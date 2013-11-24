@@ -1,0 +1,864 @@
+My Proxer is now running on 1213
+My Proxer is now running on 50030
+Main:1351277371353
+Connection is now openSocket[addr=/69.23.138.152,port=62327,localport=50030]
+Now Im reading request...
+URI is: http://www.bing.com/
+Host to contact is: www.bing.com at port 80
+Got the request...
+Used Port:80 -- Local Port:50637
+==============================================
+Response:HTTP/1.1 200 OK
+Cache-Control: private, max-age=0
+Content-Type: text/html; charset=utf-8
+P3P: CP="NON UNI COM NAV STA LOC CURa DEVa PSAa PSDa OUR IND"
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Date: Fri, 26 Oct 2012 18:49:33 GMT
+Content-Length: 14389
+Connection: close
+Set-Cookie: _FS=NU=1; domain=.bing.com; path=/
+Set-Cookie: _SS=C=20.0&SID=366EBA43C2924138AB2E0B62BF6C19D1&CW=1366&CH=635&bIm=962195; domain=.bing.com; path=/
+Set-Cookie: SRCHD=MS=2535529&D=2517401&AF=NOFORM; expires=Sun, 26-Oct-2014 18:49:33 GMT; domain=.bing.com; path=/
+
+
+in:1351277371747
+EX:1351277372064
+Error writing response to client: java.net.SocketException: Connection reset
+java.net.SocketException: Connection reset
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:107)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:135)
+	at ProxyCache.handle(ProxyCache.java:106)
+	at ProxyCache.main(ProxyCache.java:159)
+Main:1351277372118
+Connection is now openSocket[addr=/69.23.138.152,port=62330,localport=50030]
+Now Im reading request...
+URI is: http://www.bing.com/s/wlflag.ico
+Host to contact is: www.bing.com at port 80
+Got the request...
+Used Port:80 -- Local Port:50638
+==============================================
+Response:HTTP/1.1 200 OK
+Content-Type: image/x-icon
+Last-Modified: Wed, 17 Feb 2010 01:38:25 GMT
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Content-Length: 272
+Cache-Control: public, max-age=11769109
+Date: Fri, 26 Oct 2012 18:49:33 GMT
+Connection: close
+X-N: S
+
+
+in:1351277372185
+EX:1351277372377
+Error writing response to client: java.net.SocketException: Broken pipe
+java.net.SocketException: Broken pipe
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:103)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:135)
+	at ProxyCache.handle(ProxyCache.java:106)
+	at ProxyCache.main(ProxyCache.java:159)
+Main:1351277372378
+Connection is now openSocket[addr=/69.23.138.152,port=62329,localport=50030]
+Now Im reading request...
+URI is: http://www.bing.com/az/hprichbg?p=rb%2fBastei_EN-US6031990962_1366x768.jpg
+Host to contact is: www.bing.com at port 80
+Got the request...
+Used Port:80 -- Local Port:50639
+==============================================
+Response:HTTP/1.1 200 OK
+Content-Type: image/jpeg
+Last-Modified: Tue, 23 Oct 2012 17:27:54 GMT
+Content-Length: 186949
+X-N: S
+Cache-Control: public, max-age=475922
+Date: Fri, 26 Oct 2012 18:49:33 GMT
+Connection: close
+
+
+in:1351277372590
+Main:1351277373029
+Connection is now openSocket[addr=/69.23.138.152,port=62328,localport=50030]
+Now Im reading request...
+URI is: http://www.bing.com/fd/s/a/hpc3.png
+Host to contact is: www.bing.com at port 80
+Got the request...
+Used Port:80 -- Local Port:50640
+==============================================
+Response:HTTP/1.1 200 OK
+Content-Type: image/png
+Last-Modified: Tue, 14 Aug 2012 20:38:35 GMT
+Content-Length: 5448
+Cache-Control: public, max-age=12275150
+Date: Fri, 26 Oct 2012 18:49:34 GMT
+Connection: close
+
+
+in:1351277373101
+EX:1351277373337
+Error writing response to client: java.net.SocketException: Broken pipe
+java.net.SocketException: Broken pipe
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:103)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:135)
+	at ProxyCache.handle(ProxyCache.java:106)
+	at ProxyCache.main(ProxyCache.java:159)
+Main:1351277373337
+Connection is now openSocket[addr=/69.23.138.152,port=62332,localport=50030]
+Now Im reading request...
+URI is: http://www.bing.com/fd/ls/l?IG=6d92ab8ce5da4150925e478637c309bc&CID=39535F79A5C061DF173A5C80A4C5617D&PM=Y&Type=Event.CPT&DATA={%22pp%22:{%22S%22:%22L%22,%22PC%22:180,%22FC%22:-1,%22BC%22:181,%22BS%22:185,%22H%22:239,%22FE%22:-1,%22LE%22:-1,%22C1%22:-1,%22C2%22:-1,%22BP%22:2001,%22KP%22:238,%22CT%22:2008,%22IL%22:0}}&P=SERP&DA=NYC
+Host to contact is: www.bing.com at port 80
+Got the request...
+Used Port:80 -- Local Port:50641
+==============================================
+Response:HTTP/1.1 200 OK
+Cache-Control: no-cache
+Pragma: no-cache
+Content-Type: image/gif
+Expires: Sun, 12 Oct 2003 00:00:00 GMT
+P3P: CP="NON UNI COM NAV STA LOC CURa DEVa PSAa PSDa OUR IND"
+Content-Length: 42
+Date: Fri, 26 Oct 2012 18:49:35 GMT
+Connection: close
+Set-Cookie: _FS=NU=1; domain=.bing.com; path=/
+Set-Cookie: SRCHD=MS=2535529&D=2517401&AF=NOFORM; expires=Sun, 26-Oct-2014 18:49:35 GMT; domain=.bing.com; path=/
+
+
+in:1351277373958
+EX:1351277374147
+Error writing response to client: java.net.SocketException: Broken pipe
+java.net.SocketException: Broken pipe
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:103)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:135)
+	at ProxyCache.handle(ProxyCache.java:106)
+	at ProxyCache.main(ProxyCache.java:159)
+Main:1351277374148
+Connection is now openSocket[addr=/69.23.138.152,port=62333,localport=50030]
+Now Im reading request...
+URI is: http://www.bing.com/sa/8_01_0_1569928/HPImgVidViewer_c.js
+Host to contact is: www.bing.com at port 80
+Got the request...
+Used Port:80 -- Local Port:50642
+==============================================
+Response:HTTP/1.1 200 OK
+Content-Type: application/x-javascript
+Last-Modified: Mon, 16 Aug 2010 14:37:31 GMT
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Content-Length: 4608
+Cache-Control: public, max-age=15519114
+Date: Fri, 26 Oct 2012 18:49:35 GMT
+Connection: close
+
+
+in:1351277374218
+EX:1351277374473
+Error writing response to client: java.net.SocketException: Broken pipe
+java.net.SocketException: Broken pipe
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:103)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:135)
+	at ProxyCache.handle(ProxyCache.java:106)
+	at ProxyCache.main(ProxyCache.java:159)
+Main:1351277374474
+Connection is now openSocket[addr=/69.23.138.152,port=62331,localport=50030]
+Now Im reading request...
+URI is: http://www.bing.com/sa/8_01_0_1569928/notifications.js
+Host to contact is: www.bing.com at port 80
+Got the request...
+Used Port:80 -- Local Port:50643
+==============================================
+Response:HTTP/1.1 200 OK
+Content-Type: application/x-javascript
+Last-Modified: Sat, 03 Jul 2010 01:05:59 GMT
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Content-Length: 1063
+Cache-Control: public, max-age=15512477
+Date: Fri, 26 Oct 2012 18:49:36 GMT
+Connection: close
+
+
+in:1351277374543
+EX:1351277374703
+Error writing response to client: java.net.SocketException: Broken pipe
+java.net.SocketException: Broken pipe
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:103)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:135)
+	at ProxyCache.handle(ProxyCache.java:106)
+	at ProxyCache.main(ProxyCache.java:159)
+Main:1351277374704
+Connection is now openSocket[addr=/69.23.138.152,port=62335,localport=50030]
+Now Im reading request...
+URI is: http://www.bing.com/sa/8_01_0_1569928/homepageHotspotsLarge_c.js
+Host to contact is: www.bing.com at port 80
+Got the request...
+Used Port:80 -- Local Port:50644
+==============================================
+Response:HTTP/1.1 200 OK
+Content-Type: application/x-javascript
+Last-Modified: Fri, 24 Dec 2010 13:56:49 GMT
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Content-Length: 1659
+Cache-Control: public, max-age=15512978
+Date: Fri, 26 Oct 2012 18:49:36 GMT
+Connection: close
+
+
+in:1351277374776
+EX:1351277374946
+Error writing response to client: java.net.SocketException: Broken pipe
+java.net.SocketException: Broken pipe
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:103)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:135)
+	at ProxyCache.handle(ProxyCache.java:106)
+	at ProxyCache.main(ProxyCache.java:159)
+Main:1351277374947
+Connection is now openSocket[addr=/69.23.138.152,port=62334,localport=50030]
+Now Im reading request...
+URI is: http://www.bing.com/sa/8_01_0_1569928/HpModLarge.js
+Host to contact is: www.bing.com at port 80
+Got the request...
+Used Port:80 -- Local Port:50645
+==============================================
+Response:HTTP/1.1 200 OK
+Content-Type: application/x-javascript
+Last-Modified: Tue, 19 Oct 2010 07:32:22 GMT
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Content-Length: 3137
+Cache-Control: public, max-age=15519156
+Date: Fri, 26 Oct 2012 18:49:36 GMT
+Connection: close
+
+
+in:1351277375017
+EX:1351277375162
+Error writing response to client: java.net.SocketException: Broken pipe
+java.net.SocketException: Broken pipe
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:103)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:135)
+	at ProxyCache.handle(ProxyCache.java:106)
+	at ProxyCache.main(ProxyCache.java:159)
+Main:1351277375163
+Connection is now openSocket[addr=/69.23.138.152,port=62337,localport=50030]
+Now Im reading request...
+URI is: http://www.bing.com/sa/8_01_0_1569928/homepageLike_c.js
+Host to contact is: www.bing.com at port 80
+Got the request...
+Used Port:80 -- Local Port:50646
+==============================================
+Response:HTTP/1.1 200 OK
+Content-Type: application/x-javascript
+Last-Modified: Thu, 30 Dec 2010 10:05:43 GMT
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Content-Length: 465
+Cache-Control: public, max-age=15519068
+Date: Fri, 26 Oct 2012 18:49:36 GMT
+Connection: close
+
+
+in:1351277375229
+EX:1351277375388
+Error writing response to client: java.net.SocketException: Broken pipe
+java.net.SocketException: Broken pipe
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:103)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:135)
+	at ProxyCache.handle(ProxyCache.java:106)
+	at ProxyCache.main(ProxyCache.java:159)
+Main:1351277375389
+Connection is now openSocket[addr=/69.23.138.152,port=62338,localport=50030]
+Now Im reading request...
+URI is: http://api.bing.com/qsonhs.aspx?FORM=ASAPIH&q=
+Host to contact is: api.bing.com at port 80
+Got the request...
+Used Port:80 -- Local Port:50647
+==============================================
+Response:HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+X-Content-Type-Options: nosniff
+Content-Length: 35
+Date: Fri, 26 Oct 2012 18:49:37 GMT
+Connection: close
+
+
+in:1351277375537
+EX:1351277375734
+Error writing response to client: java.net.SocketException: Broken pipe
+java.net.SocketException: Broken pipe
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:103)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:135)
+	at ProxyCache.handle(ProxyCache.java:106)
+	at ProxyCache.main(ProxyCache.java:159)
+Main:1351277375734
+Connection is now openSocket[addr=/69.23.138.152,port=62336,localport=50030]
+Now Im reading request...
+URI is: http://www.bing.com/fd/sa/8_09_0_1564658/AutoSug.js
+Host to contact is: www.bing.com at port 80
+Got the request...
+Used Port:80 -- Local Port:50648
+==============================================
+Response:HTTP/1.1 200 OK
+Content-Type: application/x-javascript
+Content-Encoding: gzip
+Last-Modified: Thu, 02 Dec 2010 21:54:34 GMT
+Content-Length: 8102
+Cache-Control: public, max-age=15299831
+Date: Fri, 26 Oct 2012 18:49:37 GMT
+Connection: close
+Vary: Accept-Encoding
+
+
+in:1351277375833
+EX:1351277376044
+Error writing response to client: java.net.SocketException: Connection reset
+java.net.SocketException: Connection reset
+	at java.lang.Throwable.<init>(Throwable.java:67)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:94)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:135)
+	at ProxyCache.handle(ProxyCache.java:106)
+	at ProxyCache.main(ProxyCache.java:159)
+Main:1351277376045
+Connection is now openSocket[addr=/69.23.138.152,port=62339,localport=50030]
+Now Im reading request...
+URI is: http://www.bing.com/fd/ls/l?IG=6d92ab8ce5da4150925e478637c309bc&CID=39535F79A5C061DF173A5C80A4C5617D&PM=Y&Type=Event.PPT&DATA={%22S%22:2010,%22E%22:2057,%22T%22:0,%22I%22:0,%22N%22:{}}&P=SERP&DA=NYC
+Host to contact is: www.bing.com at port 80
+Got the request...
+Used Port:80 -- Local Port:50649
+==============================================
+Response:HTTP/1.1 200 OK
+Cache-Control: no-cache
+Pragma: no-cache
+Content-Type: image/gif
+Expires: Sun, 12 Oct 2003 00:00:00 GMT
+P3P: CP="NON UNI COM NAV STA LOC CURa DEVa PSAa PSDa OUR IND"
+Content-Length: 42
+Date: Fri, 26 Oct 2012 18:49:37 GMT
+Connection: close
+Set-Cookie: _FS=NU=1; domain=.bing.com; path=/
+Set-Cookie: SRCHD=MS=2535529&D=2517401&AF=NOFORM; expires=Sun, 26-Oct-2014 18:49:37 GMT; domain=.bing.com; path=/
+
+
+in:1351277376139
+EX:1351277376278
+Error writing response to client: java.net.SocketException: Broken pipe
+java.net.SocketException: Broken pipe
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:103)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:135)
+	at ProxyCache.handle(ProxyCache.java:106)
+	at ProxyCache.main(ProxyCache.java:159)
+Main:1351277376278
+Connection is now openSocket[addr=/69.23.138.152,port=62340,localport=50030]
+Now Im reading request...
+URI is: http://www.bing.com/fd/fb/r?v=8_09_0_1564658&sId=0
+Host to contact is: www.bing.com at port 80
+Got the request...
+Used Port:80 -- Local Port:50650
+==============================================
+Response:HTTP/1.1 200 OK
+Cache-Control: private, max-age=15552000
+Content-Type: text/html; charset=utf-8
+P3P: CP="NON UNI COM NAV STA LOC CURa DEVa PSAa PSDa OUR IND"
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Date: Fri, 26 Oct 2012 18:49:37 GMT
+Content-Length: 3482
+Connection: close
+Set-Cookie: _FS=NU=1; domain=.bing.com; path=/
+Set-Cookie: SRCHD=MS=2535529&D=2517401&AF=NOFORM; expires=Sun, 26-Oct-2014 18:49:37 GMT; domain=.bing.com; path=/
+
+
+in:1351277376380
+EX:1351277376524
+Error writing response to client: java.net.SocketException: Connection reset
+java.net.SocketException: Connection reset
+	at java.lang.Throwable.<init>(Throwable.java:67)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:94)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:135)
+	at ProxyCache.handle(ProxyCache.java:106)
+	at ProxyCache.main(ProxyCache.java:159)
+Main:1351277376525
+Connection is now openSocket[addr=/69.23.138.152,port=62341,localport=50030]
+Now Im reading request...
+URI is: http://www.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1&nc=1351277369961&video=1
+Host to contact is: www.bing.com at port 80
+Got the request...
+Used Port:80 -- Local Port:50651
+==============================================
+Response:HTTP/1.1 200 OK
+Cache-Control: private
+Content-Type: application/json; charset=utf-8
+P3P: CP="NON UNI COM NAV STA LOC CURa DEVa PSAa PSDa OUR IND"
+Content-Length: 2917
+Date: Fri, 26 Oct 2012 18:49:38 GMT
+Connection: close
+Set-Cookie: _FS=NU=1; domain=.bing.com; path=/
+Set-Cookie: SRCHD=MS=2535529&D=2517401&AF=NOFORM; expires=Sun, 26-Oct-2014 18:49:38 GMT; domain=.bing.com; path=/
+
+
+in:1351277376641
+EX:1351277376787
+Error writing response to client: java.net.SocketException: Broken pipe
+java.net.SocketException: Broken pipe
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:103)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:135)
+	at ProxyCache.handle(ProxyCache.java:106)
+	at ProxyCache.main(ProxyCache.java:159)
+Main:1351277376787
+Connection is now openSocket[addr=/69.23.138.152,port=62342,localport=50030]
+Now Im reading request...
+URI is: http://www.bing.com/notifications/render?bnptrigger=%7B%22PartnerId%22%3A%22HomePage%22%2C%22IID%22%3A%22SERP.2000%22%2C%22Attributes%22%3A%7B%22RawRequestURL%22%3A%22%2F%22%7D%7D&IG=6d92ab8ce5da4150925e478637c309bc&IID=SERP.2000
+Host to contact is: www.bing.com at port 80
+Got the request...
+Used Port:80 -- Local Port:50652
+==============================================
+Response:HTTP/1.1 200 OK
+Cache-Control: no-cache
+Pragma: no-cache
+Content-Type: text/html
+Expires: -1
+P3P: CP="NON UNI COM NAV STA LOC CURa DEVa PSAa PSDa OUR IND"
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Date: Fri, 26 Oct 2012 18:49:38 GMT
+Content-Length: 20
+Connection: close
+Set-Cookie: _FS=NU=1; domain=.bing.com; path=/
+Set-Cookie: SRCHD=MS=2535529&D=2517401&AF=NOFORM; expires=Sun, 26-Oct-2014 18:49:38 GMT; domain=.bing.com; path=/
+
+
+in:1351277376945
+EX:1351277377100
+Error writing response to client: java.net.SocketException: Broken pipe
+java.net.SocketException: Broken pipe
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:103)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:135)
+	at ProxyCache.handle(ProxyCache.java:106)
+	at ProxyCache.main(ProxyCache.java:159)
+Main:1351277377100
+Connection is now openSocket[addr=/69.23.138.152,port=62343,localport=50030]
+Now Im reading request...
+URI is: http://c.bing.com/c.gif?DI=15074
+Host to contact is: c.bing.com at port 80
+Got the request...
+Used Port:80 -- Local Port:38558
+==============================================
+Response:HTTP/1.1 302 Redirect
+Cache-Control: private, no-cache, proxy-revalidate, no-store
+Pragma: no-cache
+Location: http://c.atdmt.com/c.gif?DI=15074&RedC=c.bing.com&MXFR=39535F79A5C061DF173A5C80A4C5617D
+Server: Microsoft-IIS/7.5
+X-Powered-By: ASP.NET
+P3P: CP="BUS CUR CONo FIN IVDo ONL OUR PHY SAMo TELo"
+Set-Cookie: MUID=39535F79A5C061DF173A5C80A4C5617D&TUID=1; domain=.bing.com; expires=Sun, 26-Oct-2014 18:49:38 GMT; path=/;
+Date: Fri, 26 Oct 2012 18:49:37 GMT
+Connection: close
+Content-Length: 0
+
+
+in:1351277377401
+EX:1351277377475
+Error writing response to client: java.net.SocketException: Broken pipe
+java.net.SocketException: Broken pipe
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:103)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:135)
+	at ProxyCache.handle(ProxyCache.java:106)
+	at ProxyCache.main(ProxyCache.java:159)
+Main:1351277377475
+Connection is now openSocket[addr=/69.23.138.152,port=62344,localport=50030]
+Now Im reading request...
+URI is: http://www.bing.com/hpm?IID=SERP.1000&IG=6d92ab8ce5da4150925e478637c309bc
+Host to contact is: www.bing.com at port 80
+Got the request...
+Used Port:80 -- Local Port:50654
+==============================================
+Response:HTTP/1.1 200 OK
+Cache-Control: private
+Content-Type: text/html; charset=utf-8
+x-frame-options: SAMEORIGIN
+P3P: CP="NON UNI COM NAV STA LOC CURa DEVa PSAa PSDa OUR IND"
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Date: Fri, 26 Oct 2012 18:49:39 GMT
+Content-Length: 1621
+Connection: close
+Set-Cookie: _FS=NU=1; domain=.bing.com; path=/
+Set-Cookie: SRCHD=MS=2535529&D=2517401&AF=NOFORM; expires=Sun, 26-Oct-2014 18:49:39 GMT; domain=.bing.com; path=/
+
+
+in:1351277377716
+EX:1351277377859
+Error writing response to client: java.net.SocketException: Broken pipe
+java.net.SocketException: Broken pipe
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:103)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:135)
+	at ProxyCache.handle(ProxyCache.java:106)
+	at ProxyCache.main(ProxyCache.java:159)
+Main:1351277377860
+Connection is now openSocket[addr=/69.23.138.152,port=62345,localport=50030]
+Now Im reading request...
+URI is: http://www.facebook.com/plugins/like.php?action=like&font=arial&layout=button_count&colorscheme=light&href=http%3A%2F%2Fwww.bing.com%3Fssd%3D20121026_0700%26FORM%3DHPFBLK%26mkt%3Den-US%26
+Host to contact is: www.facebook.com at port 80
+Got the request...
+Used Port:80 -- Local Port:52128
+==============================================
+Response:HTTP/1.1 200 OK
+Cache-Control: private, no-cache, no-store, must-revalidate
+Expires: Sat, 01 Jan 2000 00:00:00 GMT
+Pragma: no-cache
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Content-Encoding: gzip
+Content-Type: text/html; charset=utf-8
+X-FB-Debug: B9oXFkylnRRL3cXHIomiE6a2+tMKYyt7VWqYqIClH9c=
+Date: Fri, 26 Oct 2012 18:49:39 GMT
+Transfer-Encoding: chunked
+Connection: close
+
+
+in:1351277378312
+EX:1351277378473
+Error writing response to client: java.net.SocketException: Connection reset
+java.net.SocketException: Connection reset
+	at java.lang.Throwable.<init>(Throwable.java:67)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:94)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:135)
+	at ProxyCache.handle(ProxyCache.java:106)
+	at ProxyCache.main(ProxyCache.java:159)
+Main:1351277378474
+Connection is now openSocket[addr=/69.23.138.152,port=62346,localport=50030]
+Now Im reading request...
+URI is: http://www.facebook.com/extern/login_status.php?api_key=111239619098&ok_session=http%3A%2F%2Fwww.bing.com%2Ffd%2Ffb%2Fu%3Fv%3D8_09_0_1564658%26sId%3D0%23status%3Dconnected&no_session=http%3A%2F%2Fwww.bing.com%2Ffd%2Ffb%2Fu%3Fv%3D8_09_0_1564658%26sId%3D0%23status%3DnotConnected&no_user=http%3A%2F%2Fwww.bing.com%2Ffd%2Ffb%2Fu%3Fv%3D8_09_0_1564658%26sId%3D0%23status%3Dunknown&session_version=3&extern=2
+Host to contact is: www.facebook.com at port 80
+Got the request...
+Used Port:80 -- Local Port:52129
+==============================================
+Response:HTTP/1.1 302 Found
+Location: http://www.bing.com/fd/fb/u?v=8_09_0_1564658&sId=0#status=unknown
+Content-Type: text/html; charset=utf-8
+X-FB-Debug: BjP0Tg7T8KTSSCBigssLOP6zAcHPubiEJ6YMPj2IhnE=
+Date: Fri, 26 Oct 2012 18:49:40 GMT
+Connection: close
+Content-Length: 0
+
+
+in:1351277378840
+EX:1351277378902
+Error writing response to client: java.net.SocketException: Broken pipe
+java.net.SocketException: Broken pipe
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:103)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:135)
+	at ProxyCache.handle(ProxyCache.java:106)
+	at ProxyCache.main(ProxyCache.java:159)
+Main:1351277378902
+Connection is now openSocket[addr=/69.23.138.152,port=62347,localport=50030]
+Now Im reading request...
+URI is: http://c.atdmt.com/c.gif?DI=15074&RedC=c.bing.com&MXFR=39535F79A5C061DF173A5C80A4C5617D
+Host to contact is: c.atdmt.com at port 80
+Got the request...
+Used Port:80 -- Local Port:32780
+==============================================
+Response:HTTP/1.1 302 Redirect
+Cache-Control: private, no-cache, proxy-revalidate, no-store
+Pragma: no-cache
+Location: http://c.bing.com/c.gif?DI=15074&MUID=1BBC1D4EA2F967DB3FBD1EB6A1F96799&cb=1cdb3aaa7de2c20
+Server: Microsoft-IIS/7.5
+X-Powered-By: ASP.NET
+P3P: CP="BUS CUR CONo FIN IVDo ONL OUR PHY SAMo TELo"
+Set-Cookie: MUID=1BBC1D4EA2F967DB3FBD1EB6A1F96799; domain=.atdmt.com; expires=Sun, 26-Oct-2014 18:49:40 GMT; path=/;
+Set-Cookie: SRM_A=1BBC1D4EA2F967DB3FBD1EB6A1F96799; domain=c.atdmt.com; expires=Sun, 26-Oct-2014 18:49:40 GMT; path=/;
+Set-Cookie: SRM_B=1BBC1D4EA2F967DB3FBD1EB6A1F96799; domain=c.atdmt.com; expires=Sun, 26-Oct-2014 18:49:40 GMT; path=/;
+Date: Fri, 26 Oct 2012 18:49:39 GMT
+Connection: close
+Content-Length: 0
+
+
+in:1351277379215
+EX:1351277379305
+Error writing response to client: java.net.SocketException: Broken pipe
+java.net.SocketException: Broken pipe
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:103)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:135)
+	at ProxyCache.handle(ProxyCache.java:106)
+	at ProxyCache.main(ProxyCache.java:159)
+Main:1351277379306
+Connection is now openSocket[addr=/69.23.138.152,port=62348,localport=50030]
+Now Im reading request...
+URI is: http://ts1.mm.bing.net/th?id=I4809552376956172&c=8&w=190&h=108&pid=14.1
+Host to contact is: ts1.mm.bing.net at port 80
+Got the request...
+Used Port:80 -- Local Port:50658
+==============================================
+Response:HTTP/1.1 200 OK
+Content-Type: image/jpeg
+X-AS-ServerName: BN1SCH010104627
+Content-Length: 4299
+Date: Fri, 26 Oct 2012 18:49:40 GMT
+Connection: close
+Cache-Control: public, max-age=1209600
+
+
+in:1351277379400
+EX:1351277379539
+Error writing response to client: java.net.SocketException: Connection reset
+java.net.SocketException: Connection reset
+	at java.lang.Throwable.<init>(Throwable.java:67)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:94)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:135)
+	at ProxyCache.handle(ProxyCache.java:106)
+	at ProxyCache.main(ProxyCache.java:159)
+Main:1351277379539
+Connection is now openSocket[addr=/69.23.138.152,port=62351,localport=50030]
+Now Im reading request...
+URI is: http://ts1.mm.bing.net/th?id=I4856225778238130&c=8&w=190&h=108&pid=14.1
+Host to contact is: ts1.mm.bing.net at port 80
+Got the request...
+Used Port:80 -- Local Port:50659
+==============================================
+Response:HTTP/1.1 200 OK
+Content-Type: image/jpeg
+X-AS-ServerName: BN1SCH010034526
+Content-Length: 5611
+Date: Fri, 26 Oct 2012 18:49:41 GMT
+Connection: close
+Cache-Control: public, max-age=1209600
+
+
+in:1351277379606
+EX:1351277379826
+Error writing response to client: java.net.SocketException: Broken pipe
+java.net.SocketException: Broken pipe
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:103)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:135)
+	at ProxyCache.handle(ProxyCache.java:106)
+	at ProxyCache.main(ProxyCache.java:159)
+Main:1351277379826
+Connection is now openSocket[addr=/69.23.138.152,port=62350,localport=50030]
+Now Im reading request...
+URI is: http://ts1.mm.bing.net/th?id=I4934372709892146&c=4&w=190&h=108&pid=14.1
+Host to contact is: ts1.mm.bing.net at port 80
+Got the request...
+Used Port:80 -- Local Port:50660
+==============================================
+Response:HTTP/1.1 200 OK
+Content-Type: image/jpeg
+X-AS-ServerName: BN1SCH010044414
+Content-Length: 4736
+Date: Fri, 26 Oct 2012 18:49:41 GMT
+Connection: close
+Cache-Control: public, max-age=1209600
+
+
+in:1351277379893
+EX:1351277380156
+Error writing response to client: java.net.SocketException: Broken pipe
+java.net.SocketException: Broken pipe
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:103)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:135)
+	at ProxyCache.handle(ProxyCache.java:106)
+	at ProxyCache.main(ProxyCache.java:159)
+Main:1351277380157
+Connection is now openSocket[addr=/69.23.138.152,port=62352,localport=50030]
+Now Im reading request...
+URI is: http://ts1.mm.bing.net/th?id=I4949022818043415&c=4&w=190&h=108&pid=14.1
+Host to contact is: ts1.mm.bing.net at port 80
+Got the request...
+Used Port:80 -- Local Port:50661
+==============================================
+Response:HTTP/1.1 200 OK
+Content-Type: image/jpeg
+X-AS-ServerName: BN1SCH010044512
+Content-Length: 6003
+Date: Fri, 26 Oct 2012 18:49:41 GMT
+Connection: close
+Cache-Control: public, max-age=1209600
+
+
+in:1351277380243
+EX:1351277380502
+Error writing response to client: java.net.SocketException: Broken pipe
+java.net.SocketException: Broken pipe
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:103)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:135)
+	at ProxyCache.handle(ProxyCache.java:106)
+	at ProxyCache.main(ProxyCache.java:159)
+Main:1351277380502
+Connection is now openSocket[addr=/69.23.138.152,port=62349,localport=50030]
+Now Im reading request...
+URI is: http://www.bing.com/fd/s/a/sca.gif
+Host to contact is: www.bing.com at port 80
+Got the request...
+Used Port:80 -- Local Port:50662
+==============================================
+Response:HTTP/1.1 200 OK
+Content-Type: image/gif
+Last-Modified: Mon, 07 Mar 2011 18:33:12 GMT
+Content-Length: 84
+Cache-Control: public, max-age=12275119
+Date: Fri, 26 Oct 2012 18:49:42 GMT
+Connection: close
+
+
+in:1351277380567
+EX:1351277380736
+Error writing response to client: java.net.SocketException: Broken pipe
+java.net.SocketException: Broken pipe
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:103)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:135)
+	at ProxyCache.handle(ProxyCache.java:106)
+	at ProxyCache.main(ProxyCache.java:159)
+Main:1351277380736
+Connection is now openSocket[addr=/69.23.138.152,port=62353,localport=50030]
+Now Im reading request...
+Exception in thread "main" java.lang.NullPointerException
+	at HttpRequest.<init>(HttpRequest.java:32)
+	at ProxyCache.handle(ProxyCache.java:41)
+	at ProxyCache.main(ProxyCache.java:159)
+My Proxer is now running on 50030
+Main:1351277794094
+Connection is now openSocket[addr=/69.23.138.152,port=62437,localport=50030]
+Now Im reading request...
+URI is: http://google.com/
+Host to contact is: google.com at port 80
+Got the request...
+Used Port:80 -- Local Port:36280
+==============================================
+Response:HTTP/1.1 301 Moved Permanently
+Location: http://www.google.com/
+Content-Type: text/html; charset=UTF-8
+Date: Fri, 26 Oct 2012 18:56:35 GMT
+Expires: Sun, 25 Nov 2012 18:56:35 GMT
+Cache-Control: public, max-age=2592000
+Server: gws
+Content-Length: 219
+X-XSS-Protection: 1; mode=block
+X-Frame-Options: SAMEORIGIN
+Connection: close
+
+
+in:1351277794506
+EX:1351277794707
+Error writing response to client: java.net.SocketException: Broken pipe
+java.net.SocketException: Broken pipe
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:103)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:135)
+	at ProxyCache.handle(ProxyCache.java:106)
+	at ProxyCache.main(ProxyCache.java:159)
+Main:1351277794708
+Connection is now openSocket[addr=/69.23.138.152,port=62438,localport=50030]
+Now Im reading request...
+URI is: http://www.google.com/
+Host to contact is: www.google.com at port 80
+Got the request...
+Used Port:80 -- Local Port:39092
+==============================================
+Response:HTTP/1.1 200 OK
+Date: Fri, 26 Oct 2012 18:56:36 GMT
+Expires: -1
+Cache-Control: private, max-age=0
+Content-Type: text/html; charset=UTF-8
+Content-Encoding: gzip
+Server: gws
+Content-Length: 28923
+X-XSS-Protection: 1; mode=block
+X-Frame-Options: SAMEORIGIN
+Connection: close
+
+
+in:1351277795354
+EX:1351277795950
+Error writing response to client: java.net.SocketException: Connection reset
+java.net.SocketException: Connection reset
+	at java.lang.Throwable.<init>(Throwable.java:67)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:94)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:135)
+	at ProxyCache.handle(ProxyCache.java:106)
+	at ProxyCache.main(ProxyCache.java:159)
+Main:1351277795951
+Connection is now openSocket[addr=/69.23.138.152,port=62440,localport=50030]
+Now Im reading request...
+URI is: http://www.google.com/images/icons/product/chrome-48.png
+Host to contact is: www.google.com at port 80
+Got the request...
+Used Port:80 -- Local Port:39093
+==============================================
+Response:HTTP/1.1 200 OK
+Content-Type: image/png
+Last-Modified: Mon, 02 Apr 2012 02:13:37 GMT
+Date: Fri, 26 Oct 2012 18:56:37 GMT
+Expires: Sat, 03 Nov 2012 18:56:37 GMT
+Cache-Control: public, max-age=691200
+X-Content-Type-Options: nosniff
+Server: sffe
+Content-Length: 1834
+X-XSS-Protection: 1; mode=block
+Connection: close
+
+
+in:1351277796312
+EX:1351277796465
+Error writing response to client: java.net.SocketException: Broken pipe
+java.net.SocketException: Broken pipe
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:103)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:135)
+	at ProxyCache.handle(ProxyCache.java:106)
+	at ProxyCache.main(ProxyCache.java:159)
+Main:1351277796466
+Connection is now openSocket[addr=/69.23.138.152,port=62439,localport=50030]
+Now Im reading request...
+URI is: http://www.google.com/images/srpr/logo3w.png
+Host to contact is: www.google.com at port 80
+Got the request...
+Used Port:80 -- Local Port:39094
+==============================================
+Response:HTTP/1.1 200 OK
+Content-Type: image/png
+Last-Modified: Mon, 02 Apr 2012 02:13:37 GMT
+Date: Fri, 26 Oct 2012 08:21:14 GMT
+Expires: Sat, 03 Nov 2012 08:21:14 GMT
+X-Content-Type-Options: nosniff
+Server: sffe
+Content-Length: 7007
+X-XSS-Protection: 1; mode=block
+Cache-Control: public, max-age=691200
+Age: 38124
+Connection: close
+
+
+in:1351277796901
+EX:1351277797183
+Error writing response to client: java.net.SocketException: Broken pipe
+java.net.SocketException: Broken pipe
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:103)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:135)
+	at ProxyCache.handle(ProxyCache.java:106)
+	at ProxyCache.main(ProxyCache.java:159)
+Main:1351277797184
+Connection is now openSocket[addr=/69.23.138.152,port=62442,localport=50030]
+Now Im reading request...
+Exception in thread "main" java.lang.NullPointerException
+	at HttpRequest.<init>(HttpRequest.java:32)
+	at ProxyCache.handle(ProxyCache.java:41)
+	at ProxyCache.main(ProxyCache.java:159)

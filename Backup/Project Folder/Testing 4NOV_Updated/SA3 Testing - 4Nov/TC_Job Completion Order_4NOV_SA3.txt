@@ -1,0 +1,12 @@
+
+
+12/11/04 18:34:00 INFO mapred.JobClient: Job complete: job_201211041810_0001
+12/11/04 18:34:03 INFO mapred.JobClient: Job complete: job_201211041810_0005
+12/11/04 18:34:04 INFO mapred.JobClient: Job complete: job_201211041810_0009
+12/11/04 18:34:05 INFO mapred.JobClient: Job complete: job_201211041810_0010
+12/11/04 18:34:06 INFO mapred.JobClient: Job complete: job_201211041810_0002
+12/11/04 18:34:06 INFO mapred.JobClient: Job complete: job_201211041810_0007
+12/11/04 18:34:07 INFO mapred.JobClient: Job complete: job_201211041810_0004
+12/11/04 18:34:08 INFO mapred.JobClient: Job complete: job_201211041810_0003
+12/11/04 18:34:08 INFO mapred.JobClient: Job complete: job_201211041810_0006
+12/11/04 18:34:10 INFO mapred.JobClient: Job complete: job_201211041810_0008

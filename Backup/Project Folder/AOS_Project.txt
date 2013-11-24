@@ -1,0 +1,92 @@
+https://www-147.ibm.com/cloud/enterprise/dashboard
+
+170.224.164.187 MaterNode
+170.224.168.210 Data Node1
+170.224.168.209 DataNode2
+170.224.163.203 DataNode3
+170.224.168.177 DataNode4
+170.224.168.180 DataNode5
+
+http://170.224.164.187:50030/scheduler
+
+
+https://www.ibm.com/developerworks/training/kp/l-kp-command/index.html
+
+Download hadoop-0.20.2.tar.gz from 
+
+ftp://apache.mirrors.pair.com/hadoop/common/hadoop-0.20.2/
+
+http://hadoop.apache.org/common/docs/r0.20.2/hdfs_shell.html
+
+http://hadoop.apache.org/common/docs/r0.20.2/fair_scheduler.html
+
+cd /mnt/biginsights/opt/ibm/biginsights/IHC
+
+/mnt/biginsights/hadoop/hdfs
+
+hadoop jar hadoop-0.20.2-examples.jar wordcount /user/idcuser/cs5531/imput/testinput.dat /user/idcuser/cs5531/output
+
+
+
+
+
+Demo #1 - Instance Creation & Management
+
+Learn how to sign in and create a running instance (i.e., VM) from an image.
+ 	 
+Demo #2 - Connecting to an Instance using an SSH Client
+Demo #3 - Working with IP, Storage & Keys
+Demo #4 - User Roles and Administration
+Demo #5 - Image Creation and Instance Creation
+Demo #6 - Setting up the Firewalls
+Demo #7 - Establishing a Virtual LAN (VLAN)
+Demo #8 - Working with the Asset Catalog
+Demo #9 - Sharing private Images, & creating support forums
+
+naveenbathina
+acliff123
+
+http://wiki.apache.org/hadoop/EclipsePlugIn
+http://ist.berkeley.edu/as-ag/tools/howto/install-eclipse-win.html
+http://hadoop.apache.org/common/docs/r0.20.2/quickstart.html
+http://ebiquity.umbc.edu/Tutorials/Hadoop/08%20-%20download%20and%20copy%20hadoop.html
+http://wiki.apache.org/hadoop/HadoopJavaVersions
+http://www.cloudera.com/blog/2009/04/configuring-eclipse-for-hadoop-development-a-screencast/
+http://wiki.apache.org/hadoop/EclipseEnvironment
+
+
+comparator ava example
+conditional operator example
+fairscheduler.xml
+default poolscheduling mode--variable
+
+As per our understanding,initialisiation of fair sheduler is happening at fairscheduler.start method.This start method is invoked at only one place at set up method of teasfairsceduler.java which is a junit test suite.
+
+Servlet is initialised in start method.When URL is hit http://<server:port>/scheduler with some parameters advanced and setFifo will inovke scheduler update method.
+
+Infos is the hashmap which has jobs that needs to be scheduled
+
+How to run in our eclipse?
+
+springer--research papers+Ieee magazine
+ohiolink
+
+priceline.com for cheap fares
+
+Security in mobile data base accees
+authentication in mabile data base systems--search
+
+2569 Fox Run Raod
+WYOMING, MI 49519
+
+vm argument
+
+Ctrl+shift+R--for search on whole project
+hadoop jar hadoop-0.20.2-examples.jar wordcount hdfs://170.224.164.187:9000/user/idcuser/cs5531/testinput.dat /user/idcuser/cs5531/output
+
+2 Phase II
+(Weightage 16%) Due: Oct 26 Nov 2, 2012
+What to turnin?
+1. Your entire source code in tar.gz so that it can be imported as a new project in Eclipse.
+2. A 2 page report that describes: (a) your design, (b) your test cases, (c) the challenges your
+faced, and (d) contributions of each team member.

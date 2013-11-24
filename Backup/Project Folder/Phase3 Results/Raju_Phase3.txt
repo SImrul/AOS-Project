@@ -1,0 +1,9 @@
+1M+1D Haddop master  170.224.169.182  http://170.224.169.182:50030/scheduler
+1M+2D Haddop master1 170.224.169.166  http://170.224.169.166:50030/scheduler
+1M+4D hadoop Master2 170.224.168.239  http://170.224.168.239:50030/scheduler
+
+Default:FIFO
+FS
+SA1:Least Number of Tasksfirst Schedule
+SA2:Least Percent executed maps first Schedule
+SA3:High number of pending tasks first schedule

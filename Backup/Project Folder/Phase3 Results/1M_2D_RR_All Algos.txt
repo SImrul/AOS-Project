@@ -1,0 +1,55 @@
+FIFO
+12/12/11 19:56:25 INFO mapred.JobClient: Running job: job_201212111952_0002
+12/12/11 19:56:25 INFO mapred.JobClient: Running job: job_201212111952_0001
+12/12/11 19:56:25 INFO mapred.JobClient: Running job: job_201212111952_0003
+12/12/11 19:56:25 INFO mapred.JobClient: Running job: job_201212111952_0004
+2_1_3_4
+12/12/11 19:57:26 INFO mapred.JobClient: Job complete: job_201212111952_0001
+12/12/11 19:57:35 INFO mapred.JobClient: Job complete: job_201212111952_0002
+12/12/11 19:57:49 INFO mapred.JobClient: Job complete: job_201212111952_0003
+12/12/11 19:57:53 INFO mapred.JobClient: Job complete: job_201212111952_0004
+1_2_3_4
+FS
+12/12/11 19:59:43 INFO mapred.JobClient: Running job: job_201212111952_0006
+12/12/11 19:59:44 INFO mapred.JobClient: Running job: job_201212111952_0005
+12/12/11 19:59:45 INFO mapred.JobClient: Running job: job_201212111952_0007
+12/12/11 19:59:45 INFO mapred.JobClient: Running job: job_201212111952_0008
+2_1_3_4
+12/12/11 20:00:32 INFO mapred.JobClient: Job complete: job_201212111952_0006
+12/12/11 20:00:45 INFO mapred.JobClient: Job complete: job_201212111952_0005
+12/12/11 20:00:58 INFO mapred.JobClient: Job complete: job_201212111952_0007
+12/12/11 20:01:04 INFO mapred.JobClient: Job complete: job_201212111952_0008
+2_1_3_4
+SA1
+12/12/11 20:03:35 INFO mapred.JobClient: Running job: job_201212111952_0010
+12/12/11 20:03:35 INFO mapred.JobClient: Running job: job_201212111952_0009
+12/12/11 20:03:35 INFO mapred.JobClient: Running job: job_201212111952_0011
+12/12/11 20:03:35 INFO mapred.JobClient: Running job: job_201212111952_0012
+2_1_3_4
+12/12/11 20:04:23 INFO mapred.JobClient: Job complete: job_201212111952_0009
+12/12/11 20:04:40 INFO mapred.JobClient: Job complete: job_201212111952_0012
+12/12/11 20:04:50 INFO mapred.JobClient: Job complete: job_201212111952_0011
+12/12/11 20:05:01 INFO mapred.JobClient: Job complete: job_201212111952_0010
+1_4_3_2
+SA2
+12/12/11 20:06:36 INFO mapred.JobClient: Running job: job_201212111952_0013
+12/12/11 20:06:36 INFO mapred.JobClient: Running job: job_201212111952_0014
+12/12/11 20:06:36 INFO mapred.JobClient: Running job: job_201212111952_0016
+12/12/11 20:06:36 INFO mapred.JobClient: Running job: job_201212111952_0015
+1_2_4_3
+12/12/11 20:07:21 INFO mapred.JobClient: Job complete: job_201212111952_0013
+12/12/11 20:07:37 INFO mapred.JobClient: Job complete: job_201212111952_0014
+12/12/11 20:07:44 INFO mapred.JobClient: Job complete: job_201212111952_0015
+12/12/11 20:07:58 INFO mapred.JobClient: Job complete: job_201212111952_0016
+1_2_3_4
+SA3
+12/12/11 20:09:25 INFO mapred.JobClient: Running job: job_201212111952_0018
+12/12/11 20:09:26 INFO mapred.JobClient: Running job: job_201212111952_0017
+12/12/11 20:09:26 INFO mapred.JobClient: Running job: job_201212111952_0020
+12/12/11 20:09:26 INFO mapred.JobClient: Running job: job_201212111952_0019
+2_1_4_3
+12/12/11 20:10:45 INFO mapred.JobClient: Job complete: job_201212111952_0020
+12/12/11 20:10:47 INFO mapred.JobClient: Job complete: job_201212111952_0018
+12/12/11 20:10:48 INFO mapred.JobClient: Job complete: job_201212111952_0019
+12/12/11 20:10:48 INFO mapred.JobClient: Job complete: job_201212111952_0017
+4_2_3_1

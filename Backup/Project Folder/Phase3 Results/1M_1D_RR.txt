@@ -1,0 +1,1127 @@
+Using username "idcuser".
+Authenticating with public key "imported-openssh-key"
+[idcuser@vhost2477 ~]$ pwd
+/home/idcuser
+[idcuser@vhost2477 ~]$ ls -lrt
+total 0
+[idcuser@vhost2477 ~]$ ls -lrt
+total 64712
+-rwxr-xr-x 1 idcuser idcuser 66131307 Dec  2 22:10 testinput.dat
+-rwxr-xr-x 1 idcuser idcuser     1222 Dec  3 00:51 run_jobs_testing.sh
+-rwxr-xr-x 1 idcuser idcuser    42244 Dec 11 18:11 hadoop-0.20.2-customScheduler.jar
+[idcuser@vhost2477 ~]$ cd $HADOOP_HOME/lib
+[idcuser@vhost2477 lib]$ ls -lrt
+total 7352
+drwxr-xr-x 4 idcuser idcuser    4096 Dec 11 07:12 native
+drwxr-xr-x 2 idcuser idcuser    4096 Dec 11 07:12 jsp-2.1
+drwxr-xr-x 2 idcuser idcuser    4096 Dec 11 07:12 jdiff
+-rw-r--r-- 1 idcuser idcuser   15010 Dec 11 07:12 xmlenc-0.52.jar
+-rw-r--r-- 1 idcuser idcuser    8601 Dec 11 07:12 slf4j-log4j12-1.4.3.jar
+-rw-r--r-- 1 idcuser idcuser   15345 Dec 11 07:12 slf4j-api-1.4.3.jar
+-rw-r--r-- 1 idcuser idcuser  132368 Dec 11 07:12 servlet-api-2.5-6.1.14.jar
+-rw-r--r-- 1 idcuser idcuser   65261 Dec 11 07:12 oro-2.0.8.jar
+-rw-r--r-- 1 idcuser idcuser  391834 Dec 11 07:12 log4j-1.2.15.jar
+-rw-r--r-- 1 idcuser idcuser   11358 Dec 11 07:12 kfs-0.2.LICENSE.txt
+-rw-r--r-- 1 idcuser idcuser   11428 Dec 11 07:12 kfs-0.2.2.jar
+-rw-r--r-- 1 idcuser idcuser  121070 Dec 11 07:12 junit-3.8.1.jar
+-rw-r--r-- 1 idcuser idcuser  163121 Dec 11 07:12 jetty-util-6.1.14.jar
+-rw-r--r-- 1 idcuser idcuser  516429 Dec 11 07:12 jetty-6.1.14.jar
+-rw-r--r-- 1 idcuser idcuser  321806 Dec 11 07:12 jets3t-0.6.1.jar
+-rw-r--r-- 1 idcuser idcuser   76698 Dec 11 07:12 jasper-runtime-5.5.12.jar
+-rw-r--r-- 1 idcuser idcuser  405086 Dec 11 07:12 jasper-compiler-5.5.12.jar
+-rw-r--r-- 1 idcuser idcuser    3434 Dec 11 07:12 hsqldb-1.8.0.10.LICENSE.txt
+-rw-r--r-- 1 idcuser idcuser  706710 Dec 11 07:12 hsqldb-1.8.0.10.jar
+-rw-r--r-- 1 idcuser idcuser 3566844 Dec 11 07:12 core-3.1.1.jar
+-rw-r--r-- 1 idcuser idcuser  180792 Dec 11 07:12 commons-net-1.4.1.jar
+-rw-r--r-- 1 idcuser idcuser   26202 Dec 11 07:12 commons-logging-api-1.0.4.jar
+-rw-r--r-- 1 idcuser idcuser   38015 Dec 11 07:12 commons-logging-1.0.4.jar
+-rw-r--r-- 1 idcuser idcuser  279781 Dec 11 07:12 commons-httpclient-3.0.1.jar
+-rw-r--r-- 1 idcuser idcuser  112341 Dec 11 07:12 commons-el-1.0.jar
+-rw-r--r-- 1 idcuser idcuser   46725 Dec 11 07:12 commons-codec-1.3.jar
+-rw-r--r-- 1 idcuser idcuser   41123 Dec 11 07:12 commons-cli-1.2.jar
+-rw-r--r-- 1 idcuser idcuser   37246 Dec 11 07:44 hadoop-0.20.2-fairscheduler.jar
+[idcuser@vhost2477 lib]$ rm hadoop-0.20.2-fairscheduler.jar
+[idcuser@vhost2477 lib]$ ls -lrt
+total 7308
+drwxr-xr-x 4 idcuser idcuser    4096 Dec 11 07:12 native
+drwxr-xr-x 2 idcuser idcuser    4096 Dec 11 07:12 jsp-2.1
+drwxr-xr-x 2 idcuser idcuser    4096 Dec 11 07:12 jdiff
+-rw-r--r-- 1 idcuser idcuser   15010 Dec 11 07:12 xmlenc-0.52.jar
+-rw-r--r-- 1 idcuser idcuser    8601 Dec 11 07:12 slf4j-log4j12-1.4.3.jar
+-rw-r--r-- 1 idcuser idcuser   15345 Dec 11 07:12 slf4j-api-1.4.3.jar
+-rw-r--r-- 1 idcuser idcuser  132368 Dec 11 07:12 servlet-api-2.5-6.1.14.jar
+-rw-r--r-- 1 idcuser idcuser   65261 Dec 11 07:12 oro-2.0.8.jar
+-rw-r--r-- 1 idcuser idcuser  391834 Dec 11 07:12 log4j-1.2.15.jar
+-rw-r--r-- 1 idcuser idcuser   11358 Dec 11 07:12 kfs-0.2.LICENSE.txt
+-rw-r--r-- 1 idcuser idcuser   11428 Dec 11 07:12 kfs-0.2.2.jar
+-rw-r--r-- 1 idcuser idcuser  121070 Dec 11 07:12 junit-3.8.1.jar
+-rw-r--r-- 1 idcuser idcuser  163121 Dec 11 07:12 jetty-util-6.1.14.jar
+-rw-r--r-- 1 idcuser idcuser  516429 Dec 11 07:12 jetty-6.1.14.jar
+-rw-r--r-- 1 idcuser idcuser  321806 Dec 11 07:12 jets3t-0.6.1.jar
+-rw-r--r-- 1 idcuser idcuser   76698 Dec 11 07:12 jasper-runtime-5.5.12.jar
+-rw-r--r-- 1 idcuser idcuser  405086 Dec 11 07:12 jasper-compiler-5.5.12.jar
+-rw-r--r-- 1 idcuser idcuser    3434 Dec 11 07:12 hsqldb-1.8.0.10.LICENSE.txt
+-rw-r--r-- 1 idcuser idcuser  706710 Dec 11 07:12 hsqldb-1.8.0.10.jar
+-rw-r--r-- 1 idcuser idcuser 3566844 Dec 11 07:12 core-3.1.1.jar
+-rw-r--r-- 1 idcuser idcuser  180792 Dec 11 07:12 commons-net-1.4.1.jar
+-rw-r--r-- 1 idcuser idcuser   26202 Dec 11 07:12 commons-logging-api-1.0.4.jar
+-rw-r--r-- 1 idcuser idcuser   38015 Dec 11 07:12 commons-logging-1.0.4.jar
+-rw-r--r-- 1 idcuser idcuser  279781 Dec 11 07:12 commons-httpclient-3.0.1.jar
+-rw-r--r-- 1 idcuser idcuser  112341 Dec 11 07:12 commons-el-1.0.jar
+-rw-r--r-- 1 idcuser idcuser   46725 Dec 11 07:12 commons-codec-1.3.jar
+-rw-r--r-- 1 idcuser idcuser   41123 Dec 11 07:12 commons-cli-1.2.jar
+[idcuser@vhost2477 lib]$ cp ~/hadoop-0.20.2-customScheduler.jar .
+[idcuser@vhost2477 lib]$ ls -lrt
+total 7356
+drwxr-xr-x 4 idcuser idcuser    4096 Dec 11 07:12 native
+drwxr-xr-x 2 idcuser idcuser    4096 Dec 11 07:12 jsp-2.1
+drwxr-xr-x 2 idcuser idcuser    4096 Dec 11 07:12 jdiff
+-rw-r--r-- 1 idcuser idcuser   15010 Dec 11 07:12 xmlenc-0.52.jar
+-rw-r--r-- 1 idcuser idcuser    8601 Dec 11 07:12 slf4j-log4j12-1.4.3.jar
+-rw-r--r-- 1 idcuser idcuser   15345 Dec 11 07:12 slf4j-api-1.4.3.jar
+-rw-r--r-- 1 idcuser idcuser  132368 Dec 11 07:12 servlet-api-2.5-6.1.14.jar
+-rw-r--r-- 1 idcuser idcuser   65261 Dec 11 07:12 oro-2.0.8.jar
+-rw-r--r-- 1 idcuser idcuser  391834 Dec 11 07:12 log4j-1.2.15.jar
+-rw-r--r-- 1 idcuser idcuser   11358 Dec 11 07:12 kfs-0.2.LICENSE.txt
+-rw-r--r-- 1 idcuser idcuser   11428 Dec 11 07:12 kfs-0.2.2.jar
+-rw-r--r-- 1 idcuser idcuser  121070 Dec 11 07:12 junit-3.8.1.jar
+-rw-r--r-- 1 idcuser idcuser  163121 Dec 11 07:12 jetty-util-6.1.14.jar
+-rw-r--r-- 1 idcuser idcuser  516429 Dec 11 07:12 jetty-6.1.14.jar
+-rw-r--r-- 1 idcuser idcuser  321806 Dec 11 07:12 jets3t-0.6.1.jar
+-rw-r--r-- 1 idcuser idcuser   76698 Dec 11 07:12 jasper-runtime-5.5.12.jar
+-rw-r--r-- 1 idcuser idcuser  405086 Dec 11 07:12 jasper-compiler-5.5.12.jar
+-rw-r--r-- 1 idcuser idcuser    3434 Dec 11 07:12 hsqldb-1.8.0.10.LICENSE.txt
+-rw-r--r-- 1 idcuser idcuser  706710 Dec 11 07:12 hsqldb-1.8.0.10.jar
+-rw-r--r-- 1 idcuser idcuser 3566844 Dec 11 07:12 core-3.1.1.jar
+-rw-r--r-- 1 idcuser idcuser  180792 Dec 11 07:12 commons-net-1.4.1.jar
+-rw-r--r-- 1 idcuser idcuser   26202 Dec 11 07:12 commons-logging-api-1.0.4.jar
+-rw-r--r-- 1 idcuser idcuser   38015 Dec 11 07:12 commons-logging-1.0.4.jar
+-rw-r--r-- 1 idcuser idcuser  279781 Dec 11 07:12 commons-httpclient-3.0.1.jar
+-rw-r--r-- 1 idcuser idcuser  112341 Dec 11 07:12 commons-el-1.0.jar
+-rw-r--r-- 1 idcuser idcuser   46725 Dec 11 07:12 commons-codec-1.3.jar
+-rw-r--r-- 1 idcuser idcuser   41123 Dec 11 07:12 commons-cli-1.2.jar
+-rwxr-xr-x 1 idcuser idcuser   42244 Dec 11 19:06 hadoop-0.20.2-customScheduler.jar
+[idcuser@vhost2477 lib]$ stop-all.sh
+[INFO] Progress - Stop console
+[INFO] @170.224.169.182 - console stopped
+[INFO] Progress - 11%
+[INFO] Progress - Stop jaqlserver
+[INFO] @170.224.169.182 - jaqlserver stopped
+[INFO] Progress - 22%
+[INFO] Progress - Stop oozie
+[INFO] @170.224.169.182 - oozie stopped
+[INFO] Progress - 33%
+[INFO] Progress - Stop flume
+[INFO] @170.224.169.182 - flume stopped
+[INFO] Progress - 44%
+[INFO] Progress - Stop hbase
+[INFO] @170.224.169.182 - hbase-master stopped
+[INFO] @170.224.169.182 - hbase-regionserver stopped
+[INFO] Deployer - hbase service stopped
+[INFO] Progress - 56%
+[INFO] Progress - Stop hive
+[INFO] @170.224.169.182 - hive-web-interface stopped
+[INFO] Progress - 67%
+[INFO] Progress - Stop zookeeper
+[INFO] @170.224.169.182 - zookeeper stopped
+[INFO] Deployer - zookeeper service stopped
+[INFO] Progress - 78%
+[INFO] Progress - Stop derby
+[INFO] @170.224.169.182 - derby stopped
+[INFO] Progress - 89%
+[INFO] Progress - Stop hadoop
+[INFO] @170.224.169.182 - namenode stopped
+[INFO] @170.224.169.217 - datanode stopped
+[INFO] @170.224.169.182 - secondarynamenode stopped
+[INFO] @170.224.169.217 - tasktracker stopped
+[INFO] Progress - 94%
+[INFO] @170.224.169.182 - datanode stopped
+[INFO] @170.224.169.182 - jobtracker stopped
+[INFO] @170.224.169.182 - tasktracker stopped
+[INFO] Progress - 100%
+[INFO] DeployManager - Stop; SUCCEEDED components: [console, jaqlserver, oozie, flume, hbase, hive, zookeeper, derby, hadoop]; FAILED components: []
+[idcuser@vhost2477 lib]$ pwd
+/mnt/biginsights/opt/ibm/biginsights/IHC/lib
+[idcuser@vhost2477 lib]$ cd ../../hadoop-conf/
+[idcuser@vhost2477 hadoop-conf]$ ls -lrt
+total 124
+-rw-rw-r-- 1 idcuser idcuser 1195 Dec 11 07:44 ssl-server.xml.example
+-rw-rw-r-- 1 idcuser idcuser 1243 Dec 11 07:44 ssl-client.xml.example
+-rw-rw-r-- 1 idcuser idcuser   32 Dec 11 07:44 slaves
+-rw-rw-r-- 1 idcuser idcuser   37 Dec 11 07:44 masters
+-rw-rw-r-- 1 idcuser idcuser 2432 Dec 11 07:44 mapred-site.xml
+-rw-rw-r-- 1 idcuser idcuser 2815 Dec 11 07:44 log4j.properties
+-rw-rw-r-- 1 idcuser idcuser   32 Dec 11 07:44 includes
+-rw-rw-r-- 1 idcuser idcuser 2254 Dec 11 07:44 ibm-hadoop.properties
+-rw-rw-r-- 1 idcuser idcuser 1608 Dec 11 07:44 hdfs-site.xml
+-rw-rw-r-- 1 idcuser idcuser 4190 Dec 11 07:44 hadoop-policy.xml
+-rw-rw-r-- 1 idcuser idcuser 1245 Dec 11 07:44 hadoop-metrics.properties
+-rwxrw-r-- 1 idcuser idcuser 2535 Dec 11 07:44 hadoop-env.sh
+-rw-rw-r-- 1 idcuser idcuser 1317 Dec 11 07:44 core-site.xml
+-rw-rw-r-- 1 idcuser idcuser  535 Dec 11 07:44 configuration.xsl
+-rw-rw-r-- 1 idcuser idcuser 3936 Dec 11 07:44 capacity-scheduler.xml
+[idcuser@vhost2477 hadoop-conf]$ vi mapred-site.xml
+[idcuser@vhost2477 hadoop-conf]$ vi mapred-site.xml
+[idcuser@vhost2477 hadoop-conf]$ start-all.sh
+[INFO] Progress - Start hadoop
+[INFO] @170.224.169.182 - namenode started, pid 16518
+[INFO] @170.224.169.217 - datanode started, pid 15976
+[INFO] @170.224.169.182 - secondarynamenode started, pid 16684
+[INFO] @170.224.169.217 - tasktracker started, pid 16142
+[INFO] Progress - 6%
+[INFO] @170.224.169.182 - datanode started, pid 16841
+[INFO] @170.224.169.182 - jobtracker started, pid 17009
+[INFO] @170.224.169.182 - tasktracker started, pid 17152
+[INFO] Progress - 11%
+[INFO] Progress - Start derby
+[INFO] @170.224.169.182 - derby started, pid 100
+[INFO] Progress - 22%
+[INFO] Progress - Start zookeeper
+[INFO] @170.224.169.182 - zookeeper started, pid 17349
+[INFO] Deployer - zookeeper service started
+[INFO] Progress - 33%
+[INFO] Progress - Start hive
+[INFO] @170.224.169.182 - derby started, pid 100
+[INFO] Progress - 44%
+[INFO] @170.224.169.182 - hive-web-interface started, pid 17532
+[INFO] Progress - Start hbase
+[INFO] @170.224.169.182 - hbase-master started
+[INFO] @170.224.169.182 - hbase-regionserver started
+[INFO] Deployer - hbase service started
+[INFO] Progress - 56%
+[INFO] Progress - Start flume
+[INFO] @170.224.169.182 - zookeeper started, pid 17349
+[INFO] Deployer - zookeeper service started
+[INFO] @170.224.169.182 - flume-master started, pid 18081
+[INFO] @170.224.169.182 - flume-node started, pid 18361
+[INFO] Progress - 67%
+[INFO] Progress - Start oozie
+[INFO] @170.224.169.182 - oozie started
+[INFO] Progress - 78%
+[INFO] Progress - Start jaqlserver
+[INFO] @170.224.169.182 - jaqlserver started
+[INFO] Progress - 89%
+[INFO] Progress - Start console
+[INFO] @170.224.169.182 - console started
+[INFO] Progress - 100%
+[INFO] DeployManager - Start; SUCCEEDED components: [hadoop, derby, zookeeper, hive, hbase, flume, oozie, jaqlserver, console]; FAILED components: []
+[idcuser@vhost2477 hadoop-conf]$ cd ~
+[idcuser@vhost2477 ~]$ ls -lrt
+total 64712
+-rwxr-xr-x 1 idcuser idcuser 66131307 Dec  2 22:10 testinput.dat
+-rwxr-xr-x 1 idcuser idcuser     1222 Dec  3 00:51 run_jobs_testing.sh
+-rwxr-xr-x 1 idcuser idcuser    42244 Dec 11 18:11 hadoop-0.20.2-customScheduler.jar
+[idcuser@vhost2477 ~]$ ./run_jobs_testing.sh 4
+testinput.dat  is present. Ok to proceed.
+rmr: cannot remove /user/idcuser/o0: No such file or directory.
+rmr: cannot remove /user/idcuser/o1: No such file or directory.
+rmr: cannot remove /user/idcuser/o2: No such file or directory.
+rmr: cannot remove /user/idcuser/o3: No such file or directory.
+Jobid:  0  Priority:  NORMAL  Maps:  20  Reduces:  8
+Jobid:  1  Priority:  VERY_HIGH  Maps:  20  Reduces:  8
+Jobid:  2  Priority:  NORMAL  Maps:  20  Reduces:  5
+Jobid:  3  Priority:  VERY_LOW  Maps:  20  Reduces:  5
+[idcuser@vhost2477 ~]$ Exception in thread "main" java.io.IOException: Error opening job jar: /home/idcuser/WordCount.jar
+        at org.apache.hadoop.util.RunJar.main(RunJar.java:90)
+Caused by: java.util.zip.ZipException: error in opening zip file
+        at java.util.zip.ZipFile.open(Native Method)
+        at java.util.zip.ZipFile.<init>(ZipFile.java:137)
+        at java.util.jar.JarFile.<init>(JarFile.java:149)
+        at java.util.jar.JarFile.<init>(JarFile.java:86)
+        at org.apache.hadoop.util.RunJar.main(RunJar.java:88)
+Exception in thread "main" java.io.IOException: Error opening job jar: /home/idcuser/WordCount.jar
+        at org.apache.hadoop.util.RunJar.main(RunJar.java:90)
+Caused by: java.util.zip.ZipException: error in opening zip file
+        at java.util.zip.ZipFile.open(Native Method)
+        at java.util.zip.ZipFile.<init>(ZipFile.java:137)
+        at java.util.jar.JarFile.<init>(JarFile.java:149)
+        at java.util.jar.JarFile.<init>(JarFile.java:86)
+        at org.apache.hadoop.util.RunJar.main(RunJar.java:88)
+Exception in thread "main" java.io.IOException: Error opening job jar: /home/idcuser/WordCount.jar
+        at org.apache.hadoop.util.RunJar.main(RunJar.java:90)
+Caused by: java.util.zip.ZipException: error in opening zip file
+        at java.util.zip.ZipFile.open(Native Method)
+        at java.util.zip.ZipFile.<init>(ZipFile.java:137)
+        at java.util.jar.JarFile.<init>(JarFile.java:149)
+        at java.util.jar.JarFile.<init>(JarFile.java:86)
+        at org.apache.hadoop.util.RunJar.main(RunJar.java:88)
+Exception in thread "main" java.io.IOException: Error opening job jar: /home/idcuser/WordCount.jar
+        at org.apache.hadoop.util.RunJar.main(RunJar.java:90)
+Caused by: java.util.zip.ZipException: error in opening zip file
+        at java.util.zip.ZipFile.open(Native Method)
+        at java.util.zip.ZipFile.<init>(ZipFile.java:137)
+        at java.util.jar.JarFile.<init>(JarFile.java:149)
+        at java.util.jar.JarFile.<init>(JarFile.java:86)
+        at org.apache.hadoop.util.RunJar.main(RunJar.java:88)
+
+[idcuser@vhost2477 ~]$ ./run_jobs_testing.sh 4
+testinput.dat  is present. Ok to proceed.
+copyFromLocal: Target /user/idcuser/i0 already exists
+rmr: cannot remove /user/idcuser/o0: No such file or directory.
+copyFromLocal: Target /user/idcuser/i1 already exists
+rmr: cannot remove /user/idcuser/o1: No such file or directory.
+copyFromLocal: Target /user/idcuser/i2 already exists
+rmr: cannot remove /user/idcuser/o2: No such file or directory.
+copyFromLocal: Target /user/idcuser/i3 already exists
+rmr: cannot remove /user/idcuser/o3: No such file or directory.
+Jobid:  0  Priority:  NORMAL  Maps:  20  Reduces:  8
+Jobid:  1  Priority:  VERY_HIGH  Maps:  20  Reduces:  8
+Jobid:  2  Priority:  NORMAL  Maps:  20  Reduces:  5
+Jobid:  3  Priority:  VERY_LOW  Maps:  20  Reduces:  5
+[idcuser@vhost2477 ~]$ 12/12/11 19:25:38 INFO input.FileInputFormat: Total input paths to process : 1
+12/12/11 19:25:38 INFO input.FileInputFormat: Total input paths to process : 1
+12/12/11 19:25:38 INFO input.FileInputFormat: Total input paths to process : 1
+12/12/11 19:25:38 INFO input.FileInputFormat: Total input paths to process : 1
+12/12/11 19:25:39 INFO mapred.JobClient: Running job: job_201212111910_0002
+12/12/11 19:25:39 INFO mapred.JobClient: Running job: job_201212111910_0004
+12/12/11 19:25:39 INFO mapred.JobClient: Running job: job_201212111910_0003
+12/12/11 19:25:39 INFO mapred.JobClient: Running job: job_201212111910_0001
+12/12/11 19:25:40 INFO mapred.JobClient:  map 0% reduce 0%
+12/12/11 19:25:40 INFO mapred.JobClient:  map 0% reduce 0%
+12/12/11 19:25:40 INFO mapred.JobClient:  map 0% reduce 0%
+12/12/11 19:25:40 INFO mapred.JobClient:  map 0% reduce 0%
+12/12/11 19:25:56 INFO mapred.JobClient:  map 31% reduce 0%
+12/12/11 19:25:57 INFO mapred.JobClient:  map 49% reduce 0%
+12/12/11 19:26:00 INFO mapred.JobClient:  map 63% reduce 0%
+12/12/11 19:26:01 INFO mapred.JobClient:  map 82% reduce 0%
+12/12/11 19:26:02 INFO mapred.JobClient:  map 39% reduce 0%
+12/12/11 19:26:03 INFO mapred.JobClient:  map 85% reduce 0%
+12/12/11 19:26:04 INFO mapred.JobClient:  map 100% reduce 0%
+12/12/11 19:26:05 INFO mapred.JobClient:  map 100% reduce 0%
+12/12/11 19:26:07 INFO mapred.JobClient:  map 11% reduce 0%
+12/12/11 19:26:10 INFO mapred.JobClient:  map 21% reduce 0%
+12/12/11 19:26:11 INFO mapred.JobClient:  map 41% reduce 0%
+12/12/11 19:26:13 INFO mapred.JobClient:  map 53% reduce 0%
+12/12/11 19:26:14 INFO mapred.JobClient:  map 3% reduce 0%
+12/12/11 19:26:16 INFO mapred.JobClient:  map 100% reduce 4%
+12/12/11 19:26:17 INFO mapred.JobClient:  map 9% reduce 0%
+12/12/11 19:26:17 INFO mapred.JobClient:  map 66% reduce 0%
+12/12/11 19:26:19 INFO mapred.JobClient:  map 100% reduce 8%
+12/12/11 19:26:19 INFO mapred.JobClient:  map 80% reduce 0%
+12/12/11 19:26:20 INFO mapred.JobClient:  map 18% reduce 0%
+12/12/11 19:26:22 INFO mapred.JobClient:  map 92% reduce 0%
+12/12/11 19:26:23 INFO mapred.JobClient:  map 25% reduce 0%
+12/12/11 19:26:25 INFO mapred.JobClient:  map 100% reduce 0%
+12/12/11 19:26:25 INFO mapred.JobClient:  map 100% reduce 12%
+12/12/11 19:26:25 INFO mapred.JobClient:  map 33% reduce 0%
+12/12/11 19:26:26 INFO mapred.JobClient:  map 100% reduce 25%
+12/12/11 19:26:28 INFO mapred.JobClient:  map 40% reduce 0%
+12/12/11 19:26:29 INFO mapred.JobClient:  map 100% reduce 37%
+12/12/11 19:26:29 INFO mapred.JobClient:  map 49% reduce 0%
+12/12/11 19:26:31 INFO mapred.JobClient:  map 100% reduce 50%
+12/12/11 19:26:31 INFO mapred.JobClient:  map 57% reduce 0%
+12/12/11 19:26:32 INFO mapred.JobClient:  map 74% reduce 0%
+12/12/11 19:26:34 INFO mapred.JobClient:  map 75% reduce 0%
+12/12/11 19:26:35 INFO mapred.JobClient:  map 89% reduce 0%
+12/12/11 19:26:37 INFO mapred.JobClient:  map 100% reduce 62%
+12/12/11 19:26:38 INFO mapred.JobClient:  map 100% reduce 0%
+12/12/11 19:26:41 INFO mapred.JobClient:  map 100% reduce 66%
+12/12/11 19:26:43 INFO mapred.JobClient:  map 100% reduce 79%
+12/12/11 19:26:44 INFO mapred.JobClient:  map 100% reduce 91%
+12/12/11 19:26:46 INFO mapred.JobClient:  map 100% reduce 12%
+12/12/11 19:26:47 INFO mapred.JobClient:  map 100% reduce 100%
+12/12/11 19:26:49 INFO mapred.JobClient: Job complete: job_201212111910_0001
+12/12/11 19:26:49 INFO mapred.JobClient: Counters: 17
+12/12/11 19:26:49 INFO mapred.JobClient:   Job Counters
+12/12/11 19:26:49 INFO mapred.JobClient:     Data-local map tasks=2
+12/12/11 19:26:49 INFO mapred.JobClient:     Launched map tasks=2
+12/12/11 19:26:49 INFO mapred.JobClient:     Launched reduce tasks=8
+12/12/11 19:26:49 INFO mapred.JobClient:   FileSystemCounters
+12/12/11 19:26:49 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=31537825
+12/12/11 19:26:49 INFO mapred.JobClient:     HDFS_BYTES_READ=132328151
+12/12/11 19:26:49 INFO mapred.JobClient:     FILE_BYTES_READ=26890785
+12/12/11 19:26:49 INFO mapred.JobClient:     HDFS_BYTES_WRITTEN=4840116
+12/12/11 19:26:49 INFO mapred.JobClient:   Map-Reduce Framework
+12/12/11 19:26:49 INFO mapred.JobClient:     Map output bytes=149413414
+12/12/11 19:26:49 INFO mapred.JobClient:     Reduce input groups=80762
+12/12/11 19:26:49 INFO mapred.JobClient:     Combine output records=387679
+12/12/11 19:26:49 INFO mapred.JobClient:     Reduce input records=160411
+12/12/11 19:26:49 INFO mapred.JobClient:     Map output records=4287700
+12/12/11 19:26:49 INFO mapred.JobClient:     Map input records=1000396
+12/12/11 19:26:49 INFO mapred.JobClient:     Reduce shuffle bytes=9473188
+12/12/11 19:26:49 INFO mapred.JobClient:     Combine input records=4514968
+12/12/11 19:26:49 INFO mapred.JobClient:     Reduce output records=80762
+12/12/11 19:26:49 INFO mapred.JobClient:     Spilled Records=548090
+12/12/11 19:26:53 INFO mapred.JobClient:  map 100% reduce 25%
+12/12/11 19:26:55 INFO mapred.JobClient:  map 100% reduce 50%
+12/12/11 19:26:56 INFO mapred.JobClient:  map 100% reduce 62%
+12/12/11 19:27:02 INFO mapred.JobClient:  map 100% reduce 75%
+12/12/11 19:27:05 INFO mapred.JobClient:  map 100% reduce 87%
+12/12/11 19:27:06 INFO mapred.JobClient:  map 100% reduce 100%
+12/12/11 19:27:07 INFO mapred.JobClient:  map 100% reduce 20%
+12/12/11 19:27:08 INFO mapred.JobClient: Job complete: job_201212111910_0003
+12/12/11 19:27:08 INFO mapred.JobClient: Counters: 17
+12/12/11 19:27:08 INFO mapred.JobClient:   Job Counters
+12/12/11 19:27:08 INFO mapred.JobClient:     Data-local map tasks=1
+12/12/11 19:27:08 INFO mapred.JobClient:     Launched map tasks=1
+12/12/11 19:27:08 INFO mapred.JobClient:     Launched reduce tasks=8
+12/12/11 19:27:08 INFO mapred.JobClient:   FileSystemCounters
+12/12/11 19:27:08 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=15843622
+12/12/11 19:27:08 INFO mapred.JobClient:     HDFS_BYTES_READ=66131307
+12/12/11 19:27:08 INFO mapred.JobClient:     FILE_BYTES_READ=13556706
+12/12/11 19:27:08 INFO mapred.JobClient:     HDFS_BYTES_WRITTEN=4767977
+12/12/11 19:27:08 INFO mapred.JobClient:   Map-Reduce Framework
+12/12/11 19:27:08 INFO mapred.JobClient:     Map output bytes=74706707
+12/12/11 19:27:08 INFO mapred.JobClient:     Reduce input groups=80762
+12/12/11 19:27:08 INFO mapred.JobClient:     Combine output records=194512
+12/12/11 19:27:08 INFO mapred.JobClient:     Reduce input records=80762
+12/12/11 19:27:08 INFO mapred.JobClient:     Map output records=2143850
+12/12/11 19:27:08 INFO mapred.JobClient:     Map input records=500198
+12/12/11 19:27:08 INFO mapred.JobClient:     Reduce shuffle bytes=3814707
+12/12/11 19:27:08 INFO mapred.JobClient:     Combine input records=2257600
+12/12/11 19:27:08 INFO mapred.JobClient:     Reduce output records=80762
+12/12/11 19:27:08 INFO mapred.JobClient:     Spilled Records=275274
+12/12/11 19:27:10 INFO mapred.JobClient:  map 100% reduce 26%
+12/12/11 19:27:11 INFO mapred.JobClient:  map 100% reduce 46%
+12/12/11 19:27:14 INFO mapred.JobClient:  map 100% reduce 66%
+12/12/11 19:27:16 INFO mapred.JobClient:  map 100% reduce 100%
+12/12/11 19:27:18 INFO mapred.JobClient: Job complete: job_201212111910_0002
+12/12/11 19:27:18 INFO mapred.JobClient: Counters: 17
+12/12/11 19:27:18 INFO mapred.JobClient:   Job Counters
+12/12/11 19:27:18 INFO mapred.JobClient:     Data-local map tasks=3
+12/12/11 19:27:18 INFO mapred.JobClient:     Launched map tasks=3
+12/12/11 19:27:18 INFO mapred.JobClient:     Launched reduce tasks=5
+12/12/11 19:27:18 INFO mapred.JobClient:   FileSystemCounters
+12/12/11 19:27:18 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=47236759
+12/12/11 19:27:18 INFO mapred.JobClient:     HDFS_BYTES_READ=198524995
+12/12/11 19:27:18 INFO mapred.JobClient:     FILE_BYTES_READ=37913136
+12/12/11 19:27:18 INFO mapred.JobClient:     HDFS_BYTES_WRITTEN=4840553
+12/12/11 19:27:18 INFO mapred.JobClient:   Map-Reduce Framework
+12/12/11 19:27:18 INFO mapred.JobClient:     Map output bytes=224120121
+12/12/11 19:27:18 INFO mapred.JobClient:     Reduce input groups=80762
+12/12/11 19:27:18 INFO mapred.JobClient:     Combine output records=581160
+12/12/11 19:27:18 INFO mapred.JobClient:     Reduce input records=240027
+12/12/11 19:27:18 INFO mapred.JobClient:     Map output records=6431550
+12/12/11 19:27:18 INFO mapred.JobClient:     Map input records=1500594
+12/12/11 19:27:18 INFO mapred.JobClient:     Reduce shuffle bytes=14095195
+12/12/11 19:27:18 INFO mapred.JobClient:     Combine input records=6772683
+12/12/11 19:27:18 INFO mapred.JobClient:     Reduce output records=80762
+12/12/11 19:27:18 INFO mapred.JobClient:     Spilled Records=821187
+12/12/11 19:27:20 INFO mapred.JobClient:  map 100% reduce 20%
+12/12/11 19:27:23 INFO mapred.JobClient:  map 100% reduce 40%
+12/12/11 19:27:26 INFO mapred.JobClient:  map 100% reduce 60%
+12/12/11 19:27:27 INFO mapred.JobClient:  map 100% reduce 66%
+12/12/11 19:27:32 INFO mapred.JobClient:  map 100% reduce 86%
+12/12/11 19:27:33 INFO mapred.JobClient:  map 100% reduce 100%
+12/12/11 19:27:35 INFO mapred.JobClient: Job complete: job_201212111910_0004
+12/12/11 19:27:35 INFO mapred.JobClient: Counters: 17
+12/12/11 19:27:35 INFO mapred.JobClient:   Job Counters
+12/12/11 19:27:35 INFO mapred.JobClient:     Data-local map tasks=4
+12/12/11 19:27:35 INFO mapred.JobClient:     Launched map tasks=4
+12/12/11 19:27:35 INFO mapred.JobClient:     Launched reduce tasks=5
+12/12/11 19:27:35 INFO mapred.JobClient:   FileSystemCounters
+12/12/11 19:27:35 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=62948513
+12/12/11 19:27:35 INFO mapred.JobClient:     HDFS_BYTES_READ=264721839
+12/12/11 19:27:35 INFO mapred.JobClient:     FILE_BYTES_READ=50354572
+12/12/11 19:27:35 INFO mapred.JobClient:     HDFS_BYTES_WRITTEN=4840981
+12/12/11 19:27:35 INFO mapred.JobClient:   Map-Reduce Framework
+12/12/11 19:27:35 INFO mapred.JobClient:     Map output bytes=298826828
+12/12/11 19:27:35 INFO mapred.JobClient:     Reduce input groups=80762
+12/12/11 19:27:35 INFO mapred.JobClient:     Combine output records=775388
+12/12/11 19:27:35 INFO mapred.JobClient:     Reduce input records=319674
+12/12/11 19:27:35 INFO mapred.JobClient:     Map output records=8575400
+12/12/11 19:27:35 INFO mapred.JobClient:     Map input records=2000792
+12/12/11 19:27:35 INFO mapred.JobClient:     Reduce shuffle bytes=19151046
+12/12/11 19:27:35 INFO mapred.JobClient:     Combine input records=9031114
+12/12/11 19:27:35 INFO mapred.JobClient:     Reduce output records=80762
+12/12/11 19:27:35 INFO mapred.JobClient:     Spilled Records=1095062
+
+[idcuser@vhost2477 ~]$ ./run_jobs_testing.sh 4
+testinput.dat  is present. Ok to proceed.
+copyFromLocal: Target /user/idcuser/i0 already exists
+Deleted hdfs://170.224.169.182:9000/user/idcuser/o0
+copyFromLocal: Target /user/idcuser/i1 already exists
+Deleted hdfs://170.224.169.182:9000/user/idcuser/o1
+copyFromLocal: Target /user/idcuser/i2 already exists
+Deleted hdfs://170.224.169.182:9000/user/idcuser/o2
+copyFromLocal: Target /user/idcuser/i3 already exists
+Deleted hdfs://170.224.169.182:9000/user/idcuser/o3
+Jobid:  0  Priority:  NORMAL  Maps:  20  Reduces:  8
+Jobid:  1  Priority:  VERY_HIGH  Maps:  20  Reduces:  8
+Jobid:  2  Priority:  NORMAL  Maps:  20  Reduces:  5
+Jobid:  3  Priority:  VERY_LOW  Maps:  20  Reduces:  5
+[idcuser@vhost2477 ~]$ 12/12/11 19:29:03 INFO input.FileInputFormat: Total input paths to process : 1
+12/12/11 19:29:03 INFO input.FileInputFormat: Total input paths to process : 1
+12/12/11 19:29:03 INFO input.FileInputFormat: Total input paths to process : 1
+12/12/11 19:29:03 INFO mapred.JobClient: Running job: job_201212111910_0006
+12/12/11 19:29:03 INFO input.FileInputFormat: Total input paths to process : 1
+12/12/11 19:29:04 INFO mapred.JobClient: Running job: job_201212111910_0007
+12/12/11 19:29:04 INFO mapred.JobClient: Running job: job_201212111910_0005
+12/12/11 19:29:04 INFO mapred.JobClient: Running job: job_201212111910_0008
+12/12/11 19:29:04 INFO mapred.JobClient:  map 0% reduce 0%
+12/12/11 19:29:05 INFO mapred.JobClient:  map 0% reduce 0%
+12/12/11 19:29:05 INFO mapred.JobClient:  map 0% reduce 0%
+12/12/11 19:29:05 INFO mapred.JobClient:  map 0% reduce 0%
+12/12/11 19:29:20 INFO mapred.JobClient:  map 37% reduce 0%
+12/12/11 19:29:23 INFO mapred.JobClient:  map 59% reduce 0%
+12/12/11 19:29:24 INFO mapred.JobClient:  map 12% reduce 0%
+12/12/11 19:29:24 INFO mapred.JobClient:  map 72% reduce 0%
+12/12/11 19:29:26 INFO mapred.JobClient:  map 28% reduce 0%
+12/12/11 19:29:26 INFO mapred.JobClient:  map 87% reduce 0%
+12/12/11 19:29:29 INFO mapred.JobClient:  map 95% reduce 0%
+12/12/11 19:29:30 INFO mapred.JobClient:  map 49% reduce 0%
+12/12/11 19:29:31 INFO mapred.JobClient:  map 66% reduce 0%
+12/12/11 19:29:32 INFO mapred.JobClient:  map 100% reduce 0%
+12/12/11 19:29:34 INFO mapred.JobClient:  map 37% reduce 0%
+12/12/11 19:29:36 INFO mapred.JobClient:  map 75% reduce 0%
+12/12/11 19:29:39 INFO mapred.JobClient:  map 3% reduce 0%
+12/12/11 19:29:39 INFO mapred.JobClient:  map 100% reduce 0%
+12/12/11 19:29:41 INFO mapred.JobClient:  map 17% reduce 0%
+12/12/11 19:29:44 INFO mapred.JobClient:  map 24% reduce 0%
+12/12/11 19:29:44 INFO mapred.JobClient:  map 100% reduce 2%
+12/12/11 19:29:46 INFO mapred.JobClient:  map 34% reduce 0%
+12/12/11 19:29:46 INFO mapred.JobClient:  map 100% reduce 14%
+12/12/11 19:29:48 INFO mapred.JobClient:  map 45% reduce 0%
+12/12/11 19:29:48 INFO mapred.JobClient:  map 100% reduce 27%
+12/12/11 19:29:49 INFO mapred.JobClient:  map 57% reduce 0%
+12/12/11 19:29:50 INFO mapred.JobClient:  map 67% reduce 0%
+12/12/11 19:29:50 INFO mapred.JobClient:  map 100% reduce 37%
+12/12/11 19:29:52 INFO mapred.JobClient:  map 79% reduce 0%
+12/12/11 19:29:53 INFO mapred.JobClient:  map 75% reduce 0%
+12/12/11 19:29:55 INFO mapred.JobClient:  map 100% reduce 49%
+12/12/11 19:29:55 INFO mapred.JobClient:  map 93% reduce 0%
+12/12/11 19:29:58 INFO mapred.JobClient:  map 100% reduce 4%
+12/12/11 19:29:59 INFO mapred.JobClient:  map 100% reduce 6%
+12/12/11 19:30:01 INFO mapred.JobClient:  map 100% reduce 54%
+12/12/11 19:30:02 INFO mapred.JobClient:  map 100% reduce 8%
+12/12/11 19:30:02 INFO mapred.JobClient:  map 91% reduce 0%
+12/12/11 19:30:05 INFO mapred.JobClient:  map 100% reduce 12%
+12/12/11 19:30:05 INFO mapred.JobClient:  map 100% reduce 0%
+12/12/11 19:30:07 INFO mapred.JobClient:  map 100% reduce 62%
+12/12/11 19:30:07 INFO mapred.JobClient:  map 100% reduce 24%
+12/12/11 19:30:08 INFO mapred.JobClient:  map 100% reduce 40%
+12/12/11 19:30:14 INFO mapred.JobClient:  map 100% reduce 74%
+12/12/11 19:30:16 INFO mapred.JobClient:  map 100% reduce 87%
+12/12/11 19:30:17 INFO mapred.JobClient:  map 100% reduce 100%
+12/12/11 19:30:19 INFO mapred.JobClient: Job complete: job_201212111910_0005
+12/12/11 19:30:19 INFO mapred.JobClient: Counters: 17
+12/12/11 19:30:19 INFO mapred.JobClient:   Job Counters
+12/12/11 19:30:19 INFO mapred.JobClient:     Data-local map tasks=2
+12/12/11 19:30:19 INFO mapred.JobClient:     Launched map tasks=2
+12/12/11 19:30:19 INFO mapred.JobClient:     Launched reduce tasks=8
+12/12/11 19:30:19 INFO mapred.JobClient:   FileSystemCounters
+12/12/11 19:30:19 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=31537825
+12/12/11 19:30:19 INFO mapred.JobClient:     HDFS_BYTES_READ=132328151
+12/12/11 19:30:19 INFO mapred.JobClient:     FILE_BYTES_READ=26890785
+12/12/11 19:30:19 INFO mapred.JobClient:     HDFS_BYTES_WRITTEN=4840116
+12/12/11 19:30:19 INFO mapred.JobClient:   Map-Reduce Framework
+12/12/11 19:30:19 INFO mapred.JobClient:     Map output bytes=149413414
+12/12/11 19:30:19 INFO mapred.JobClient:     Reduce input groups=80762
+12/12/11 19:30:19 INFO mapred.JobClient:     Combine output records=387679
+12/12/11 19:30:19 INFO mapred.JobClient:     Reduce input records=160411
+12/12/11 19:30:19 INFO mapred.JobClient:     Map output records=4287700
+12/12/11 19:30:19 INFO mapred.JobClient:     Map input records=1000396
+12/12/11 19:30:19 INFO mapred.JobClient:     Reduce shuffle bytes=8827808
+12/12/11 19:30:19 INFO mapred.JobClient:     Combine input records=4514968
+12/12/11 19:30:19 INFO mapred.JobClient:     Reduce output records=80762
+12/12/11 19:30:19 INFO mapred.JobClient:     Spilled Records=548090
+12/12/11 19:30:19 INFO mapred.JobClient:  map 100% reduce 20%
+12/12/11 19:30:23 INFO mapred.JobClient:  map 100% reduce 25%
+12/12/11 19:30:25 INFO mapred.JobClient:  map 100% reduce 37%
+12/12/11 19:30:26 INFO mapred.JobClient:  map 100% reduce 50%
+12/12/11 19:30:28 INFO mapred.JobClient:  map 100% reduce 62%
+12/12/11 19:30:32 INFO mapred.JobClient:  map 100% reduce 40%
+12/12/11 19:30:34 INFO mapred.JobClient:  map 100% reduce 60%
+12/12/11 19:30:35 INFO mapred.JobClient:  map 100% reduce 80%
+12/12/11 19:30:37 INFO mapred.JobClient:  map 100% reduce 100%
+12/12/11 19:30:39 INFO mapred.JobClient: Job complete: job_201212111910_0006
+12/12/11 19:30:39 INFO mapred.JobClient: Counters: 17
+12/12/11 19:30:39 INFO mapred.JobClient:   Job Counters
+12/12/11 19:30:39 INFO mapred.JobClient:     Data-local map tasks=3
+12/12/11 19:30:39 INFO mapred.JobClient:     Launched map tasks=3
+12/12/11 19:30:39 INFO mapred.JobClient:     Launched reduce tasks=5
+12/12/11 19:30:39 INFO mapred.JobClient:   FileSystemCounters
+12/12/11 19:30:39 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=47236759
+12/12/11 19:30:39 INFO mapred.JobClient:     HDFS_BYTES_READ=198524995
+12/12/11 19:30:39 INFO mapred.JobClient:     FILE_BYTES_READ=37913136
+12/12/11 19:30:39 INFO mapred.JobClient:     HDFS_BYTES_WRITTEN=4840553
+12/12/11 19:30:39 INFO mapred.JobClient:   Map-Reduce Framework
+12/12/11 19:30:39 INFO mapred.JobClient:     Map output bytes=224120121
+12/12/11 19:30:39 INFO mapred.JobClient:     Reduce input groups=80762
+12/12/11 19:30:39 INFO mapred.JobClient:     Combine output records=581160
+12/12/11 19:30:39 INFO mapred.JobClient:     Reduce input records=240027
+12/12/11 19:30:39 INFO mapred.JobClient:     Map output records=6431550
+12/12/11 19:30:39 INFO mapred.JobClient:     Map input records=1500594
+12/12/11 19:30:39 INFO mapred.JobClient:     Reduce shuffle bytes=14124477
+12/12/11 19:30:39 INFO mapred.JobClient:     Combine input records=6772683
+12/12/11 19:30:39 INFO mapred.JobClient:     Reduce output records=80762
+12/12/11 19:30:39 INFO mapred.JobClient:     Spilled Records=821187
+12/12/11 19:30:41 INFO mapred.JobClient:  map 100% reduce 60%
+12/12/11 19:30:43 INFO mapred.JobClient:  map 100% reduce 80%
+12/12/11 19:30:44 INFO mapred.JobClient:  map 100% reduce 100%
+12/12/11 19:30:46 INFO mapred.JobClient:  map 100% reduce 75%
+12/12/11 19:30:46 INFO mapred.JobClient: Job complete: job_201212111910_0007
+12/12/11 19:30:46 INFO mapred.JobClient: Counters: 17
+12/12/11 19:30:46 INFO mapred.JobClient:   Job Counters
+12/12/11 19:30:46 INFO mapred.JobClient:     Data-local map tasks=4
+12/12/11 19:30:46 INFO mapred.JobClient:     Launched map tasks=4
+12/12/11 19:30:46 INFO mapred.JobClient:     Launched reduce tasks=5
+12/12/11 19:30:46 INFO mapred.JobClient:   FileSystemCounters
+12/12/11 19:30:46 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=62948513
+12/12/11 19:30:46 INFO mapred.JobClient:     HDFS_BYTES_READ=264721839
+12/12/11 19:30:46 INFO mapred.JobClient:     FILE_BYTES_READ=50354572
+12/12/11 19:30:46 INFO mapred.JobClient:     HDFS_BYTES_WRITTEN=4840981
+12/12/11 19:30:46 INFO mapred.JobClient:   Map-Reduce Framework
+12/12/11 19:30:46 INFO mapred.JobClient:     Map output bytes=298826828
+12/12/11 19:30:46 INFO mapred.JobClient:     Reduce input groups=80762
+12/12/11 19:30:46 INFO mapred.JobClient:     Combine output records=775388
+12/12/11 19:30:46 INFO mapred.JobClient:     Reduce input records=319674
+12/12/11 19:30:46 INFO mapred.JobClient:     Map output records=8575400
+12/12/11 19:30:46 INFO mapred.JobClient:     Map input records=2000792
+12/12/11 19:30:46 INFO mapred.JobClient:     Reduce shuffle bytes=18176481
+12/12/11 19:30:46 INFO mapred.JobClient:     Combine input records=9031114
+12/12/11 19:30:46 INFO mapred.JobClient:     Reduce output records=80762
+12/12/11 19:30:46 INFO mapred.JobClient:     Spilled Records=1095062
+12/12/11 19:30:52 INFO mapred.JobClient:  map 100% reduce 87%
+12/12/11 19:30:53 INFO mapred.JobClient:  map 100% reduce 100%
+12/12/11 19:30:55 INFO mapred.JobClient: Job complete: job_201212111910_0008
+12/12/11 19:30:55 INFO mapred.JobClient: Counters: 17
+12/12/11 19:30:55 INFO mapred.JobClient:   Job Counters
+12/12/11 19:30:55 INFO mapred.JobClient:     Data-local map tasks=1
+12/12/11 19:30:55 INFO mapred.JobClient:     Launched map tasks=1
+12/12/11 19:30:55 INFO mapred.JobClient:     Launched reduce tasks=8
+12/12/11 19:30:55 INFO mapred.JobClient:   FileSystemCounters
+12/12/11 19:30:55 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=15843622
+12/12/11 19:30:55 INFO mapred.JobClient:     HDFS_BYTES_READ=66131307
+12/12/11 19:30:55 INFO mapred.JobClient:     FILE_BYTES_READ=13556706
+12/12/11 19:30:55 INFO mapred.JobClient:     HDFS_BYTES_WRITTEN=4767977
+12/12/11 19:30:55 INFO mapred.JobClient:   Map-Reduce Framework
+12/12/11 19:30:55 INFO mapred.JobClient:     Map output bytes=74706707
+12/12/11 19:30:55 INFO mapred.JobClient:     Reduce input groups=80762
+12/12/11 19:30:55 INFO mapred.JobClient:     Combine output records=194512
+12/12/11 19:30:55 INFO mapred.JobClient:     Reduce input records=80762
+12/12/11 19:30:55 INFO mapred.JobClient:     Map output records=2143850
+12/12/11 19:30:55 INFO mapred.JobClient:     Map input records=500198
+12/12/11 19:30:55 INFO mapred.JobClient:     Reduce shuffle bytes=3814814
+12/12/11 19:30:55 INFO mapred.JobClient:     Combine input records=2257600
+12/12/11 19:30:55 INFO mapred.JobClient:     Reduce output records=80762
+12/12/11 19:30:55 INFO mapred.JobClient:     Spilled Records=275274
+
+[idcuser@vhost2477 ~]$ ./run_jobs_testing.sh 4
+testinput.dat  is present. Ok to proceed.
+copyFromLocal: Target /user/idcuser/i0 already exists
+Deleted hdfs://170.224.169.182:9000/user/idcuser/o0
+copyFromLocal: Target /user/idcuser/i1 already exists
+Deleted hdfs://170.224.169.182:9000/user/idcuser/o1
+copyFromLocal: Target /user/idcuser/i2 already exists
+Deleted hdfs://170.224.169.182:9000/user/idcuser/o2
+copyFromLocal: Target /user/idcuser/i3 already exists
+Deleted hdfs://170.224.169.182:9000/user/idcuser/o3
+Jobid:  0  Priority:  NORMAL  Maps:  20  Reduces:  8
+Jobid:  1  Priority:  VERY_HIGH  Maps:  20  Reduces:  8
+Jobid:  2  Priority:  NORMAL  Maps:  20  Reduces:  5
+Jobid:  3  Priority:  VERY_LOW  Maps:  20  Reduces:  5
+[idcuser@vhost2477 ~]$ 12/12/11 19:32:40 INFO input.FileInputFormat: Total input paths to process : 1
+12/12/11 19:32:40 INFO input.FileInputFormat: Total input paths to process : 1
+12/12/11 19:32:40 INFO input.FileInputFormat: Total input paths to process : 1
+12/12/11 19:32:40 INFO mapred.JobClient: Running job: job_201212111910_0010
+12/12/11 19:32:41 INFO mapred.JobClient: Running job: job_201212111910_0009
+12/12/11 19:32:41 INFO input.FileInputFormat: Total input paths to process : 1
+12/12/11 19:32:41 INFO mapred.JobClient: Running job: job_201212111910_0012
+12/12/11 19:32:41 INFO mapred.JobClient: Running job: job_201212111910_0011
+12/12/11 19:32:41 INFO mapred.JobClient:  map 0% reduce 0%
+12/12/11 19:32:42 INFO mapred.JobClient:  map 0% reduce 0%
+12/12/11 19:32:42 INFO mapred.JobClient:  map 0% reduce 0%
+12/12/11 19:32:42 INFO mapred.JobClient:  map 0% reduce 0%
+12/12/11 19:32:59 INFO mapred.JobClient:  map 21% reduce 0%
+12/12/11 19:33:00 INFO mapred.JobClient:  map 41% reduce 0%
+12/12/11 19:33:02 INFO mapred.JobClient:  map 53% reduce 0%
+12/12/11 19:33:03 INFO mapred.JobClient:  map 63% reduce 0%
+12/12/11 19:33:05 INFO mapred.JobClient:  map 77% reduce 0%
+12/12/11 19:33:05 INFO mapred.JobClient:  map 34% reduce 0%
+12/12/11 19:33:06 INFO mapred.JobClient:  map 81% reduce 0%
+12/12/11 19:33:08 INFO mapred.JobClient:  map 92% reduce 0%
+12/12/11 19:33:09 INFO mapred.JobClient:  map 65% reduce 0%
+12/12/11 19:33:10 INFO mapred.JobClient:  map 97% reduce 0%
+12/12/11 19:33:10 INFO mapred.JobClient:  map 10% reduce 0%
+12/12/11 19:33:11 INFO mapred.JobClient:  map 86% reduce 0%
+12/12/11 19:33:13 INFO mapred.JobClient:  map 21% reduce 0%
+12/12/11 19:33:14 INFO mapred.JobClient:  map 100% reduce 0%
+12/12/11 19:33:14 INFO mapred.JobClient:  map 100% reduce 0%
+12/12/11 19:33:14 INFO mapred.JobClient:  map 30% reduce 0%
+12/12/11 19:33:16 INFO mapred.JobClient:  map 100% reduce 4%
+12/12/11 19:33:16 INFO mapred.JobClient:  map 33% reduce 0%
+12/12/11 19:33:17 INFO mapred.JobClient:  map 40% reduce 0%
+12/12/11 19:33:19 INFO mapred.JobClient:  map 100% reduce 6%
+12/12/11 19:33:20 INFO mapred.JobClient:  map 47% reduce 0%
+12/12/11 19:33:22 INFO mapred.JobClient:  map 60% reduce 0%
+12/12/11 19:33:22 INFO mapred.JobClient:  map 100% reduce 34%
+12/12/11 19:33:23 INFO mapred.JobClient:  map 62% reduce 0%
+12/12/11 19:33:23 INFO mapred.JobClient:  map 100% reduce 36%
+12/12/11 19:33:26 INFO mapred.JobClient:  map 13% reduce 0%
+12/12/11 19:33:26 INFO mapred.JobClient:  map 70% reduce 0%
+12/12/11 19:33:27 INFO mapred.JobClient:  map 100% reduce 51%
+12/12/11 19:33:27 INFO mapred.JobClient:  map 74% reduce 0%
+12/12/11 19:33:29 INFO mapred.JobClient:  map 25% reduce 0%
+12/12/11 19:33:29 INFO mapred.JobClient:  map 79% reduce 0%
+12/12/11 19:33:29 INFO mapred.JobClient:  map 100% reduce 57%
+12/12/11 19:33:30 INFO mapred.JobClient:  map 85% reduce 0%
+12/12/11 19:33:32 INFO mapred.JobClient:  map 100% reduce 62%
+12/12/11 19:33:32 INFO mapred.JobClient:  map 48% reduce 0%
+12/12/11 19:33:33 INFO mapred.JobClient:  map 100% reduce 84%
+12/12/11 19:33:33 INFO mapred.JobClient:  map 94% reduce 0%
+12/12/11 19:33:35 INFO mapred.JobClient:  map 50% reduce 0%
+12/12/11 19:33:36 INFO mapred.JobClient:  map 65% reduce 0%
+12/12/11 19:33:36 INFO mapred.JobClient:  map 100% reduce 0%
+12/12/11 19:33:38 INFO mapred.JobClient:  map 100% reduce 100%
+12/12/11 19:33:39 INFO mapred.JobClient:  map 77% reduce 0%
+12/12/11 19:33:40 INFO mapred.JobClient: Job complete: job_201212111910_0009
+12/12/11 19:33:40 INFO mapred.JobClient: Counters: 17
+12/12/11 19:33:40 INFO mapred.JobClient:   Job Counters
+12/12/11 19:33:40 INFO mapred.JobClient:     Data-local map tasks=3
+12/12/11 19:33:40 INFO mapred.JobClient:     Launched map tasks=3
+12/12/11 19:33:40 INFO mapred.JobClient:     Launched reduce tasks=5
+12/12/11 19:33:40 INFO mapred.JobClient:   FileSystemCounters
+12/12/11 19:33:40 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=47236759
+12/12/11 19:33:40 INFO mapred.JobClient:     HDFS_BYTES_READ=198524995
+12/12/11 19:33:40 INFO mapred.JobClient:     FILE_BYTES_READ=37913136
+12/12/11 19:33:40 INFO mapred.JobClient:     HDFS_BYTES_WRITTEN=4840553
+12/12/11 19:33:40 INFO mapred.JobClient:   Map-Reduce Framework
+12/12/11 19:33:40 INFO mapred.JobClient:     Map output bytes=224120121
+12/12/11 19:33:40 INFO mapred.JobClient:     Reduce input groups=80762
+12/12/11 19:33:40 INFO mapred.JobClient:     Combine output records=581160
+12/12/11 19:33:40 INFO mapred.JobClient:     Reduce input records=240027
+12/12/11 19:33:40 INFO mapred.JobClient:     Map output records=6431550
+12/12/11 19:33:40 INFO mapred.JobClient:     Map input records=1500594
+12/12/11 19:33:40 INFO mapred.JobClient:     Reduce shuffle bytes=13105229
+12/12/11 19:33:40 INFO mapred.JobClient:     Combine input records=6772683
+12/12/11 19:33:40 INFO mapred.JobClient:     Reduce output records=80762
+12/12/11 19:33:40 INFO mapred.JobClient:     Spilled Records=821187
+12/12/11 19:33:40 INFO mapred.JobClient:  map 100% reduce 12%
+12/12/11 19:33:42 INFO mapred.JobClient:  map 100% reduce 0%
+12/12/11 19:33:46 INFO mapred.JobClient:  map 100% reduce 25%
+12/12/11 19:33:48 INFO mapred.JobClient:  map 100% reduce 50%
+12/12/11 19:33:53 INFO mapred.JobClient:  map 100% reduce 62%
+12/12/11 19:33:56 INFO mapred.JobClient:  map 100% reduce 75%
+12/12/11 19:33:57 INFO mapred.JobClient:  map 100% reduce 87%
+12/12/11 19:34:00 INFO mapred.JobClient:  map 100% reduce 100%
+12/12/11 19:34:02 INFO mapred.JobClient:  map 100% reduce 20%
+12/12/11 19:34:02 INFO mapred.JobClient: Job complete: job_201212111910_0011
+12/12/11 19:34:02 INFO mapred.JobClient: Counters: 17
+12/12/11 19:34:02 INFO mapred.JobClient:   Job Counters
+12/12/11 19:34:02 INFO mapred.JobClient:     Data-local map tasks=1
+12/12/11 19:34:02 INFO mapred.JobClient:     Launched map tasks=1
+12/12/11 19:34:02 INFO mapred.JobClient:     Launched reduce tasks=8
+12/12/11 19:34:02 INFO mapred.JobClient:   FileSystemCounters
+12/12/11 19:34:02 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=15843622
+12/12/11 19:34:02 INFO mapred.JobClient:     HDFS_BYTES_READ=66131307
+12/12/11 19:34:02 INFO mapred.JobClient:     FILE_BYTES_READ=13556706
+12/12/11 19:34:02 INFO mapred.JobClient:     HDFS_BYTES_WRITTEN=4767977
+12/12/11 19:34:02 INFO mapred.JobClient:   Map-Reduce Framework
+12/12/11 19:34:02 INFO mapred.JobClient:     Map output bytes=74706707
+12/12/11 19:34:02 INFO mapred.JobClient:     Reduce input groups=80762
+12/12/11 19:34:02 INFO mapred.JobClient:     Combine output records=194512
+12/12/11 19:34:02 INFO mapred.JobClient:     Reduce input records=80762
+12/12/11 19:34:02 INFO mapred.JobClient:     Map output records=2143850
+12/12/11 19:34:02 INFO mapred.JobClient:     Map input records=500198
+12/12/11 19:34:02 INFO mapred.JobClient:     Reduce shuffle bytes=3813776
+12/12/11 19:34:02 INFO mapred.JobClient:     Combine input records=2257600
+12/12/11 19:34:02 INFO mapred.JobClient:     Reduce output records=80762
+12/12/11 19:34:02 INFO mapred.JobClient:     Spilled Records=275274
+12/12/11 19:34:03 INFO mapred.JobClient:  map 100% reduce 25%
+12/12/11 19:34:05 INFO mapred.JobClient:  map 100% reduce 44%
+12/12/11 19:34:09 INFO mapred.JobClient:  map 100% reduce 79%
+12/12/11 19:34:11 INFO mapred.JobClient:  map 100% reduce 100%
+12/12/11 19:34:13 INFO mapred.JobClient: Job complete: job_201212111910_0012
+12/12/11 19:34:13 INFO mapred.JobClient: Counters: 17
+12/12/11 19:34:13 INFO mapred.JobClient:   Job Counters
+12/12/11 19:34:13 INFO mapred.JobClient:     Data-local map tasks=4
+12/12/11 19:34:13 INFO mapred.JobClient:     Launched map tasks=4
+12/12/11 19:34:13 INFO mapred.JobClient:     Launched reduce tasks=5
+12/12/11 19:34:13 INFO mapred.JobClient:   FileSystemCounters
+12/12/11 19:34:13 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=62948513
+12/12/11 19:34:13 INFO mapred.JobClient:     HDFS_BYTES_READ=264721839
+12/12/11 19:34:13 INFO mapred.JobClient:     FILE_BYTES_READ=50354572
+12/12/11 19:34:13 INFO mapred.JobClient:     HDFS_BYTES_WRITTEN=4840981
+12/12/11 19:34:13 INFO mapred.JobClient:   Map-Reduce Framework
+12/12/11 19:34:13 INFO mapred.JobClient:     Map output bytes=298826828
+12/12/11 19:34:13 INFO mapred.JobClient:     Reduce input groups=80762
+12/12/11 19:34:13 INFO mapred.JobClient:     Combine output records=775388
+12/12/11 19:34:13 INFO mapred.JobClient:     Reduce input records=319674
+12/12/11 19:34:13 INFO mapred.JobClient:     Map output records=8575400
+12/12/11 19:34:13 INFO mapred.JobClient:     Map input records=2000792
+12/12/11 19:34:13 INFO mapred.JobClient:     Reduce shuffle bytes=19107105
+12/12/11 19:34:13 INFO mapred.JobClient:     Combine input records=9031114
+12/12/11 19:34:13 INFO mapred.JobClient:     Reduce output records=80762
+12/12/11 19:34:13 INFO mapred.JobClient:     Spilled Records=1095062
+12/12/11 19:34:14 INFO mapred.JobClient:  map 100% reduce 12%
+12/12/11 19:34:18 INFO mapred.JobClient:  map 100% reduce 25%
+12/12/11 19:34:20 INFO mapred.JobClient:  map 100% reduce 37%
+12/12/11 19:34:21 INFO mapred.JobClient:  map 100% reduce 50%
+12/12/11 19:34:26 INFO mapred.JobClient:  map 100% reduce 62%
+12/12/11 19:34:27 INFO mapred.JobClient:  map 100% reduce 75%
+12/12/11 19:34:29 INFO mapred.JobClient:  map 100% reduce 87%
+12/12/11 19:34:30 INFO mapred.JobClient:  map 100% reduce 100%
+12/12/11 19:34:32 INFO mapred.JobClient: Job complete: job_201212111910_0010
+12/12/11 19:34:32 INFO mapred.JobClient: Counters: 17
+12/12/11 19:34:32 INFO mapred.JobClient:   Job Counters
+12/12/11 19:34:32 INFO mapred.JobClient:     Data-local map tasks=2
+12/12/11 19:34:32 INFO mapred.JobClient:     Launched map tasks=2
+12/12/11 19:34:32 INFO mapred.JobClient:     Launched reduce tasks=8
+12/12/11 19:34:32 INFO mapred.JobClient:   FileSystemCounters
+12/12/11 19:34:32 INFO mapred.JobClient:     HDFS_BYTES_READ=132328151
+12/12/11 19:34:32 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=31537825
+12/12/11 19:34:32 INFO mapred.JobClient:     FILE_BYTES_READ=26890785
+12/12/11 19:34:32 INFO mapred.JobClient:     HDFS_BYTES_WRITTEN=4840116
+12/12/11 19:34:32 INFO mapred.JobClient:   Map-Reduce Framework
+12/12/11 19:34:32 INFO mapred.JobClient:     Map output bytes=149413414
+12/12/11 19:34:32 INFO mapred.JobClient:     Reduce input groups=80762
+12/12/11 19:34:32 INFO mapred.JobClient:     Combine output records=387679
+12/12/11 19:34:32 INFO mapred.JobClient:     Reduce input records=160411
+12/12/11 19:34:32 INFO mapred.JobClient:     Map output records=4287700
+12/12/11 19:34:32 INFO mapred.JobClient:     Map input records=1000396
+12/12/11 19:34:32 INFO mapred.JobClient:     Reduce shuffle bytes=9472003
+12/12/11 19:34:32 INFO mapred.JobClient:     Combine input records=4514968
+12/12/11 19:34:32 INFO mapred.JobClient:     Reduce output records=80762
+12/12/11 19:34:32 INFO mapred.JobClient:     Spilled Records=548090
+
+[idcuser@vhost2477 ~]$ ./run_jobs_testing.sh 4
+testinput.dat  is present. Ok to proceed.
+copyFromLocal: Target /user/idcuser/i0 already exists
+Deleted hdfs://170.224.169.182:9000/user/idcuser/o0
+copyFromLocal: Target /user/idcuser/i1 already exists
+Deleted hdfs://170.224.169.182:9000/user/idcuser/o1
+copyFromLocal: Target /user/idcuser/i2 already exists
+Deleted hdfs://170.224.169.182:9000/user/idcuser/o2
+copyFromLocal: Target /user/idcuser/i3 already exists
+Deleted hdfs://170.224.169.182:9000/user/idcuser/o3
+Jobid:  0  Priority:  NORMAL  Maps:  20  Reduces:  8
+Jobid:  1  Priority:  VERY_HIGH  Maps:  20  Reduces:  8
+Jobid:  2  Priority:  NORMAL  Maps:  20  Reduces:  5
+Jobid:  3  Priority:  VERY_LOW  Maps:  20  Reduces:  5
+[idcuser@vhost2477 ~]$ 12/12/11 19:35:47 INFO input.FileInputFormat: Total input paths to process : 1
+12/12/11 19:35:47 INFO input.FileInputFormat: Total input paths to process : 1
+12/12/11 19:35:47 INFO input.FileInputFormat: Total input paths to process : 1
+12/12/11 19:35:47 INFO input.FileInputFormat: Total input paths to process : 1
+12/12/11 19:35:48 INFO mapred.JobClient: Running job: job_201212111910_0013
+12/12/11 19:35:48 INFO mapred.JobClient: Running job: job_201212111910_0014
+12/12/11 19:35:48 INFO mapred.JobClient: Running job: job_201212111910_0016
+12/12/11 19:35:48 INFO mapred.JobClient: Running job: job_201212111910_0015
+12/12/11 19:35:49 INFO mapred.JobClient:  map 0% reduce 0%
+12/12/11 19:35:49 INFO mapred.JobClient:  map 0% reduce 0%
+12/12/11 19:35:49 INFO mapred.JobClient:  map 0% reduce 0%
+12/12/11 19:35:49 INFO mapred.JobClient:  map 0% reduce 0%
+12/12/11 19:36:05 INFO mapred.JobClient:  map 18% reduce 0%
+12/12/11 19:36:06 INFO mapred.JobClient:  map 5% reduce 0%
+12/12/11 19:36:07 INFO mapred.JobClient:  map 75% reduce 0%
+12/12/11 19:36:08 INFO mapred.JobClient:  map 16% reduce 0%
+12/12/11 19:36:08 INFO mapred.JobClient:  map 25% reduce 0%
+12/12/11 19:36:10 INFO mapred.JobClient:  map 100% reduce 0%
+12/12/11 19:36:10 INFO mapred.JobClient:  map 25% reduce 0%
+12/12/11 19:36:11 INFO mapred.JobClient:  map 38% reduce 0%
+12/12/11 19:36:14 INFO mapred.JobClient:  map 43% reduce 0%
+12/12/11 19:36:16 INFO mapred.JobClient:  map 55% reduce 0%
+12/12/11 19:36:17 INFO mapred.JobClient:  map 68% reduce 0%
+12/12/11 19:36:19 INFO mapred.JobClient:  map 79% reduce 0%
+12/12/11 19:36:20 INFO mapred.JobClient:  map 93% reduce 0%
+12/12/11 19:36:22 INFO mapred.JobClient:  map 16% reduce 0%
+12/12/11 19:36:23 INFO mapred.JobClient:  map 100% reduce 0%
+12/12/11 19:36:25 INFO mapred.JobClient:  map 31% reduce 0%
+12/12/11 19:36:26 INFO mapred.JobClient:  map 57% reduce 0%
+12/12/11 19:36:28 INFO mapred.JobClient:  map 72% reduce 0%
+12/12/11 19:36:29 INFO mapred.JobClient:  map 96% reduce 0%
+12/12/11 19:36:31 INFO mapred.JobClient:  map 28% reduce 0%
+12/12/11 19:36:31 INFO mapred.JobClient:  map 100% reduce 0%
+12/12/11 19:36:32 INFO mapred.JobClient:  map 100% reduce 6%
+12/12/11 19:36:32 INFO mapred.JobClient:  map 100% reduce 12%
+12/12/11 19:36:34 INFO mapred.JobClient:  map 35% reduce 0%
+12/12/11 19:36:34 INFO mapred.JobClient:  map 100% reduce 25%
+12/12/11 19:36:35 INFO mapred.JobClient:  map 45% reduce 0%
+12/12/11 19:36:37 INFO mapred.JobClient:  map 56% reduce 0%
+12/12/11 19:36:39 INFO mapred.JobClient:  map 64% reduce 0%
+12/12/11 19:36:39 INFO mapred.JobClient:  map 100% reduce 20%
+12/12/11 19:36:40 INFO mapred.JobClient:  map 67% reduce 0%
+12/12/11 19:36:40 INFO mapred.JobClient:  map 100% reduce 24%
+12/12/11 19:36:42 INFO mapred.JobClient:  map 74% reduce 0%
+12/12/11 19:36:43 INFO mapred.JobClient:  map 100% reduce 44%
+12/12/11 19:36:45 INFO mapred.JobClient:  map 75% reduce 0%
+12/12/11 19:36:46 INFO mapred.JobClient:  map 100% reduce 60%
+12/12/11 19:36:48 INFO mapred.JobClient:  map 100% reduce 0%
+12/12/11 19:36:49 INFO mapred.JobClient:  map 100% reduce 5%
+12/12/11 19:36:51 INFO mapred.JobClient:  map 100% reduce 80%
+12/12/11 19:36:54 INFO mapred.JobClient:  map 100% reduce 100%
+12/12/11 19:36:55 INFO mapred.JobClient:  map 100% reduce 25%
+12/12/11 19:36:56 INFO mapred.JobClient: Job complete: job_201212111910_0016
+12/12/11 19:36:56 INFO mapred.JobClient: Counters: 17
+12/12/11 19:36:56 INFO mapred.JobClient:   Job Counters
+12/12/11 19:36:56 INFO mapred.JobClient:     Data-local map tasks=3
+12/12/11 19:36:56 INFO mapred.JobClient:     Launched map tasks=3
+12/12/11 19:36:56 INFO mapred.JobClient:     Launched reduce tasks=5
+12/12/11 19:36:56 INFO mapred.JobClient:   FileSystemCounters
+12/12/11 19:36:56 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=47236759
+12/12/11 19:36:56 INFO mapred.JobClient:     HDFS_BYTES_READ=198524995
+12/12/11 19:36:56 INFO mapred.JobClient:     FILE_BYTES_READ=37913136
+12/12/11 19:36:56 INFO mapred.JobClient:     HDFS_BYTES_WRITTEN=4840553
+12/12/11 19:36:56 INFO mapred.JobClient:   Map-Reduce Framework
+12/12/11 19:36:56 INFO mapred.JobClient:     Map output bytes=224120121
+12/12/11 19:36:56 INFO mapred.JobClient:     Reduce input groups=80762
+12/12/11 19:36:56 INFO mapred.JobClient:     Combine output records=581160
+12/12/11 19:36:56 INFO mapred.JobClient:     Reduce input records=240027
+12/12/11 19:36:56 INFO mapred.JobClient:     Map output records=6431550
+12/12/11 19:36:56 INFO mapred.JobClient:     Map input records=1500594
+12/12/11 19:36:56 INFO mapred.JobClient:     Reduce shuffle bytes=15111577
+12/12/11 19:36:56 INFO mapred.JobClient:     Combine input records=6772683
+12/12/11 19:36:56 INFO mapred.JobClient:     Reduce output records=80762
+12/12/11 19:36:56 INFO mapred.JobClient:     Spilled Records=821187
+12/12/11 19:36:58 INFO mapred.JobClient:  map 100% reduce 40%
+12/12/11 19:37:00 INFO mapred.JobClient:  map 100% reduce 37%
+12/12/11 19:37:03 INFO mapred.JobClient:  map 100% reduce 50%
+12/12/11 19:37:07 INFO mapred.JobClient:  map 100% reduce 75%
+12/12/11 19:37:09 INFO mapred.JobClient:  map 100% reduce 87%
+12/12/11 19:37:12 INFO mapred.JobClient:  map 100% reduce 100%
+12/12/11 19:37:14 INFO mapred.JobClient: Job complete: job_201212111910_0015
+12/12/11 19:37:14 INFO mapred.JobClient: Counters: 17
+12/12/11 19:37:14 INFO mapred.JobClient:   Job Counters
+12/12/11 19:37:14 INFO mapred.JobClient:     Data-local map tasks=1
+12/12/11 19:37:14 INFO mapred.JobClient:     Launched map tasks=1
+12/12/11 19:37:14 INFO mapred.JobClient:     Launched reduce tasks=8
+12/12/11 19:37:14 INFO mapred.JobClient:   FileSystemCounters
+12/12/11 19:37:14 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=15843622
+12/12/11 19:37:14 INFO mapred.JobClient:     HDFS_BYTES_READ=66131307
+12/12/11 19:37:14 INFO mapred.JobClient:     FILE_BYTES_READ=13556706
+12/12/11 19:37:14 INFO mapred.JobClient:     HDFS_BYTES_WRITTEN=4767977
+12/12/11 19:37:14 INFO mapred.JobClient:   Map-Reduce Framework
+12/12/11 19:37:14 INFO mapred.JobClient:     Map output bytes=74706707
+12/12/11 19:37:14 INFO mapred.JobClient:     Reduce input groups=80762
+12/12/11 19:37:14 INFO mapred.JobClient:     Combine output records=194512
+12/12/11 19:37:14 INFO mapred.JobClient:     Reduce input records=80762
+12/12/11 19:37:14 INFO mapred.JobClient:     Map output records=2143850
+12/12/11 19:37:14 INFO mapred.JobClient:     Map input records=500198
+12/12/11 19:37:14 INFO mapred.JobClient:     Reduce shuffle bytes=2543208
+12/12/11 19:37:14 INFO mapred.JobClient:     Combine input records=2257600
+12/12/11 19:37:14 INFO mapred.JobClient:     Reduce output records=80762
+12/12/11 19:37:14 INFO mapred.JobClient:     Spilled Records=275274
+12/12/11 19:37:16 INFO mapred.JobClient:  map 100% reduce 60%
+12/12/11 19:37:18 INFO mapred.JobClient:  map 100% reduce 80%
+12/12/11 19:37:19 INFO mapred.JobClient:  map 100% reduce 100%
+12/12/11 19:37:21 INFO mapred.JobClient: Job complete: job_201212111910_0013
+12/12/11 19:37:21 INFO mapred.JobClient: Counters: 17
+12/12/11 19:37:21 INFO mapred.JobClient:   Job Counters
+12/12/11 19:37:21 INFO mapred.JobClient:     Data-local map tasks=4
+12/12/11 19:37:21 INFO mapred.JobClient:     Launched map tasks=4
+12/12/11 19:37:21 INFO mapred.JobClient:     Launched reduce tasks=5
+12/12/11 19:37:21 INFO mapred.JobClient:   FileSystemCounters
+12/12/11 19:37:21 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=62948513
+12/12/11 19:37:21 INFO mapred.JobClient:     HDFS_BYTES_READ=264721839
+12/12/11 19:37:21 INFO mapred.JobClient:     FILE_BYTES_READ=50354572
+12/12/11 19:37:21 INFO mapred.JobClient:     HDFS_BYTES_WRITTEN=4840981
+12/12/11 19:37:21 INFO mapred.JobClient:   Map-Reduce Framework
+12/12/11 19:37:21 INFO mapred.JobClient:     Map output bytes=298826828
+12/12/11 19:37:21 INFO mapred.JobClient:     Reduce input groups=80762
+12/12/11 19:37:21 INFO mapred.JobClient:     Combine output records=775388
+12/12/11 19:37:21 INFO mapred.JobClient:     Reduce input records=319674
+12/12/11 19:37:21 INFO mapred.JobClient:     Map output records=8575400
+12/12/11 19:37:21 INFO mapred.JobClient:     Map input records=2000792
+12/12/11 19:37:21 INFO mapred.JobClient:     Reduce shuffle bytes=18088287
+12/12/11 19:37:21 INFO mapred.JobClient:     Combine input records=9031114
+12/12/11 19:37:21 INFO mapred.JobClient:     Reduce output records=80762
+12/12/11 19:37:21 INFO mapred.JobClient:     Spilled Records=1095062
+12/12/11 19:37:21 INFO mapred.JobClient:  map 100% reduce 12%
+12/12/11 19:37:25 INFO mapred.JobClient:  map 100% reduce 25%
+12/12/11 19:37:27 INFO mapred.JobClient:  map 100% reduce 37%
+12/12/11 19:37:28 INFO mapred.JobClient:  map 100% reduce 50%
+12/12/11 19:37:30 INFO mapred.JobClient:  map 100% reduce 62%
+12/12/11 19:37:31 INFO mapred.JobClient:  map 100% reduce 64%
+12/12/11 19:37:36 INFO mapred.JobClient:  map 100% reduce 77%
+12/12/11 19:37:37 INFO mapred.JobClient:  map 100% reduce 100%
+12/12/11 19:37:39 INFO mapred.JobClient: Job complete: job_201212111910_0014
+12/12/11 19:37:39 INFO mapred.JobClient: Counters: 17
+12/12/11 19:37:39 INFO mapred.JobClient:   Job Counters
+12/12/11 19:37:39 INFO mapred.JobClient:     Data-local map tasks=2
+12/12/11 19:37:39 INFO mapred.JobClient:     Launched map tasks=2
+12/12/11 19:37:39 INFO mapred.JobClient:     Launched reduce tasks=8
+12/12/11 19:37:39 INFO mapred.JobClient:   FileSystemCounters
+12/12/11 19:37:39 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=31537825
+12/12/11 19:37:39 INFO mapred.JobClient:     HDFS_BYTES_READ=132328151
+12/12/11 19:37:39 INFO mapred.JobClient:     FILE_BYTES_READ=26890785
+12/12/11 19:37:39 INFO mapred.JobClient:     HDFS_BYTES_WRITTEN=4840116
+12/12/11 19:37:39 INFO mapred.JobClient:   Map-Reduce Framework
+12/12/11 19:37:39 INFO mapred.JobClient:     Map output bytes=149413414
+12/12/11 19:37:39 INFO mapred.JobClient:     Reduce input groups=80762
+12/12/11 19:37:39 INFO mapred.JobClient:     Combine output records=387679
+12/12/11 19:37:39 INFO mapred.JobClient:     Reduce input records=160411
+12/12/11 19:37:39 INFO mapred.JobClient:     Map output records=4287700
+12/12/11 19:37:39 INFO mapred.JobClient:     Map input records=1000396
+12/12/11 19:37:39 INFO mapred.JobClient:     Reduce shuffle bytes=8837118
+12/12/11 19:37:39 INFO mapred.JobClient:     Combine input records=4514968
+12/12/11 19:37:39 INFO mapred.JobClient:     Reduce output records=80762
+12/12/11 19:37:39 INFO mapred.JobClient:     Spilled Records=548090
+
+[idcuser@vhost2477 ~]$ ./run_jobs_testing.sh 4
+testinput.dat  is present. Ok to proceed.
+copyFromLocal: Target /user/idcuser/i0 already exists
+Deleted hdfs://170.224.169.182:9000/user/idcuser/o0
+copyFromLocal: Target /user/idcuser/i1 already exists
+Deleted hdfs://170.224.169.182:9000/user/idcuser/o1
+copyFromLocal: Target /user/idcuser/i2 already exists
+Deleted hdfs://170.224.169.182:9000/user/idcuser/o2
+copyFromLocal: Target /user/idcuser/i3 already exists
+Deleted hdfs://170.224.169.182:9000/user/idcuser/o3
+Jobid:  0  Priority:  NORMAL  Maps:  20  Reduces:  8
+Jobid:  1  Priority:  VERY_HIGH  Maps:  20  Reduces:  8
+Jobid:  2  Priority:  NORMAL  Maps:  20  Reduces:  5
+Jobid:  3  Priority:  VERY_LOW  Maps:  20  Reduces:  5
+[idcuser@vhost2477 ~]$ 12/12/11 19:38:41 INFO input.FileInputFormat: Total input paths to process : 1
+12/12/11 19:38:42 INFO mapred.JobClient: Running job: job_201212111910_0017
+12/12/11 19:38:42 INFO input.FileInputFormat: Total input paths to process : 1
+12/12/11 19:38:42 INFO input.FileInputFormat: Total input paths to process : 1
+12/12/11 19:38:42 INFO mapred.JobClient: Running job: job_201212111910_0018
+12/12/11 19:38:42 INFO input.FileInputFormat: Total input paths to process : 1
+12/12/11 19:38:42 INFO mapred.JobClient: Running job: job_201212111910_0019
+12/12/11 19:38:43 INFO mapred.JobClient: Running job: job_201212111910_0020
+12/12/11 19:38:43 INFO mapred.JobClient:  map 0% reduce 0%
+12/12/11 19:38:43 INFO mapred.JobClient:  map 0% reduce 0%
+12/12/11 19:38:44 INFO mapred.JobClient:  map 0% reduce 0%
+12/12/11 19:38:44 INFO mapred.JobClient:  map 0% reduce 0%
+12/12/11 19:39:00 INFO mapred.JobClient:  map 38% reduce 0%
+12/12/11 19:39:01 INFO mapred.JobClient:  map 66% reduce 0%
+12/12/11 19:39:04 INFO mapred.JobClient:  map 50% reduce 0%
+12/12/11 19:39:04 INFO mapred.JobClient:  map 12% reduce 0%
+12/12/11 19:39:04 INFO mapred.JobClient:  map 100% reduce 0%
+12/12/11 19:39:05 INFO mapred.JobClient:  map 60% reduce 0%
+12/12/11 19:39:06 INFO mapred.JobClient:  map 22% reduce 0%
+12/12/11 19:39:08 INFO mapred.JobClient:  map 79% reduce 0%
+12/12/11 19:39:09 INFO mapred.JobClient:  map 25% reduce 0%
+12/12/11 19:39:11 INFO mapred.JobClient:  map 94% reduce 0%
+12/12/11 19:39:12 INFO mapred.JobClient:  map 13% reduce 0%
+12/12/11 19:39:13 INFO mapred.JobClient:  map 30% reduce 0%
+12/12/11 19:39:14 INFO mapred.JobClient:  map 100% reduce 0%
+12/12/11 19:39:15 INFO mapred.JobClient:  map 19% reduce 0%
+12/12/11 19:39:16 INFO mapred.JobClient:  map 37% reduce 0%
+12/12/11 19:39:18 INFO mapred.JobClient:  map 34% reduce 0%
+12/12/11 19:39:20 INFO mapred.JobClient:  map 43% reduce 0%
+12/12/11 19:39:21 INFO mapred.JobClient:  map 48% reduce 0%
+12/12/11 19:39:22 INFO mapred.JobClient:  map 100% reduce 4%
+12/12/11 19:39:23 INFO mapred.JobClient:  map 49% reduce 0%
+12/12/11 19:39:24 INFO mapred.JobClient:  map 60% reduce 0%
+12/12/11 19:39:26 INFO mapred.JobClient:  map 53% reduce 0%
+12/12/11 19:39:26 INFO mapred.JobClient:  map 100% reduce 6%
+12/12/11 19:39:27 INFO mapred.JobClient:  map 66% reduce 0%
+12/12/11 19:39:28 INFO mapred.JobClient:  map 100% reduce 14%
+12/12/11 19:39:29 INFO mapred.JobClient:  map 100% reduce 12%
+12/12/11 19:39:29 INFO mapred.JobClient:  map 60% reduce 0%
+12/12/11 19:39:31 INFO mapred.JobClient:  map 100% reduce 25%
+12/12/11 19:39:31 INFO mapred.JobClient:  map 100% reduce 25%
+12/12/11 19:39:32 INFO mapred.JobClient:  map 68% reduce 0%
+12/12/11 19:39:34 INFO mapred.JobClient:  map 80% reduce 0%
+12/12/11 19:39:34 INFO mapred.JobClient:  map 73% reduce 0%
+12/12/11 19:39:35 INFO mapred.JobClient:  map 85% reduce 0%
+12/12/11 19:39:37 INFO mapred.JobClient:  map 98% reduce 0%
+12/12/11 19:39:37 INFO mapred.JobClient:  map 100% reduce 29%
+12/12/11 19:39:38 INFO mapred.JobClient:  map 100% reduce 0%
+12/12/11 19:39:40 INFO mapred.JobClient:  map 100% reduce 37%
+12/12/11 19:39:40 INFO mapred.JobClient:  map 86% reduce 0%
+12/12/11 19:39:43 INFO mapred.JobClient:  map 100% reduce 37%
+12/12/11 19:39:43 INFO mapred.JobClient:  map 100% reduce 4%
+12/12/11 19:39:49 INFO mapred.JobClient:  map 100% reduce 50%
+12/12/11 19:39:50 INFO mapred.JobClient:  map 100% reduce 20%
+12/12/11 19:39:52 INFO mapred.JobClient:  map 100% reduce 50%
+12/12/11 19:39:52 INFO mapred.JobClient:  map 100% reduce 20%
+12/12/11 19:39:57 INFO mapred.JobClient:  map 100% reduce 40%
+12/12/11 19:39:59 INFO mapred.JobClient:  map 100% reduce 62%
+12/12/11 19:40:01 INFO mapred.JobClient:  map 100% reduce 40%
+12/12/11 19:40:02 INFO mapred.JobClient:  map 100% reduce 62%
+12/12/11 19:40:03 INFO mapred.JobClient:  map 100% reduce 46%
+12/12/11 19:40:05 INFO mapred.JobClient:  map 100% reduce 66%
+12/12/11 19:40:10 INFO mapred.JobClient:  map 100% reduce 60%
+12/12/11 19:40:10 INFO mapred.JobClient:  map 100% reduce 60%
+12/12/11 19:40:11 INFO mapred.JobClient:  map 100% reduce 75%
+12/12/11 19:40:11 INFO mapred.JobClient:  map 100% reduce 75%
+12/12/11 19:40:19 INFO mapred.JobClient:  map 100% reduce 80%
+12/12/11 19:40:20 INFO mapred.JobClient:  map 100% reduce 87%
+12/12/11 19:40:22 INFO mapred.JobClient:  map 100% reduce 80%
+12/12/11 19:40:26 INFO mapred.JobClient:  map 100% reduce 87%
+12/12/11 19:40:28 INFO mapred.JobClient:  map 100% reduce 100%
+12/12/11 19:40:29 INFO mapred.JobClient:  map 100% reduce 100%
+12/12/11 19:40:30 INFO mapred.JobClient: Job complete: job_201212111910_0020
+12/12/11 19:40:30 INFO mapred.JobClient: Counters: 17
+12/12/11 19:40:30 INFO mapred.JobClient:   Job Counters
+12/12/11 19:40:30 INFO mapred.JobClient:     Data-local map tasks=3
+12/12/11 19:40:30 INFO mapred.JobClient:     Launched map tasks=3
+12/12/11 19:40:30 INFO mapred.JobClient:     Launched reduce tasks=5
+12/12/11 19:40:30 INFO mapred.JobClient:   FileSystemCounters
+12/12/11 19:40:30 INFO mapred.JobClient:     HDFS_BYTES_READ=198524995
+12/12/11 19:40:30 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=47236759
+12/12/11 19:40:30 INFO mapred.JobClient:     FILE_BYTES_READ=37913136
+12/12/11 19:40:30 INFO mapred.JobClient:     HDFS_BYTES_WRITTEN=4840553
+12/12/11 19:40:30 INFO mapred.JobClient:   Map-Reduce Framework
+12/12/11 19:40:30 INFO mapred.JobClient:     Map output bytes=224120121
+12/12/11 19:40:30 INFO mapred.JobClient:     Reduce input groups=80762
+12/12/11 19:40:30 INFO mapred.JobClient:     Combine output records=581160
+12/12/11 19:40:30 INFO mapred.JobClient:     Reduce input records=240027
+12/12/11 19:40:30 INFO mapred.JobClient:     Map output records=6431550
+12/12/11 19:40:30 INFO mapred.JobClient:     Map input records=1500594
+12/12/11 19:40:30 INFO mapred.JobClient:     Reduce shuffle bytes=13076569
+12/12/11 19:40:30 INFO mapred.JobClient:     Combine input records=6772683
+12/12/11 19:40:30 INFO mapred.JobClient:     Reduce output records=80762
+12/12/11 19:40:30 INFO mapred.JobClient:     Spilled Records=821187
+12/12/11 19:40:31 INFO mapred.JobClient:  map 100% reduce 100%
+12/12/11 19:40:31 INFO mapred.JobClient: Job complete: job_201212111910_0019
+12/12/11 19:40:31 INFO mapred.JobClient: Counters: 17
+12/12/11 19:40:31 INFO mapred.JobClient:   Job Counters
+12/12/11 19:40:31 INFO mapred.JobClient:     Data-local map tasks=1
+12/12/11 19:40:31 INFO mapred.JobClient:     Launched map tasks=1
+12/12/11 19:40:31 INFO mapred.JobClient:     Launched reduce tasks=8
+12/12/11 19:40:31 INFO mapred.JobClient:   FileSystemCounters
+12/12/11 19:40:31 INFO mapred.JobClient:     HDFS_BYTES_READ=66131307
+12/12/11 19:40:31 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=15843622
+12/12/11 19:40:31 INFO mapred.JobClient:     FILE_BYTES_READ=13556706
+12/12/11 19:40:31 INFO mapred.JobClient:     HDFS_BYTES_WRITTEN=4767977
+12/12/11 19:40:31 INFO mapred.JobClient:   Map-Reduce Framework
+12/12/11 19:40:31 INFO mapred.JobClient:     Map output bytes=74706707
+12/12/11 19:40:31 INFO mapred.JobClient:     Reduce input groups=80762
+12/12/11 19:40:31 INFO mapred.JobClient:     Combine output records=194512
+12/12/11 19:40:31 INFO mapred.JobClient:     Reduce input records=80762
+12/12/11 19:40:31 INFO mapred.JobClient:     Map output records=2143850
+12/12/11 19:40:31 INFO mapred.JobClient:     Map input records=500198
+12/12/11 19:40:31 INFO mapred.JobClient:     Reduce shuffle bytes=3815025
+12/12/11 19:40:31 INFO mapred.JobClient:     Combine input records=2257600
+12/12/11 19:40:31 INFO mapred.JobClient:     Reduce output records=80762
+12/12/11 19:40:31 INFO mapred.JobClient:     Spilled Records=275274
+12/12/11 19:40:33 INFO mapred.JobClient: Job complete: job_201212111910_0018
+12/12/11 19:40:33 INFO mapred.JobClient: Counters: 17
+12/12/11 19:40:33 INFO mapred.JobClient:   Job Counters
+12/12/11 19:40:33 INFO mapred.JobClient:     Data-local map tasks=4
+12/12/11 19:40:33 INFO mapred.JobClient:     Launched map tasks=4
+12/12/11 19:40:33 INFO mapred.JobClient:     Launched reduce tasks=5
+12/12/11 19:40:33 INFO mapred.JobClient:   FileSystemCounters
+12/12/11 19:40:33 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=62948513
+12/12/11 19:40:33 INFO mapred.JobClient:     HDFS_BYTES_READ=264721839
+12/12/11 19:40:33 INFO mapred.JobClient:     FILE_BYTES_READ=50354572
+12/12/11 19:40:33 INFO mapred.JobClient:     HDFS_BYTES_WRITTEN=4840981
+12/12/11 19:40:33 INFO mapred.JobClient:   Map-Reduce Framework
+12/12/11 19:40:33 INFO mapred.JobClient:     Map output bytes=298826828
+12/12/11 19:40:33 INFO mapred.JobClient:     Reduce input groups=80762
+12/12/11 19:40:33 INFO mapred.JobClient:     Combine output records=775388
+12/12/11 19:40:33 INFO mapred.JobClient:     Reduce input records=319674
+12/12/11 19:40:33 INFO mapred.JobClient:     Map output records=8575400
+12/12/11 19:40:33 INFO mapred.JobClient:     Map input records=2000792
+12/12/11 19:40:33 INFO mapred.JobClient:     Reduce shuffle bytes=18089843
+12/12/11 19:40:33 INFO mapred.JobClient:     Combine input records=9031114
+12/12/11 19:40:33 INFO mapred.JobClient:     Reduce output records=80762
+12/12/11 19:40:33 INFO mapred.JobClient:     Spilled Records=1095062
+12/12/11 19:40:35 INFO mapred.JobClient:  map 100% reduce 100%
+12/12/11 19:40:37 INFO mapred.JobClient: Job complete: job_201212111910_0017
+12/12/11 19:40:37 INFO mapred.JobClient: Counters: 17
+12/12/11 19:40:37 INFO mapred.JobClient:   Job Counters
+12/12/11 19:40:37 INFO mapred.JobClient:     Data-local map tasks=2
+12/12/11 19:40:37 INFO mapred.JobClient:     Launched map tasks=2
+12/12/11 19:40:37 INFO mapred.JobClient:     Launched reduce tasks=8
+12/12/11 19:40:37 INFO mapred.JobClient:   FileSystemCounters
+12/12/11 19:40:37 INFO mapred.JobClient:     HDFS_BYTES_READ=132328151
+12/12/11 19:40:37 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=31537825
+12/12/11 19:40:37 INFO mapred.JobClient:     FILE_BYTES_READ=26890785
+12/12/11 19:40:37 INFO mapred.JobClient:     HDFS_BYTES_WRITTEN=4840116
+12/12/11 19:40:37 INFO mapred.JobClient:   Map-Reduce Framework
+12/12/11 19:40:37 INFO mapred.JobClient:     Map output bytes=149413414
+12/12/11 19:40:37 INFO mapred.JobClient:     Reduce input groups=80762
+12/12/11 19:40:37 INFO mapred.JobClient:     Combine output records=387679
+12/12/11 19:40:37 INFO mapred.JobClient:     Reduce input records=160411
+12/12/11 19:40:37 INFO mapred.JobClient:     Map output records=4287700
+12/12/11 19:40:37 INFO mapred.JobClient:     Map input records=1000396
+12/12/11 19:40:37 INFO mapred.JobClient:     Reduce shuffle bytes=10099083
+12/12/11 19:40:37 INFO mapred.JobClient:     Combine input records=4514968
+12/12/11 19:40:37 INFO mapred.JobClient:     Reduce output records=80762
+12/12/11 19:40:37 INFO mapred.JobClient:     Spilled Records=548090
+
+[idcuser@vhost2477 ~]$

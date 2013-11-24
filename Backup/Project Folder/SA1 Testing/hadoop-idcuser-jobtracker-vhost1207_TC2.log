@@ -1,0 +1,519 @@
+
+2012-11-03 20:16:30,334 INFO org.apache.hadoop.mapred.JobTracker: Initializing job_201211032009_0002
+2012-11-03 20:16:30,335 INFO org.apache.hadoop.mapred.JobInProgress: Initializing job_201211032009_0002
+2012-11-03 20:16:30,459 INFO org.apache.hadoop.mapred.JobTracker: Initializing job_201211032009_0001
+2012-11-03 20:16:30,460 INFO org.apache.hadoop.mapred.JobInProgress: Initializing job_201211032009_0001
+2012-11-03 20:16:30,694 INFO org.apache.hadoop.mapred.JobTracker: Initializing job_201211032009_0003
+2012-11-03 20:16:30,696 INFO org.apache.hadoop.mapred.JobInProgress: Initializing job_201211032009_0003
+2012-11-03 20:16:30,729 INFO org.apache.hadoop.mapred.JobInProgress: Input size for job job_201211032009_0002 = 66131307. Number of splits = 1
+2012-11-03 20:16:30,729 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201211032009_0002_m_000000 has split on node:/default-rack/170.224.164.187
+2012-11-03 20:16:30,729 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201211032009_0002_m_000000 has split on node:/default-rack/170.224.168.180
+2012-11-03 20:16:30,729 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201211032009_0002_m_000000 has split on node:/default-rack/170.224.168.210
+2012-11-03 20:16:30,733 INFO org.apache.hadoop.mapred.JobInProgress: Input size for job job_201211032009_0001 = 66131307. Number of splits = 1
+2012-11-03 20:16:30,733 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201211032009_0001_m_000000 has split on node:/default-rack/170.224.164.187
+2012-11-03 20:16:30,733 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201211032009_0001_m_000000 has split on node:/default-rack/170.224.168.180
+2012-11-03 20:16:30,733 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201211032009_0001_m_000000 has split on node:/default-rack/170.224.168.210
+2012-11-03 20:16:30,778 INFO org.apache.hadoop.mapred.JobInProgress: Input size for job job_201211032009_0003 = 66131307. Number of splits = 1
+2012-11-03 20:16:30,778 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201211032009_0003_m_000000 has split on node:/default-rack/170.224.164.187
+2012-11-03 20:16:30,778 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201211032009_0003_m_000000 has split on node:/default-rack/170.224.168.180
+2012-11-03 20:16:30,778 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201211032009_0003_m_000000 has split on node:/default-rack/170.224.168.210
+2012-11-03 20:16:33,518 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201211032009_0001_m_000002_0' to tip task_201211032009_0001_m_000002, for tracker 'tracker_170.224.164.187:localhost.localdomain/127.0.0.1:55044'
+2012-11-03 20:16:33,699 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201211032009_0002_m_000002_0' to tip task_201211032009_0002_m_000002, for tracker 'tracker_170.224.163.203:localhost.localdomain/127.0.0.1:34107'
+2012-11-03 20:16:33,701 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201211032009_0003_m_000002_0' to tip task_201211032009_0003_m_000002, for tracker 'tracker_170.224.168.177:localhost.localdomain/127.0.0.1:40127'
+2012-11-03 20:16:36,564 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201211032009_0001_m_000002_0' has completed task_201211032009_0001_m_000002 successfully.
+2012-11-03 20:16:36,740 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201211032009_0002_m_000002_0' has completed task_201211032009_0002_m_000002 successfully.
+2012-11-03 20:16:36,743 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201211032009_0003_m_000002_0' has completed task_201211032009_0003_m_000002 successfully.
+2012-11-03 20:16:39,570 INFO org.apache.hadoop.mapred.FairScheduler: Entering Selecting Scheduling Algs logic
+2012-11-03 20:16:39,570 INFO org.apache.hadoop.mapred.FairScheduler: Exiting Selecting Scheduling Algs logic
+2012-11-03 20:16:39,570 INFO org.apache.hadoop.mapred.FairScheduler: JOB 	 PRIORITY 	 # OF MAPS 	 # OF REDUCES 	 # OF MAPS COMPLETED 	 # OF REDUCES COMPLETED 	 % OF MAPS COMPLETED 	 % OF REDUCES COMPLETED
+2012-11-03 20:16:39,570 INFO org.apache.hadoop.mapred.FairScheduler: ---- 	 -------- 	 --------- 	 ----------- 	 -------------------- 	 --------------------- 	 ------------------- 	 ----------------------
+2012-11-03 20:16:39,570 INFO org.apache.hadoop.mapred.FairScheduler: job_201211032009_0001 	 NORMAL 	 1 	 5 	 0 	 0 	 0.0 	 0.0
+2012-11-03 20:16:39,570 INFO org.apache.hadoop.mapred.FairScheduler: job_201211032009_0003 	 NORMAL 	 1 	 10 	 0 	 0 	 0.0 	 0.0
+2012-11-03 20:16:39,570 INFO org.apache.hadoop.mapred.FairScheduler: job_201211032009_0002 	 LOW 	 1 	 15 	 0 	 0 	 0.0 	 0.0
+2012-11-03 20:16:39,571 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201211032009_0001_m_000000_0' to tip task_201211032009_0001_m_000000, for tracker 'tracker_170.224.164.187:localhost.localdomain/127.0.0.1:55044'
+2012-11-03 20:16:39,574 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201211032009_0001_m_000000
+2012-11-03 20:16:39,708 INFO org.apache.hadoop.mapred.FairScheduler: Entering Selecting Scheduling Algs logic
+2012-11-03 20:16:39,708 INFO org.apache.hadoop.mapred.FairScheduler: Exiting Selecting Scheduling Algs logic
+2012-11-03 20:16:39,708 INFO org.apache.hadoop.mapred.FairScheduler: JOB 	 PRIORITY 	 # OF MAPS 	 # OF REDUCES 	 # OF MAPS COMPLETED 	 # OF REDUCES COMPLETED 	 % OF MAPS COMPLETED 	 % OF REDUCES COMPLETED
+2012-11-03 20:16:39,708 INFO org.apache.hadoop.mapred.FairScheduler: ---- 	 -------- 	 --------- 	 ----------- 	 -------------------- 	 --------------------- 	 ------------------- 	 ----------------------
+2012-11-03 20:16:39,708 INFO org.apache.hadoop.mapred.FairScheduler: job_201211032009_0003 	 NORMAL 	 1 	 10 	 0 	 0 	 0.0 	 0.0
+2012-11-03 20:16:39,708 INFO org.apache.hadoop.mapred.FairScheduler: job_201211032009_0002 	 LOW 	 1 	 15 	 0 	 0 	 0.0 	 0.0
+2012-11-03 20:16:39,708 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201211032009_0003_m_000000_0' to tip task_201211032009_0003_m_000000, for tracker 'tracker_170.224.168.210:localhost.localdomain/127.0.0.1:57299'
+2012-11-03 20:16:39,709 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201211032009_0003_m_000000
+2012-11-03 20:16:39,709 INFO org.apache.hadoop.mapred.FairScheduler: Entering Selecting Scheduling Algs logic
+2012-11-03 20:16:39,709 INFO org.apache.hadoop.mapred.FairScheduler: Exiting Selecting Scheduling Algs logic
+2012-11-03 20:16:39,709 INFO org.apache.hadoop.mapred.FairScheduler: JOB 	 PRIORITY 	 # OF MAPS 	 # OF REDUCES 	 # OF MAPS COMPLETED 	 # OF REDUCES COMPLETED 	 % OF MAPS COMPLETED 	 % OF REDUCES COMPLETED
+2012-11-03 20:16:39,709 INFO org.apache.hadoop.mapred.FairScheduler: ---- 	 -------- 	 --------- 	 ----------- 	 -------------------- 	 --------------------- 	 ------------------- 	 ----------------------
+2012-11-03 20:16:39,709 INFO org.apache.hadoop.mapred.FairScheduler: job_201211032009_0002 	 LOW 	 1 	 15 	 0 	 0 	 0.0 	 0.0
+2012-11-03 20:16:39,710 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201211032009_0002_m_000000_0' to tip task_201211032009_0002_m_000000, for tracker 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:36623'
+2012-11-03 20:16:39,710 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201211032009_0002_m_000000
+2012-11-03 20:16:39,717 INFO org.apache.hadoop.mapred.FairScheduler: Entering Selecting Scheduling Algs logic
+2012-11-03 20:16:39,717 INFO org.apache.hadoop.mapred.FairScheduler: Exiting Selecting Scheduling Algs logic
+2012-11-03 20:16:39,717 INFO org.apache.hadoop.mapred.FairScheduler: JOB 	 PRIORITY 	 # OF MAPS 	 # OF REDUCES 	 # OF MAPS COMPLETED 	 # OF REDUCES COMPLETED 	 % OF MAPS COMPLETED 	 % OF REDUCES COMPLETED
+2012-11-03 20:16:39,717 INFO org.apache.hadoop.mapred.FairScheduler: ---- 	 -------- 	 --------- 	 ----------- 	 -------------------- 	 --------------------- 	 ------------------- 	 ----------------------
+2012-11-03 20:16:39,745 INFO org.apache.hadoop.mapred.FairScheduler: Entering Selecting Scheduling Algs logic
+2012-11-03 20:16:39,745 INFO org.apache.hadoop.mapred.FairScheduler: Exiting Selecting Scheduling Algs logic
+2012-11-03 20:16:39,746 INFO org.apache.hadoop.mapred.FairScheduler: JOB 	 PRIORITY 	 # OF MAPS 	 # OF REDUCES 	 # OF MAPS COMPLETED 	 # OF REDUCES COMPLETED 	 % OF MAPS COMPLETED 	 % OF REDUCES COMPLETED
+2012-11-03 20:16:39,746 INFO org.apache.hadoop.mapred.FairScheduler: ---- 	 -------- 	 --------- 	 ----------- 	 -------------------- 	 --------------------- 	 ------------------- 	 ----------------------
+2012-11-03 20:16:39,749 INFO org.apache.hadoop.mapred.FairScheduler: Entering Selecting Scheduling Algs logic
+2012-11-03 20:16:39,749 INFO org.apache.hadoop.mapred.FairScheduler: Exiting Selecting Scheduling Algs logic
+2012-11-03 20:16:39,749 INFO org.apache.hadoop.mapred.FairScheduler: JOB 	 PRIORITY 	 # OF MAPS 	 # OF REDUCES 	 # OF MAPS COMPLETED 	 # OF REDUCES COMPLETED 	 % OF MAPS COMPLETED 	 % OF REDUCES COMPLETED
+2012-11-03 20:16:39,749 INFO org.apache.hadoop.mapred.FairScheduler: ---- 	 -------- 	 --------- 	 ----------- 	 -------------------- 	 --------------------- 	 ------------------- 	 ----------------------
+2012-11-03 20:16:42,721 INFO org.apache.hadoop.mapred.FairScheduler: Entering Selecting Scheduling Algs logic
+2012-11-03 20:16:42,721 INFO org.apache.hadoop.mapred.FairScheduler: Exiting Selecting Scheduling Algs logic
+2012-11-03 20:16:42,721 INFO org.apache.hadoop.mapred.FairScheduler: JOB 	 PRIORITY 	 # OF MAPS 	 # OF REDUCES 	 # OF MAPS COMPLETED 	 # OF REDUCES COMPLETED 	 % OF MAPS COMPLETED 	 % OF REDUCES COMPLETED
+2012-11-03 20:16:42,721 INFO org.apache.hadoop.mapred.FairScheduler: ---- 	 -------- 	 --------- 	 ----------- 	 -------------------- 	 --------------------- 	 ------------------- 	 ----------------------
+2012-11-03 20:16:42,748 INFO org.apache.hadoop.mapred.FairScheduler: Entering Selecting Scheduling Algs logic
+2012-11-03 20:16:42,748 INFO org.apache.hadoop.mapred.FairScheduler: Exiting Selecting Scheduling Algs logic
+2012-11-03 20:16:42,748 INFO org.apache.hadoop.mapred.FairScheduler: JOB 	 PRIORITY 	 # OF MAPS 	 # OF REDUCES 	 # OF MAPS COMPLETED 	 # OF REDUCES COMPLETED 	 % OF MAPS COMPLETED 	 % OF REDUCES COMPLETED
+2012-11-03 20:16:42,748 INFO org.apache.hadoop.mapred.FairScheduler: ---- 	 -------- 	 --------- 	 ----------- 	 -------------------- 	 --------------------- 	 ------------------- 	 ----------------------
+2012-11-03 20:16:42,751 INFO org.apache.hadoop.mapred.FairScheduler: Entering Selecting Scheduling Algs logic
+2012-11-03 20:16:42,751 INFO org.apache.hadoop.mapred.FairScheduler: Exiting Selecting Scheduling Algs logic
+2012-11-03 20:16:42,751 INFO org.apache.hadoop.mapred.FairScheduler: JOB 	 PRIORITY 	 # OF MAPS 	 # OF REDUCES 	 # OF MAPS COMPLETED 	 # OF REDUCES COMPLETED 	 % OF MAPS COMPLETED 	 % OF REDUCES COMPLETED
+2012-11-03 20:16:42,751 INFO org.apache.hadoop.mapred.FairScheduler: ---- 	 -------- 	 --------- 	 ----------- 	 -------------------- 	 --------------------- 	 ------------------- 	 ----------------------
+2012-11-03 20:16:45,725 INFO org.apache.hadoop.mapred.FairScheduler: Entering Selecting Scheduling Algs logic
+2012-11-03 20:16:45,725 INFO org.apache.hadoop.mapred.FairScheduler: Exiting Selecting Scheduling Algs logic
+2012-11-03 20:16:45,725 INFO org.apache.hadoop.mapred.FairScheduler: JOB 	 PRIORITY 	 # OF MAPS 	 # OF REDUCES 	 # OF MAPS COMPLETED 	 # OF REDUCES COMPLETED 	 % OF MAPS COMPLETED 	 % OF REDUCES COMPLETED
+2012-11-03 20:16:45,725 INFO org.apache.hadoop.mapred.FairScheduler: ---- 	 -------- 	 --------- 	 ----------- 	 -------------------- 	 --------------------- 	 ------------------- 	 ----------------------
+2012-11-03 20:16:45,753 INFO org.apache.hadoop.mapred.FairScheduler: Entering Selecting Scheduling Algs logic
+2012-11-03 20:16:45,753 INFO org.apache.hadoop.mapred.FairScheduler: Exiting Selecting Scheduling Algs logic
+2012-11-03 20:16:45,753 INFO org.apache.hadoop.mapred.FairScheduler: JOB 	 PRIORITY 	 # OF MAPS 	 # OF REDUCES 	 # OF MAPS COMPLETED 	 # OF REDUCES COMPLETED 	 % OF MAPS COMPLETED 	 % OF REDUCES COMPLETED
+2012-11-03 20:16:45,754 INFO org.apache.hadoop.mapred.FairScheduler: ---- 	 -------- 	 --------- 	 ----------- 	 -------------------- 	 --------------------- 	 ------------------- 	 ----------------------
+2012-11-03 20:16:45,755 INFO org.apache.hadoop.mapred.FairScheduler: Entering Selecting Scheduling Algs logic
+2012-11-03 20:16:45,755 INFO org.apache.hadoop.mapred.FairScheduler: Exiting Selecting Scheduling Algs logic
+2012-11-03 20:16:45,755 INFO org.apache.hadoop.mapred.FairScheduler: JOB 	 PRIORITY 	 # OF MAPS 	 # OF REDUCES 	 # OF MAPS COMPLETED 	 # OF REDUCES COMPLETED 	 % OF MAPS COMPLETED 	 % OF REDUCES COMPLETED
+2012-11-03 20:16:45,755 INFO org.apache.hadoop.mapred.FairScheduler: ---- 	 -------- 	 --------- 	 ----------- 	 -------------------- 	 --------------------- 	 ------------------- 	 ----------------------
+2012-11-03 20:16:48,748 INFO org.apache.hadoop.mapred.FairScheduler: Entering Selecting Scheduling Algs logic
+2012-11-03 20:16:48,748 INFO org.apache.hadoop.mapred.FairScheduler: Exiting Selecting Scheduling Algs logic
+2012-11-03 20:16:48,748 INFO org.apache.hadoop.mapred.FairScheduler: JOB 	 PRIORITY 	 # OF MAPS 	 # OF REDUCES 	 # OF MAPS COMPLETED 	 # OF REDUCES COMPLETED 	 % OF MAPS COMPLETED 	 % OF REDUCES COMPLETED
+2012-11-03 20:16:48,748 INFO org.apache.hadoop.mapred.FairScheduler: ---- 	 -------- 	 --------- 	 ----------- 	 -------------------- 	 --------------------- 	 ------------------- 	 ----------------------
+2012-11-03 20:16:48,762 INFO org.apache.hadoop.mapred.FairScheduler: Entering Selecting Scheduling Algs logic
+2012-11-03 20:16:48,762 INFO org.apache.hadoop.mapred.FairScheduler: Exiting Selecting Scheduling Algs logic
+2012-11-03 20:16:48,762 INFO org.apache.hadoop.mapred.FairScheduler: JOB 	 PRIORITY 	 # OF MAPS 	 # OF REDUCES 	 # OF MAPS COMPLETED 	 # OF REDUCES COMPLETED 	 % OF MAPS COMPLETED 	 % OF REDUCES COMPLETED
+2012-11-03 20:16:48,762 INFO org.apache.hadoop.mapred.FairScheduler: ---- 	 -------- 	 --------- 	 ----------- 	 -------------------- 	 --------------------- 	 ------------------- 	 ----------------------
+2012-11-03 20:16:48,765 INFO org.apache.hadoop.mapred.FairScheduler: Entering Selecting Scheduling Algs logic
+2012-11-03 20:16:48,765 INFO org.apache.hadoop.mapred.FairScheduler: Exiting Selecting Scheduling Algs logic
+2012-11-03 20:16:48,765 INFO org.apache.hadoop.mapred.FairScheduler: JOB 	 PRIORITY 	 # OF MAPS 	 # OF REDUCES 	 # OF MAPS COMPLETED 	 # OF REDUCES COMPLETED 	 % OF MAPS COMPLETED 	 % OF REDUCES COMPLETED
+2012-11-03 20:16:48,765 INFO org.apache.hadoop.mapred.FairScheduler: ---- 	 -------- 	 --------- 	 ----------- 	 -------------------- 	 --------------------- 	 ------------------- 	 ----------------------
+2012-11-03 20:16:51,752 INFO org.apache.hadoop.mapred.FairScheduler: Entering Selecting Scheduling Algs logic
+2012-11-03 20:16:51,752 INFO org.apache.hadoop.mapred.FairScheduler: Exiting Selecting Scheduling Algs logic
+2012-11-03 20:16:51,752 INFO org.apache.hadoop.mapred.FairScheduler: JOB 	 PRIORITY 	 # OF MAPS 	 # OF REDUCES 	 # OF MAPS COMPLETED 	 # OF REDUCES COMPLETED 	 % OF MAPS COMPLETED 	 % OF REDUCES COMPLETED
+2012-11-03 20:16:51,752 INFO org.apache.hadoop.mapred.FairScheduler: ---- 	 -------- 	 --------- 	 ----------- 	 -------------------- 	 --------------------- 	 ------------------- 	 ----------------------
+2012-11-03 20:16:51,769 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201211032009_0001_m_000000_0' has completed task_201211032009_0001_m_000000 successfully.
+2012-11-03 20:16:51,769 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:1  completedMapsInputSize:66131308  completedMapsOutputSize:5085892
+2012-11-03 20:16:51,770 INFO org.apache.hadoop.mapred.FairScheduler: Entering Selecting Scheduling Algs logic
+2012-11-03 20:16:51,770 INFO org.apache.hadoop.mapred.FairScheduler: Exiting Selecting Scheduling Algs logic
+2012-11-03 20:16:51,770 INFO org.apache.hadoop.mapred.FairScheduler: JOB 	 PRIORITY 	 # OF MAPS 	 # OF REDUCES 	 # OF MAPS COMPLETED 	 # OF REDUCES COMPLETED 	 % OF MAPS COMPLETED 	 % OF REDUCES COMPLETED
+2012-11-03 20:16:51,770 INFO org.apache.hadoop.mapred.FairScheduler: ---- 	 -------- 	 --------- 	 ----------- 	 -------------------- 	 --------------------- 	 ------------------- 	 ----------------------
+2012-11-03 20:16:51,770 INFO org.apache.hadoop.mapred.FairScheduler: Entering Selecting Scheduling Algs logic
+2012-11-03 20:16:51,770 INFO org.apache.hadoop.mapred.FairScheduler: Exiting Selecting Scheduling Algs logic
+2012-11-03 20:16:51,770 INFO org.apache.hadoop.mapred.FairScheduler: JOB 	 PRIORITY 	 # OF MAPS 	 # OF REDUCES 	 # OF MAPS COMPLETED 	 # OF REDUCES COMPLETED 	 % OF MAPS COMPLETED 	 % OF REDUCES COMPLETED
+2012-11-03 20:16:51,770 INFO org.apache.hadoop.mapred.FairScheduler: ---- 	 -------- 	 --------- 	 ----------- 	 -------------------- 	 --------------------- 	 ------------------- 	 ----------------------
+2012-11-03 20:16:51,770 INFO org.apache.hadoop.mapred.FairScheduler: Entering Selecting Scheduling Algs logic
+2012-11-03 20:16:51,771 INFO org.apache.hadoop.mapred.FairScheduler: Exiting Selecting Scheduling Algs logic
+2012-11-03 20:16:51,771 INFO org.apache.hadoop.mapred.FairScheduler: JOB 	 PRIORITY 	 # OF MAPS 	 # OF REDUCES 	 # OF MAPS COMPLETED 	 # OF REDUCES COMPLETED 	 % OF MAPS COMPLETED 	 % OF REDUCES COMPLETED
+2012-11-03 20:16:51,771 INFO org.apache.hadoop.mapred.FairScheduler: ---- 	 -------- 	 --------- 	 ----------- 	 -------------------- 	 --------------------- 	 ------------------- 	 ----------------------
+2012-11-03 20:16:52,133 INFO org.apache.hadoop.mapred.FairScheduler: Entering Selecting Scheduling Algs logic
+2012-11-03 20:16:52,133 INFO org.apache.hadoop.mapred.FairScheduler: Exiting Selecting Scheduling Algs logic
+2012-11-03 20:16:52,133 INFO org.apache.hadoop.mapred.FairScheduler: JOB 	 PRIORITY 	 # OF MAPS 	 # OF REDUCES 	 # OF MAPS COMPLETED 	 # OF REDUCES COMPLETED 	 % OF MAPS COMPLETED 	 % OF REDUCES COMPLETED
+2012-11-03 20:16:52,133 INFO org.apache.hadoop.mapred.FairScheduler: ---- 	 -------- 	 --------- 	 ----------- 	 -------------------- 	 --------------------- 	 ------------------- 	 ----------------------
+2012-11-03 20:16:52,133 INFO org.apache.hadoop.mapred.FairScheduler: job_201211032009_0001 	 NORMAL 	 1 	 5 	 1 	 0 	 100.0 	 0.0
+2012-11-03 20:16:52,137 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201211032009_0001_r_000000_0' to tip task_201211032009_0001_r_000000, for tracker 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:36623'
+2012-11-03 20:16:52,204 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201211032009_0003_m_000000_0' has completed task_201211032009_0003_m_000000 successfully.
+2012-11-03 20:16:52,204 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:1  completedMapsInputSize:66131308  completedMapsOutputSize:5085922
+2012-11-03 20:16:52,205 INFO org.apache.hadoop.mapred.FairScheduler: Entering Selecting Scheduling Algs logic
+2012-11-03 20:16:52,205 INFO org.apache.hadoop.mapred.FairScheduler: Exiting Selecting Scheduling Algs logic
+2012-11-03 20:16:52,205 INFO org.apache.hadoop.mapred.FairScheduler: JOB 	 PRIORITY 	 # OF MAPS 	 # OF REDUCES 	 # OF MAPS COMPLETED 	 # OF REDUCES COMPLETED 	 % OF MAPS COMPLETED 	 % OF REDUCES COMPLETED
+2012-11-03 20:16:52,205 INFO org.apache.hadoop.mapred.FairScheduler: ---- 	 -------- 	 --------- 	 ----------- 	 -------------------- 	 --------------------- 	 ------------------- 	 ----------------------
+2012-11-03 20:16:52,205 INFO org.apache.hadoop.mapred.FairScheduler: Entering Selecting Scheduling Algs logic
+2012-11-03 20:16:52,206 INFO org.apache.hadoop.mapred.FairScheduler: Exiting Selecting Scheduling Algs logic
+2012-11-03 20:16:52,206 INFO org.apache.hadoop.mapred.FairScheduler: JOB 	 PRIORITY 	 # OF MAPS 	 # OF REDUCES 	 # OF MAPS COMPLETED 	 # OF REDUCES COMPLETED 	 % OF MAPS COMPLETED 	 % OF REDUCES COMPLETED
+2012-11-03 20:16:52,206 INFO org.apache.hadoop.mapred.FairScheduler: ---- 	 -------- 	 --------- 	 ----------- 	 -------------------- 	 --------------------- 	 ------------------- 	 ----------------------
+2012-11-03 20:16:52,206 INFO org.apache.hadoop.mapred.FairScheduler: job_201211032009_0001 	 NORMAL 	 1 	 5 	 1 	 0 	 100.0 	 0.0
+2012-11-03 20:16:52,206 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201211032009_0001_r_000001_0' to tip task_201211032009_0001_r_000001, for tracker 'tracker_170.224.168.210:localhost.localdomain/127.0.0.1:57299'
+2012-11-03 20:16:54,756 INFO org.apache.hadoop.mapred.FairScheduler: Entering Selecting Scheduling Algs logic
+2012-11-03 20:16:54,756 INFO org.apache.hadoop.mapred.FairScheduler: Exiting Selecting Scheduling Algs logic
+2012-11-03 20:16:54,756 INFO org.apache.hadoop.mapred.FairScheduler: JOB 	 PRIORITY 	 # OF MAPS 	 # OF REDUCES 	 # OF MAPS COMPLETED 	 # OF REDUCES COMPLETED 	 % OF MAPS COMPLETED 	 % OF REDUCES COMPLETED
+2012-11-03 20:16:54,756 INFO org.apache.hadoop.mapred.FairScheduler: ---- 	 -------- 	 --------- 	 ----------- 	 -------------------- 	 --------------------- 	 ------------------- 	 ----------------------
+2012-11-03 20:16:54,756 INFO org.apache.hadoop.mapred.FairScheduler: Entering Selecting Scheduling Algs logic
+2012-11-03 20:16:54,756 INFO org.apache.hadoop.mapred.FairScheduler: Exiting Selecting Scheduling Algs logic
+2012-11-03 20:16:54,756 INFO org.apache.hadoop.mapred.FairScheduler: JOB 	 PRIORITY 	 # OF MAPS 	 # OF REDUCES 	 # OF MAPS COMPLETED 	 # OF REDUCES COMPLETED 	 % OF MAPS COMPLETED 	 % OF REDUCES COMPLETED
+2012-11-03 20:16:54,756 INFO org.apache.hadoop.mapred.FairScheduler: ---- 	 -------- 	 --------- 	 ----------- 	 -------------------- 	 --------------------- 	 ------------------- 	 ----------------------
+2012-11-03 20:16:54,757 INFO org.apache.hadoop.mapred.FairScheduler: job_201211032009_0001 	 NORMAL 	 1 	 5 	 1 	 0 	 100.0 	 0.0
+2012-11-03 20:16:54,757 INFO org.apache.hadoop.mapred.FairScheduler: job_201211032009_0003 	 NORMAL 	 1 	 10 	 1 	 0 	 100.0 	 0.0
+2012-11-03 20:16:54,757 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201211032009_0001_r_000002_0' to tip task_201211032009_0001_r_000002, for tracker 'tracker_170.224.168.209:localhost.localdomain/127.0.0.1:47189'
+2012-11-03 20:16:54,774 INFO org.apache.hadoop.mapred.FairScheduler: Entering Selecting Scheduling Algs logic
+2012-11-03 20:16:54,774 INFO org.apache.hadoop.mapred.FairScheduler: Exiting Selecting Scheduling Algs logic
+2012-11-03 20:16:54,774 INFO org.apache.hadoop.mapred.FairScheduler: JOB 	 PRIORITY 	 # OF MAPS 	 # OF REDUCES 	 # OF MAPS COMPLETED 	 # OF REDUCES COMPLETED 	 % OF MAPS COMPLETED 	 % OF REDUCES COMPLETED
+2012-11-03 20:16:54,774 INFO org.apache.hadoop.mapred.FairScheduler: ---- 	 -------- 	 --------- 	 ----------- 	 -------------------- 	 --------------------- 	 ------------------- 	 ----------------------
+2012-11-03 20:16:54,774 INFO org.apache.hadoop.mapred.FairScheduler: Entering Selecting Scheduling Algs logic
+2012-11-03 20:16:54,774 INFO org.apache.hadoop.mapred.FairScheduler: Exiting Selecting Scheduling Algs logic
+2012-11-03 20:16:54,774 INFO org.apache.hadoop.mapred.FairScheduler: JOB 	 PRIORITY 	 # OF MAPS 	 # OF REDUCES 	 # OF MAPS COMPLETED 	 # OF REDUCES COMPLETED 	 % OF MAPS COMPLETED 	 % OF REDUCES COMPLETED
+2012-11-03 20:16:54,774 INFO org.apache.hadoop.mapred.FairScheduler: ---- 	 -------- 	 --------- 	 ----------- 	 -------------------- 	 --------------------- 	 ------------------- 	 ----------------------
+2012-11-03 20:16:54,774 INFO org.apache.hadoop.mapred.FairScheduler: job_201211032009_0001 	 NORMAL 	 1 	 5 	 1 	 0 	 100.0 	 0.0
+2012-11-03 20:16:54,774 INFO org.apache.hadoop.mapred.FairScheduler: job_201211032009_0003 	 NORMAL 	 1 	 10 	 1 	 0 	 100.0 	 0.0
+2012-11-03 20:16:54,774 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201211032009_0001_r_000003_0' to tip task_201211032009_0001_r_000003, for tracker 'tracker_170.224.164.187:localhost.localdomain/127.0.0.1:55044'
+2012-11-03 20:16:54,775 INFO org.apache.hadoop.mapred.FairScheduler: Entering Selecting Scheduling Algs logic
+2012-11-03 20:16:54,775 INFO org.apache.hadoop.mapred.FairScheduler: Exiting Selecting Scheduling Algs logic
+2012-11-03 20:16:54,775 INFO org.apache.hadoop.mapred.FairScheduler: JOB 	 PRIORITY 	 # OF MAPS 	 # OF REDUCES 	 # OF MAPS COMPLETED 	 # OF REDUCES COMPLETED 	 % OF MAPS COMPLETED 	 % OF REDUCES COMPLETED
+2012-11-03 20:16:54,775 INFO org.apache.hadoop.mapred.FairScheduler: ---- 	 -------- 	 --------- 	 ----------- 	 -------------------- 	 --------------------- 	 ------------------- 	 ----------------------
+2012-11-03 20:16:54,775 INFO org.apache.hadoop.mapred.FairScheduler: Entering Selecting Scheduling Algs logic
+2012-11-03 20:16:54,775 INFO org.apache.hadoop.mapred.FairScheduler: Exiting Selecting Scheduling Algs logic
+2012-11-03 20:16:54,775 INFO org.apache.hadoop.mapred.FairScheduler: JOB 	 PRIORITY 	 # OF MAPS 	 # OF REDUCES 	 # OF MAPS COMPLETED 	 # OF REDUCES COMPLETED 	 % OF MAPS COMPLETED 	 % OF REDUCES COMPLETED
+2012-11-03 20:16:54,775 INFO org.apache.hadoop.mapred.FairScheduler: ---- 	 -------- 	 --------- 	 ----------- 	 -------------------- 	 --------------------- 	 ------------------- 	 ----------------------
+2012-11-03 20:16:54,775 INFO org.apache.hadoop.mapred.FairScheduler: job_201211032009_0001 	 NORMAL 	 1 	 5 	 1 	 0 	 100.0 	 0.0
+2012-11-03 20:16:54,775 INFO org.apache.hadoop.mapred.FairScheduler: job_201211032009_0003 	 NORMAL 	 1 	 10 	 1 	 0 	 100.0 	 0.0
+2012-11-03 20:16:54,775 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201211032009_0001_r_000004_0' to tip task_201211032009_0001_r_000004, for tracker 'tracker_170.224.163.203:localhost.localdomain/127.0.0.1:34107'
+2012-11-03 20:16:54,776 INFO org.apache.hadoop.mapred.FairScheduler: Entering Selecting Scheduling Algs logic
+2012-11-03 20:16:54,776 INFO org.apache.hadoop.mapred.FairScheduler: Exiting Selecting Scheduling Algs logic
+2012-11-03 20:16:54,776 INFO org.apache.hadoop.mapred.FairScheduler: JOB 	 PRIORITY 	 # OF MAPS 	 # OF REDUCES 	 # OF MAPS COMPLETED 	 # OF REDUCES COMPLETED 	 % OF MAPS COMPLETED 	 % OF REDUCES COMPLETED
+2012-11-03 20:16:54,776 INFO org.apache.hadoop.mapred.FairScheduler: ---- 	 -------- 	 --------- 	 ----------- 	 -------------------- 	 --------------------- 	 ------------------- 	 ----------------------
+2012-11-03 20:16:54,776 INFO org.apache.hadoop.mapred.FairScheduler: Entering Selecting Scheduling Algs logic
+2012-11-03 20:16:54,776 INFO org.apache.hadoop.mapred.FairScheduler: Exiting Selecting Scheduling Algs logic
+2012-11-03 20:16:54,776 INFO org.apache.hadoop.mapred.FairScheduler: JOB 	 PRIORITY 	 # OF MAPS 	 # OF REDUCES 	 # OF MAPS COMPLETED 	 # OF REDUCES COMPLETED 	 % OF MAPS COMPLETED 	 % OF REDUCES COMPLETED
+2012-11-03 20:16:54,776 INFO org.apache.hadoop.mapred.FairScheduler: ---- 	 -------- 	 --------- 	 ----------- 	 -------------------- 	 --------------------- 	 ------------------- 	 ----------------------
+2012-11-03 20:16:54,776 INFO org.apache.hadoop.mapred.FairScheduler: job_201211032009_0003 	 NORMAL 	 1 	 10 	 1 	 0 	 100.0 	 0.0
+2012-11-03 20:16:54,776 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201211032009_0003_r_000000_0' to tip task_201211032009_0003_r_000000, for tracker 'tracker_170.224.168.177:localhost.localdomain/127.0.0.1:40127'
+2012-11-03 20:16:55,147 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201211032009_0002_m_000000_0' has completed task_201211032009_0002_m_000000 successfully.
+2012-11-03 20:16:55,148 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:1  completedMapsInputSize:66131308  completedMapsOutputSize:5085952
+2012-11-03 20:16:55,148 INFO org.apache.hadoop.mapred.FairScheduler: Entering Selecting Scheduling Algs logic
+2012-11-03 20:16:55,148 INFO org.apache.hadoop.mapred.FairScheduler: Exiting Selecting Scheduling Algs logic
+2012-11-03 20:16:55,148 INFO org.apache.hadoop.mapred.FairScheduler: JOB 	 PRIORITY 	 # OF MAPS 	 # OF REDUCES 	 # OF MAPS COMPLETED 	 # OF REDUCES COMPLETED 	 % OF MAPS COMPLETED 	 % OF REDUCES COMPLETED
+2012-11-03 20:16:55,148 INFO org.apache.hadoop.mapred.FairScheduler: ---- 	 -------- 	 --------- 	 ----------- 	 -------------------- 	 --------------------- 	 ------------------- 	 ----------------------
+2012-11-03 20:16:55,148 INFO org.apache.hadoop.mapred.FairScheduler: Entering Selecting Scheduling Algs logic
+2012-11-03 20:16:55,148 INFO org.apache.hadoop.mapred.FairScheduler: Exiting Selecting Scheduling Algs logic
+2012-11-03 20:16:55,148 INFO org.apache.hadoop.mapred.FairScheduler: JOB 	 PRIORITY 	 # OF MAPS 	 # OF REDUCES 	 # OF MAPS COMPLETED 	 # OF REDUCES COMPLETED 	 % OF MAPS COMPLETED 	 % OF REDUCES COMPLETED
+2012-11-03 20:16:55,148 INFO org.apache.hadoop.mapred.FairScheduler: ---- 	 -------- 	 --------- 	 ----------- 	 -------------------- 	 --------------------- 	 ------------------- 	 ----------------------
+2012-11-03 20:16:55,148 INFO org.apache.hadoop.mapred.FairScheduler: job_201211032009_0003 	 NORMAL 	 1 	 10 	 1 	 0 	 100.0 	 0.0
+2012-11-03 20:16:55,149 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201211032009_0003_r_000001_0' to tip task_201211032009_0003_r_000001, for tracker 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:36623'
+2012-11-03 20:16:55,215 INFO org.apache.hadoop.mapred.FairScheduler: Entering Selecting Scheduling Algs logic
+2012-11-03 20:16:55,215 INFO org.apache.hadoop.mapred.FairScheduler: Exiting Selecting Scheduling Algs logic
+2012-11-03 20:16:55,215 INFO org.apache.hadoop.mapred.FairScheduler: JOB 	 PRIORITY 	 # OF MAPS 	 # OF REDUCES 	 # OF MAPS COMPLETED 	 # OF REDUCES COMPLETED 	 % OF MAPS COMPLETED 	 % OF REDUCES COMPLETED
+2012-11-03 20:16:55,215 INFO org.apache.hadoop.mapred.FairScheduler: ---- 	 -------- 	 --------- 	 ----------- 	 -------------------- 	 --------------------- 	 ------------------- 	 ----------------------
+2012-11-03 20:16:55,215 INFO org.apache.hadoop.mapred.FairScheduler: Entering Selecting Scheduling Algs logic
+2012-11-03 20:16:55,216 INFO org.apache.hadoop.mapred.FairScheduler: Exiting Selecting Scheduling Algs logic
+2012-11-03 20:16:55,216 INFO org.apache.hadoop.mapred.FairScheduler: JOB 	 PRIORITY 	 # OF MAPS 	 # OF REDUCES 	 # OF MAPS COMPLETED 	 # OF REDUCES COMPLETED 	 % OF MAPS COMPLETED 	 % OF REDUCES COMPLETED
+2012-11-03 20:16:55,216 INFO org.apache.hadoop.mapred.FairScheduler: ---- 	 -------- 	 --------- 	 ----------- 	 -------------------- 	 --------------------- 	 ------------------- 	 ----------------------
+2012-11-03 20:16:55,216 INFO org.apache.hadoop.mapred.FairScheduler: job_201211032009_0003 	 NORMAL 	 1 	 10 	 1 	 0 	 100.0 	 0.0
+2012-11-03 20:16:55,216 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201211032009_0003_r_000002_0' to tip task_201211032009_0003_r_000002, for tracker 'tracker_170.224.168.210:localhost.localdomain/127.0.0.1:57299'
+2012-11-03 20:16:57,784 INFO org.apache.hadoop.mapred.FairScheduler: Entering Selecting Scheduling Algs logic
+2012-11-03 20:16:57,784 INFO org.apache.hadoop.mapred.FairScheduler: Exiting Selecting Scheduling Algs logic
+2012-11-03 20:16:57,784 INFO org.apache.hadoop.mapred.FairScheduler: JOB 	 PRIORITY 	 # OF MAPS 	 # OF REDUCES 	 # OF MAPS COMPLETED 	 # OF REDUCES COMPLETED 	 % OF MAPS COMPLETED 	 % OF REDUCES COMPLETED
+2012-11-03 20:16:57,784 INFO org.apache.hadoop.mapred.FairScheduler: ---- 	 -------- 	 --------- 	 ----------- 	 -------------------- 	 --------------------- 	 ------------------- 	 ----------------------
+2012-11-03 20:16:57,784 INFO org.apache.hadoop.mapred.FairScheduler: job_201211032009_0003 	 NORMAL 	 1 	 10 	 1 	 0 	 100.0 	 0.0
+2012-11-03 20:16:57,784 INFO org.apache.hadoop.mapred.FairScheduler: job_201211032009_0002 	 LOW 	 1 	 15 	 1 	 0 	 100.0 	 0.0
+2012-11-03 20:16:57,784 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201211032009_0003_r_000003_0' to tip task_201211032009_0003_r_000003, for tracker 'tracker_170.224.164.187:localhost.localdomain/127.0.0.1:55044'
+2012-11-03 20:16:57,786 INFO org.apache.hadoop.mapred.FairScheduler: Entering Selecting Scheduling Algs logic
+2012-11-03 20:16:57,786 INFO org.apache.hadoop.mapred.FairScheduler: Exiting Selecting Scheduling Algs logic
+2012-11-03 20:16:57,786 INFO org.apache.hadoop.mapred.FairScheduler: JOB 	 PRIORITY 	 # OF MAPS 	 # OF REDUCES 	 # OF MAPS COMPLETED 	 # OF REDUCES COMPLETED 	 % OF MAPS COMPLETED 	 % OF REDUCES COMPLETED
+2012-11-03 20:16:57,786 INFO org.apache.hadoop.mapred.FairScheduler: ---- 	 -------- 	 --------- 	 ----------- 	 -------------------- 	 --------------------- 	 ------------------- 	 ----------------------
+2012-11-03 20:16:57,786 INFO org.apache.hadoop.mapred.FairScheduler: job_201211032009_0003 	 NORMAL 	 1 	 10 	 1 	 0 	 100.0 	 0.0
+2012-11-03 20:16:57,786 INFO org.apache.hadoop.mapred.FairScheduler: job_201211032009_0002 	 LOW 	 1 	 15 	 1 	 0 	 100.0 	 0.0
+2012-11-03 20:16:57,786 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201211032009_0003_r_000004_0' to tip task_201211032009_0003_r_000004, for tracker 'tracker_170.224.168.177:localhost.localdomain/127.0.0.1:40127'
+2012-11-03 20:16:57,787 INFO org.apache.hadoop.mapred.FairScheduler: Entering Selecting Scheduling Algs logic
+2012-11-03 20:16:57,787 INFO org.apache.hadoop.mapred.FairScheduler: Exiting Selecting Scheduling Algs logic
+2012-11-03 20:16:57,787 INFO org.apache.hadoop.mapred.FairScheduler: JOB 	 PRIORITY 	 # OF MAPS 	 # OF REDUCES 	 # OF MAPS COMPLETED 	 # OF REDUCES COMPLETED 	 % OF MAPS COMPLETED 	 % OF REDUCES COMPLETED
+2012-11-03 20:16:57,787 INFO org.apache.hadoop.mapred.FairScheduler: ---- 	 -------- 	 --------- 	 ----------- 	 -------------------- 	 --------------------- 	 ------------------- 	 ----------------------
+2012-11-03 20:16:57,787 INFO org.apache.hadoop.mapred.FairScheduler: job_201211032009_0003 	 NORMAL 	 1 	 10 	 1 	 0 	 100.0 	 0.0
+2012-11-03 20:16:57,787 INFO org.apache.hadoop.mapred.FairScheduler: job_201211032009_0002 	 LOW 	 1 	 15 	 1 	 0 	 100.0 	 0.0
+2012-11-03 20:16:57,787 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201211032009_0003_r_000005_0' to tip task_201211032009_0003_r_000005, for tracker 'tracker_170.224.163.203:localhost.localdomain/127.0.0.1:34107'
+2012-11-03 20:16:57,794 INFO org.apache.hadoop.mapred.FairScheduler: Entering Selecting Scheduling Algs logic
+2012-11-03 20:16:57,794 INFO org.apache.hadoop.mapred.FairScheduler: Exiting Selecting Scheduling Algs logic
+2012-11-03 20:16:57,794 INFO org.apache.hadoop.mapred.FairScheduler: JOB 	 PRIORITY 	 # OF MAPS 	 # OF REDUCES 	 # OF MAPS COMPLETED 	 # OF REDUCES COMPLETED 	 % OF MAPS COMPLETED 	 % OF REDUCES COMPLETED
+2012-11-03 20:16:57,794 INFO org.apache.hadoop.mapred.FairScheduler: ---- 	 -------- 	 --------- 	 ----------- 	 -------------------- 	 --------------------- 	 ------------------- 	 ----------------------
+2012-11-03 20:16:57,794 INFO org.apache.hadoop.mapred.FairScheduler: job_201211032009_0003 	 NORMAL 	 1 	 10 	 1 	 0 	 100.0 	 0.0
+2012-11-03 20:16:57,794 INFO org.apache.hadoop.mapred.FairScheduler: job_201211032009_0002 	 LOW 	 1 	 15 	 1 	 0 	 100.0 	 0.0
+2012-11-03 20:16:57,795 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201211032009_0003_r_000006_0' to tip task_201211032009_0003_r_000006, for tracker 'tracker_170.224.168.209:localhost.localdomain/127.0.0.1:47189'
+2012-11-03 20:17:01,159 INFO org.apache.hadoop.mapred.FairScheduler: Entering Selecting Scheduling Algs logic
+2012-11-03 20:17:01,159 INFO org.apache.hadoop.mapred.FairScheduler: Exiting Selecting Scheduling Algs logic
+2012-11-03 20:17:01,159 INFO org.apache.hadoop.mapred.FairScheduler: JOB 	 PRIORITY 	 # OF MAPS 	 # OF REDUCES 	 # OF MAPS COMPLETED 	 # OF REDUCES COMPLETED 	 % OF MAPS COMPLETED 	 % OF REDUCES COMPLETED
+2012-11-03 20:17:01,159 INFO org.apache.hadoop.mapred.FairScheduler: ---- 	 -------- 	 --------- 	 ----------- 	 -------------------- 	 --------------------- 	 ------------------- 	 ----------------------
+2012-11-03 20:17:01,159 INFO org.apache.hadoop.mapred.FairScheduler: job_201211032009_0003 	 NORMAL 	 1 	 10 	 1 	 0 	 100.0 	 0.0
+2012-11-03 20:17:01,159 INFO org.apache.hadoop.mapred.FairScheduler: job_201211032009_0002 	 LOW 	 1 	 15 	 1 	 0 	 100.0 	 0.0
+2012-11-03 20:17:01,159 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201211032009_0003_r_000007_0' to tip task_201211032009_0003_r_000007, for tracker 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:36623'
+2012-11-03 20:17:01,224 INFO org.apache.hadoop.mapred.FairScheduler: Entering Selecting Scheduling Algs logic
+2012-11-03 20:17:01,225 INFO org.apache.hadoop.mapred.FairScheduler: Exiting Selecting Scheduling Algs logic
+2012-11-03 20:17:01,225 INFO org.apache.hadoop.mapred.FairScheduler: JOB 	 PRIORITY 	 # OF MAPS 	 # OF REDUCES 	 # OF MAPS COMPLETED 	 # OF REDUCES COMPLETED 	 % OF MAPS COMPLETED 	 % OF REDUCES COMPLETED
+2012-11-03 20:17:01,225 INFO org.apache.hadoop.mapred.FairScheduler: ---- 	 -------- 	 --------- 	 ----------- 	 -------------------- 	 --------------------- 	 ------------------- 	 ----------------------
+2012-11-03 20:17:01,225 INFO org.apache.hadoop.mapred.FairScheduler: job_201211032009_0003 	 NORMAL 	 1 	 10 	 1 	 0 	 100.0 	 0.0
+2012-11-03 20:17:01,225 INFO org.apache.hadoop.mapred.FairScheduler: job_201211032009_0002 	 LOW 	 1 	 15 	 1 	 0 	 100.0 	 0.0
+2012-11-03 20:17:01,225 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201211032009_0003_r_000008_0' to tip task_201211032009_0003_r_000008, for tracker 'tracker_170.224.168.210:localhost.localdomain/127.0.0.1:57299'
+2012-11-03 20:17:03,791 INFO org.apache.hadoop.mapred.FairScheduler: Entering Selecting Scheduling Algs logic
+2012-11-03 20:17:03,791 INFO org.apache.hadoop.mapred.FairScheduler: Exiting Selecting Scheduling Algs logic
+2012-11-03 20:17:03,791 INFO org.apache.hadoop.mapred.FairScheduler: JOB 	 PRIORITY 	 # OF MAPS 	 # OF REDUCES 	 # OF MAPS COMPLETED 	 # OF REDUCES COMPLETED 	 % OF MAPS COMPLETED 	 % OF REDUCES COMPLETED
+2012-11-03 20:17:03,791 INFO org.apache.hadoop.mapred.FairScheduler: ---- 	 -------- 	 --------- 	 ----------- 	 -------------------- 	 --------------------- 	 ------------------- 	 ----------------------
+2012-11-03 20:17:03,791 INFO org.apache.hadoop.mapred.FairScheduler: job_201211032009_0003 	 NORMAL 	 1 	 10 	 1 	 0 	 100.0 	 0.0
+2012-11-03 20:17:03,791 INFO org.apache.hadoop.mapred.FairScheduler: job_201211032009_0002 	 LOW 	 1 	 15 	 1 	 0 	 100.0 	 0.0
+2012-11-03 20:17:03,792 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201211032009_0003_r_000009_0' to tip task_201211032009_0003_r_000009, for tracker 'tracker_170.224.164.187:localhost.localdomain/127.0.0.1:55044'
+2012-11-03 20:17:03,796 INFO org.apache.hadoop.mapred.FairScheduler: Entering Selecting Scheduling Algs logic
+2012-11-03 20:17:03,796 INFO org.apache.hadoop.mapred.FairScheduler: Exiting Selecting Scheduling Algs logic
+2012-11-03 20:17:03,797 INFO org.apache.hadoop.mapred.FairScheduler: JOB 	 PRIORITY 	 # OF MAPS 	 # OF REDUCES 	 # OF MAPS COMPLETED 	 # OF REDUCES COMPLETED 	 % OF MAPS COMPLETED 	 % OF REDUCES COMPLETED
+2012-11-03 20:17:03,797 INFO org.apache.hadoop.mapred.FairScheduler: ---- 	 -------- 	 --------- 	 ----------- 	 -------------------- 	 --------------------- 	 ------------------- 	 ----------------------
+2012-11-03 20:17:03,797 INFO org.apache.hadoop.mapred.FairScheduler: job_201211032009_0002 	 LOW 	 1 	 15 	 1 	 0 	 100.0 	 0.0
+2012-11-03 20:17:03,797 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201211032009_0002_r_000000_0' to tip task_201211032009_0002_r_000000, for tracker 'tracker_170.224.163.203:localhost.localdomain/127.0.0.1:34107'
+2012-11-03 20:17:03,797 INFO org.apache.hadoop.mapred.FairScheduler: Entering Selecting Scheduling Algs logic
+2012-11-03 20:17:03,797 INFO org.apache.hadoop.mapred.FairScheduler: Exiting Selecting Scheduling Algs logic
+2012-11-03 20:17:03,798 INFO org.apache.hadoop.mapred.FairScheduler: JOB 	 PRIORITY 	 # OF MAPS 	 # OF REDUCES 	 # OF MAPS COMPLETED 	 # OF REDUCES COMPLETED 	 % OF MAPS COMPLETED 	 % OF REDUCES COMPLETED
+2012-11-03 20:17:03,798 INFO org.apache.hadoop.mapred.FairScheduler: ---- 	 -------- 	 --------- 	 ----------- 	 -------------------- 	 --------------------- 	 ------------------- 	 ----------------------
+2012-11-03 20:17:03,798 INFO org.apache.hadoop.mapred.FairScheduler: job_201211032009_0002 	 LOW 	 1 	 15 	 1 	 0 	 100.0 	 0.0
+2012-11-03 20:17:03,798 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201211032009_0002_r_000001_0' to tip task_201211032009_0002_r_000001, for tracker 'tracker_170.224.168.177:localhost.localdomain/127.0.0.1:40127'
+2012-11-03 20:17:03,804 INFO org.apache.hadoop.mapred.FairScheduler: Entering Selecting Scheduling Algs logic
+2012-11-03 20:17:03,804 INFO org.apache.hadoop.mapred.FairScheduler: Exiting Selecting Scheduling Algs logic
+2012-11-03 20:17:03,804 INFO org.apache.hadoop.mapred.FairScheduler: JOB 	 PRIORITY 	 # OF MAPS 	 # OF REDUCES 	 # OF MAPS COMPLETED 	 # OF REDUCES COMPLETED 	 % OF MAPS COMPLETED 	 % OF REDUCES COMPLETED
+2012-11-03 20:17:03,804 INFO org.apache.hadoop.mapred.FairScheduler: ---- 	 -------- 	 --------- 	 ----------- 	 -------------------- 	 --------------------- 	 ------------------- 	 ----------------------
+2012-11-03 20:17:03,804 INFO org.apache.hadoop.mapred.FairScheduler: job_201211032009_0002 	 LOW 	 1 	 15 	 1 	 0 	 100.0 	 0.0
+2012-11-03 20:17:03,804 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201211032009_0002_r_000002_0' to tip task_201211032009_0002_r_000002, for tracker 'tracker_170.224.168.209:localhost.localdomain/127.0.0.1:47189'
+2012-11-03 20:17:04,164 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201211032009_0001_r_000000_0' has completed task_201211032009_0001_r_000000 successfully.
+2012-11-03 20:17:04,165 INFO org.apache.hadoop.mapred.FairScheduler: Entering Selecting Scheduling Algs logic
+2012-11-03 20:17:04,165 INFO org.apache.hadoop.mapred.FairScheduler: Exiting Selecting Scheduling Algs logic
+2012-11-03 20:17:04,166 INFO org.apache.hadoop.mapred.FairScheduler: JOB 	 PRIORITY 	 # OF MAPS 	 # OF REDUCES 	 # OF MAPS COMPLETED 	 # OF REDUCES COMPLETED 	 % OF MAPS COMPLETED 	 % OF REDUCES COMPLETED
+2012-11-03 20:17:04,166 INFO org.apache.hadoop.mapred.FairScheduler: ---- 	 -------- 	 --------- 	 ----------- 	 -------------------- 	 --------------------- 	 ------------------- 	 ----------------------
+2012-11-03 20:17:04,166 INFO org.apache.hadoop.mapred.FairScheduler: job_201211032009_0002 	 LOW 	 1 	 15 	 1 	 0 	 100.0 	 0.0
+2012-11-03 20:17:04,166 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201211032009_0002_r_000003_0' to tip task_201211032009_0002_r_000003, for tracker 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:36623'
+2012-11-03 20:17:04,257 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201211032009_0001_r_000001_0' has completed task_201211032009_0001_r_000001 successfully.
+2012-11-03 20:17:04,257 INFO org.apache.hadoop.mapred.FairScheduler: Entering Selecting Scheduling Algs logic
+2012-11-03 20:17:04,258 INFO org.apache.hadoop.mapred.FairScheduler: Exiting Selecting Scheduling Algs logic
+2012-11-03 20:17:04,258 INFO org.apache.hadoop.mapred.FairScheduler: JOB 	 PRIORITY 	 # OF MAPS 	 # OF REDUCES 	 # OF MAPS COMPLETED 	 # OF REDUCES COMPLETED 	 % OF MAPS COMPLETED 	 % OF REDUCES COMPLETED
+2012-11-03 20:17:04,258 INFO org.apache.hadoop.mapred.FairScheduler: ---- 	 -------- 	 --------- 	 ----------- 	 -------------------- 	 --------------------- 	 ------------------- 	 ----------------------
+2012-11-03 20:17:04,258 INFO org.apache.hadoop.mapred.FairScheduler: job_201211032009_0002 	 LOW 	 1 	 15 	 1 	 0 	 100.0 	 0.0
+2012-11-03 20:17:04,258 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201211032009_0002_r_000004_0' to tip task_201211032009_0002_r_000004, for tracker 'tracker_170.224.168.210:localhost.localdomain/127.0.0.1:57299'
+2012-11-03 20:17:06,796 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201211032009_0001_r_000003_0' has completed task_201211032009_0001_r_000003 successfully.
+2012-11-03 20:17:06,797 INFO org.apache.hadoop.mapred.FairScheduler: Entering Selecting Scheduling Algs logic
+2012-11-03 20:17:06,797 INFO org.apache.hadoop.mapred.FairScheduler: Exiting Selecting Scheduling Algs logic
+2012-11-03 20:17:06,797 INFO org.apache.hadoop.mapred.FairScheduler: JOB 	 PRIORITY 	 # OF MAPS 	 # OF REDUCES 	 # OF MAPS COMPLETED 	 # OF REDUCES COMPLETED 	 % OF MAPS COMPLETED 	 % OF REDUCES COMPLETED
+2012-11-03 20:17:06,797 INFO org.apache.hadoop.mapred.FairScheduler: ---- 	 -------- 	 --------- 	 ----------- 	 -------------------- 	 --------------------- 	 ------------------- 	 ----------------------
+2012-11-03 20:17:06,797 INFO org.apache.hadoop.mapred.FairScheduler: job_201211032009_0002 	 LOW 	 1 	 15 	 1 	 0 	 100.0 	 0.0
+2012-11-03 20:17:06,797 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201211032009_0002_r_000005_0' to tip task_201211032009_0002_r_000005, for tracker 'tracker_170.224.164.187:localhost.localdomain/127.0.0.1:55044'
+2012-11-03 20:17:06,805 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201211032009_0003_r_000000_0' has completed task_201211032009_0003_r_000000 successfully.
+2012-11-03 20:17:06,806 INFO org.apache.hadoop.mapred.FairScheduler: Entering Selecting Scheduling Algs logic
+2012-11-03 20:17:06,806 INFO org.apache.hadoop.mapred.FairScheduler: Exiting Selecting Scheduling Algs logic
+2012-11-03 20:17:06,806 INFO org.apache.hadoop.mapred.FairScheduler: JOB 	 PRIORITY 	 # OF MAPS 	 # OF REDUCES 	 # OF MAPS COMPLETED 	 # OF REDUCES COMPLETED 	 % OF MAPS COMPLETED 	 % OF REDUCES COMPLETED
+2012-11-03 20:17:06,806 INFO org.apache.hadoop.mapred.FairScheduler: ---- 	 -------- 	 --------- 	 ----------- 	 -------------------- 	 --------------------- 	 ------------------- 	 ----------------------
+2012-11-03 20:17:06,806 INFO org.apache.hadoop.mapred.FairScheduler: job_201211032009_0002 	 LOW 	 1 	 15 	 1 	 0 	 100.0 	 0.0
+2012-11-03 20:17:06,806 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201211032009_0002_r_000006_0' to tip task_201211032009_0002_r_000006, for tracker 'tracker_170.224.168.177:localhost.localdomain/127.0.0.1:40127'
+2012-11-03 20:17:06,806 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201211032009_0001_r_000004_0' has completed task_201211032009_0001_r_000004 successfully.
+2012-11-03 20:17:06,807 INFO org.apache.hadoop.mapred.FairScheduler: Entering Selecting Scheduling Algs logic
+2012-11-03 20:17:06,807 INFO org.apache.hadoop.mapred.FairScheduler: Exiting Selecting Scheduling Algs logic
+2012-11-03 20:17:06,807 INFO org.apache.hadoop.mapred.FairScheduler: JOB 	 PRIORITY 	 # OF MAPS 	 # OF REDUCES 	 # OF MAPS COMPLETED 	 # OF REDUCES COMPLETED 	 % OF MAPS COMPLETED 	 % OF REDUCES COMPLETED
+2012-11-03 20:17:06,807 INFO org.apache.hadoop.mapred.FairScheduler: ---- 	 -------- 	 --------- 	 ----------- 	 -------------------- 	 --------------------- 	 ------------------- 	 ----------------------
+2012-11-03 20:17:06,807 INFO org.apache.hadoop.mapred.FairScheduler: job_201211032009_0002 	 LOW 	 1 	 15 	 1 	 0 	 100.0 	 0.0
+2012-11-03 20:17:06,807 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201211032009_0002_r_000007_0' to tip task_201211032009_0002_r_000007, for tracker 'tracker_170.224.163.203:localhost.localdomain/127.0.0.1:34107'
+2012-11-03 20:17:06,809 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201211032009_0001_r_000002_0' has completed task_201211032009_0001_r_000002 successfully.
+2012-11-03 20:17:06,809 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201211032009_0001_m_000001_0' to tip task_201211032009_0001_m_000001, for tracker 'tracker_170.224.168.209:localhost.localdomain/127.0.0.1:47189'
+2012-11-03 20:17:07,171 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201211032009_0003_r_000001_0' has completed task_201211032009_0003_r_000001 successfully.
+2012-11-03 20:17:07,264 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201211032009_0003_r_000002_0' has completed task_201211032009_0003_r_000002 successfully.
+2012-11-03 20:17:09,801 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201211032009_0003_r_000003_0' has completed task_201211032009_0003_r_000003 successfully.
+2012-11-03 20:17:09,801 INFO org.apache.hadoop.mapred.FairScheduler: Entering Selecting Scheduling Algs logic
+2012-11-03 20:17:09,802 INFO org.apache.hadoop.mapred.FairScheduler: Exiting Selecting Scheduling Algs logic
+2012-11-03 20:17:09,802 INFO org.apache.hadoop.mapred.FairScheduler: JOB 	 PRIORITY 	 # OF MAPS 	 # OF REDUCES 	 # OF MAPS COMPLETED 	 # OF REDUCES COMPLETED 	 % OF MAPS COMPLETED 	 % OF REDUCES COMPLETED
+2012-11-03 20:17:09,802 INFO org.apache.hadoop.mapred.FairScheduler: ---- 	 -------- 	 --------- 	 ----------- 	 -------------------- 	 --------------------- 	 ------------------- 	 ----------------------
+2012-11-03 20:17:09,802 INFO org.apache.hadoop.mapred.FairScheduler: job_201211032009_0002 	 LOW 	 1 	 15 	 1 	 0 	 100.0 	 0.0
+2012-11-03 20:17:09,802 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201211032009_0002_r_000008_0' to tip task_201211032009_0002_r_000008, for tracker 'tracker_170.224.164.187:localhost.localdomain/127.0.0.1:55044'
+2012-11-03 20:17:09,820 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201211032009_0003_r_000005_0' has completed task_201211032009_0003_r_000005 successfully.
+2012-11-03 20:17:09,821 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201211032009_0003_r_000004_0' has completed task_201211032009_0003_r_000004 successfully.
+2012-11-03 20:17:09,822 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201211032009_0003_r_000006_0' has completed task_201211032009_0003_r_000006 successfully.
+2012-11-03 20:17:09,823 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201211032009_0001_m_000001_0' has completed task_201211032009_0001_m_000001 successfully.
+2012-11-03 20:17:09,823 INFO org.apache.hadoop.mapred.JobInProgress: Job job_201211032009_0001 has completed successfully.
+2012-11-03 20:17:09,852 INFO org.apache.hadoop.mapred.FairScheduler: Entering Selecting Scheduling Algs logic
+2012-11-03 20:17:09,852 INFO org.apache.hadoop.mapred.FairScheduler: Exiting Selecting Scheduling Algs logic
+2012-11-03 20:17:09,852 INFO org.apache.hadoop.mapred.FairScheduler: JOB 	 PRIORITY 	 # OF MAPS 	 # OF REDUCES 	 # OF MAPS COMPLETED 	 # OF REDUCES COMPLETED 	 % OF MAPS COMPLETED 	 % OF REDUCES COMPLETED
+2012-11-03 20:17:09,852 INFO org.apache.hadoop.mapred.FairScheduler: ---- 	 -------- 	 --------- 	 ----------- 	 -------------------- 	 --------------------- 	 ------------------- 	 ----------------------
+2012-11-03 20:17:09,853 INFO org.apache.hadoop.mapred.FairScheduler: job_201211032009_0002 	 LOW 	 1 	 15 	 1 	 0 	 100.0 	 0.0
+2012-11-03 20:17:09,853 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201211032009_0002_r_000009_0' to tip task_201211032009_0002_r_000009, for tracker 'tracker_170.224.168.209:localhost.localdomain/127.0.0.1:47189'
+2012-11-03 20:17:09,853 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201211032009_0001_m_000001_0' from 'tracker_170.224.168.209:localhost.localdomain/127.0.0.1:47189'
+2012-11-03 20:17:09,853 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201211032009_0001_r_000002_0' from 'tracker_170.224.168.209:localhost.localdomain/127.0.0.1:47189'
+2012-11-03 20:17:10,175 INFO org.apache.hadoop.mapred.FairScheduler: Entering Selecting Scheduling Algs logic
+2012-11-03 20:17:10,175 INFO org.apache.hadoop.mapred.FairScheduler: Exiting Selecting Scheduling Algs logic
+2012-11-03 20:17:10,175 INFO org.apache.hadoop.mapred.FairScheduler: JOB 	 PRIORITY 	 # OF MAPS 	 # OF REDUCES 	 # OF MAPS COMPLETED 	 # OF REDUCES COMPLETED 	 % OF MAPS COMPLETED 	 % OF REDUCES COMPLETED
+2012-11-03 20:17:10,175 INFO org.apache.hadoop.mapred.FairScheduler: ---- 	 -------- 	 --------- 	 ----------- 	 -------------------- 	 --------------------- 	 ------------------- 	 ----------------------
+2012-11-03 20:17:10,175 INFO org.apache.hadoop.mapred.FairScheduler: job_201211032009_0002 	 LOW 	 1 	 15 	 1 	 0 	 100.0 	 0.0
+2012-11-03 20:17:10,175 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201211032009_0002_r_000010_0' to tip task_201211032009_0002_r_000010, for tracker 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:36623'
+2012-11-03 20:17:10,175 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201211032009_0001_r_000000_0' from 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:36623'
+2012-11-03 20:17:10,272 INFO org.apache.hadoop.mapred.FairScheduler: Entering Selecting Scheduling Algs logic
+2012-11-03 20:17:10,272 INFO org.apache.hadoop.mapred.FairScheduler: Exiting Selecting Scheduling Algs logic
+2012-11-03 20:17:10,272 INFO org.apache.hadoop.mapred.FairScheduler: JOB 	 PRIORITY 	 # OF MAPS 	 # OF REDUCES 	 # OF MAPS COMPLETED 	 # OF REDUCES COMPLETED 	 % OF MAPS COMPLETED 	 % OF REDUCES COMPLETED
+2012-11-03 20:17:10,272 INFO org.apache.hadoop.mapred.FairScheduler: ---- 	 -------- 	 --------- 	 ----------- 	 -------------------- 	 --------------------- 	 ------------------- 	 ----------------------
+2012-11-03 20:17:10,272 INFO org.apache.hadoop.mapred.FairScheduler: job_201211032009_0002 	 LOW 	 1 	 15 	 1 	 0 	 100.0 	 0.0
+2012-11-03 20:17:10,272 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201211032009_0002_r_000011_0' to tip task_201211032009_0002_r_000011, for tracker 'tracker_170.224.168.210:localhost.localdomain/127.0.0.1:57299'
+2012-11-03 20:17:10,272 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201211032009_0001_r_000001_0' from 'tracker_170.224.168.210:localhost.localdomain/127.0.0.1:57299'
+2012-11-03 20:17:12,807 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201211032009_0003_r_000009_0' has completed task_201211032009_0003_r_000009 successfully.
+2012-11-03 20:17:12,808 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201211032009_0001_m_000000_0' from 'tracker_170.224.164.187:localhost.localdomain/127.0.0.1:55044'
+2012-11-03 20:17:12,808 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201211032009_0001_m_000002_0' from 'tracker_170.224.164.187:localhost.localdomain/127.0.0.1:55044'
+2012-11-03 20:17:12,808 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201211032009_0001_r_000003_0' from 'tracker_170.224.164.187:localhost.localdomain/127.0.0.1:55044'
+2012-11-03 20:17:12,826 INFO org.apache.hadoop.mapred.FairScheduler: Entering Selecting Scheduling Algs logic
+2012-11-03 20:17:12,826 INFO org.apache.hadoop.mapred.FairScheduler: Exiting Selecting Scheduling Algs logic
+2012-11-03 20:17:12,826 INFO org.apache.hadoop.mapred.FairScheduler: JOB 	 PRIORITY 	 # OF MAPS 	 # OF REDUCES 	 # OF MAPS COMPLETED 	 # OF REDUCES COMPLETED 	 % OF MAPS COMPLETED 	 % OF REDUCES COMPLETED
+2012-11-03 20:17:12,826 INFO org.apache.hadoop.mapred.FairScheduler: ---- 	 -------- 	 --------- 	 ----------- 	 -------------------- 	 --------------------- 	 ------------------- 	 ----------------------
+2012-11-03 20:17:12,826 INFO org.apache.hadoop.mapred.FairScheduler: job_201211032009_0002 	 LOW 	 1 	 15 	 1 	 0 	 100.0 	 0.0
+2012-11-03 20:17:12,827 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201211032009_0002_r_000012_0' to tip task_201211032009_0002_r_000012, for tracker 'tracker_170.224.163.203:localhost.localdomain/127.0.0.1:34107'
+2012-11-03 20:17:12,827 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201211032009_0001_r_000004_0' from 'tracker_170.224.163.203:localhost.localdomain/127.0.0.1:34107'
+2012-11-03 20:17:13,184 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201211032009_0003_r_000007_0' has completed task_201211032009_0003_r_000007 successfully.
+2012-11-03 20:17:13,184 INFO org.apache.hadoop.mapred.FairScheduler: Entering Selecting Scheduling Algs logic
+2012-11-03 20:17:13,184 INFO org.apache.hadoop.mapred.FairScheduler: Exiting Selecting Scheduling Algs logic
+2012-11-03 20:17:13,185 INFO org.apache.hadoop.mapred.FairScheduler: JOB 	 PRIORITY 	 # OF MAPS 	 # OF REDUCES 	 # OF MAPS COMPLETED 	 # OF REDUCES COMPLETED 	 % OF MAPS COMPLETED 	 % OF REDUCES COMPLETED
+2012-11-03 20:17:13,185 INFO org.apache.hadoop.mapred.FairScheduler: ---- 	 -------- 	 --------- 	 ----------- 	 -------------------- 	 --------------------- 	 ------------------- 	 ----------------------
+2012-11-03 20:17:13,185 INFO org.apache.hadoop.mapred.FairScheduler: job_201211032009_0002 	 LOW 	 1 	 15 	 1 	 0 	 100.0 	 0.0
+2012-11-03 20:17:13,185 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201211032009_0002_r_000013_0' to tip task_201211032009_0002_r_000013, for tracker 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:36623'
+2012-11-03 20:17:13,277 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201211032009_0003_r_000008_0' has completed task_201211032009_0003_r_000008 successfully.
+2012-11-03 20:17:13,278 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201211032009_0003_m_000001_0' to tip task_201211032009_0003_m_000001, for tracker 'tracker_170.224.168.210:localhost.localdomain/127.0.0.1:57299'
+2012-11-03 20:17:15,813 INFO org.apache.hadoop.mapred.FairScheduler: Entering Selecting Scheduling Algs logic
+2012-11-03 20:17:15,813 INFO org.apache.hadoop.mapred.FairScheduler: Exiting Selecting Scheduling Algs logic
+2012-11-03 20:17:15,813 INFO org.apache.hadoop.mapred.FairScheduler: JOB 	 PRIORITY 	 # OF MAPS 	 # OF REDUCES 	 # OF MAPS COMPLETED 	 # OF REDUCES COMPLETED 	 % OF MAPS COMPLETED 	 % OF REDUCES COMPLETED
+2012-11-03 20:17:15,813 INFO org.apache.hadoop.mapred.FairScheduler: ---- 	 -------- 	 --------- 	 ----------- 	 -------------------- 	 --------------------- 	 ------------------- 	 ----------------------
+2012-11-03 20:17:15,813 INFO org.apache.hadoop.mapred.FairScheduler: job_201211032009_0002 	 LOW 	 1 	 15 	 1 	 0 	 100.0 	 0.0
+2012-11-03 20:17:15,813 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201211032009_0002_r_000014_0' to tip task_201211032009_0002_r_000014, for tracker 'tracker_170.224.164.187:localhost.localdomain/127.0.0.1:55044'
+2012-11-03 20:17:15,832 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201211032009_0002_r_000000_0' has completed task_201211032009_0002_r_000000 successfully.
+2012-11-03 20:17:15,832 INFO org.apache.hadoop.mapred.FairScheduler: Entering Selecting Scheduling Algs logic
+2012-11-03 20:17:15,832 INFO org.apache.hadoop.mapred.FairScheduler: Exiting Selecting Scheduling Algs logic
+2012-11-03 20:17:15,832 INFO org.apache.hadoop.mapred.FairScheduler: JOB 	 PRIORITY 	 # OF MAPS 	 # OF REDUCES 	 # OF MAPS COMPLETED 	 # OF REDUCES COMPLETED 	 % OF MAPS COMPLETED 	 % OF REDUCES COMPLETED
+2012-11-03 20:17:15,832 INFO org.apache.hadoop.mapred.FairScheduler: ---- 	 -------- 	 --------- 	 ----------- 	 -------------------- 	 --------------------- 	 ------------------- 	 ----------------------
+2012-11-03 20:17:15,833 INFO org.apache.hadoop.mapred.FairScheduler: Entering Selecting Scheduling Algs logic
+2012-11-03 20:17:15,833 INFO org.apache.hadoop.mapred.FairScheduler: Exiting Selecting Scheduling Algs logic
+2012-11-03 20:17:15,833 INFO org.apache.hadoop.mapred.FairScheduler: JOB 	 PRIORITY 	 # OF MAPS 	 # OF REDUCES 	 # OF MAPS COMPLETED 	 # OF REDUCES COMPLETED 	 % OF MAPS COMPLETED 	 % OF REDUCES COMPLETED
+2012-11-03 20:17:15,833 INFO org.apache.hadoop.mapred.FairScheduler: ---- 	 -------- 	 --------- 	 ----------- 	 -------------------- 	 --------------------- 	 ------------------- 	 ----------------------
+2012-11-03 20:17:15,861 INFO org.apache.hadoop.mapred.FairScheduler: Entering Selecting Scheduling Algs logic
+2012-11-03 20:17:15,861 INFO org.apache.hadoop.mapred.FairScheduler: Exiting Selecting Scheduling Algs logic
+2012-11-03 20:17:15,861 INFO org.apache.hadoop.mapred.FairScheduler: JOB 	 PRIORITY 	 # OF MAPS 	 # OF REDUCES 	 # OF MAPS COMPLETED 	 # OF REDUCES COMPLETED 	 % OF MAPS COMPLETED 	 % OF REDUCES COMPLETED
+2012-11-03 20:17:15,861 INFO org.apache.hadoop.mapred.FairScheduler: ---- 	 -------- 	 --------- 	 ----------- 	 -------------------- 	 --------------------- 	 ------------------- 	 ----------------------
+2012-11-03 20:17:16,189 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201211032009_0002_r_000003_0' has completed task_201211032009_0002_r_000003 successfully.
+2012-11-03 20:17:16,283 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201211032009_0002_r_000004_0' has completed task_201211032009_0002_r_000004 successfully.
+2012-11-03 20:17:16,283 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201211032009_0003_m_000001_0' has completed task_201211032009_0003_m_000001 successfully.
+2012-11-03 20:17:16,284 INFO org.apache.hadoop.mapred.JobInProgress: Job job_201211032009_0003 has completed successfully.
+2012-11-03 20:17:16,317 INFO org.apache.hadoop.mapred.FairScheduler: Entering Selecting Scheduling Algs logic
+2012-11-03 20:17:16,317 INFO org.apache.hadoop.mapred.FairScheduler: Exiting Selecting Scheduling Algs logic
+2012-11-03 20:17:16,317 INFO org.apache.hadoop.mapred.FairScheduler: JOB 	 PRIORITY 	 # OF MAPS 	 # OF REDUCES 	 # OF MAPS COMPLETED 	 # OF REDUCES COMPLETED 	 % OF MAPS COMPLETED 	 % OF REDUCES COMPLETED
+2012-11-03 20:17:16,317 INFO org.apache.hadoop.mapred.FairScheduler: ---- 	 -------- 	 --------- 	 ----------- 	 -------------------- 	 --------------------- 	 ------------------- 	 ----------------------
+2012-11-03 20:17:16,317 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201211032009_0003_m_000000_0' from 'tracker_170.224.168.210:localhost.localdomain/127.0.0.1:57299'
+2012-11-03 20:17:16,317 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201211032009_0003_m_000001_0' from 'tracker_170.224.168.210:localhost.localdomain/127.0.0.1:57299'
+2012-11-03 20:17:16,317 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201211032009_0003_r_000002_0' from 'tracker_170.224.168.210:localhost.localdomain/127.0.0.1:57299'
+2012-11-03 20:17:16,317 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201211032009_0003_r_000008_0' from 'tracker_170.224.168.210:localhost.localdomain/127.0.0.1:57299'
+2012-11-03 20:17:18,818 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201211032009_0002_r_000005_0' has completed task_201211032009_0002_r_000005 successfully.
+2012-11-03 20:17:18,819 INFO org.apache.hadoop.mapred.FairScheduler: Entering Selecting Scheduling Algs logic
+2012-11-03 20:17:18,819 INFO org.apache.hadoop.mapred.FairScheduler: Exiting Selecting Scheduling Algs logic
+2012-11-03 20:17:18,819 INFO org.apache.hadoop.mapred.FairScheduler: JOB 	 PRIORITY 	 # OF MAPS 	 # OF REDUCES 	 # OF MAPS COMPLETED 	 # OF REDUCES COMPLETED 	 % OF MAPS COMPLETED 	 % OF REDUCES COMPLETED
+2012-11-03 20:17:18,819 INFO org.apache.hadoop.mapred.FairScheduler: ---- 	 -------- 	 --------- 	 ----------- 	 -------------------- 	 --------------------- 	 ------------------- 	 ----------------------
+2012-11-03 20:17:18,819 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201211032009_0003_r_000003_0' from 'tracker_170.224.164.187:localhost.localdomain/127.0.0.1:55044'
+2012-11-03 20:17:18,819 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201211032009_0003_r_000009_0' from 'tracker_170.224.164.187:localhost.localdomain/127.0.0.1:55044'
+2012-11-03 20:17:18,838 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201211032009_0002_r_000001_0' has completed task_201211032009_0002_r_000001 successfully.
+2012-11-03 20:17:18,839 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201211032009_0002_r_000006_0' has completed task_201211032009_0002_r_000006 successfully.
+2012-11-03 20:17:18,840 INFO org.apache.hadoop.mapred.FairScheduler: Entering Selecting Scheduling Algs logic
+2012-11-03 20:17:18,840 INFO org.apache.hadoop.mapred.FairScheduler: Exiting Selecting Scheduling Algs logic
+2012-11-03 20:17:18,840 INFO org.apache.hadoop.mapred.FairScheduler: JOB 	 PRIORITY 	 # OF MAPS 	 # OF REDUCES 	 # OF MAPS COMPLETED 	 # OF REDUCES COMPLETED 	 % OF MAPS COMPLETED 	 % OF REDUCES COMPLETED
+2012-11-03 20:17:18,840 INFO org.apache.hadoop.mapred.FairScheduler: ---- 	 -------- 	 --------- 	 ----------- 	 -------------------- 	 --------------------- 	 ------------------- 	 ----------------------
+2012-11-03 20:17:18,840 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201211032009_0003_m_000002_0' from 'tracker_170.224.168.177:localhost.localdomain/127.0.0.1:40127'
+2012-11-03 20:17:18,840 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201211032009_0003_r_000000_0' from 'tracker_170.224.168.177:localhost.localdomain/127.0.0.1:40127'
+2012-11-03 20:17:18,840 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201211032009_0003_r_000004_0' from 'tracker_170.224.168.177:localhost.localdomain/127.0.0.1:40127'
+2012-11-03 20:17:18,840 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201211032009_0002_r_000007_0' has completed task_201211032009_0002_r_000007 successfully.
+2012-11-03 20:17:18,841 INFO org.apache.hadoop.mapred.FairScheduler: Entering Selecting Scheduling Algs logic
+2012-11-03 20:17:18,841 INFO org.apache.hadoop.mapred.FairScheduler: Exiting Selecting Scheduling Algs logic
+2012-11-03 20:17:18,841 INFO org.apache.hadoop.mapred.FairScheduler: JOB 	 PRIORITY 	 # OF MAPS 	 # OF REDUCES 	 # OF MAPS COMPLETED 	 # OF REDUCES COMPLETED 	 % OF MAPS COMPLETED 	 % OF REDUCES COMPLETED
+2012-11-03 20:17:18,841 INFO org.apache.hadoop.mapred.FairScheduler: ---- 	 -------- 	 --------- 	 ----------- 	 -------------------- 	 --------------------- 	 ------------------- 	 ----------------------
+2012-11-03 20:17:18,841 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201211032009_0003_r_000005_0' from 'tracker_170.224.163.203:localhost.localdomain/127.0.0.1:34107'
+2012-11-03 20:17:18,865 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201211032009_0002_r_000002_0' has completed task_201211032009_0002_r_000002 successfully.
+2012-11-03 20:17:18,865 INFO org.apache.hadoop.mapred.FairScheduler: Entering Selecting Scheduling Algs logic
+2012-11-03 20:17:18,865 INFO org.apache.hadoop.mapred.FairScheduler: Exiting Selecting Scheduling Algs logic
+2012-11-03 20:17:18,865 INFO org.apache.hadoop.mapred.FairScheduler: JOB 	 PRIORITY 	 # OF MAPS 	 # OF REDUCES 	 # OF MAPS COMPLETED 	 # OF REDUCES COMPLETED 	 % OF MAPS COMPLETED 	 % OF REDUCES COMPLETED
+2012-11-03 20:17:18,865 INFO org.apache.hadoop.mapred.FairScheduler: ---- 	 -------- 	 --------- 	 ----------- 	 -------------------- 	 --------------------- 	 ------------------- 	 ----------------------
+2012-11-03 20:17:18,865 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201211032009_0003_r_000006_0' from 'tracker_170.224.168.209:localhost.localdomain/127.0.0.1:47189'
+2012-11-03 20:17:19,195 INFO org.apache.hadoop.mapred.FairScheduler: Entering Selecting Scheduling Algs logic
+2012-11-03 20:17:19,195 INFO org.apache.hadoop.mapred.FairScheduler: Exiting Selecting Scheduling Algs logic
+2012-11-03 20:17:19,195 INFO org.apache.hadoop.mapred.FairScheduler: JOB 	 PRIORITY 	 # OF MAPS 	 # OF REDUCES 	 # OF MAPS COMPLETED 	 # OF REDUCES COMPLETED 	 % OF MAPS COMPLETED 	 % OF REDUCES COMPLETED
+2012-11-03 20:17:19,195 INFO org.apache.hadoop.mapred.FairScheduler: ---- 	 -------- 	 --------- 	 ----------- 	 -------------------- 	 --------------------- 	 ------------------- 	 ----------------------
+2012-11-03 20:17:19,195 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201211032009_0003_r_000001_0' from 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:36623'
+2012-11-03 20:17:19,195 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201211032009_0003_r_000007_0' from 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:36623'
+2012-11-03 20:17:19,321 INFO org.apache.hadoop.mapred.FairScheduler: Entering Selecting Scheduling Algs logic
+2012-11-03 20:17:19,322 INFO org.apache.hadoop.mapred.FairScheduler: Exiting Selecting Scheduling Algs logic
+2012-11-03 20:17:19,322 INFO org.apache.hadoop.mapred.FairScheduler: JOB 	 PRIORITY 	 # OF MAPS 	 # OF REDUCES 	 # OF MAPS COMPLETED 	 # OF REDUCES COMPLETED 	 % OF MAPS COMPLETED 	 % OF REDUCES COMPLETED
+2012-11-03 20:17:19,322 INFO org.apache.hadoop.mapred.FairScheduler: ---- 	 -------- 	 --------- 	 ----------- 	 -------------------- 	 --------------------- 	 ------------------- 	 ----------------------
+2012-11-03 20:17:21,822 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201211032009_0002_r_000008_0' has completed task_201211032009_0002_r_000008 successfully.
+2012-11-03 20:17:21,822 INFO org.apache.hadoop.mapred.FairScheduler: Entering Selecting Scheduling Algs logic
+2012-11-03 20:17:21,822 INFO org.apache.hadoop.mapred.FairScheduler: Exiting Selecting Scheduling Algs logic
+2012-11-03 20:17:21,823 INFO org.apache.hadoop.mapred.FairScheduler: JOB 	 PRIORITY 	 # OF MAPS 	 # OF REDUCES 	 # OF MAPS COMPLETED 	 # OF REDUCES COMPLETED 	 % OF MAPS COMPLETED 	 % OF REDUCES COMPLETED
+2012-11-03 20:17:21,823 INFO org.apache.hadoop.mapred.FairScheduler: ---- 	 -------- 	 --------- 	 ----------- 	 -------------------- 	 --------------------- 	 ------------------- 	 ----------------------
+2012-11-03 20:17:21,844 INFO org.apache.hadoop.mapred.FairScheduler: Entering Selecting Scheduling Algs logic
+2012-11-03 20:17:21,844 INFO org.apache.hadoop.mapred.FairScheduler: Exiting Selecting Scheduling Algs logic
+2012-11-03 20:17:21,844 INFO org.apache.hadoop.mapred.FairScheduler: JOB 	 PRIORITY 	 # OF MAPS 	 # OF REDUCES 	 # OF MAPS COMPLETED 	 # OF REDUCES COMPLETED 	 % OF MAPS COMPLETED 	 % OF REDUCES COMPLETED
+2012-11-03 20:17:21,844 INFO org.apache.hadoop.mapred.FairScheduler: ---- 	 -------- 	 --------- 	 ----------- 	 -------------------- 	 --------------------- 	 ------------------- 	 ----------------------
+2012-11-03 20:17:21,845 INFO org.apache.hadoop.mapred.FairScheduler: Entering Selecting Scheduling Algs logic
+2012-11-03 20:17:21,845 INFO org.apache.hadoop.mapred.FairScheduler: Exiting Selecting Scheduling Algs logic
+2012-11-03 20:17:21,845 INFO org.apache.hadoop.mapred.FairScheduler: JOB 	 PRIORITY 	 # OF MAPS 	 # OF REDUCES 	 # OF MAPS COMPLETED 	 # OF REDUCES COMPLETED 	 % OF MAPS COMPLETED 	 % OF REDUCES COMPLETED
+2012-11-03 20:17:21,845 INFO org.apache.hadoop.mapred.FairScheduler: ---- 	 -------- 	 --------- 	 ----------- 	 -------------------- 	 --------------------- 	 ------------------- 	 ----------------------
+2012-11-03 20:17:21,869 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201211032009_0002_r_000009_0' has completed task_201211032009_0002_r_000009 successfully.
+2012-11-03 20:17:21,869 INFO org.apache.hadoop.mapred.FairScheduler: Entering Selecting Scheduling Algs logic
+2012-11-03 20:17:21,869 INFO org.apache.hadoop.mapred.FairScheduler: Exiting Selecting Scheduling Algs logic
+2012-11-03 20:17:21,869 INFO org.apache.hadoop.mapred.FairScheduler: JOB 	 PRIORITY 	 # OF MAPS 	 # OF REDUCES 	 # OF MAPS COMPLETED 	 # OF REDUCES COMPLETED 	 % OF MAPS COMPLETED 	 % OF REDUCES COMPLETED
+2012-11-03 20:17:21,869 INFO org.apache.hadoop.mapred.FairScheduler: ---- 	 -------- 	 --------- 	 ----------- 	 -------------------- 	 --------------------- 	 ------------------- 	 ----------------------
+2012-11-03 20:17:22,200 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201211032009_0002_r_000010_0' has completed task_201211032009_0002_r_000010 successfully.
+2012-11-03 20:17:22,201 INFO org.apache.hadoop.mapred.FairScheduler: Entering Selecting Scheduling Algs logic
+2012-11-03 20:17:22,201 INFO org.apache.hadoop.mapred.FairScheduler: Exiting Selecting Scheduling Algs logic
+2012-11-03 20:17:22,201 INFO org.apache.hadoop.mapred.FairScheduler: JOB 	 PRIORITY 	 # OF MAPS 	 # OF REDUCES 	 # OF MAPS COMPLETED 	 # OF REDUCES COMPLETED 	 % OF MAPS COMPLETED 	 % OF REDUCES COMPLETED
+2012-11-03 20:17:22,201 INFO org.apache.hadoop.mapred.FairScheduler: ---- 	 -------- 	 --------- 	 ----------- 	 -------------------- 	 --------------------- 	 ------------------- 	 ----------------------
+2012-11-03 20:17:22,325 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201211032009_0002_r_000011_0' has completed task_201211032009_0002_r_000011 successfully.
+2012-11-03 20:17:22,325 INFO org.apache.hadoop.mapred.FairScheduler: Entering Selecting Scheduling Algs logic
+2012-11-03 20:17:22,325 INFO org.apache.hadoop.mapred.FairScheduler: Exiting Selecting Scheduling Algs logic
+2012-11-03 20:17:22,325 INFO org.apache.hadoop.mapred.FairScheduler: JOB 	 PRIORITY 	 # OF MAPS 	 # OF REDUCES 	 # OF MAPS COMPLETED 	 # OF REDUCES COMPLETED 	 % OF MAPS COMPLETED 	 % OF REDUCES COMPLETED
+2012-11-03 20:17:22,325 INFO org.apache.hadoop.mapred.FairScheduler: ---- 	 -------- 	 --------- 	 ----------- 	 -------------------- 	 --------------------- 	 ------------------- 	 ----------------------
+2012-11-03 20:17:24,826 INFO org.apache.hadoop.mapred.FairScheduler: Entering Selecting Scheduling Algs logic
+2012-11-03 20:17:24,826 INFO org.apache.hadoop.mapred.FairScheduler: Exiting Selecting Scheduling Algs logic
+2012-11-03 20:17:24,826 INFO org.apache.hadoop.mapred.FairScheduler: JOB 	 PRIORITY 	 # OF MAPS 	 # OF REDUCES 	 # OF MAPS COMPLETED 	 # OF REDUCES COMPLETED 	 % OF MAPS COMPLETED 	 % OF REDUCES COMPLETED
+2012-11-03 20:17:24,826 INFO org.apache.hadoop.mapred.FairScheduler: ---- 	 -------- 	 --------- 	 ----------- 	 -------------------- 	 --------------------- 	 ------------------- 	 ----------------------
+2012-11-03 20:17:24,847 INFO org.apache.hadoop.mapred.FairScheduler: Entering Selecting Scheduling Algs logic
+2012-11-03 20:17:24,847 INFO org.apache.hadoop.mapred.FairScheduler: Exiting Selecting Scheduling Algs logic
+2012-11-03 20:17:24,848 INFO org.apache.hadoop.mapred.FairScheduler: JOB 	 PRIORITY 	 # OF MAPS 	 # OF REDUCES 	 # OF MAPS COMPLETED 	 # OF REDUCES COMPLETED 	 % OF MAPS COMPLETED 	 % OF REDUCES COMPLETED
+2012-11-03 20:17:24,848 INFO org.apache.hadoop.mapred.FairScheduler: ---- 	 -------- 	 --------- 	 ----------- 	 -------------------- 	 --------------------- 	 ------------------- 	 ----------------------
+2012-11-03 20:17:24,849 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201211032009_0002_r_000012_0' has completed task_201211032009_0002_r_000012 successfully.
+2012-11-03 20:17:24,850 INFO org.apache.hadoop.mapred.FairScheduler: Entering Selecting Scheduling Algs logic
+2012-11-03 20:17:24,850 INFO org.apache.hadoop.mapred.FairScheduler: Exiting Selecting Scheduling Algs logic
+2012-11-03 20:17:24,850 INFO org.apache.hadoop.mapred.FairScheduler: JOB 	 PRIORITY 	 # OF MAPS 	 # OF REDUCES 	 # OF MAPS COMPLETED 	 # OF REDUCES COMPLETED 	 % OF MAPS COMPLETED 	 % OF REDUCES COMPLETED
+2012-11-03 20:17:24,850 INFO org.apache.hadoop.mapred.FairScheduler: ---- 	 -------- 	 --------- 	 ----------- 	 -------------------- 	 --------------------- 	 ------------------- 	 ----------------------
+2012-11-03 20:17:24,872 INFO org.apache.hadoop.mapred.FairScheduler: Entering Selecting Scheduling Algs logic
+2012-11-03 20:17:24,872 INFO org.apache.hadoop.mapred.FairScheduler: Exiting Selecting Scheduling Algs logic
+2012-11-03 20:17:24,872 INFO org.apache.hadoop.mapred.FairScheduler: JOB 	 PRIORITY 	 # OF MAPS 	 # OF REDUCES 	 # OF MAPS COMPLETED 	 # OF REDUCES COMPLETED 	 % OF MAPS COMPLETED 	 % OF REDUCES COMPLETED
+2012-11-03 20:17:24,872 INFO org.apache.hadoop.mapred.FairScheduler: ---- 	 -------- 	 --------- 	 ----------- 	 -------------------- 	 --------------------- 	 ------------------- 	 ----------------------
+2012-11-03 20:17:25,205 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201211032009_0002_r_000013_0' has completed task_201211032009_0002_r_000013 successfully.
+2012-11-03 20:17:25,205 INFO org.apache.hadoop.mapred.FairScheduler: Entering Selecting Scheduling Algs logic
+2012-11-03 20:17:25,205 INFO org.apache.hadoop.mapred.FairScheduler: Exiting Selecting Scheduling Algs logic
+2012-11-03 20:17:25,205 INFO org.apache.hadoop.mapred.FairScheduler: JOB 	 PRIORITY 	 # OF MAPS 	 # OF REDUCES 	 # OF MAPS COMPLETED 	 # OF REDUCES COMPLETED 	 % OF MAPS COMPLETED 	 % OF REDUCES COMPLETED
+2012-11-03 20:17:25,205 INFO org.apache.hadoop.mapred.FairScheduler: ---- 	 -------- 	 --------- 	 ----------- 	 -------------------- 	 --------------------- 	 ------------------- 	 ----------------------
+2012-11-03 20:17:25,329 INFO org.apache.hadoop.mapred.FairScheduler: Entering Selecting Scheduling Algs logic
+2012-11-03 20:17:25,329 INFO org.apache.hadoop.mapred.FairScheduler: Exiting Selecting Scheduling Algs logic
+2012-11-03 20:17:25,329 INFO org.apache.hadoop.mapred.FairScheduler: JOB 	 PRIORITY 	 # OF MAPS 	 # OF REDUCES 	 # OF MAPS COMPLETED 	 # OF REDUCES COMPLETED 	 % OF MAPS COMPLETED 	 % OF REDUCES COMPLETED
+2012-11-03 20:17:25,329 INFO org.apache.hadoop.mapred.FairScheduler: ---- 	 -------- 	 --------- 	 ----------- 	 -------------------- 	 --------------------- 	 ------------------- 	 ----------------------
+2012-11-03 20:17:27,831 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201211032009_0002_r_000014_0' has completed task_201211032009_0002_r_000014 successfully.
+2012-11-03 20:17:27,831 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201211032009_0002_m_000001_0' to tip task_201211032009_0002_m_000001, for tracker 'tracker_170.224.164.187:localhost.localdomain/127.0.0.1:55044'
+2012-11-03 20:17:27,852 INFO org.apache.hadoop.mapred.FairScheduler: Entering Selecting Scheduling Algs logic
+2012-11-03 20:17:27,852 INFO org.apache.hadoop.mapred.FairScheduler: Exiting Selecting Scheduling Algs logic
+2012-11-03 20:17:27,852 INFO org.apache.hadoop.mapred.FairScheduler: JOB 	 PRIORITY 	 # OF MAPS 	 # OF REDUCES 	 # OF MAPS COMPLETED 	 # OF REDUCES COMPLETED 	 % OF MAPS COMPLETED 	 % OF REDUCES COMPLETED
+2012-11-03 20:17:27,852 INFO org.apache.hadoop.mapred.FairScheduler: ---- 	 -------- 	 --------- 	 ----------- 	 -------------------- 	 --------------------- 	 ------------------- 	 ----------------------
+2012-11-03 20:17:27,852 INFO org.apache.hadoop.mapred.FairScheduler: Entering Selecting Scheduling Algs logic
+2012-11-03 20:17:27,853 INFO org.apache.hadoop.mapred.FairScheduler: Exiting Selecting Scheduling Algs logic
+2012-11-03 20:17:27,853 INFO org.apache.hadoop.mapred.FairScheduler: JOB 	 PRIORITY 	 # OF MAPS 	 # OF REDUCES 	 # OF MAPS COMPLETED 	 # OF REDUCES COMPLETED 	 % OF MAPS COMPLETED 	 % OF REDUCES COMPLETED
+2012-11-03 20:17:27,853 INFO org.apache.hadoop.mapred.FairScheduler: ---- 	 -------- 	 --------- 	 ----------- 	 -------------------- 	 --------------------- 	 ------------------- 	 ----------------------
+2012-11-03 20:17:27,876 INFO org.apache.hadoop.mapred.FairScheduler: Entering Selecting Scheduling Algs logic
+2012-11-03 20:17:27,876 INFO org.apache.hadoop.mapred.FairScheduler: Exiting Selecting Scheduling Algs logic
+2012-11-03 20:17:27,876 INFO org.apache.hadoop.mapred.FairScheduler: JOB 	 PRIORITY 	 # OF MAPS 	 # OF REDUCES 	 # OF MAPS COMPLETED 	 # OF REDUCES COMPLETED 	 % OF MAPS COMPLETED 	 % OF REDUCES COMPLETED
+2012-11-03 20:17:27,876 INFO org.apache.hadoop.mapred.FairScheduler: ---- 	 -------- 	 --------- 	 ----------- 	 -------------------- 	 --------------------- 	 ------------------- 	 ----------------------
+2012-11-03 20:17:28,215 INFO org.apache.hadoop.mapred.FairScheduler: Entering Selecting Scheduling Algs logic
+2012-11-03 20:17:28,215 INFO org.apache.hadoop.mapred.FairScheduler: Exiting Selecting Scheduling Algs logic
+2012-11-03 20:17:28,215 INFO org.apache.hadoop.mapred.FairScheduler: JOB 	 PRIORITY 	 # OF MAPS 	 # OF REDUCES 	 # OF MAPS COMPLETED 	 # OF REDUCES COMPLETED 	 % OF MAPS COMPLETED 	 % OF REDUCES COMPLETED
+2012-11-03 20:17:28,215 INFO org.apache.hadoop.mapred.FairScheduler: ---- 	 -------- 	 --------- 	 ----------- 	 -------------------- 	 --------------------- 	 ------------------- 	 ----------------------
+2012-11-03 20:17:30,835 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201211032009_0002_m_000001_0' has completed task_201211032009_0002_m_000001 successfully.
+2012-11-03 20:17:30,835 INFO org.apache.hadoop.mapred.JobInProgress: Job job_201211032009_0002 has completed successfully.
+2012-11-03 20:17:30,860 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201211032009_0002_m_000001_0' from 'tracker_170.224.164.187:localhost.localdomain/127.0.0.1:55044'
+2012-11-03 20:17:30,860 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201211032009_0002_r_000005_0' from 'tracker_170.224.164.187:localhost.localdomain/127.0.0.1:55044'
+2012-11-03 20:17:30,860 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201211032009_0002_r_000008_0' from 'tracker_170.224.164.187:localhost.localdomain/127.0.0.1:55044'
+2012-11-03 20:17:30,860 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201211032009_0002_r_000014_0' from 'tracker_170.224.164.187:localhost.localdomain/127.0.0.1:55044'
+2012-11-03 20:17:30,861 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201211032009_0002_r_000001_0' from 'tracker_170.224.168.177:localhost.localdomain/127.0.0.1:40127'
+2012-11-03 20:17:30,862 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201211032009_0002_r_000006_0' from 'tracker_170.224.168.177:localhost.localdomain/127.0.0.1:40127'
+2012-11-03 20:17:30,862 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201211032009_0002_m_000002_0' from 'tracker_170.224.163.203:localhost.localdomain/127.0.0.1:34107'
+2012-11-03 20:17:30,862 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201211032009_0002_r_000000_0' from 'tracker_170.224.163.203:localhost.localdomain/127.0.0.1:34107'
+2012-11-03 20:17:30,862 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201211032009_0002_r_000007_0' from 'tracker_170.224.163.203:localhost.localdomain/127.0.0.1:34107'
+2012-11-03 20:17:30,862 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201211032009_0002_r_000012_0' from 'tracker_170.224.163.203:localhost.localdomain/127.0.0.1:34107'
+2012-11-03 20:17:30,878 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201211032009_0002_r_000002_0' from 'tracker_170.224.168.209:localhost.localdomain/127.0.0.1:47189'
+2012-11-03 20:17:30,879 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201211032009_0002_r_000009_0' from 'tracker_170.224.168.209:localhost.localdomain/127.0.0.1:47189'
+2012-11-03 20:17:31,218 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201211032009_0002_m_000000_0' from 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:36623'
+2012-11-03 20:17:31,218 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201211032009_0002_r_000003_0' from 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:36623'
+2012-11-03 20:17:31,219 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201211032009_0002_r_000010_0' from 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:36623'
+2012-11-03 20:17:31,219 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201211032009_0002_r_000013_0' from 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:36623'
+2012-11-03 20:17:31,336 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201211032009_0002_r_000004_0' from 'tracker_170.224.168.210:localhost.localdomain/127.0.0.1:57299'
+2012-11-03 20:17:31,336 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201211032009_0002_r_000011_0' from 'tracker_170.224.168.210:localhost.localdomain/127.0.0.1:57299'

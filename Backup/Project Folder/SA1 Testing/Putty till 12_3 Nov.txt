@@ -1,0 +1,2007 @@
+Using username "idcuser".
+Authenticating with public key "imported-openssh-key"
+Last login: Sun Nov  4 03:54:56 2012 from cpe-69-23-138-152.wi.res.rr.com
+[idcuser@vhost1207 ~]$ ./run_jobs.sh 4
+Jobid:  0  Priority:  LOW  No Of Reduces:  10
+Jobid:  1  Priority:  NORMAL  No Of Reduces:  5
+Jobid:  2  Priority:  NORMAL  No Of Reduces:  15
+Jobid:  3  Priority:  LOW  No Of Reduces:  10
+[idcuser@vhost1207 ~]$ 12/11/04 04:01:20 INFO input.FileInputFormat: Total input                                                                                         paths to process : 1
+12/11/04 04:01:20 INFO input.FileInputFormat: Total input paths to process : 1
+12/11/04 04:01:20 INFO input.FileInputFormat: Total input paths to process : 1
+12/11/04 04:01:20 INFO input.FileInputFormat: Total input paths to process : 1
+12/11/04 04:01:21 INFO mapred.JobClient: Running job: job_201211040358_0003
+12/11/04 04:01:22 INFO mapred.JobClient: Running job: job_201211040358_0004
+12/11/04 04:01:22 INFO mapred.JobClient: Running job: job_201211040358_0002
+12/11/04 04:01:22 INFO mapred.JobClient: Running job: job_201211040358_0001
+12/11/04 04:01:22 INFO mapred.JobClient:  map 0% reduce 0%
+12/11/04 04:01:23 INFO mapred.JobClient:  map 0% reduce 0%
+12/11/04 04:01:23 INFO mapred.JobClient:  map 0% reduce 0%
+12/11/04 04:01:23 INFO mapred.JobClient:  map 0% reduce 0%
+12/11/04 04:01:38 INFO mapred.JobClient:  map 4% reduce 0%
+12/11/04 04:01:39 INFO mapred.JobClient:  map 5% reduce 0%
+12/11/04 04:01:41 INFO mapred.JobClient:  map 12% reduce 0%
+12/11/04 04:01:44 INFO mapred.JobClient:  map 16% reduce 0%
+12/11/04 04:01:45 INFO mapred.JobClient:  map 18% reduce 0%
+12/11/04 04:01:47 INFO mapred.JobClient:  map 20% reduce 0%
+12/11/04 04:01:50 INFO mapred.JobClient:  map 22% reduce 0%
+12/11/04 04:01:51 INFO mapred.JobClient:  map 23% reduce 0%
+12/11/04 04:01:53 INFO mapred.JobClient:  map 27% reduce 0%
+12/11/04 04:01:54 INFO mapred.JobClient:  map 28% reduce 0%
+12/11/04 04:01:56 INFO mapred.JobClient:  map 30% reduce 0%
+12/11/04 04:01:57 INFO mapred.JobClient:  map 31% reduce 0%
+12/11/04 04:01:59 INFO mapred.JobClient:  map 33% reduce 0%
+12/11/04 04:02:00 INFO mapred.JobClient:  map 35% reduce 0%
+12/11/04 04:02:02 INFO mapred.JobClient:  map 38% reduce 0%
+12/11/04 04:02:03 INFO mapred.JobClient:  map 39% reduce 0%
+12/11/04 04:02:05 INFO mapred.JobClient:  map 42% reduce 0%
+12/11/04 04:02:08 INFO mapred.JobClient:  map 45% reduce 0%
+12/11/04 04:02:09 INFO mapred.JobClient:  map 46% reduce 0%
+12/11/04 04:02:11 INFO mapred.JobClient:  map 49% reduce 0%
+12/11/04 04:02:14 INFO mapred.JobClient:  map 53% reduce 0%
+12/11/04 04:02:17 INFO mapred.JobClient:  map 54% reduce 0%
+12/11/04 04:02:18 INFO mapred.JobClient:  map 55% reduce 0%
+12/11/04 04:02:20 INFO mapred.JobClient:  map 58% reduce 0%
+12/11/04 04:02:21 INFO mapred.JobClient:  map 60% reduce 0%
+12/11/04 04:02:23 INFO mapred.JobClient:  map 63% reduce 0%
+12/11/04 04:02:24 INFO mapred.JobClient:  map 64% reduce 0%
+12/11/04 04:02:26 INFO mapred.JobClient:  map 67% reduce 0%
+12/11/04 04:02:27 INFO mapred.JobClient:  map 68% reduce 0%
+12/11/04 04:02:29 INFO mapred.JobClient:  map 71% reduce 0%
+12/11/04 04:02:30 INFO mapred.JobClient:  map 72% reduce 0%
+12/11/04 04:02:32 INFO mapred.JobClient:  map 74% reduce 8%
+12/11/04 04:02:33 INFO mapred.JobClient:  map 75% reduce 8%
+12/11/04 04:02:35 INFO mapred.JobClient:  map 77% reduce 15%
+12/11/04 04:02:36 INFO mapred.JobClient:  map 77% reduce 17%
+12/11/04 04:02:38 INFO mapred.JobClient:  map 80% reduce 18%
+12/11/04 04:02:41 INFO mapred.JobClient:  map 83% reduce 19%
+12/11/04 04:02:42 INFO mapred.JobClient:  map 85% reduce 22%
+12/11/04 04:02:44 INFO mapred.JobClient:  map 90% reduce 23%
+12/11/04 04:02:47 INFO mapred.JobClient:  map 93% reduce 24%
+12/11/04 04:02:48 INFO mapred.JobClient:  map 94% reduce 25%
+12/11/04 04:02:50 INFO mapred.JobClient:  map 97% reduce 25%
+12/11/04 04:02:51 INFO mapred.JobClient:  map 98% reduce 26%
+12/11/04 04:02:53 INFO mapred.JobClient:  map 99% reduce 27%
+12/11/04 04:02:54 INFO mapred.JobClient:  map 2% reduce 0%
+12/11/04 04:02:54 INFO mapred.JobClient:  map 100% reduce 27%
+12/11/04 04:02:57 INFO mapred.JobClient:  map 3% reduce 0%
+12/11/04 04:02:57 INFO mapred.JobClient:  map 100% reduce 28%
+12/11/04 04:02:58 INFO mapred.JobClient:  map 4% reduce 0%
+12/11/04 04:03:00 INFO mapred.JobClient:  map 10% reduce 0%
+12/11/04 04:03:01 INFO mapred.JobClient:  map 100% reduce 29%
+12/11/04 04:03:01 INFO mapred.JobClient:  map 11% reduce 0%
+12/11/04 04:03:03 INFO mapred.JobClient:  map 100% reduce 30%
+12/11/04 04:03:03 INFO mapred.JobClient:  map 14% reduce 0%
+12/11/04 04:03:04 INFO mapred.JobClient:  map 100% reduce 32%
+12/11/04 04:03:04 INFO mapred.JobClient:  map 15% reduce 0%
+12/11/04 04:03:06 INFO mapred.JobClient:  map 100% reduce 41%
+12/11/04 04:03:06 INFO mapred.JobClient:  map 17% reduce 0%
+12/11/04 04:03:07 INFO mapred.JobClient:  map 100% reduce 53%
+12/11/04 04:03:07 INFO mapred.JobClient:  map 18% reduce 0%
+12/11/04 04:03:09 INFO mapred.JobClient:  map 100% reduce 54%
+12/11/04 04:03:09 INFO mapred.JobClient:  map 19% reduce 0%
+12/11/04 04:03:10 INFO mapred.JobClient:  map 100% reduce 60%
+12/11/04 04:03:12 INFO mapred.JobClient:  map 100% reduce 64%
+12/11/04 04:03:12 INFO mapred.JobClient:  map 23% reduce 0%
+12/11/04 04:03:13 INFO mapred.JobClient:  map 100% reduce 74%
+12/11/04 04:03:15 INFO mapred.JobClient:  map 100% reduce 87%
+12/11/04 04:03:15 INFO mapred.JobClient:  map 27% reduce 0%
+12/11/04 04:03:16 INFO mapred.JobClient:  map 100% reduce 94%
+12/11/04 04:03:18 INFO mapred.JobClient:  map 100% reduce 100%
+12/11/04 04:03:18 INFO mapred.JobClient:  map 32% reduce 0%
+12/11/04 04:03:21 INFO mapred.JobClient:  map 38% reduce 0%
+12/11/04 04:03:23 INFO mapred.JobClient: Job complete: job_201211040358_0004
+12/11/04 04:03:23 INFO mapred.JobClient: Counters: 18
+12/11/04 04:03:23 INFO mapred.JobClient:   Job Counters
+12/11/04 04:03:23 INFO mapred.JobClient:     Data-local map tasks=53
+12/11/04 04:03:23 INFO mapred.JobClient:     Rack-local map tasks=2
+12/11/04 04:03:23 INFO mapred.JobClient:     Launched map tasks=55
+12/11/04 04:03:23 INFO mapred.JobClient:     Launched reduce tasks=5
+12/11/04 04:03:23 INFO mapred.JobClient:   FileSystemCounters
+12/11/04 04:03:23 INFO mapred.JobClient:     HDFS_BYTES_READ=3640760883
+12/11/04 04:03:23 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=863802257
+12/11/04 04:03:23 INFO mapred.JobClient:     FILE_BYTES_READ=693439048
+12/11/04 04:03:23 INFO mapred.JobClient:     HDFS_BYTES_WRITTEN=4923229
+12/11/04 04:03:23 INFO mapred.JobClient:   Map-Reduce Framework
+12/11/04 04:03:23 INFO mapred.JobClient:     Map output bytes=4108868885
+12/11/04 04:03:23 INFO mapred.JobClient:     Reduce input groups=80762
+12/11/04 04:03:23 INFO mapred.JobClient:     Combine output records=10632531
+12/11/04 04:03:23 INFO mapred.JobClient:     Reduce input records=4384769
+12/11/04 04:03:23 INFO mapred.JobClient:     Map output records=117911750
+12/11/04 04:03:23 INFO mapred.JobClient:     Map input records=27510890
+12/11/04 04:03:23 INFO mapred.JobClient:     Reduce shuffle bytes=274782481
+12/11/04 04:03:23 INFO mapred.JobClient:     Combine input records=124159512
+12/11/04 04:03:23 INFO mapred.JobClient:     Reduce output records=80762
+12/11/04 04:03:23 INFO mapred.JobClient:     Spilled Records=15040921
+12/11/04 04:03:24 INFO mapred.JobClient:  map 41% reduce 0%
+12/11/04 04:03:27 INFO mapred.JobClient:  map 44% reduce 0%
+12/11/04 04:03:30 INFO mapred.JobClient:  map 49% reduce 0%
+12/11/04 04:03:33 INFO mapred.JobClient:  map 53% reduce 0%
+12/11/04 04:03:36 INFO mapred.JobClient:  map 57% reduce 0%
+12/11/04 04:03:39 INFO mapred.JobClient:  map 61% reduce 0%
+12/11/04 04:03:42 INFO mapred.JobClient:  map 65% reduce 0%
+12/11/04 04:03:45 INFO mapred.JobClient:  map 68% reduce 0%
+12/11/04 04:03:48 INFO mapred.JobClient:  map 72% reduce 0%
+12/11/04 04:03:51 INFO mapred.JobClient:  map 76% reduce 0%
+12/11/04 04:03:54 INFO mapred.JobClient:  map 79% reduce 3%
+12/11/04 04:03:57 INFO mapred.JobClient:  map 80% reduce 6%
+12/11/04 04:03:58 INFO mapred.JobClient:  map 82% reduce 7%
+12/11/04 04:04:00 INFO mapred.JobClient:  map 85% reduce 11%
+12/11/04 04:04:02 INFO mapred.JobClient:  map 86% reduce 13%
+12/11/04 04:04:04 INFO mapred.JobClient:  map 87% reduce 17%
+12/11/04 04:04:07 INFO mapred.JobClient:  map 92% reduce 18%
+12/11/04 04:04:08 INFO mapred.JobClient:  map 93% reduce 18%
+12/11/04 04:04:10 INFO mapred.JobClient:  map 95% reduce 20%
+12/11/04 04:04:11 INFO mapred.JobClient:  map 96% reduce 20%
+12/11/04 04:04:13 INFO mapred.JobClient:  map 98% reduce 21%
+12/11/04 04:04:13 INFO mapred.JobClient:  map 1% reduce 0%
+12/11/04 04:04:14 INFO mapred.JobClient:  map 99% reduce 21%
+12/11/04 04:04:14 INFO mapred.JobClient:  map 2% reduce 0%
+12/11/04 04:04:16 INFO mapred.JobClient:  map 100% reduce 23%
+12/11/04 04:04:16 INFO mapred.JobClient:  map 4% reduce 0%
+12/11/04 04:04:17 INFO mapred.JobClient:  map 5% reduce 0%
+12/11/04 04:04:19 INFO mapred.JobClient:  map 7% reduce 0%
+12/11/04 04:04:20 INFO mapred.JobClient:  map 8% reduce 0%
+12/11/04 04:04:22 INFO mapred.JobClient:  map 100% reduce 24%
+12/11/04 04:04:22 INFO mapred.JobClient:  map 11% reduce 0%
+12/11/04 04:04:25 INFO mapred.JobClient:  map 100% reduce 29%
+12/11/04 04:04:25 INFO mapred.JobClient:  map 13% reduce 0%
+12/11/04 04:04:26 INFO mapred.JobClient:  map 100% reduce 30%
+12/11/04 04:04:26 INFO mapred.JobClient:  map 14% reduce 0%
+12/11/04 04:04:28 INFO mapred.JobClient:  map 100% reduce 47%
+12/11/04 04:04:28 INFO mapred.JobClient:  map 16% reduce 0%
+12/11/04 04:04:29 INFO mapred.JobClient:  map 100% reduce 52%
+12/11/04 04:04:29 INFO mapred.JobClient:  map 17% reduce 0%
+12/11/04 04:04:31 INFO mapred.JobClient:  map 19% reduce 0%
+12/11/04 04:04:31 INFO mapred.JobClient:  map 100% reduce 65%
+12/11/04 04:04:32 INFO mapred.JobClient:  map 100% reduce 70%
+12/11/04 04:04:34 INFO mapred.JobClient:  map 23% reduce 0%
+12/11/04 04:04:34 INFO mapred.JobClient:  map 100% reduce 75%
+12/11/04 04:04:35 INFO mapred.JobClient:  map 24% reduce 0%
+12/11/04 04:04:37 INFO mapred.JobClient:  map 27% reduce 0%
+12/11/04 04:04:37 INFO mapred.JobClient:  map 100% reduce 80%
+12/11/04 04:04:38 INFO mapred.JobClient:  map 28% reduce 0%
+12/11/04 04:04:40 INFO mapred.JobClient:  map 31% reduce 0%
+12/11/04 04:04:40 INFO mapred.JobClient:  map 100% reduce 81%
+12/11/04 04:04:41 INFO mapred.JobClient:  map 32% reduce 0%
+12/11/04 04:04:41 INFO mapred.JobClient:  map 100% reduce 82%
+12/11/04 04:04:43 INFO mapred.JobClient:  map 34% reduce 0%
+12/11/04 04:04:43 INFO mapred.JobClient:  map 100% reduce 83%
+12/11/04 04:04:44 INFO mapred.JobClient:  map 35% reduce 0%
+12/11/04 04:04:44 INFO mapred.JobClient:  map 100% reduce 86%
+12/11/04 04:04:46 INFO mapred.JobClient:  map 38% reduce 0%
+12/11/04 04:04:47 INFO mapred.JobClient:  map 39% reduce 0%
+12/11/04 04:04:49 INFO mapred.JobClient:  map 42% reduce 0%
+12/11/04 04:04:49 INFO mapred.JobClient:  map 100% reduce 88%
+12/11/04 04:04:50 INFO mapred.JobClient:  map 100% reduce 90%
+12/11/04 04:04:52 INFO mapred.JobClient:  map 45% reduce 0%
+12/11/04 04:04:52 INFO mapred.JobClient:  map 100% reduce 95%
+12/11/04 04:04:53 INFO mapred.JobClient:  map 46% reduce 0%
+12/11/04 04:04:55 INFO mapred.JobClient:  map 50% reduce 0%
+12/11/04 04:04:56 INFO mapred.JobClient:  map 51% reduce 0%
+12/11/04 04:04:58 INFO mapred.JobClient:  map 55% reduce 0%
+12/11/04 04:04:58 INFO mapred.JobClient:  map 100% reduce 100%
+12/11/04 04:04:59 INFO mapred.JobClient:  map 56% reduce 0%
+12/11/04 04:05:01 INFO mapred.JobClient:  map 58% reduce 0%
+12/11/04 04:05:02 INFO mapred.JobClient:  map 60% reduce 0%
+12/11/04 04:05:03 INFO mapred.JobClient: Job complete: job_201211040358_0001
+12/11/04 04:05:03 INFO mapred.JobClient: Counters: 18
+12/11/04 04:05:03 INFO mapred.JobClient:   Job Counters
+12/11/04 04:05:03 INFO mapred.JobClient:     Data-local map tasks=52
+12/11/04 04:05:03 INFO mapred.JobClient:     Rack-local map tasks=3
+12/11/04 04:05:03 INFO mapred.JobClient:     Launched map tasks=55
+12/11/04 04:05:03 INFO mapred.JobClient:     Launched reduce tasks=15
+12/11/04 04:05:03 INFO mapred.JobClient:   FileSystemCounters
+12/11/04 04:05:03 INFO mapred.JobClient:     HDFS_BYTES_READ=3640760883
+12/11/04 04:05:03 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=863848097
+12/11/04 04:05:03 INFO mapred.JobClient:     FILE_BYTES_READ=740911824
+12/11/04 04:05:03 INFO mapred.JobClient:     HDFS_BYTES_WRITTEN=4923229
+12/11/04 04:05:03 INFO mapred.JobClient:   Map-Reduce Framework
+12/11/04 04:05:03 INFO mapred.JobClient:     Map output bytes=4108868885
+12/11/04 04:05:03 INFO mapred.JobClient:     Reduce input groups=80762
+12/11/04 04:05:03 INFO mapred.JobClient:     Combine output records=10632531
+12/11/04 04:05:03 INFO mapred.JobClient:     Reduce input records=4384769
+12/11/04 04:05:03 INFO mapred.JobClient:     Map output records=117911750
+12/11/04 04:05:03 INFO mapred.JobClient:     Map input records=27510890
+12/11/04 04:05:03 INFO mapred.JobClient:     Reduce shuffle bytes=274781613
+12/11/04 04:05:03 INFO mapred.JobClient:     Combine input records=124159512
+12/11/04 04:05:03 INFO mapred.JobClient:     Reduce output records=80762
+12/11/04 04:05:03 INFO mapred.JobClient:     Spilled Records=15040921
+12/11/04 04:05:04 INFO mapred.JobClient:  map 61% reduce 0%
+12/11/04 04:05:05 INFO mapred.JobClient:  map 62% reduce 0%
+12/11/04 04:05:07 INFO mapred.JobClient:  map 65% reduce 0%
+12/11/04 04:05:08 INFO mapred.JobClient:  map 67% reduce 0%
+12/11/04 04:05:10 INFO mapred.JobClient:  map 69% reduce 0%
+12/11/04 04:05:13 INFO mapred.JobClient:  map 73% reduce 0%
+12/11/04 04:05:14 INFO mapred.JobClient:  map 74% reduce 0%
+12/11/04 04:05:16 INFO mapred.JobClient:  map 77% reduce 0%
+12/11/04 04:05:17 INFO mapred.JobClient:  map 79% reduce 0%
+12/11/04 04:05:19 INFO mapred.JobClient:  map 80% reduce 0%
+12/11/04 04:05:20 INFO mapred.JobClient:  map 82% reduce 0%
+12/11/04 04:05:22 INFO mapred.JobClient:  map 83% reduce 2%
+12/11/04 04:05:23 INFO mapred.JobClient:  map 84% reduce 6%
+12/11/04 04:05:25 INFO mapred.JobClient:  map 86% reduce 8%
+12/11/04 04:05:26 INFO mapred.JobClient:  map 87% reduce 18%
+12/11/04 04:05:28 INFO mapred.JobClient:  map 88% reduce 18%
+12/11/04 04:05:29 INFO mapred.JobClient:  map 90% reduce 25%
+12/11/04 04:05:31 INFO mapred.JobClient:  map 92% reduce 25%
+12/11/04 04:05:32 INFO mapred.JobClient:  map 94% reduce 25%
+[idcuser@vhost1207 ~]$ 12/11/04 04:05:34 INFO mapred.JobClient:  map 95% reduce 26%
+12/11/04 04:05:35 INFO mapred.JobClient:  map 97% reduce 27%
+12/11/04 04:05:35 INFO mapred.JobClient:  map 1% reduce 0%
+12/11/04 04:05:37 INFO mapred.JobClient:  map 98% reduce 27%
+12/11/04 04:05:37 INFO mapred.JobClient:  map 2% reduce 0%
+12/11/04 04:05:38 INFO mapred.JobClient:  map 99% reduce 29%
+12/11/04 04:05:38 INFO mapred.JobClient:  map 4% reduce 0%
+12/11/04 04:05:40 INFO mapred.JobClient:  map 6% reduce 0%
+12/11/04 04:05:41 INFO mapred.JobClient:  map 100% reduce 29%
+12/11/04 04:05:41 INFO mapred.JobClient:  map 8% reduce 0%
+12/11/04 04:05:43 INFO mapred.JobClient:  map 9% reduce 0%
+12/11/04 04:05:44 INFO mapred.JobClient:  map 100% reduce 30%
+12/11/04 04:05:44 INFO mapred.JobClient:  map 12% reduce 0%
+12/11/04 04:05:47 INFO mapred.JobClient:  map 100% reduce 31%
+12/11/04 04:05:47 INFO mapred.JobClient:  map 14% reduce 0%
+12/11/04 04:05:50 INFO mapred.JobClient:  map 100% reduce 32%
+12/11/04 04:05:50 INFO mapred.JobClient:  map 18% reduce 0%
+12/11/04 04:05:52 INFO mapred.JobClient:  map 100% reduce 45%
+12/11/04 04:05:52 INFO mapred.JobClient:  map 19% reduce 0%
+12/11/04 04:05:53 INFO mapred.JobClient:  map 100% reduce 60%
+12/11/04 04:05:53 INFO mapred.JobClient:  map 20% reduce 0%
+12/11/04 04:05:55 INFO mapred.JobClient:  map 23% reduce 0%
+12/11/04 04:05:56 INFO mapred.JobClient:  map 100% reduce 68%
+12/11/04 04:05:56 INFO mapred.JobClient:  map 25% reduce 0%
+12/11/04 04:05:58 INFO mapred.JobClient:  map 27% reduce 0%
+12/11/04 04:05:59 INFO mapred.JobClient:  map 100% reduce 95%
+12/11/04 04:05:59 INFO mapred.JobClient:  map 29% reduce 0%
+12/11/04 04:06:02 INFO mapred.JobClient:  map 30% reduce 0%
+12/11/04 04:06:03 INFO mapred.JobClient:  map 100% reduce 100%
+12/11/04 04:06:03 INFO mapred.JobClient:  map 32% reduce 0%
+12/11/04 04:06:05 INFO mapred.JobClient:  map 33% reduce 0%
+12/11/04 04:06:06 INFO mapred.JobClient:  map 36% reduce 0%
+12/11/04 04:06:08 INFO mapred.JobClient:  map 38% reduce 0%
+12/11/04 04:06:09 INFO mapred.JobClient:  map 41% reduce 0%
+12/11/04 04:06:11 INFO mapred.JobClient:  map 42% reduce 0%
+12/11/04 04:06:11 INFO mapred.JobClient: Job complete: job_201211040358_0003
+12/11/04 04:06:11 INFO mapred.JobClient: Counters: 18
+12/11/04 04:06:11 INFO mapred.JobClient:   Job Counters
+12/11/04 04:06:11 INFO mapred.JobClient:     Data-local map tasks=53
+12/11/04 04:06:11 INFO mapred.JobClient:     Rack-local map tasks=2
+12/11/04 04:06:11 INFO mapred.JobClient:     Launched map tasks=55
+12/11/04 04:06:11 INFO mapred.JobClient:     Launched reduce tasks=10
+12/11/04 04:06:11 INFO mapred.JobClient:   FileSystemCounters
+12/11/04 04:06:11 INFO mapred.JobClient:     HDFS_BYTES_READ=3640760883
+12/11/04 04:06:11 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=863825177
+12/11/04 04:06:11 INFO mapred.JobClient:     FILE_BYTES_READ=849172280
+12/11/04 04:06:11 INFO mapred.JobClient:     HDFS_BYTES_WRITTEN=4923229
+12/11/04 04:06:11 INFO mapred.JobClient:   Map-Reduce Framework
+12/11/04 04:06:11 INFO mapred.JobClient:     Map output bytes=4108868885
+12/11/04 04:06:11 INFO mapred.JobClient:     Reduce input groups=80762
+12/11/04 04:06:11 INFO mapred.JobClient:     Combine output records=10632531
+12/11/04 04:06:11 INFO mapred.JobClient:     Reduce input records=4384769
+12/11/04 04:06:11 INFO mapred.JobClient:     Map output records=117911750
+12/11/04 04:06:11 INFO mapred.JobClient:     Map input records=27510890
+12/11/04 04:06:11 INFO mapred.JobClient:     Reduce shuffle bytes=270207071
+12/11/04 04:06:11 INFO mapred.JobClient:     Combine input records=124159512
+12/11/04 04:06:11 INFO mapred.JobClient:     Reduce output records=80762
+12/11/04 04:06:11 INFO mapred.JobClient:     Spilled Records=15040921
+12/11/04 04:06:12 INFO mapred.JobClient:  map 44% reduce 0%
+12/11/04 04:06:14 INFO mapred.JobClient:  map 46% reduce 0%
+12/11/04 04:06:15 INFO mapred.JobClient:  map 49% reduce 0%
+12/11/04 04:06:17 INFO mapred.JobClient:  map 50% reduce 0%
+12/11/04 04:06:18 INFO mapred.JobClient:  map 53% reduce 0%
+12/11/04 04:06:20 INFO mapred.JobClient:  map 55% reduce 0%
+12/11/04 04:06:21 INFO mapred.JobClient:  map 56% reduce 0%
+12/11/04 04:06:23 INFO mapred.JobClient:  map 58% reduce 0%
+12/11/04 04:06:24 INFO mapred.JobClient:  map 61% reduce 0%
+12/11/04 04:06:26 INFO mapred.JobClient:  map 62% reduce 0%
+12/11/04 04:06:27 INFO mapred.JobClient:  map 64% reduce 0%
+12/11/04 04:06:29 INFO mapred.JobClient:  map 65% reduce 0%
+12/11/04 04:06:30 INFO mapred.JobClient:  map 67% reduce 0%
+12/11/04 04:06:32 INFO mapred.JobClient:  map 68% reduce 0%
+12/11/04 04:06:33 INFO mapred.JobClient:  map 71% reduce 0%
+12/11/04 04:06:35 INFO mapred.JobClient:  map 73% reduce 1%
+12/11/04 04:06:36 INFO mapred.JobClient:  map 75% reduce 2%
+12/11/04 04:06:38 INFO mapred.JobClient:  map 76% reduce 2%
+12/11/04 04:06:39 INFO mapred.JobClient:  map 78% reduce 9%
+12/11/04 04:06:41 INFO mapred.JobClient:  map 78% reduce 11%
+12/11/04 04:06:42 INFO mapred.JobClient:  map 80% reduce 16%
+12/11/04 04:06:44 INFO mapred.JobClient:  map 81% reduce 17%
+12/11/04 04:06:45 INFO mapred.JobClient:  map 83% reduce 20%
+12/11/04 04:06:47 INFO mapred.JobClient:  map 84% reduce 21%
+12/11/04 04:06:48 INFO mapred.JobClient:  map 86% reduce 23%
+12/11/04 04:06:50 INFO mapred.JobClient:  map 87% reduce 23%
+12/11/04 04:06:51 INFO mapred.JobClient:  map 91% reduce 24%
+12/11/04 04:06:53 INFO mapred.JobClient:  map 92% reduce 24%
+12/11/04 04:06:54 INFO mapred.JobClient:  map 97% reduce 26%
+12/11/04 04:06:57 INFO mapred.JobClient:  map 100% reduce 27%
+12/11/04 04:07:02 INFO mapred.JobClient:  map 100% reduce 28%
+12/11/04 04:07:03 INFO mapred.JobClient:  map 100% reduce 30%
+12/11/04 04:07:09 INFO mapred.JobClient:  map 100% reduce 72%
+12/11/04 04:07:11 INFO mapred.JobClient:  map 100% reduce 79%
+12/11/04 04:07:12 INFO mapred.JobClient:  map 100% reduce 93%
+12/11/04 04:07:14 INFO mapred.JobClient:  map 100% reduce 100%
+12/11/04 04:07:16 INFO mapred.JobClient: Job complete: job_201211040358_0002
+12/11/04 04:07:16 INFO mapred.JobClient: Counters: 18
+12/11/04 04:07:16 INFO mapred.JobClient:   Job Counters
+12/11/04 04:07:16 INFO mapred.JobClient:     Data-local map tasks=54
+12/11/04 04:07:16 INFO mapred.JobClient:     Rack-local map tasks=1
+12/11/04 04:07:16 INFO mapred.JobClient:     Launched map tasks=55
+12/11/04 04:07:16 INFO mapred.JobClient:     Launched reduce tasks=10
+12/11/04 04:07:16 INFO mapred.JobClient:   FileSystemCounters
+12/11/04 04:07:16 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=863825177
+12/11/04 04:07:16 INFO mapred.JobClient:     HDFS_BYTES_READ=3640760883
+12/11/04 04:07:16 INFO mapred.JobClient:     FILE_BYTES_READ=849172280
+12/11/04 04:07:16 INFO mapred.JobClient:     HDFS_BYTES_WRITTEN=4923229
+12/11/04 04:07:16 INFO mapred.JobClient:   Map-Reduce Framework
+12/11/04 04:07:16 INFO mapred.JobClient:     Map output bytes=4108868885
+12/11/04 04:07:16 INFO mapred.JobClient:     Reduce input groups=80762
+12/11/04 04:07:16 INFO mapred.JobClient:     Combine output records=10632531
+12/11/04 04:07:16 INFO mapred.JobClient:     Reduce input records=4384769
+12/11/04 04:07:16 INFO mapred.JobClient:     Map output records=117911750
+12/11/04 04:07:16 INFO mapred.JobClient:     Map input records=27510890
+12/11/04 04:07:16 INFO mapred.JobClient:     Reduce shuffle bytes=272751004
+12/11/04 04:07:16 INFO mapred.JobClient:     Combine input records=124159512
+12/11/04 04:07:16 INFO mapred.JobClient:     Reduce output records=80762
+12/11/04 04:07:16 INFO mapred.JobClient:     Spilled Records=15040921
+
+[idcuser@vhost1207 ~]$ cd $HADOOP_HOME/LIB
+-bash: cd: /mnt/biginsights/opt/ibm/biginsights/IHC/LIB: No such file or directory
+[idcuser@vhost1207 ~]$ cd $HADOOP_HOME/lib
+[idcuser@vhost1207 lib]$ ls
+commons-cli-1.2.jar            core-3.1.1.jar                            hsqldb-1.8.0.10.LICENSE.txt  jsp-2.1              servlet-api-2.5-6.1.14.jar
+commons-codec-1.3.jar          hadoop-0.20.2-customcheduler.jar          jasper-compiler-5.5.12.jar   junit-3.8.1.jar      slf4j-api-1.4.3.jar
+commons-el-1.0.jar             hadoop-0.20.2-fairscheduler.jar           jasper-runtime-5.5.12.jar    kfs-0.2.2.jar        slf4j-log4j12-1.4.3.jar
+commons-httpclient-3.0.1.jar   hadoop-0.20.2-fairscheduler.original.jar  jdiff                        kfs-0.2.LICENSE.txt  WordCountNew.java
+commons-logging-1.0.4.jar      hadoop-0.20.2-fairscheduler-SA2.jar       jets3t-0.6.1.jar             log4j-1.2.15.jar     xmlenc-0.52.jar
+commons-logging-api-1.0.4.jar  hadoop-0.20.2-fairscheduler-SA3.jar       jetty-6.1.14.jar             native
+commons-net-1.4.1.jar          hsqldb-1.8.0.10.jar                       jetty-util-6.1.14.jar        oro-2.0.8.jar
+[idcuser@vhost1207 lib]$ rm hadoop-0.20.2-fairscheduler-SA2.jar
+[idcuser@vhost1207 lib]$ rm hadoop-0.20.2-fairscheduler-SA3.jar
+[idcuser@vhost1207 lib]$ ls
+commons-cli-1.2.jar            core-3.1.1.jar                            jasper-runtime-5.5.12.jar  kfs-0.2.2.jar               slf4j-log4j12-1.4.3.jar
+commons-codec-1.3.jar          hadoop-0.20.2-customcheduler.jar          jdiff                      kfs-0.2.LICENSE.txt         WordCountNew.java
+commons-el-1.0.jar             hadoop-0.20.2-fairscheduler.jar           jets3t-0.6.1.jar           log4j-1.2.15.jar            xmlenc-0.52.jar
+commons-httpclient-3.0.1.jar   hadoop-0.20.2-fairscheduler.original.jar  jetty-6.1.14.jar           native
+commons-logging-1.0.4.jar      hsqldb-1.8.0.10.jar                       jetty-util-6.1.14.jar      oro-2.0.8.jar
+commons-logging-api-1.0.4.jar  hsqldb-1.8.0.10.LICENSE.txt               jsp-2.1                    servlet-api-2.5-6.1.14.jar
+commons-net-1.4.1.jar          jasper-compiler-5.5.12.jar                junit-3.8.1.jar            slf4j-api-1.4.3.jar
+[idcuser@vhost1207 lib]$
+[idcuser@vhost1207 lib]$ rm hadoop-0.20.2-customcheduler.jar
+[idcuser@vhost1207 lib]$ ls
+commons-cli-1.2.jar            commons-net-1.4.1.jar                     jasper-compiler-5.5.12.jar  jsp-2.1              oro-2.0.8.jar
+commons-codec-1.3.jar          core-3.1.1.jar                            jasper-runtime-5.5.12.jar   junit-3.8.1.jar      servlet-api-2.5-6.1.14.jar
+commons-el-1.0.jar             hadoop-0.20.2-fairscheduler.jar           jdiff                       kfs-0.2.2.jar        slf4j-api-1.4.3.jar
+commons-httpclient-3.0.1.jar   hadoop-0.20.2-fairscheduler.original.jar  jets3t-0.6.1.jar            kfs-0.2.LICENSE.txt  slf4j-log4j12-1.4.3.jar
+commons-logging-1.0.4.jar      hsqldb-1.8.0.10.jar                       jetty-6.1.14.jar            log4j-1.2.15.jar     WordCountNew.java
+commons-logging-api-1.0.4.jar  hsqldb-1.8.0.10.LICENSE.txt               jetty-util-6.1.14.jar       native               xmlenc-0.52.jar
+[idcuser@vhost1207 lib]$ /mnt/biginsights/opt/ibm/biginsights/bin/stop-all.sh
+[INFO] Progress - Stop console
+[INFO] @170.224.164.187 - console stopped
+[INFO] Progress - 11%
+[INFO] Progress - Stop jaqlserver
+[INFO] @170.224.164.187 - jaqlserver stopped
+[INFO] Progress - 22%
+[INFO] Progress - Stop oozie
+[INFO] @170.224.164.187 - oozie stopped
+[INFO] Progress - 33%
+[INFO] Progress - Stop flume
+[INFO] @170.224.164.187 - flume stopped
+[INFO] Progress - 44%
+[INFO] Progress - Stop hbase
+[INFO] Deployer - Failed to nicely shutdown hbase daemon, would you like to mandatorily kill the process?(yes/no)
+yes
+[INFO] @170.224.164.187 - Succeed in killing the process
+[INFO] @170.224.164.187 - hbase-master stopped
+[INFO] @170.224.164.187 - hbase-regionserver stopped
+[INFO] Deployer - hbase service stopped
+[INFO] Progress - 56%
+[INFO] Progress - Stop hive
+[INFO] @170.224.164.187 - hive-web-interface stopped
+[INFO] Progress - 67%
+[INFO] Progress - Stop zookeeper
+[INFO] Progress - 78%
+[INFO] Progress - Stop derby
+[INFO] @170.224.164.187 - derby stopped
+[INFO] Progress - 89%
+[INFO] Progress - Stop hadoop
+[INFO] @170.224.163.203 - datanode stopped
+[INFO] @170.224.164.187 - namenode stopped
+[INFO] @170.224.168.209 - datanode stopped
+[INFO] @170.224.168.180 - datanode stopped
+[INFO] @170.224.168.177 - datanode stopped
+[INFO] @170.224.168.210 - datanode stopped
+[INFO] @170.224.164.187 - secondarynamenode stopped
+[INFO] @170.224.168.209 - tasktracker stopped
+[INFO] Progress - 91%
+[INFO] @170.224.168.180 - tasktracker stopped
+[INFO] Progress - 93%
+[INFO] @170.224.163.203 - tasktracker stopped
+[INFO] Progress - 94%
+[INFO] @170.224.168.210 - tasktracker stopped
+[INFO] Progress - 96%
+[INFO] @170.224.168.177 - tasktracker stopped
+[INFO] Progress - 98%
+[INFO] @170.224.164.187 - datanode stopped
+[INFO] @170.224.164.187 - jobtracker stopped
+[INFO] @170.224.164.187 - tasktracker stopped
+[INFO] Progress - 100%
+[ERROR] DeployManager -
+[ERROR] DeployManager - OPERATION ERROR -- Stop [hadoop, derby, zookeeper, hive, hbase, flume, oozie, jaqlserver, console]:
+[ERROR] DeployManager - -------------------------------------------------------
+[INFO] DeployManager - console succeeded -- 170.224.164.187=0
+[INFO] DeployManager - jaqlserver succeeded -- 170.224.164.187=0
+[INFO] DeployManager - oozie succeeded -- 170.224.164.187=0
+[INFO] DeployManager - flume succeeded -- 170.224.164.187=0
+[INFO] DeployManager - hbase succeeded -- 170.224.164.187=0
+[INFO] DeployManager - hive succeeded -- 170.224.164.187=0
+[ERROR] DeployManager - zookeeper failed <com.ibm.xap.mgmt.DeployException: Zookeeper cluster has not been fully stopped -- 170.224.164.187=-1 (For input string: "")>com.ibm.xap.mgmt.DeployException: Zookeeper cluster has not been fully stopped -- 170.224.164.187=-1 (For input string: "")
+        at com.ibm.xap.mgmt.zookeeper.ZookeeperDeployer.stopService(ZookeeperDeployer.java:338)
+        at com.ibm.xap.mgmt.DeployManager$StopThread.work(DeployManager.java:973)
+        at com.ibm.xap.mgmt.DeployManager$WorkerThread.run(DeployManager.java:902)
+
+[INFO] DeployManager - derby succeeded -- 170.224.164.187=0
+[INFO] DeployManager - hadoop succeeded -- 170.224.163.203=0; 170.224.164.187=0; 170.224.168.177=0; 170.224.168.180=0; 170.224.168.209=0; 170.224.168.210=0
+[ERROR] DeployManager - Stop; SUCCEEDED components: [console, jaqlserver, oozie, flume, hbase, hive, derby, hadoop]; FAILED components: [zookeeper]
+Error exit.
+[idcuser@vhost1207 lib]$ ls
+commons-cli-1.2.jar            commons-net-1.4.1.jar                     jasper-compiler-5.5.12.jar  jsp-2.1              oro-2.0.8.jar
+commons-codec-1.3.jar          core-3.1.1.jar                            jasper-runtime-5.5.12.jar   junit-3.8.1.jar      servlet-api-2.5-6.1.14.jar
+commons-el-1.0.jar             hadoop-0.20.2-fairscheduler.jar           jdiff                       kfs-0.2.2.jar        slf4j-api-1.4.3.jar
+commons-httpclient-3.0.1.jar   hadoop-0.20.2-fairscheduler.original.jar  jets3t-0.6.1.jar            kfs-0.2.LICENSE.txt  slf4j-log4j12-1.4.3.jar
+commons-logging-1.0.4.jar      hsqldb-1.8.0.10.jar                       jetty-6.1.14.jar            log4j-1.2.15.jar     WordCountNew.java
+commons-logging-api-1.0.4.jar  hsqldb-1.8.0.10.LICENSE.txt               jetty-util-6.1.14.jar       native               xmlenc-0.52.jar
+[idcuser@vhost1207 lib]$ pwd
+/mnt/biginsights/opt/ibm/biginsights/IHC/lib
+[idcuser@vhost1207 lib]$ mv /mnt/biginsights/opt/ibm/biginsights/IHC/lib/hadoop-0.20.2-fairscheduler.original.jar /mnt/biginsights/opt/ibm/biginsights/IHC
+[idcuser@vhost1207 lib]$ ls
+commons-cli-1.2.jar           commons-logging-api-1.0.4.jar    hsqldb-1.8.0.10.LICENSE.txt  jetty-6.1.14.jar       kfs-0.2.LICENSE.txt         slf4j-api-1.4.3.jar
+commons-codec-1.3.jar         commons-net-1.4.1.jar            jasper-compiler-5.5.12.jar   jetty-util-6.1.14.jar  log4j-1.2.15.jar            slf4j-log4j12-1.4.3.jar
+commons-el-1.0.jar            core-3.1.1.jar                   jasper-runtime-5.5.12.jar    jsp-2.1                native                      WordCountNew.java
+commons-httpclient-3.0.1.jar  hadoop-0.20.2-fairscheduler.jar  jdiff                        junit-3.8.1.jar        oro-2.0.8.jar               xmlenc-0.52.jar
+commons-logging-1.0.4.jar     hsqldb-1.8.0.10.jar              jets3t-0.6.1.jar             kfs-0.2.2.jar          servlet-api-2.5-6.1.14.jar
+[idcuser@vhost1207 lib]$ /mnt/biginsights/opt/ibm/biginsights/bin/start-all.sh
+[INFO] Progress - Start hadoop
+[INFO] @170.224.164.187 - namenode started, pid 27182
+[INFO] @170.224.168.210 - datanode started, pid 30373
+[INFO] @170.224.163.203 - datanode started, pid 20877
+[INFO] @170.224.168.180 - datanode started, pid 17994
+[INFO] @170.224.168.209 - datanode started, pid 30615
+[INFO] @170.224.168.177 - datanode started, pid 17400
+[INFO] @170.224.164.187 - secondarynamenode started, pid 27354
+[INFO] @170.224.168.210 - tasktracker started, pid 30541
+[INFO] Progress - 2%
+[INFO] @170.224.168.209 - tasktracker started, pid 30785
+[INFO] Progress - 4%
+[INFO] @170.224.163.203 - tasktracker started, pid 21046
+[INFO] Progress - 6%
+[INFO] @170.224.168.177 - tasktracker started, pid 17569
+[INFO] Progress - 7%
+[INFO] @170.224.168.180 - tasktracker started, pid 18163
+[INFO] Progress - 9%
+[INFO] @170.224.164.187 - datanode started, pid 27534
+[INFO] @170.224.164.187 - jobtracker started, pid 27708
+[INFO] @170.224.164.187 - tasktracker started, pid 27858
+[INFO] Progress - 11%
+[INFO] Progress - Start derby
+[INFO] @170.224.164.187 - derby started, pid 45
+[INFO] Progress - 22%
+[INFO] Progress - Start zookeeper
+[INFO] Progress - 33%
+[INFO] Progress - Start hive
+[INFO] @170.224.164.187 - derby started, pid 45
+[INFO] Progress - 44%
+[INFO] @170.224.164.187 - hive-web-interface started, pid 28115
+[INFO] Progress - Start hbase
+[INFO] @170.224.164.187 - hbase-master started
+[INFO] @170.224.164.187 - hbase-regionserver started
+[INFO] Deployer - hbase service started
+[INFO] Progress - 56%
+[INFO] Progress - Start flume
+[INFO] Progress - 67%
+[INFO] Progress - Start oozie
+[INFO] Progress - 78%
+[INFO] Progress - Start jaqlserver
+[INFO] @170.224.164.187 - jaqlserver started
+[INFO] Progress - 89%
+[INFO] Progress - Start console
+[INFO] @170.224.164.187 - console started
+[INFO] Progress - 100%
+[ERROR] DeployManager -
+[ERROR] DeployManager - OPERATION ERROR -- Start [hadoop, derby, zookeeper, hive, hbase, flume, oozie, jaqlserver, console]:
+[ERROR] DeployManager - -------------------------------------------------------
+[INFO] DeployManager - hadoop succeeded -- 170.224.163.203=0; 170.224.164.187=0; 170.224.168.177=0; 170.224.168.180=0; 170.224.168.209=0; 170.224.168.210=0
+[INFO] DeployManager - derby succeeded -- 170.224.164.187=0
+[ERROR] DeployManager - zookeeper failed <com.ibm.xap.mgmt.DeployException: Zookeeper cluster has not been fully started -- 170.224.164.187=-1 (Zookeeper service was failed to be started, error = For input string: "")>com.ibm.xap.mgmt.DeployException: Zookeeper cluster has not been fully started -- 170.224.164.187=-1 (Zookeeper service was failed to be started, error = For input string: "")
+        at com.ibm.xap.mgmt.zookeeper.ZookeeperDeployer.startService(ZookeeperDeployer.java:303)
+        at com.ibm.xap.mgmt.DeployManager$StartThread.work(DeployManager.java:962)
+        at com.ibm.xap.mgmt.DeployManager$WorkerThread.run(DeployManager.java:902)
+
+[INFO] DeployManager - hive succeeded -- 170.224.164.187=0 (28115)
+[INFO] DeployManager - hbase succeeded -- 170.224.164.187=0
+[ERROR] DeployManager - flume failed <com.ibm.xap.mgmt.DeployException: Zookeeper cluster has not been fully started -- 170.224.164.187=-1 (Zookeeper service was failed to be started, error = For input string: "")>com.ibm.xap.mgmt.DeployException: Zookeeper cluster has not been fully started -- 170.224.164.187=-1 (Zookeeper service was failed to be started, error = For input string: "")
+        at com.ibm.xap.mgmt.zookeeper.ZookeeperDeployer.startService(ZookeeperDeployer.java:303)
+        at com.ibm.xap.mgmt.flume.FlumeDeployer.startZookeeperService(FlumeDeployer.java:585)
+        at com.ibm.xap.mgmt.flume.FlumeDeployer.startService(FlumeDeployer.java:1281)
+        at com.ibm.xap.mgmt.DeployManager$StartThread.work(DeployManager.java:962)
+        at com.ibm.xap.mgmt.DeployManager$WorkerThread.run(DeployManager.java:902)
+
+[INFO] DeployManager - oozie succeeded -- 170.224.164.187=-1 (exit code: 1 -- "ssh" "170.224.164.187" "/bin/sh /mnt/biginsights/opt/ibm/biginsights/oozie/bin/start-oozie.sh"
+Oozie WASCE is already started, pid 4074
+)
+[INFO] DeployManager - jaqlserver succeeded -- 170.224.164.187=0
+[INFO] DeployManager - console succeeded -- 170.224.164.187=0
+[ERROR] DeployManager - Start; SUCCEEDED components: [hadoop, derby, hive, hbase, oozie, jaqlserver, console]; FAILED components: [zookeeper, flume]
+Error exit.
+[idcuser@vhost1207 lib]$ cd ~
+[idcuser@vhost1207 ~]$ ./run_jobs.sh 4
+Jobid:  0  Priority:  LOW  No Of Reduces:  10
+Jobid:  1  Priority:  NORMAL  No Of Reduces:  5
+Jobid:  2  Priority:  NORMAL  No Of Reduces:  15
+Jobid:  3  Priority:  LOW  No Of Reduces:  10
+[idcuser@vhost1207 ~]$ 12/11/04 04:14:08 INFO input.FileInputFormat: Total input paths to process : 1
+12/11/04 04:14:09 INFO input.FileInputFormat: Total input paths to process : 1
+12/11/04 04:14:09 INFO input.FileInputFormat: Total input paths to process : 1
+12/11/04 04:14:09 INFO input.FileInputFormat: Total input paths to process : 1
+12/11/04 04:14:09 INFO mapred.JobClient: Running job: job_201211040412_0001
+12/11/04 04:14:09 INFO mapred.JobClient: Running job: job_201211040412_0002
+12/11/04 04:14:09 INFO mapred.JobClient: Running job: job_201211040412_0004
+12/11/04 04:14:10 INFO mapred.JobClient: Running job: job_201211040412_0003
+12/11/04 04:14:10 INFO mapred.JobClient:  map 0% reduce 0%
+12/11/04 04:14:10 INFO mapred.JobClient:  map 0% reduce 0%
+12/11/04 04:14:11 INFO mapred.JobClient:  map 0% reduce 0%
+12/11/04 04:14:11 INFO mapred.JobClient:  map 0% reduce 0%
+12/11/04 04:14:29 INFO mapred.JobClient:  map 7% reduce 0%
+12/11/04 04:14:32 INFO mapred.JobClient:  map 11% reduce 0%
+12/11/04 04:14:35 INFO mapred.JobClient:  map 17% reduce 0%
+12/11/04 04:14:39 INFO mapred.JobClient:  map 20% reduce 0%
+12/11/04 04:14:41 INFO mapred.JobClient:  map 21% reduce 0%
+12/11/04 04:14:42 INFO mapred.JobClient:  map 22% reduce 0%
+12/11/04 04:14:45 INFO mapred.JobClient:  map 27% reduce 0%
+12/11/04 04:14:47 INFO mapred.JobClient:  map 28% reduce 0%
+12/11/04 04:14:48 INFO mapred.JobClient:  map 31% reduce 0%
+12/11/04 04:14:50 INFO mapred.JobClient:  map 33% reduce 0%
+12/11/04 04:14:51 INFO mapred.JobClient:  map 36% reduce 0%
+12/11/04 04:14:54 INFO mapred.JobClient:  map 39% reduce 0%
+12/11/04 04:14:56 INFO mapred.JobClient:  map 40% reduce 0%
+12/11/04 04:14:57 INFO mapred.JobClient:  map 42% reduce 0%
+12/11/04 04:15:00 INFO mapred.JobClient:  map 45% reduce 0%
+12/11/04 04:15:02 INFO mapred.JobClient:  map 46% reduce 0%
+12/11/04 04:15:03 INFO mapred.JobClient:  map 50% reduce 0%
+12/11/04 04:15:05 INFO mapred.JobClient:  map 52% reduce 0%
+12/11/04 04:15:06 INFO mapred.JobClient:  map 55% reduce 0%
+12/11/04 04:15:08 INFO mapred.JobClient:  map 58% reduce 0%
+12/11/04 04:15:09 INFO mapred.JobClient:  map 59% reduce 0%
+12/11/04 04:15:11 INFO mapred.JobClient:  map 60% reduce 0%
+12/11/04 04:15:12 INFO mapred.JobClient:  map 62% reduce 0%
+12/11/04 04:15:15 INFO mapred.JobClient:  map 63% reduce 0%
+12/11/04 04:15:17 INFO mapred.JobClient:  map 65% reduce 0%
+12/11/04 04:15:18 INFO mapred.JobClient:  map 68% reduce 0%
+12/11/04 04:15:20 INFO mapred.JobClient:  map 70% reduce 0%
+12/11/04 04:15:21 INFO mapred.JobClient:  map 73% reduce 2%
+12/11/04 04:15:23 INFO mapred.JobClient:  map 74% reduce 2%
+12/11/04 04:15:24 INFO mapred.JobClient:  map 76% reduce 7%
+12/11/04 04:15:26 INFO mapred.JobClient:  map 78% reduce 7%
+12/11/04 04:15:27 INFO mapred.JobClient:  map 80% reduce 12%
+12/11/04 04:15:29 INFO mapred.JobClient:  map 81% reduce 16%
+12/11/04 04:15:30 INFO mapred.JobClient:  map 82% reduce 22%
+12/11/04 04:15:32 INFO mapred.JobClient:  map 83% reduce 22%
+12/11/04 04:15:33 INFO mapred.JobClient:  map 85% reduce 22%
+12/11/04 04:15:36 INFO mapred.JobClient:  map 89% reduce 23%
+12/11/04 04:15:38 INFO mapred.JobClient:  map 90% reduce 23%
+12/11/04 04:15:39 INFO mapred.JobClient:  map 92% reduce 26%
+12/11/04 04:15:41 INFO mapred.JobClient:  map 94% reduce 27%
+12/11/04 04:15:42 INFO mapred.JobClient:  map 97% reduce 27%
+12/11/04 04:15:43 INFO mapred.JobClient:  map 1% reduce 0%
+12/11/04 04:15:44 INFO mapred.JobClient:  map 99% reduce 27%
+12/11/04 04:15:45 INFO mapred.JobClient:  map 2% reduce 0%
+12/11/04 04:15:45 INFO mapred.JobClient:  map 99% reduce 28%
+12/11/04 04:15:46 INFO mapred.JobClient:  map 4% reduce 0%
+12/11/04 04:15:47 INFO mapred.JobClient:  map 100% reduce 28%
+12/11/04 04:15:48 INFO mapred.JobClient:  map 5% reduce 0%
+12/11/04 04:15:49 INFO mapred.JobClient:  map 6% reduce 0%
+12/11/04 04:15:50 INFO mapred.JobClient:  map 100% reduce 29%
+12/11/04 04:15:51 INFO mapred.JobClient:  map 9% reduce 0%
+12/11/04 04:15:51 INFO mapred.JobClient:  map 100% reduce 30%
+12/11/04 04:15:52 INFO mapred.JobClient:  map 10% reduce 0%
+12/11/04 04:15:54 INFO mapred.JobClient:  map 13% reduce 0%
+12/11/04 04:15:54 INFO mapred.JobClient:  map 100% reduce 31%
+12/11/04 04:15:55 INFO mapred.JobClient:  map 14% reduce 0%
+12/11/04 04:15:57 INFO mapred.JobClient:  map 16% reduce 0%
+12/11/04 04:15:57 INFO mapred.JobClient:  map 100% reduce 44%
+12/11/04 04:16:00 INFO mapred.JobClient:  map 20% reduce 0%
+12/11/04 04:16:00 INFO mapred.JobClient:  map 100% reduce 52%
+12/11/04 04:16:01 INFO mapred.JobClient:  map 21% reduce 0%
+12/11/04 04:16:03 INFO mapred.JobClient:  map 24% reduce 0%
+12/11/04 04:16:03 INFO mapred.JobClient:  map 100% reduce 54%
+12/11/04 04:16:05 INFO mapred.JobClient:  map 100% reduce 67%
+12/11/04 04:16:06 INFO mapred.JobClient:  map 27% reduce 0%
+12/11/04 04:16:06 INFO mapred.JobClient:  map 100% reduce 100%
+12/11/04 04:16:09 INFO mapred.JobClient:  map 31% reduce 0%
+12/11/04 04:16:11 INFO mapred.JobClient: Job complete: job_201211040412_0001
+12/11/04 04:16:11 INFO mapred.JobClient: Counters: 18
+12/11/04 04:16:11 INFO mapred.JobClient:   Job Counters
+12/11/04 04:16:11 INFO mapred.JobClient:     Data-local map tasks=52
+12/11/04 04:16:11 INFO mapred.JobClient:     Rack-local map tasks=3
+12/11/04 04:16:11 INFO mapred.JobClient:     Launched map tasks=55
+12/11/04 04:16:11 INFO mapred.JobClient:     Launched reduce tasks=5
+12/11/04 04:16:11 INFO mapred.JobClient:   FileSystemCounters
+12/11/04 04:16:11 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=863802257
+12/11/04 04:16:11 INFO mapred.JobClient:     HDFS_BYTES_READ=3640760883
+12/11/04 04:16:11 INFO mapred.JobClient:     FILE_BYTES_READ=693439048
+12/11/04 04:16:11 INFO mapred.JobClient:     HDFS_BYTES_WRITTEN=4923229
+12/11/04 04:16:11 INFO mapred.JobClient:   Map-Reduce Framework
+12/11/04 04:16:11 INFO mapred.JobClient:     Map output bytes=4108868885
+12/11/04 04:16:11 INFO mapred.JobClient:     Reduce input groups=80762
+12/11/04 04:16:11 INFO mapred.JobClient:     Combine output records=10632531
+12/11/04 04:16:11 INFO mapred.JobClient:     Reduce input records=4384769
+12/11/04 04:16:11 INFO mapred.JobClient:     Map output records=117911750
+12/11/04 04:16:11 INFO mapred.JobClient:     Map input records=27510890
+12/11/04 04:16:11 INFO mapred.JobClient:     Reduce shuffle bytes=272748837
+12/11/04 04:16:11 INFO mapred.JobClient:     Combine input records=124159512
+12/11/04 04:16:11 INFO mapred.JobClient:     Reduce output records=80762
+12/11/04 04:16:11 INFO mapred.JobClient:     Spilled Records=15040921
+12/11/04 04:16:12 INFO mapred.JobClient:  map 35% reduce 0%
+12/11/04 04:16:15 INFO mapred.JobClient:  map 39% reduce 0%
+12/11/04 04:16:16 INFO mapred.JobClient:  map 41% reduce 0%
+12/11/04 04:16:18 INFO mapred.JobClient:  map 42% reduce 0%
+12/11/04 04:16:19 INFO mapred.JobClient:  map 43% reduce 0%
+12/11/04 04:16:21 INFO mapred.JobClient:  map 45% reduce 0%
+12/11/04 04:16:22 INFO mapred.JobClient:  map 46% reduce 0%
+12/11/04 04:16:23 INFO mapred.JobClient:  map 47% reduce 0%
+12/11/04 04:16:24 INFO mapred.JobClient:  map 50% reduce 0%
+12/11/04 04:16:25 INFO mapred.JobClient:  map 51% reduce 0%
+12/11/04 04:16:26 INFO mapred.JobClient:  map 52% reduce 0%
+12/11/04 04:16:27 INFO mapred.JobClient:  map 54% reduce 0%
+12/11/04 04:16:28 INFO mapred.JobClient:  map 55% reduce 0%
+12/11/04 04:16:30 INFO mapred.JobClient:  map 56% reduce 0%
+12/11/04 04:16:31 INFO mapred.JobClient:  map 60% reduce 0%
+12/11/04 04:16:32 INFO mapred.JobClient:  map 61% reduce 0%
+12/11/04 04:16:33 INFO mapred.JobClient:  map 62% reduce 0%
+12/11/04 04:16:34 INFO mapred.JobClient:  map 64% reduce 0%
+12/11/04 04:16:35 INFO mapred.JobClient:  map 65% reduce 0%
+12/11/04 04:16:36 INFO mapred.JobClient:  map 66% reduce 0%
+12/11/04 04:16:37 INFO mapred.JobClient:  map 68% reduce 0%
+12/11/04 04:16:40 INFO mapred.JobClient:  map 70% reduce 0%
+12/11/04 04:16:41 INFO mapred.JobClient:  map 71% reduce 0%
+12/11/04 04:16:42 INFO mapred.JobClient:  map 71% reduce 1%
+12/11/04 04:16:43 INFO mapred.JobClient:  map 74% reduce 2%
+12/11/04 04:16:46 INFO mapred.JobClient:  map 76% reduce 2%
+12/11/04 04:16:47 INFO mapred.JobClient:  map 77% reduce 2%
+12/11/04 04:16:48 INFO mapred.JobClient:  map 78% reduce 2%
+12/11/04 04:16:49 INFO mapred.JobClient:  map 80% reduce 4%
+12/11/04 04:16:50 INFO mapred.JobClient:  map 80% reduce 6%
+12/11/04 04:16:51 INFO mapred.JobClient:  map 82% reduce 6%
+12/11/04 04:16:52 INFO mapred.JobClient:  map 84% reduce 8%
+12/11/04 04:16:53 INFO mapred.JobClient:  map 84% reduce 9%
+12/11/04 04:16:54 INFO mapred.JobClient:  map 86% reduce 11%
+12/11/04 04:16:55 INFO mapred.JobClient:  map 87% reduce 13%
+12/11/04 04:16:57 INFO mapred.JobClient:  map 87% reduce 14%
+12/11/04 04:16:58 INFO mapred.JobClient:  map 88% reduce 16%
+12/11/04 04:16:59 INFO mapred.JobClient:  map 89% reduce 18%
+12/11/04 04:17:00 INFO mapred.JobClient:  map 90% reduce 18%
+12/11/04 04:17:01 INFO mapred.JobClient:  map 93% reduce 18%
+12/11/04 04:17:02 INFO mapred.JobClient:  map 94% reduce 18%
+12/11/04 04:17:03 INFO mapred.JobClient:  map 95% reduce 19%
+12/11/04 04:17:04 INFO mapred.JobClient:  map 96% reduce 21%
+12/11/04 04:17:05 INFO mapred.JobClient:  map 2% reduce 0%
+12/11/04 04:17:05 INFO mapred.JobClient:  map 97% reduce 21%
+12/11/04 04:17:07 INFO mapred.JobClient:  map 3% reduce 0%
+12/11/04 04:17:07 INFO mapred.JobClient:  map 98% reduce 22%
+12/11/04 04:17:08 INFO mapred.JobClient:  map 99% reduce 22%
+12/11/04 04:17:09 INFO mapred.JobClient:  map 4% reduce 0%
+12/11/04 04:17:10 INFO mapred.JobClient:  map 6% reduce 0%
+12/11/04 04:17:10 INFO mapred.JobClient:  map 100% reduce 23%
+12/11/04 04:17:11 INFO mapred.JobClient:  map 7% reduce 0%
+12/11/04 04:17:12 INFO mapred.JobClient:  map 8% reduce 0%
+12/11/04 04:17:13 INFO mapred.JobClient:  map 10% reduce 0%
+12/11/04 04:17:13 INFO mapred.JobClient:  map 100% reduce 24%
+12/11/04 04:17:16 INFO mapred.JobClient:  map 12% reduce 0%
+12/11/04 04:17:16 INFO mapred.JobClient:  map 100% reduce 25%
+12/11/04 04:17:17 INFO mapred.JobClient:  map 14% reduce 0%
+12/11/04 04:17:18 INFO mapred.JobClient:  map 15% reduce 0%
+12/11/04 04:17:19 INFO mapred.JobClient:  map 17% reduce 0%
+12/11/04 04:17:20 INFO mapred.JobClient:  map 18% reduce 0%
+12/11/04 04:17:20 INFO mapred.JobClient:  map 100% reduce 34%
+12/11/04 04:17:21 INFO mapred.JobClient:  map 100% reduce 39%
+12/11/04 04:17:22 INFO mapred.JobClient:  map 19% reduce 0%
+12/11/04 04:17:22 INFO mapred.JobClient:  map 100% reduce 53%
+12/11/04 04:17:23 INFO mapred.JobClient:  map 21% reduce 0%
+12/11/04 04:17:24 INFO mapred.JobClient:  map 22% reduce 0%
+12/11/04 04:17:25 INFO mapred.JobClient:  map 23% reduce 0%
+12/11/04 04:17:25 INFO mapred.JobClient:  map 100% reduce 62%
+12/11/04 04:17:26 INFO mapred.JobClient:  map 24% reduce 0%
+12/11/04 04:17:26 INFO mapred.JobClient:  map 100% reduce 66%
+12/11/04 04:17:27 INFO mapred.JobClient:  map 100% reduce 71%
+12/11/04 04:17:28 INFO mapred.JobClient:  map 25% reduce 0%
+12/11/04 04:17:28 INFO mapred.JobClient:  map 100% reduce 75%
+12/11/04 04:17:29 INFO mapred.JobClient:  map 27% reduce 0%
+12/11/04 04:17:29 INFO mapred.JobClient:  map 100% reduce 80%
+12/11/04 04:17:30 INFO mapred.JobClient:  map 28% reduce 0%
+12/11/04 04:17:32 INFO mapred.JobClient:  map 30% reduce 0%
+12/11/04 04:17:34 INFO mapred.JobClient:  map 32% reduce 0%
+12/11/04 04:17:35 INFO mapred.JobClient:  map 34% reduce 0%
+12/11/04 04:17:35 INFO mapred.JobClient:  map 100% reduce 82%
+12/11/04 04:17:37 INFO mapred.JobClient:  map 36% reduce 0%
+12/11/04 04:17:38 INFO mapred.JobClient:  map 38% reduce 0%
+12/11/04 04:17:38 INFO mapred.JobClient:  map 100% reduce 84%
+12/11/04 04:17:39 INFO mapred.JobClient:  map 39% reduce 0%
+12/11/04 04:17:40 INFO mapred.JobClient:  map 40% reduce 0%
+12/11/04 04:17:41 INFO mapred.JobClient:  map 42% reduce 0%
+12/11/04 04:17:41 INFO mapred.JobClient:  map 100% reduce 91%
+12/11/04 04:17:43 INFO mapred.JobClient:  map 44% reduce 0%
+12/11/04 04:17:44 INFO mapred.JobClient:  map 47% reduce 0%
+12/11/04 04:17:44 INFO mapred.JobClient:  map 100% reduce 95%
+12/11/04 04:17:46 INFO mapred.JobClient:  map 49% reduce 0%
+12/11/04 04:17:47 INFO mapred.JobClient:  map 51% reduce 0%
+12/11/04 04:17:47 INFO mapred.JobClient:  map 100% reduce 100%
+12/11/04 04:17:49 INFO mapred.JobClient:  map 52% reduce 0%
+12/11/04 04:17:50 INFO mapred.JobClient:  map 53% reduce 0%
+12/11/04 04:17:51 INFO mapred.JobClient:  map 55% reduce 0%
+12/11/04 04:17:52 INFO mapred.JobClient:  map 57% reduce 0%
+12/11/04 04:17:52 INFO mapred.JobClient: Job complete: job_201211040412_0004
+12/11/04 04:17:52 INFO mapred.JobClient: Counters: 18
+12/11/04 04:17:52 INFO mapred.JobClient:   Job Counters
+12/11/04 04:17:52 INFO mapred.JobClient:     Data-local map tasks=53
+12/11/04 04:17:52 INFO mapred.JobClient:     Rack-local map tasks=2
+12/11/04 04:17:52 INFO mapred.JobClient:     Launched map tasks=55
+12/11/04 04:17:52 INFO mapred.JobClient:     Launched reduce tasks=15
+12/11/04 04:17:52 INFO mapred.JobClient:   FileSystemCounters
+12/11/04 04:17:52 INFO mapred.JobClient:     HDFS_BYTES_READ=3640760883
+12/11/04 04:17:52 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=863848097
+12/11/04 04:17:52 INFO mapred.JobClient:     FILE_BYTES_READ=740911824
+12/11/04 04:17:52 INFO mapred.JobClient:     HDFS_BYTES_WRITTEN=4923229
+12/11/04 04:17:52 INFO mapred.JobClient:   Map-Reduce Framework
+12/11/04 04:17:52 INFO mapred.JobClient:     Map output bytes=4108868885
+12/11/04 04:17:52 INFO mapred.JobClient:     Reduce input groups=80762
+12/11/04 04:17:52 INFO mapred.JobClient:     Combine output records=10632531
+12/11/04 04:17:52 INFO mapred.JobClient:     Reduce input records=4384769
+12/11/04 04:17:52 INFO mapred.JobClient:     Map output records=117911750
+12/11/04 04:17:52 INFO mapred.JobClient:     Map input records=27510890
+12/11/04 04:17:52 INFO mapred.JobClient:     Reduce shuffle bytes=273085217
+12/11/04 04:17:52 INFO mapred.JobClient:     Combine input records=124159512
+12/11/04 04:17:52 INFO mapred.JobClient:     Reduce output records=80762
+12/11/04 04:17:52 INFO mapred.JobClient:     Spilled Records=15040921
+12/11/04 04:17:53 INFO mapred.JobClient:  map 59% reduce 0%
+12/11/04 04:17:54 INFO mapred.JobClient:  map 60% reduce 0%
+12/11/04 04:17:55 INFO mapred.JobClient:  map 62% reduce 0%
+12/11/04 04:17:56 INFO mapred.JobClient:  map 64% reduce 0%
+12/11/04 04:17:58 INFO mapred.JobClient:  map 65% reduce 0%
+12/11/04 04:17:59 INFO mapred.JobClient:  map 66% reduce 0%
+12/11/04 04:18:00 INFO mapred.JobClient:  map 67% reduce 0%
+12/11/04 04:18:02 INFO mapred.JobClient:  map 69% reduce 0%
+12/11/04 04:18:04 INFO mapred.JobClient:  map 70% reduce 0%
+12/11/04 04:18:05 INFO mapred.JobClient:  map 71% reduce 0%
+12/11/04 04:18:06 INFO mapred.JobClient:  map 72% reduce 0%
+12/11/04 04:18:07 INFO mapred.JobClient:  map 75% reduce 0%
+12/11/04 04:18:08 INFO mapred.JobClient:  map 76% reduce 3%
+12/11/04 04:18:10 INFO mapred.JobClient:  map 78% reduce 9%
+12/11/04 04:18:11 INFO mapred.JobClient:  map 79% reduce 10%
+12/11/04 04:18:12 INFO mapred.JobClient:  map 80% reduce 11%
+12/11/04 04:18:14 INFO mapred.JobClient:  map 83% reduce 13%
+12/11/04 04:18:15 INFO mapred.JobClient:  map 84% reduce 14%
+12/11/04 04:18:17 INFO mapred.JobClient:  map 85% reduce 14%
+12/11/04 04:18:18 INFO mapred.JobClient:  map 87% reduce 14%
+12/11/04 04:18:19 INFO mapred.JobClient:  map 87% reduce 19%
+12/11/04 04:18:20 INFO mapred.JobClient:  map 88% reduce 20%
+12/11/04 04:18:21 INFO mapred.JobClient:  map 89% reduce 23%
+12/11/04 04:18:22 INFO mapred.JobClient:  map 91% reduce 23%
+12/11/04 04:18:23 INFO mapred.JobClient:  map 92% reduce 24%
+12/11/04 04:18:24 INFO mapred.JobClient:  map 93% reduce 25%
+12/11/04 04:18:25 INFO mapred.JobClient:  map 94% reduce 25%
+12/11/04 04:18:27 INFO mapred.JobClient:  map 1% reduce 0%
+12/11/04 04:18:27 INFO mapred.JobClient:  map 94% reduce 26%
+12/11/04 04:18:28 INFO mapred.JobClient:  map 98% reduce 27%
+12/11/04 04:18:29 INFO mapred.JobClient:  map 98% reduce 28%
+12/11/04 04:18:29 INFO mapred.JobClient:  map 2% reduce 0%
+12/11/04 04:18:30 INFO mapred.JobClient:  map 98% reduce 29%
+12/11/04 04:18:30 INFO mapred.JobClient:  map 3% reduce 0%
+12/11/04 04:18:31 INFO mapred.JobClient:  map 99% reduce 29%
+12/11/04 04:18:32 INFO mapred.JobClient:  map 5% reduce 0%
+12/11/04 04:18:33 INFO mapred.JobClient:  map 6% reduce 0%
+12/11/04 04:18:34 INFO mapred.JobClient:  map 100% reduce 29%
+12/11/04 04:18:35 INFO mapred.JobClient:  map 100% reduce 30%
+12/11/04 04:18:35 INFO mapred.JobClient:  map 8% reduce 0%
+12/11/04 04:18:37 INFO mapred.JobClient:  map 10% reduce 0%
+12/11/04 04:18:39 INFO mapred.JobClient:  map 100% reduce 31%
+12/11/04 04:18:39 INFO mapred.JobClient:  map 12% reduce 0%
+12/11/04 04:18:40 INFO mapred.JobClient:  map 15% reduce 0%
+12/11/04 04:18:41 INFO mapred.JobClient:  map 16% reduce 0%
+12/11/04 04:18:42 INFO mapred.JobClient:  map 17% reduce 0%
+12/11/04 04:18:43 INFO mapred.JobClient:  map 100% reduce 37%
+12/11/04 04:18:43 INFO mapred.JobClient:  map 19% reduce 0%
+12/11/04 04:18:44 INFO mapred.JobClient:  map 100% reduce 48%
+12/11/04 04:18:44 INFO mapred.JobClient:  map 21% reduce 0%
+12/11/04 04:18:46 INFO mapred.JobClient:  map 100% reduce 52%
+12/11/04 04:18:46 INFO mapred.JobClient:  map 22% reduce 0%
+12/11/04 04:18:47 INFO mapred.JobClient:  map 23% reduce 0%
+12/11/04 04:18:48 INFO mapred.JobClient:  map 100% reduce 61%
+12/11/04 04:18:49 INFO mapred.JobClient:  map 24% reduce 0%
+12/11/04 04:18:49 INFO mapred.JobClient:  map 100% reduce 67%
+12/11/04 04:18:50 INFO mapred.JobClient:  map 26% reduce 0%
+12/11/04 04:18:50 INFO mapred.JobClient:  map 100% reduce 84%
+12/11/04 04:18:51 INFO mapred.JobClient:  map 27% reduce 0%
+12/11/04 04:18:52 INFO mapred.JobClient:  map 100% reduce 93%
+12/11/04 04:18:52 INFO mapred.JobClient:  map 28% reduce 0%
+12/11/04 04:18:53 INFO mapred.JobClient:  map 100% reduce 100%
+12/11/04 04:18:53 INFO mapred.JobClient:  map 30% reduce 0%
+12/11/04 04:18:54 INFO mapred.JobClient:  map 31% reduce 0%
+12/11/04 04:18:55 INFO mapred.JobClient:  map 32% reduce 0%
+12/11/04 04:18:56 INFO mapred.JobClient: Job complete: job_201211040412_0002
+12/11/04 04:18:56 INFO mapred.JobClient: Counters: 18
+12/11/04 04:18:56 INFO mapred.JobClient:   Job Counters
+12/11/04 04:18:56 INFO mapred.JobClient:     Data-local map tasks=53
+12/11/04 04:18:56 INFO mapred.JobClient:     Rack-local map tasks=2
+12/11/04 04:18:56 INFO mapred.JobClient:     Launched map tasks=55
+12/11/04 04:18:56 INFO mapred.JobClient:     Launched reduce tasks=10
+12/11/04 04:18:56 INFO mapred.JobClient:   FileSystemCounters
+12/11/04 04:18:56 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=863825177
+12/11/04 04:18:56 INFO mapred.JobClient:     HDFS_BYTES_READ=3640760883
+12/11/04 04:18:56 INFO mapred.JobClient:     FILE_BYTES_READ=849172280
+12/11/04 04:18:56 INFO mapred.JobClient:     HDFS_BYTES_WRITTEN=4923229
+12/11/04 04:18:56 INFO mapred.JobClient:   Map-Reduce Framework
+12/11/04 04:18:56 INFO mapred.JobClient:     Map output bytes=4108868885
+12/11/04 04:18:56 INFO mapred.JobClient:     Reduce input groups=80762
+12/11/04 04:18:56 INFO mapred.JobClient:     Combine output records=10632531
+12/11/04 04:18:56 INFO mapred.JobClient:     Reduce input records=4384769
+12/11/04 04:18:56 INFO mapred.JobClient:     Map output records=117911750
+12/11/04 04:18:56 INFO mapred.JobClient:     Map input records=27510890
+12/11/04 04:18:56 INFO mapred.JobClient:     Reduce shuffle bytes=273258061
+12/11/04 04:18:56 INFO mapred.JobClient:     Combine input records=124159512
+12/11/04 04:18:56 INFO mapred.JobClient:     Reduce output records=80762
+12/11/04 04:18:56 INFO mapred.JobClient:     Spilled Records=15040921
+12/11/04 04:18:57 INFO mapred.JobClient:  map 35% reduce 0%
+12/11/04 04:18:58 INFO mapred.JobClient:  map 37% reduce 0%
+12/11/04 04:19:00 INFO mapred.JobClient:  map 39% reduce 0%
+12/11/04 04:19:01 INFO mapred.JobClient:  map 41% reduce 0%
+12/11/04 04:19:03 INFO mapred.JobClient:  map 42% reduce 0%
+12/11/04 04:19:04 INFO mapred.JobClient:  map 43% reduce 0%
+12/11/04 04:19:06 INFO mapred.JobClient:  map 46% reduce 0%
+12/11/04 04:19:07 INFO mapred.JobClient:  map 47% reduce 0%
+12/11/04 04:19:09 INFO mapred.JobClient:  map 48% reduce 0%
+12/11/04 04:19:10 INFO mapred.JobClient:  map 51% reduce 0%
+12/11/04 04:19:12 INFO mapred.JobClient:  map 54% reduce 0%
+12/11/04 04:19:13 INFO mapred.JobClient:  map 55% reduce 0%
+12/11/04 04:19:15 INFO mapred.JobClient:  map 58% reduce 0%
+12/11/04 04:19:16 INFO mapred.JobClient:  map 60% reduce 0%
+12/11/04 04:19:18 INFO mapred.JobClient:  map 61% reduce 0%
+12/11/04 04:19:19 INFO mapred.JobClient:  map 64% reduce 0%
+12/11/04 04:19:21 INFO mapred.JobClient:  map 65% reduce 0%
+12/11/04 04:19:22 INFO mapred.JobClient:  map 66% reduce 0%
+12/11/04 04:19:24 INFO mapred.JobClient:  map 68% reduce 0%
+12/11/04 04:19:25 INFO mapred.JobClient:  map 70% reduce 0%
+12/11/04 04:19:27 INFO mapred.JobClient:  map 72% reduce 0%
+12/11/04 04:19:28 INFO mapred.JobClient:  map 74% reduce 0%
+12/11/04 04:19:30 INFO mapred.JobClient:  map 76% reduce 2%
+12/11/04 04:19:31 INFO mapred.JobClient:  map 77% reduce 4%
+12/11/04 04:19:32 INFO mapred.JobClient:  map 78% reduce 5%
+12/11/04 04:19:33 INFO mapred.JobClient:  map 79% reduce 10%
+12/11/04 04:19:34 INFO mapred.JobClient:  map 80% reduce 11%
+12/11/04 04:19:35 INFO mapred.JobClient:  map 81% reduce 14%
+12/11/04 04:19:36 INFO mapred.JobClient:  map 83% reduce 16%
+12/11/04 04:19:37 INFO mapred.JobClient:  map 83% reduce 17%
+12/11/04 04:19:38 INFO mapred.JobClient:  map 84% reduce 18%
+12/11/04 04:19:39 INFO mapred.JobClient:  map 86% reduce 22%
+12/11/04 04:19:40 INFO mapred.JobClient:  map 87% reduce 22%
+12/11/04 04:19:41 INFO mapred.JobClient:  map 88% reduce 22%
+12/11/04 04:19:42 INFO mapred.JobClient:  map 91% reduce 25%
+12/11/04 04:19:44 INFO mapred.JobClient:  map 92% reduce 25%
+12/11/04 04:19:45 INFO mapred.JobClient:  map 94% reduce 25%
+12/11/04 04:19:46 INFO mapred.JobClient:  map 96% reduce 25%
+12/11/04 04:19:47 INFO mapred.JobClient:  map 97% reduce 26%
+12/11/04 04:19:48 INFO mapred.JobClient:  map 98% reduce 26%
+12/11/04 04:19:50 INFO mapred.JobClient:  map 99% reduce 26%
+12/11/04 04:19:51 INFO mapred.JobClient:  map 100% reduce 28%
+12/11/04 04:19:54 INFO mapred.JobClient:  map 100% reduce 29%
+12/11/04 04:19:56 INFO mapred.JobClient:  map 100% reduce 30%
+12/11/04 04:19:57 INFO mapred.JobClient:  map 100% reduce 31%
+12/11/04 04:20:00 INFO mapred.JobClient:  map 100% reduce 45%
+12/11/04 04:20:01 INFO mapred.JobClient:  map 100% reduce 52%
+12/11/04 04:20:02 INFO mapred.JobClient:  map 100% reduce 65%
+12/11/04 04:20:03 INFO mapred.JobClient:  map 100% reduce 93%
+12/11/04 04:20:05 INFO mapred.JobClient:  map 100% reduce 99%
+12/11/04 04:20:06 INFO mapred.JobClient:  map 100% reduce 100%
+12/11/04 04:20:08 INFO mapred.JobClient: Job complete: job_201211040412_0003
+12/11/04 04:20:08 INFO mapred.JobClient: Counters: 18
+12/11/04 04:20:08 INFO mapred.JobClient:   Job Counters
+12/11/04 04:20:08 INFO mapred.JobClient:     Data-local map tasks=54
+12/11/04 04:20:08 INFO mapred.JobClient:     Rack-local map tasks=1
+12/11/04 04:20:08 INFO mapred.JobClient:     Launched map tasks=55
+12/11/04 04:20:08 INFO mapred.JobClient:     Launched reduce tasks=10
+12/11/04 04:20:08 INFO mapred.JobClient:   FileSystemCounters
+12/11/04 04:20:08 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=863825177
+12/11/04 04:20:08 INFO mapred.JobClient:     HDFS_BYTES_READ=3640760883
+12/11/04 04:20:08 INFO mapred.JobClient:     FILE_BYTES_READ=849172280
+12/11/04 04:20:08 INFO mapred.JobClient:     HDFS_BYTES_WRITTEN=4923229
+12/11/04 04:20:08 INFO mapred.JobClient:   Map-Reduce Framework
+12/11/04 04:20:08 INFO mapred.JobClient:     Map output bytes=4108868885
+12/11/04 04:20:08 INFO mapred.JobClient:     Reduce input groups=80762
+12/11/04 04:20:08 INFO mapred.JobClient:     Combine output records=10632531
+12/11/04 04:20:08 INFO mapred.JobClient:     Reduce input records=4384769
+12/11/04 04:20:08 INFO mapred.JobClient:     Map output records=117911750
+12/11/04 04:20:08 INFO mapred.JobClient:     Map input records=27510890
+12/11/04 04:20:08 INFO mapred.JobClient:     Reduce shuffle bytes=271733543
+12/11/04 04:20:08 INFO mapred.JobClient:     Combine input records=124159512
+12/11/04 04:20:08 INFO mapred.JobClient:     Reduce output records=80762
+12/11/04 04:20:08 INFO mapred.JobClient:     Spilled Records=15040921
+
+[idcuser@vhost1207 ~]$ cd $HADOOP_HOME/lib
+[idcuser@vhost1207 lib]$ ls
+commons-cli-1.2.jar           commons-logging-api-1.0.4.jar    hsqldb-1.8.0.10.LICENSE.txt  jetty-6.1.14.jar       kfs-0.2.LICENSE.txt         slf4j-api-1.4.3.jar
+commons-codec-1.3.jar         commons-net-1.4.1.jar            jasper-compiler-5.5.12.jar   jetty-util-6.1.14.jar  log4j-1.2.15.jar            slf4j-log4j12-1.4.3.jar
+commons-el-1.0.jar            core-3.1.1.jar                   jasper-runtime-5.5.12.jar    jsp-2.1                native                      WordCountNew.java
+commons-httpclient-3.0.1.jar  hadoop-0.20.2-fairscheduler.jar  jdiff                        junit-3.8.1.jar        oro-2.0.8.jar               xmlenc-0.52.jar
+commons-logging-1.0.4.jar     hsqldb-1.8.0.10.jar              jets3t-0.6.1.jar             kfs-0.2.2.jar          servlet-api-2.5-6.1.14.jar
+[idcuser@vhost1207 lib]$ rm hadoop-0.20.2-fairscheduler.jar
+[idcuser@vhost1207 lib]$ ls
+commons-cli-1.2.jar           commons-logging-api-1.0.4.jar  jasper-compiler-5.5.12.jar  jetty-util-6.1.14.jar  log4j-1.2.15.jar            slf4j-log4j12-1.4.3.jar
+commons-codec-1.3.jar         commons-net-1.4.1.jar          jasper-runtime-5.5.12.jar   jsp-2.1                native                      WordCountNew.java
+commons-el-1.0.jar            core-3.1.1.jar                 jdiff                       junit-3.8.1.jar        oro-2.0.8.jar               xmlenc-0.52.jar
+commons-httpclient-3.0.1.jar  hsqldb-1.8.0.10.jar            jets3t-0.6.1.jar            kfs-0.2.2.jar          servlet-api-2.5-6.1.14.jar
+commons-logging-1.0.4.jar     hsqldb-1.8.0.10.LICENSE.txt    jetty-6.1.14.jar            kfs-0.2.LICENSE.txt    slf4j-api-1.4.3.jar
+[idcuser@vhost1207 lib]$ cp ~/hadoop-0.20.2-fairscheduler-SA1.jar .
+[idcuser@vhost1207 lib]$ ls
+commons-cli-1.2.jar            commons-net-1.4.1.jar                jasper-runtime-5.5.12.jar  junit-3.8.1.jar      servlet-api-2.5-6.1.14.jar
+commons-codec-1.3.jar          core-3.1.1.jar                       jdiff                      kfs-0.2.2.jar        slf4j-api-1.4.3.jar
+commons-el-1.0.jar             hadoop-0.20.2-fairscheduler-SA1.jar  jets3t-0.6.1.jar           kfs-0.2.LICENSE.txt  slf4j-log4j12-1.4.3.jar
+commons-httpclient-3.0.1.jar   hsqldb-1.8.0.10.jar                  jetty-6.1.14.jar           log4j-1.2.15.jar     WordCountNew.java
+commons-logging-1.0.4.jar      hsqldb-1.8.0.10.LICENSE.txt          jetty-util-6.1.14.jar      native               xmlenc-0.52.jar
+commons-logging-api-1.0.4.jar  jasper-compiler-5.5.12.jar           jsp-2.1                    oro-2.0.8.jar
+[idcuser@vhost1207 lib]$ mv hadoop-0.20.2-fairscheduler-SA1.jar hadoop-0.20.2-fairscheduler.jar
+[idcuser@vhost1207 lib]$ ls
+commons-cli-1.2.jar           commons-logging-api-1.0.4.jar    hsqldb-1.8.0.10.LICENSE.txt  jetty-6.1.14.jar       kfs-0.2.LICENSE.txt         slf4j-api-1.4.3.jar
+commons-codec-1.3.jar         commons-net-1.4.1.jar            jasper-compiler-5.5.12.jar   jetty-util-6.1.14.jar  log4j-1.2.15.jar            slf4j-log4j12-1.4.3.jar
+commons-el-1.0.jar            core-3.1.1.jar                   jasper-runtime-5.5.12.jar    jsp-2.1                native                      WordCountNew.java
+commons-httpclient-3.0.1.jar  hadoop-0.20.2-fairscheduler.jar  jdiff                        junit-3.8.1.jar        oro-2.0.8.jar               xmlenc-0.52.jar
+commons-logging-1.0.4.jar     hsqldb-1.8.0.10.jar              jets3t-0.6.1.jar             kfs-0.2.2.jar          servlet-api-2.5-6.1.14.jar
+[idcuser@vhost1207 lib]$ /mnt/biginsights/opt/ibm/biginsights/bin/stop-all.sh
+[INFO] Progress - Stop console
+[INFO] @170.224.164.187 - console stopped
+[INFO] Progress - 11%
+[INFO] Progress - Stop jaqlserver
+[INFO] @170.224.164.187 - jaqlserver stopped
+[INFO] Progress - 22%
+[INFO] Progress - Stop oozie
+[INFO] @170.224.164.187 - oozie stopped
+[INFO] Progress - 33%
+[INFO] Progress - Stop flume
+[INFO] @170.224.164.187 - flume stopped
+[INFO] Progress - 44%
+[INFO] Progress - Stop hbase
+[INFO] Deployer - Failed to nicely shutdown hbase daemon, would you like to mandatorily kill the process?(yes/no)
+yes
+[INFO] @170.224.164.187 - Succeed in killing the process
+[INFO] @170.224.164.187 - hbase-master stopped
+[INFO] @170.224.164.187 - hbase-regionserver stopped
+[INFO] Deployer - hbase service stopped
+[INFO] Progress - 56%
+[INFO] Progress - Stop hive
+[INFO] @170.224.164.187 - hive-web-interface stopped
+[INFO] Progress - 67%
+[INFO] Progress - Stop zookeeper
+[INFO] Progress - 78%
+[INFO] Progress - Stop derby
+[INFO] @170.224.164.187 - derby stopped
+[INFO] Progress - 89%
+[INFO] Progress - Stop hadoop
+[INFO] @170.224.168.180 - datanode stopped
+[INFO] @170.224.163.203 - datanode stopped
+[INFO] @170.224.164.187 - namenode stopped
+[INFO] @170.224.168.177 - datanode stopped
+[INFO] @170.224.168.209 - datanode stopped
+[INFO] @170.224.168.210 - datanode stopped
+[INFO] @170.224.164.187 - secondarynamenode stopped
+[INFO] @170.224.168.209 - tasktracker stopped
+[INFO] Progress - 91%
+[INFO] @170.224.168.210 - tasktracker stopped
+[INFO] Progress - 93%
+[INFO] @170.224.168.180 - tasktracker stopped
+[INFO] Progress - 94%
+[INFO] @170.224.163.203 - tasktracker stopped
+[INFO] Progress - 96%
+[INFO] @170.224.168.177 - tasktracker stopped
+[INFO] Progress - 98%
+[INFO] @170.224.164.187 - datanode stopped
+[INFO] @170.224.164.187 - jobtracker stopped
+[INFO] @170.224.164.187 - tasktracker stopped
+[INFO] Progress - 100%
+[ERROR] DeployManager -
+[ERROR] DeployManager - OPERATION ERROR -- Stop [hadoop, derby, zookeeper, hive, hbase, flume, oozie, jaqlserver, console]:
+[ERROR] DeployManager - -------------------------------------------------------
+[INFO] DeployManager - console succeeded -- 170.224.164.187=0
+[INFO] DeployManager - jaqlserver succeeded -- 170.224.164.187=0
+[INFO] DeployManager - oozie succeeded -- 170.224.164.187=0
+[INFO] DeployManager - flume succeeded -- 170.224.164.187=0
+[INFO] DeployManager - hbase succeeded -- 170.224.164.187=0
+[INFO] DeployManager - hive succeeded -- 170.224.164.187=0
+[ERROR] DeployManager - zookeeper failed <com.ibm.xap.mgmt.DeployException: Zookeeper cluster has not been fully stopped -- 170.224.164.187=-1 (For input string: "")>com.ibm.xap.mgmt.DeployException: Zookeeper cluster has not been fully stopped -- 170.224.164.187=-1 (For input string: "")
+        at com.ibm.xap.mgmt.zookeeper.ZookeeperDeployer.stopService(ZookeeperDeployer.java:338)
+        at com.ibm.xap.mgmt.DeployManager$StopThread.work(DeployManager.java:973)
+        at com.ibm.xap.mgmt.DeployManager$WorkerThread.run(DeployManager.java:902)
+
+[INFO] DeployManager - derby succeeded -- 170.224.164.187=0
+[INFO] DeployManager - hadoop succeeded -- 170.224.163.203=0; 170.224.164.187=0; 170.224.168.177=0; 170.224.168.180=0; 170.224.168.209=0; 170.224.168.210=0
+[ERROR] DeployManager - Stop; SUCCEEDED components: [console, jaqlserver, oozie, flume, hbase, hive, derby, hadoop]; FAILED components: [zookeeper]
+Error exit.
+[idcuser@vhost1207 lib]$ ls
+commons-cli-1.2.jar           commons-logging-api-1.0.4.jar    hsqldb-1.8.0.10.LICENSE.txt  jetty-6.1.14.jar       kfs-0.2.LICENSE.txt         slf4j-api-1.4.3.jar
+commons-codec-1.3.jar         commons-net-1.4.1.jar            jasper-compiler-5.5.12.jar   jetty-util-6.1.14.jar  log4j-1.2.15.jar            slf4j-log4j12-1.4.3.jar
+commons-el-1.0.jar            core-3.1.1.jar                   jasper-runtime-5.5.12.jar    jsp-2.1                native                      WordCountNew.java
+commons-httpclient-3.0.1.jar  hadoop-0.20.2-fairscheduler.jar  jdiff                        junit-3.8.1.jar        oro-2.0.8.jar               xmlenc-0.52.jar
+commons-logging-1.0.4.jar     hsqldb-1.8.0.10.jar              jets3t-0.6.1.jar             kfs-0.2.2.jar          servlet-api-2.5-6.1.14.jar
+[idcuser@vhost1207 lib]$ rm hadoop-0.20.2-fairscheduler.jar
+[idcuser@vhost1207 lib]$ ls
+commons-cli-1.2.jar           commons-logging-api-1.0.4.jar  jasper-compiler-5.5.12.jar  jetty-util-6.1.14.jar  log4j-1.2.15.jar            slf4j-log4j12-1.4.3.jar
+commons-codec-1.3.jar         commons-net-1.4.1.jar          jasper-runtime-5.5.12.jar   jsp-2.1                native                      WordCountNew.java
+commons-el-1.0.jar            core-3.1.1.jar                 jdiff                       junit-3.8.1.jar        oro-2.0.8.jar               xmlenc-0.52.jar
+commons-httpclient-3.0.1.jar  hsqldb-1.8.0.10.jar            jets3t-0.6.1.jar            kfs-0.2.2.jar          servlet-api-2.5-6.1.14.jar
+commons-logging-1.0.4.jar     hsqldb-1.8.0.10.LICENSE.txt    jetty-6.1.14.jar            kfs-0.2.LICENSE.txt    slf4j-api-1.4.3.jar
+[idcuser@vhost1207 lib]$ cd ~
+[idcuser@vhost1207 ~]$ ls
+cs5531  hadoop-0.20.2-customcheduler.jar  jobxmls  M.jar  nohup.out  run_jobs.sh  runMyJobs-Samyuktha.sh  WordCount.jar  WordCountNew.java
+[idcuser@vhost1207 ~]$ ls
+cs5531                            hadoop-0.20.2-fairscheduler-SA1.jar  M.jar      run_jobs.sh             WordCount.jar
+hadoop-0.20.2-customcheduler.jar  jobxmls                              nohup.out  runMyJobs-Samyuktha.sh  WordCountNew.java
+[idcuser@vhost1207 ~]$ mv hadoop-0.20.2-fairscheduler-SA1.jar hadoop-0.20.2-fairscheduler.jar
+[idcuser@vhost1207 ~]$ ls
+cs5531                            hadoop-0.20.2-fairscheduler.jar  M.jar      run_jobs.sh             WordCount.jar
+hadoop-0.20.2-customcheduler.jar  jobxmls                          nohup.out  runMyJobs-Samyuktha.sh  WordCountNew.java
+[idcuser@vhost1207 ~]$ locate mapred-site.xml
+/mnt/biginsights/opt/ibm/biginsights/IHC/src/c++/libhdfs/tests/conf/mapred-site.xml
+/mnt/biginsights/opt/ibm/biginsights/IHC/src/test/mapred-site.xml
+/mnt/biginsights/opt/ibm/biginsights/hadoop-conf/mapred-site.xml
+/mnt/biginsights/opt/ibm/biginsights/hadoop-conf/mapred-site.xml.original
+/mnt/biginsights/opt/ibm/biginsights/hdm/IHC/conf/mapred-site.xml
+/mnt/biginsights/opt/ibm/biginsights/hdm/IHC/src/c++/libhdfs/tests/conf/mapred-site.xml
+/mnt/biginsights/opt/ibm/biginsights/hdm/IHC/src/test/mapred-site.xml
+/mnt/biginsights/opt/ibm/biginsights/hdm/conf/.template/hadoop-conf-template/mapred-site.xml
+/mnt/biginsights/opt/ibm/biginsights/hdm/hadoop-conf-staging/mapred-site.xml
+[idcuser@vhost1207 ~]$ cat /mnt/biginsights/opt/ibm/biginsights/hadoop-conf/mapred-site.xml
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<!-- Put site-specific property overrides in this file. -->
+
+<configuration>
+
+  <property>
+    <name>mapred.job.tracker</name>
+    <value>170.224.164.187:9001</value>
+  </property>
+
+  <property>
+    <!-- Enable job recovered after jobtracker restart. Overrides default false. -->
+    <name>mapred.jobtracker.restart.recover</name>
+    <value>true</value>
+  </property>
+  <property>
+    <!-- Overrides default FIFO scheduler. -->
+    <name>mapred.jobtracker.taskScheduler</name>
+    <value>org.apache.hadoop.mapred.FairScheduler</value>
+  </property>
+
+  <property>
+    <!-- Max heap of child JVM spawned by tasktracker. Ideally as large as the
+         task machine can afford. The default -Xmx200m is usually too small. -->
+    <name>mapred.child.java.opts</name>
+    <value>-Xmx600m</value>
+  </property>
+  <property>
+    <!-- The number of input streams (files) to be merged at once in the
+         map/reduce tasks. The value should be sufficiently large to minimize
+         disk access. Overrides default 10. -->
+    <name>io.sort.factor</name>
+    <value>64</value>
+  </property>
+  <property>
+    <!-- Overrides default 0.05. -->
+    <name>mapred.reduce.slowstart.completed.maps</name>
+    <value>0.5</value>
+  </property>
+  <property>
+    <!-- A better value in most cases than the default 1. -->
+    <name>mapred.reduce.tasks</name>
+    <value>8</value>
+  </property>
+  <property>
+    <!-- Don't be too aggressive on MR execution. Overrides default false. -->
+    <name>mapred.map.tasks.speculative.execution</name>
+    <value>false</value>
+  </property>
+  <property>
+    <!-- Don't be too aggressive on MR execution. Overrides default false. -->
+    <name>mapred.reduce.tasks.speculative.execution</name>
+    <value>false</value>
+  </property>
+
+  <property>
+    <name>mapred.job.tracker.http.address</name>
+    <value>0.0.0.0:50030</value>
+  </property>
+  <property>
+    <name>mapred.local.dir</name>
+    <value>/mnt/biginsights/hadoop/mapred/local</value>
+  </property>
+  <property>
+    <name>mapred.system.dir</name>
+    <value>/hadoop/mapred/system</value>
+  </property>
+  <property>
+    <name>mapred.task.tracker.http.address</name>
+    <value>0.0.0.0:50060</value>
+  </property>
+  <property>
+    <name>mapred.hosts</name>
+    <value>/mnt/biginsights/opt/ibm/biginsights/hadoop-conf/includes</value>
+  </property>
+</configuration>
+[idcuser@vhost1207 ~]$ locate mapred-site.xml
+/mnt/biginsights/opt/ibm/biginsights/IHC/src/c++/libhdfs/tests/conf/mapred-site.xml
+/mnt/biginsights/opt/ibm/biginsights/IHC/src/test/mapred-site.xml
+/mnt/biginsights/opt/ibm/biginsights/hadoop-conf/mapred-site.xml
+/mnt/biginsights/opt/ibm/biginsights/hadoop-conf/mapred-site.xml.original
+/mnt/biginsights/opt/ibm/biginsights/hdm/IHC/conf/mapred-site.xml
+/mnt/biginsights/opt/ibm/biginsights/hdm/IHC/src/c++/libhdfs/tests/conf/mapred-site.xml
+/mnt/biginsights/opt/ibm/biginsights/hdm/IHC/src/test/mapred-site.xml
+/mnt/biginsights/opt/ibm/biginsights/hdm/conf/.template/hadoop-conf-template/mapred-site.xml
+/mnt/biginsights/opt/ibm/biginsights/hdm/hadoop-conf-staging/mapred-site.xml
+[idcuser@vhost1207 ~]$ ls
+cs5531                            hadoop-0.20.2-fairscheduler.jar  M.jar      run_jobs.sh             WordCount.jar
+hadoop-0.20.2-customcheduler.jar  jobxmls                          nohup.out  runMyJobs-Samyuktha.sh  WordCountNew.java
+[idcuser@vhost1207 ~]$ cd ..
+[idcuser@vhost1207 home]$ ls
+idcuser
+[idcuser@vhost1207 home]$ cd $HADOOP_HOME
+[idcuser@vhost1207 IHC]$ ls
+bin        CHANGES.txt  docs                    hadoop-0.20.2-examples.jar                hadoop-0.20.2-tools.jar    librecordio  README.txt  webapps
+build.xml  conf         hadoop-0.20.2-ant.jar   hadoop-0.20.2-fairscheduler.original.jar  IBM_Hadoop_Notices_v4.txt  LICENSE.txt  src
+c++        contrib      hadoop-0.20.2-core.jar  hadoop-0.20.2-test.jar                    lib                        NOTICE.txt   src-patch
+[idcuser@vhost1207 IHC]$ cd bin
+[idcuser@vhost1207 bin]$ ls
+hadoop            hadoop-daemon.sh   rcc        start-all.sh       start-dfs.sh     stop-all.sh       stop-dfs.sh
+hadoop-config.sh  hadoop-daemons.sh  slaves.sh  start-balancer.sh  start-mapred.sh  stop-balancer.sh  stop-mapred.sh
+[idcuser@vhost1207 bin]$ stop-all.sh
+[INFO] Progress - Stop console
+[INFO] @170.224.164.187 - console stopped
+[INFO] Progress - 11%
+[INFO] Progress - Stop jaqlserver
+[INFO] @170.224.164.187 - jaqlserver stopped
+[INFO] Progress - 22%
+[INFO] Progress - Stop oozie
+[INFO] @170.224.164.187 - oozie stopped
+[INFO] Progress - 33%
+[INFO] Progress - Stop flume
+[INFO] @170.224.164.187 - flume stopped
+[INFO] Progress - 44%
+[INFO] Progress - Stop hbase
+[INFO] @170.224.164.187 - hbase-master stopped
+[INFO] @170.224.164.187 - hbase-regionserver stopped
+[INFO] Deployer - hbase service stopped
+[INFO] Progress - 56%
+[INFO] Progress - Stop hive
+[INFO] @170.224.164.187 - hive-web-interface stopped
+[INFO] Progress - 67%
+[INFO] Progress - Stop zookeeper
+[INFO] Progress - 78%
+[INFO] Progress - Stop derby
+[INFO] @170.224.164.187 - derby stopped
+[INFO] Progress - 89%
+[INFO] Progress - Stop hadoop
+[INFO] @170.224.164.187 - namenode stopped
+[INFO] @170.224.168.177 - datanode stopped
+[INFO] @170.224.168.180 - datanode stopped
+[INFO] @170.224.168.210 - datanode stopped
+[INFO] @170.224.168.209 - datanode stopped
+[INFO] @170.224.163.203 - datanode stopped
+[INFO] @170.224.168.177 - tasktracker stopped
+[INFO] Progress - 91%
+[INFO] @170.224.164.187 - secondarynamenode stopped
+[INFO] @170.224.163.203 - tasktracker stopped
+[INFO] Progress - 93%
+[INFO] @170.224.168.209 - tasktracker stopped
+[INFO] Progress - 94%
+[INFO] @170.224.168.210 - tasktracker stopped
+[INFO] Progress - 96%
+[INFO] @170.224.168.180 - tasktracker stopped
+[INFO] Progress - 98%
+[INFO] @170.224.164.187 - datanode stopped
+[INFO] @170.224.164.187 - jobtracker stopped
+[INFO] @170.224.164.187 - tasktracker stopped
+[INFO] Progress - 100%
+[ERROR] DeployManager -
+[ERROR] DeployManager - OPERATION ERROR -- Stop [hadoop, derby, zookeeper, hive, hbase, flume, oozie, jaqlserver, console]:
+[ERROR] DeployManager - -------------------------------------------------------
+[INFO] DeployManager - console succeeded -- 170.224.164.187=0
+[INFO] DeployManager - jaqlserver succeeded -- 170.224.164.187=0
+[INFO] DeployManager - oozie succeeded -- 170.224.164.187=0
+[INFO] DeployManager - flume succeeded -- 170.224.164.187=0
+[INFO] DeployManager - hbase succeeded -- 170.224.164.187=0
+[INFO] DeployManager - hive succeeded -- 170.224.164.187=0
+[ERROR] DeployManager - zookeeper failed <com.ibm.xap.mgmt.DeployException: Zookeeper cluster has not been fully stopped -- 170.224.164.187=-1 (For input string: "")>com.ibm.xap.mgmt.DeployException: Zookeeper cluster has not been fully stopped -- 170.224.164.187=-1 (For input string: "")
+        at com.ibm.xap.mgmt.zookeeper.ZookeeperDeployer.stopService(ZookeeperDeployer.java:338)
+        at com.ibm.xap.mgmt.DeployManager$StopThread.work(DeployManager.java:973)
+        at com.ibm.xap.mgmt.DeployManager$WorkerThread.run(DeployManager.java:902)
+
+[INFO] DeployManager - derby succeeded -- 170.224.164.187=0
+[INFO] DeployManager - hadoop succeeded -- 170.224.163.203=0; 170.224.164.187=0; 170.224.168.177=0; 170.224.168.180=0; 170.224.168.209=0; 170.224.168.210=0
+[ERROR] DeployManager - Stop; SUCCEEDED components: [console, jaqlserver, oozie, flume, hbase, hive, derby, hadoop]; FAILED components: [zookeeper]
+Error exit.
+[idcuser@vhost1207 bin]$ ls
+hadoop            hadoop-daemon.sh   rcc        start-all.sh       start-dfs.sh     stop-all.sh       stop-dfs.sh
+hadoop-config.sh  hadoop-daemons.sh  slaves.sh  start-balancer.sh  start-mapred.sh  stop-balancer.sh  stop-mapred.sh
+[idcuser@vhost1207 bin]$ start-all.sh
+[INFO] Progress - Start hadoop
+[INFO] @170.224.164.187 - namenode started, pid 24265
+[INFO] @170.224.163.203 - datanode started, pid 13449
+[INFO] @170.224.168.209 - datanode started, pid 23366
+[INFO] @170.224.168.210 - datanode started, pid 22989
+[INFO] @170.224.168.177 - datanode started, pid 9967
+[INFO] @170.224.168.180 - datanode started, pid 10625
+[INFO] @170.224.164.187 - secondarynamenode started, pid 24438
+[INFO] @170.224.163.203 - tasktracker started, pid 13617
+[INFO] Progress - 2%
+[INFO] @170.224.168.210 - tasktracker started, pid 23157
+[INFO] Progress - 4%
+[INFO] @170.224.168.177 - tasktracker started, pid 10135
+[INFO] Progress - 6%
+[INFO] @170.224.168.209 - tasktracker started, pid 23533
+[INFO] Progress - 7%
+[INFO] @170.224.168.180 - tasktracker started, pid 10793
+[INFO] Progress - 9%
+[INFO] @170.224.164.187 - datanode started, pid 24619
+[INFO] Progress - 11%
+[ERROR] @170.224.164.187 - java.lang.Exception
+        at com.ibm.xap.mgmt.util.TaskRunner.run(TaskRunner.java:56)
+        at com.ibm.xap.mgmt.hdm.HadoopMgmtFacade.daemon(HadoopMgmtFacade.java:373)
+        at com.ibm.xap.mgmt.hdm.HadoopDeployer.startService(HadoopDeployer.java:248)
+        at com.ibm.xap.mgmt.DeployManager$StartThread.work(DeployManager.java:962)
+        at com.ibm.xap.mgmt.DeployManager$WorkerThread.run(DeployManager.java:902)
+ <java.io.IOException: exit code: 1 -- "ssh" "170.224.164.187" "/mnt/biginsights/opt/ibm/biginsights/.hdm-stub/bin/managed-daemon.sh start jobtracker false"
+Tail /mnt/biginsights/var/ibm/biginsights/hadoop/logs/hadoop-idcuser-jobtracker-vhost1207.log
+2012-11-04 04:25:17,604 INFO org.apache.hadoop.mapred.FifoJobComparator: Parameterless Fifo constructor
+2012-11-04 04:25:18,107 INFO org.apache.hadoop.mapred.FifoJobComparator: Parameterless Fifo constructor
+2012-11-04 04:25:18,413 INFO org.apache.hadoop.mapred.JobTracker: SHUTDOWN_MSG:
+/************************************************************
+SHUTDOWN_MSG: Shutting down JobTracker at vhost1207/170.224.164.187
+************************************************************/
+2012-11-04 04:38:14,747 INFO org.apache.hadoop.mapred.JobTracker: STARTUP_MSG:
+/************************************************************
+STARTUP_MSG: Starting JobTracker
+STARTUP_MSG:   host = vhost1207/170.224.164.187
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 0.20.2
+STARTUP_MSG:   build =  -r ; compiled by 'hadoop0202' on Tue Mar 29 09:46:31 CDT 2011
+************************************************************/
+2012-11-04 04:38:14,872 INFO org.apache.hadoop.mapred.JobTracker: Scheduler configured with (memSizeForMapSlotOnJT, memSizeForReduceSlotOnJT, limitMaxMemForMapTasks, limitMaxMemForReduceTasks) (-1, -1, -1, -1)
+2012-11-04 04:38:14,877 FATAL org.apache.hadoop.mapred.JobTracker: java.lang.RuntimeException: java.lang.RuntimeException: java.lang.ClassNotFoundException: org.apache.hadoop.mapred.FairScheduler
+        at org.apache.hadoop.conf.Configuration.getClass(Configuration.java:841)
+        at org.apache.hadoop.mapred.JobTracker.<init>(JobTracker.java:1573)
+        at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:183)
+        at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:175)
+        at org.apache.hadoop.mapred.JobTracker.main(JobTracker.java:3702)
+Caused by: java.lang.RuntimeException: java.lang.ClassNotFoundException: org.apache.hadoop.mapred.FairScheduler
+        at org.apache.hadoop.conf.Configuration.getClass(Configuration.java:809)
+        at org.apache.hadoop.conf.Configuration.getClass(Configuration.java:833)
+        ... 4 more
+Caused by: java.lang.ClassNotFoundException: org.apache.hadoop.mapred.FairScheduler
+        at java.lang.Class.forName(Class.java:172)
+        at org.apache.hadoop.conf.Configuration.getClassByName(Configuration.java:762)
+        at org.apache.hadoop.conf.Configuration.getClass(Configuration.java:807)
+        ... 5 more
+
+2012-11-04 04:38:14,880 INFO org.apache.hadoop.mapred.JobTracker: SHUTDOWN_MSG:
+/************************************************************
+SHUTDOWN_MSG: Shutting down JobTracker at vhost1207/170.224.164.187
+************************************************************/
+[ERROR] jobtracker failed to start
+>java.io.IOException: exit code: 1 -- "ssh" "170.224.164.187" "/mnt/biginsights/opt/ibm/biginsights/.hdm-stub/bin/managed-daemon.sh start jobtracker false"
+Tail /mnt/biginsights/var/ibm/biginsights/hadoop/logs/hadoop-idcuser-jobtracker-vhost1207.log
+2012-11-04 04:25:17,604 INFO org.apache.hadoop.mapred.FifoJobComparator: Parameterless Fifo constructor
+2012-11-04 04:25:18,107 INFO org.apache.hadoop.mapred.FifoJobComparator: Parameterless Fifo constructor
+2012-11-04 04:25:18,413 INFO org.apache.hadoop.mapred.JobTracker: SHUTDOWN_MSG:
+/************************************************************
+SHUTDOWN_MSG: Shutting down JobTracker at vhost1207/170.224.164.187
+************************************************************/
+2012-11-04 04:38:14,747 INFO org.apache.hadoop.mapred.JobTracker: STARTUP_MSG:
+/************************************************************
+STARTUP_MSG: Starting JobTracker
+STARTUP_MSG:   host = vhost1207/170.224.164.187
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 0.20.2
+STARTUP_MSG:   build =  -r ; compiled by 'hadoop0202' on Tue Mar 29 09:46:31 CDT 2011
+************************************************************/
+2012-11-04 04:38:14,872 INFO org.apache.hadoop.mapred.JobTracker: Scheduler configured with (memSizeForMapSlotOnJT, memSizeForReduceSlotOnJT, limitMaxMemForMapTasks, limitMaxMemForReduceTasks) (-1, -1, -1, -1)
+2012-11-04 04:38:14,877 FATAL org.apache.hadoop.mapred.JobTracker: java.lang.RuntimeException: java.lang.RuntimeException: java.lang.ClassNotFoundException: org.apache.hadoop.mapred.FairScheduler
+        at org.apache.hadoop.conf.Configuration.getClass(Configuration.java:841)
+        at org.apache.hadoop.mapred.JobTracker.<init>(JobTracker.java:1573)
+        at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:183)
+        at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:175)
+        at org.apache.hadoop.mapred.JobTracker.main(JobTracker.java:3702)
+Caused by: java.lang.RuntimeException: java.lang.ClassNotFoundException: org.apache.hadoop.mapred.FairScheduler
+        at org.apache.hadoop.conf.Configuration.getClass(Configuration.java:809)
+        at org.apache.hadoop.conf.Configuration.getClass(Configuration.java:833)
+        ... 4 more
+Caused by: java.lang.ClassNotFoundException: org.apache.hadoop.mapred.FairScheduler
+        at java.lang.Class.forName(Class.java:172)
+        at org.apache.hadoop.conf.Configuration.getClassByName(Configuration.java:762)
+        at org.apache.hadoop.conf.Configuration.getClass(Configuration.java:807)
+        ... 5 more
+
+2012-11-04 04:38:14,880 INFO org.apache.hadoop.mapred.JobTracker: SHUTDOWN_MSG:
+/************************************************************
+SHUTDOWN_MSG: Shutting down JobTracker at vhost1207/170.224.164.187
+************************************************************/
+[ERROR] jobtracker failed to start
+
+        at com.ibm.xap.mgmt.util.ExecUtil.exec(ExecUtil.java:67)
+        at com.ibm.xap.mgmt.util.ExecUtil.exec(ExecUtil.java:26)
+        at com.ibm.xap.mgmt.hdm.DaemonTask.runDaemon(DaemonTask.java:130)
+        at com.ibm.xap.mgmt.hdm.DaemonTask.doCommands(DaemonTask.java:114)
+        at com.ibm.xap.mgmt.hdm.DaemonTask.doTask(DaemonTask.java:99)
+        at com.ibm.xap.mgmt.util.Task.run(Task.java:78)
+        at com.ibm.xap.mgmt.util.TaskRunner$1.run(TaskRunner.java:43)
+
+[INFO] Progress - Start derby
+[INFO] @170.224.164.187 - derby started, pid 74
+[INFO] Progress - 22%
+[INFO] Progress - Start zookeeper
+[INFO] Progress - 33%
+[INFO] Progress - Start hive
+[INFO] @170.224.164.187 - derby started, pid 74
+[INFO] Progress - 44%
+[INFO] @170.224.164.187 - hive-web-interface started, pid 25063
+[INFO] Progress - Start hbase
+[INFO] @170.224.164.187 - hbase-master started
+[INFO] @170.224.164.187 - hbase-regionserver started
+[INFO] Deployer - hbase service started
+[INFO] Progress - 56%
+[INFO] Progress - Start flume
+[INFO] Progress - 67%
+[INFO] Progress - Start oozie
+[INFO] Progress - 78%
+[INFO] Progress - Start jaqlserver
+[INFO] @170.224.164.187 - jaqlserver started
+[INFO] Progress - 89%
+[INFO] Progress - Start console
+[INFO] @170.224.164.187 - console started
+[INFO] Progress - 100%
+[ERROR] DeployManager -
+[ERROR] DeployManager - OPERATION ERROR -- Start [hadoop, derby, zookeeper, hive, hbase, flume, oozie, jaqlserver, console]:
+[ERROR] DeployManager - -------------------------------------------------------
+[ERROR] DeployManager - hadoop failed <com.ibm.xap.mgmt.DeployException:  -- 170.224.163.203=0; 170.224.164.187=255 (java.io.IOException: exit code: 1 -- "ssh" "170.224.164.187" "/mnt/biginsights/opt/ibm/biginsights/.hdm-stub/bin/managed-daemon.sh start jobtracker false"
+Tail /mnt/biginsights/var/ibm/biginsights/hadoop/logs/hadoop-idcuser-jobtracker-vhost1207.log
+2012-11-04 04:25:17,604 INFO org.apache.hadoop.mapred.FifoJobComparator: Parameterless Fifo constructor
+2012-11-04 04:25:18,107 INFO org.apache.hadoop.mapred.FifoJobComparator: Parameterless Fifo constructor
+2012-11-04 04:25:18,413 INFO org.apache.hadoop.mapred.JobTracker: SHUTDOWN_MSG:
+/************************************************************
+SHUTDOWN_MSG: Shutting down JobTracker at vhost1207/170.224.164.187
+************************************************************/
+2012-11-04 04:38:14,747 INFO org.apache.hadoop.mapred.JobTracker: STARTUP_MSG:
+/************************************************************
+STARTUP_MSG: Starting JobTracker
+STARTUP_MSG:   host = vhost1207/170.224.164.187
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 0.20.2
+STARTUP_MSG:   build =  -r ; compiled by 'hadoop0202' on Tue Mar 29 09:46:31 CDT 2011
+************************************************************/
+2012-11-04 04:38:14,872 INFO org.apache.hadoop.mapred.JobTracker: Scheduler configured with (memSizeForMapSlotOnJT, memSizeForReduceSlotOnJT, limitMaxMemForMapTasks, limitMaxMemForReduceTasks) (-1, -1, -1, -1)
+2012-11-04 04:38:14,877 FATAL org.apache.hadoop.mapred.JobTracker: java.lang.RuntimeException: java.lang.RuntimeException: java.lang.ClassNotFoundException: org.apache.hadoop.mapred.FairScheduler
+        at org.apache.hadoop.conf.Configuration.getClass(Configuration.java:841)
+        at org.apache.hadoop.mapred.JobTracker.<init>(JobTracker.java:1573)
+        at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:183)
+        at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:175)
+        at org.apache.hadoop.mapred.JobTracker.main(JobTracker.java:3702)
+Caused by: java.lang.RuntimeException: java.lang.ClassNotFoundException: org.apache.hadoop.mapred.FairScheduler
+        at org.apache.hadoop.conf.Configuration.getClass(Configuration.java:809)
+        at org.apache.hadoop.conf.Configuration.getClass(Configuration.java:833)
+        ... 4 more
+Caused by: java.lang.ClassNotFoundException: org.apache.hadoop.mapred.FairScheduler
+        at java.lang.Class.forName(Class.java:172)
+        at org.apache.hadoop.conf.Configuration.getClassByName(Configuration.java:762)
+        at org.apache.hadoop.conf.Configuration.getClass(Configuration.java:807)
+        ... 5 more
+
+2012-11-04 04:38:14,880 INFO org.apache.hadoop.mapred.JobTracker: SHUTDOWN_MSG:
+/************************************************************
+SHUTDOWN_MSG: Shutting down JobTracker at vhost1207/170.224.164.187
+************************************************************/
+[ERROR] jobtracker failed to start
+
+        at com.ibm.xap.mgmt.util.ExecUtil.exec(ExecUtil.java:67)
+        at com.ibm.xap.mgmt.util.ExecUtil.exec(ExecUtil.java:26)
+        at com.ibm.xap.mgmt.hdm.DaemonTask.runDaemon(DaemonTask.java:130)
+        at com.ibm.xap.mgmt.hdm.DaemonTask.doCommands(DaemonTask.java:114)
+        at com.ibm.xap.mgmt.hdm.DaemonTask.doTask(DaemonTask.java:99)
+        at com.ibm.xap.mgmt.util.Task.run(Task.java:78)
+        at com.ibm.xap.mgmt.util.TaskRunner$1.run(TaskRunner.java:43)
+); 170.224.168.177=0; 170.224.168.180=0; 170.224.168.209=0; 170.224.168.210=0>com.ibm.xap.mgmt.DeployException:  -- 170.224.163.203=0; 170.224.164.187=255 (java.io.IOException: exit code: 1 -- "ssh" "170.224.164.187" "/mnt/biginsights/opt/ibm/biginsights/.hdm-stub/bin/managed-daemon.sh start jobtracker false"
+Tail /mnt/biginsights/var/ibm/biginsights/hadoop/logs/hadoop-idcuser-jobtracker-vhost1207.log
+2012-11-04 04:25:17,604 INFO org.apache.hadoop.mapred.FifoJobComparator: Parameterless Fifo constructor
+2012-11-04 04:25:18,107 INFO org.apache.hadoop.mapred.FifoJobComparator: Parameterless Fifo constructor
+2012-11-04 04:25:18,413 INFO org.apache.hadoop.mapred.JobTracker: SHUTDOWN_MSG:
+/************************************************************
+SHUTDOWN_MSG: Shutting down JobTracker at vhost1207/170.224.164.187
+************************************************************/
+2012-11-04 04:38:14,747 INFO org.apache.hadoop.mapred.JobTracker: STARTUP_MSG:
+/************************************************************
+STARTUP_MSG: Starting JobTracker
+STARTUP_MSG:   host = vhost1207/170.224.164.187
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 0.20.2
+STARTUP_MSG:   build =  -r ; compiled by 'hadoop0202' on Tue Mar 29 09:46:31 CDT 2011
+************************************************************/
+2012-11-04 04:38:14,872 INFO org.apache.hadoop.mapred.JobTracker: Scheduler configured with (memSizeForMapSlotOnJT, memSizeForReduceSlotOnJT, limitMaxMemForMapTasks, limitMaxMemForReduceTasks) (-1, -1, -1, -1)
+2012-11-04 04:38:14,877 FATAL org.apache.hadoop.mapred.JobTracker: java.lang.RuntimeException: java.lang.RuntimeException: java.lang.ClassNotFoundException: org.apache.hadoop.mapred.FairScheduler
+        at org.apache.hadoop.conf.Configuration.getClass(Configuration.java:841)
+        at org.apache.hadoop.mapred.JobTracker.<init>(JobTracker.java:1573)
+        at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:183)
+        at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:175)
+        at org.apache.hadoop.mapred.JobTracker.main(JobTracker.java:3702)
+Caused by: java.lang.RuntimeException: java.lang.ClassNotFoundException: org.apache.hadoop.mapred.FairScheduler
+        at org.apache.hadoop.conf.Configuration.getClass(Configuration.java:809)
+        at org.apache.hadoop.conf.Configuration.getClass(Configuration.java:833)
+        ... 4 more
+Caused by: java.lang.ClassNotFoundException: org.apache.hadoop.mapred.FairScheduler
+        at java.lang.Class.forName(Class.java:172)
+        at org.apache.hadoop.conf.Configuration.getClassByName(Configuration.java:762)
+        at org.apache.hadoop.conf.Configuration.getClass(Configuration.java:807)
+        ... 5 more
+
+2012-11-04 04:38:14,880 INFO org.apache.hadoop.mapred.JobTracker: SHUTDOWN_MSG:
+/************************************************************
+SHUTDOWN_MSG: Shutting down JobTracker at vhost1207/170.224.164.187
+************************************************************/
+[ERROR] jobtracker failed to start
+
+        at com.ibm.xap.mgmt.util.ExecUtil.exec(ExecUtil.java:67)
+        at com.ibm.xap.mgmt.util.ExecUtil.exec(ExecUtil.java:26)
+        at com.ibm.xap.mgmt.hdm.DaemonTask.runDaemon(DaemonTask.java:130)
+        at com.ibm.xap.mgmt.hdm.DaemonTask.doCommands(DaemonTask.java:114)
+        at com.ibm.xap.mgmt.hdm.DaemonTask.doTask(DaemonTask.java:99)
+        at com.ibm.xap.mgmt.util.Task.run(Task.java:78)
+        at com.ibm.xap.mgmt.util.TaskRunner$1.run(TaskRunner.java:43)
+); 170.224.168.177=0; 170.224.168.180=0; 170.224.168.209=0; 170.224.168.210=0
+        at com.ibm.xap.mgmt.hdm.HadoopMgmtFacade.calculateResult(HadoopMgmtFacade.java:1192)
+        at com.ibm.xap.mgmt.hdm.HadoopMgmtFacade.calculateResult(HadoopMgmtFacade.java:1143)
+        at com.ibm.xap.mgmt.hdm.HadoopMgmtFacade.daemon(HadoopMgmtFacade.java:375)
+        at com.ibm.xap.mgmt.hdm.HadoopDeployer.startService(HadoopDeployer.java:248)
+        at com.ibm.xap.mgmt.DeployManager$StartThread.work(DeployManager.java:962)
+        at com.ibm.xap.mgmt.DeployManager$WorkerThread.run(DeployManager.java:902)
+
+[INFO] DeployManager - derby succeeded -- 170.224.164.187=0
+[ERROR] DeployManager - zookeeper failed <com.ibm.xap.mgmt.DeployException: Zookeeper cluster has not been fully started -- 170.224.164.187=-1 (Zookeeper service was failed to be started, error = For input string: "")>com.ibm.xap.mgmt.DeployException: Zookeeper cluster has not been fully started -- 170.224.164.187=-1 (Zookeeper service was failed to be started, error = For input string: "")
+        at com.ibm.xap.mgmt.zookeeper.ZookeeperDeployer.startService(ZookeeperDeployer.java:303)
+        at com.ibm.xap.mgmt.DeployManager$StartThread.work(DeployManager.java:962)
+        at com.ibm.xap.mgmt.DeployManager$WorkerThread.run(DeployManager.java:902)
+
+[INFO] DeployManager - hive succeeded -- 170.224.164.187=0 (25063)
+[INFO] DeployManager - hbase succeeded -- 170.224.164.187=0
+[ERROR] DeployManager - flume failed <com.ibm.xap.mgmt.DeployException: Zookeeper cluster has not been fully started -- 170.224.164.187=-1 (Zookeeper service was failed to be started, error = For input string: "")>com.ibm.xap.mgmt.DeployException: Zookeeper cluster has not been fully started -- 170.224.164.187=-1 (Zookeeper service was failed to be started, error = For input string: "")
+        at com.ibm.xap.mgmt.zookeeper.ZookeeperDeployer.startService(ZookeeperDeployer.java:303)
+        at com.ibm.xap.mgmt.flume.FlumeDeployer.startZookeeperService(FlumeDeployer.java:585)
+        at com.ibm.xap.mgmt.flume.FlumeDeployer.startService(FlumeDeployer.java:1281)
+        at com.ibm.xap.mgmt.DeployManager$StartThread.work(DeployManager.java:962)
+        at com.ibm.xap.mgmt.DeployManager$WorkerThread.run(DeployManager.java:902)
+
+[INFO] DeployManager - oozie succeeded -- 170.224.164.187=-1 (exit code: 1 -- "ssh" "170.224.164.187" "/bin/sh /mnt/biginsights/opt/ibm/biginsights/oozie/bin/start-oozie.sh"
+Oozie WASCE is already started, pid 4074
+)
+[INFO] DeployManager - jaqlserver succeeded -- 170.224.164.187=0
+[INFO] DeployManager - console succeeded -- 170.224.164.187=0
+[ERROR] DeployManager - Start; SUCCEEDED components: [derby, hive, hbase, oozie, jaqlserver, console]; FAILED components: [hadoop, zookeeper, flume]
+Error exit.
+[idcuser@vhost1207 bin]$ cd~
+-bash: cd~: command not found
+[idcuser@vhost1207 bin]$ cd ~
+[idcuser@vhost1207 ~]$ ls
+cs5531                            hadoop-0.20.2-fairscheduler.jar  M.jar      run_jobs.sh             WordCount.jar
+hadoop-0.20.2-customcheduler.jar  jobxmls                          nohup.out  runMyJobs-Samyuktha.sh  WordCountNew.java
+[idcuser@vhost1207 ~]$ ./run_jobs.sh 4
+Deleted hdfs://170.224.164.187:9000/user/idcuser/cs5531/output
+Jobid:  0  Priority:  LOW  No Of Reduces:  10
+Jobid:  1  Priority:  VERY_LOW  No Of Reduces:  5
+Jobid:  2  Priority:  NORMAL  No Of Reduces:  5
+Jobid:  3  Priority:  LOW  No Of Reduces:  10
+[idcuser@vhost1207 ~]$ Exception in thread "main" java.lang.ClassNotFoundException: .user.idcuser.cs5531.input.testinput1.dat
+        at java.lang.Class.forName(Class.java:172)
+        at org.apache.hadoop.util.RunJar.main(RunJar.java:149)
+Exception in thread "main" java.lang.ClassNotFoundException: .user.idcuser.cs5531.input.testinput1.dat
+        at java.lang.Class.forName(Class.java:172)
+        at org.apache.hadoop.util.RunJar.main(RunJar.java:149)
+Exception in thread "main" java.lang.ClassNotFoundException: .user.idcuser.cs5531.input.testinput1.dat
+        at java.lang.Class.forName(Class.java:172)
+        at org.apache.hadoop.util.RunJar.main(RunJar.java:149)
+Exception in thread "main" java.lang.ClassNotFoundException: .user.idcuser.cs5531.input.testinput1.dat
+        at java.lang.Class.forName(Class.java:172)
+        at org.apache.hadoop.util.RunJar.main(RunJar.java:149)
+
+[idcuser@vhost1207 ~]$ ./run_jobs.sh 4
+Jobid:  0  Priority:  LOW  No Of Reduces:  10
+Jobid:  1  Priority:  VERY_LOW  No Of Reduces:  5
+Jobid:  2  Priority:  NORMAL  No Of Reduces:  5
+Jobid:  3  Priority:  LOW  No Of Reduces:  10
+[idcuser@vhost1207 ~]$ Exception in thread "main" java.lang.ClassNotFoundException: .user.idcuser.cs5531.input.testinput1.dat
+        at java.lang.Class.forName(Class.java:172)
+        at org.apache.hadoop.util.RunJar.main(RunJar.java:149)
+Exception in thread "main" java.lang.ClassNotFoundException: .user.idcuser.cs5531.input.testinput1.dat
+        at java.lang.Class.forName(Class.java:172)
+        at org.apache.hadoop.util.RunJar.main(RunJar.java:149)
+Exception in thread "main" java.lang.ClassNotFoundException: .user.idcuser.cs5531.input.testinput1.dat
+        at java.lang.Class.forName(Class.java:172)
+        at org.apache.hadoop.util.RunJar.main(RunJar.java:149)
+Exception in thread "main" java.lang.ClassNotFoundException: .user.idcuser.cs5531.input.testinput1.dat
+        at java.lang.Class.forName(Class.java:172)
+        at org.apache.hadoop.util.RunJar.main(RunJar.java:149)
+
+[idcuser@vhost1207 ~]$ ./run_jobs.sh 4
+Jobid:  0  Priority:  LOW  No Of Reduces:  10
+Jobid:  1  Priority:  VERY_LOW  No Of Reduces:  5
+Jobid:  2  Priority:  NORMAL  No Of Reduces:  5
+Jobid:  3  Priority:  LOW  No Of Reduces:  10
+[idcuser@vhost1207 ~]$ Usage: wordcount <in> <out> <# of map tasks> <# of reduce tasks> <VERY_HIGH|HIGH|NORMAL|LOW|VERY_LOW>
+Usage: wordcount <in> <out> <# of map tasks> <# of reduce tasks> <VERY_HIGH|HIGH|NORMAL|LOW|VERY_LOW>
+Usage: wordcount <in> <out> <# of map tasks> <# of reduce tasks> <VERY_HIGH|HIGH|NORMAL|LOW|VERY_LOW>
+Usage: wordcount <in> <out> <# of map tasks> <# of reduce tasks> <VERY_HIGH|HIGH|NORMAL|LOW|VERY_LOW>
+
+[idcuser@vhost1207 ~]$ ./run_jobs.sh 4
+Jobid:  0  Priority:  LOW  No Of Reduces:  10
+Jobid:  1  Priority:  VERY_LOW  No Of Reduces:  5
+Jobid:  2  Priority:  NORMAL  No Of Reduces:  5
+Jobid:  3  Priority:  LOW  No Of Reduces:  10
+[idcuser@vhost1207 ~]$ 12/11/04 04:50:10 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 0 time(s).
+12/11/04 04:50:10 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 0 time(s).
+12/11/04 04:50:10 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 0 time(s).
+12/11/04 04:50:10 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 0 time(s).
+12/11/04 04:50:11 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 1 time(s).
+12/11/04 04:50:11 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 1 time(s).
+12/11/04 04:50:11 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 1 time(s).
+12/11/04 04:50:11 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 1 time(s).
+12/11/04 04:50:12 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 2 time(s).
+12/11/04 04:50:12 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 2 time(s).
+12/11/04 04:50:12 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 2 time(s).
+12/11/04 04:50:12 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 2 time(s).
+12/11/04 04:50:13 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 3 time(s).
+12/11/04 04:50:13 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 3 time(s).
+12/11/04 04:50:13 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 3 time(s).
+12/11/04 04:50:13 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 3 time(s).
+12/11/04 04:50:14 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 4 time(s).
+12/11/04 04:50:14 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 4 time(s).
+12/11/04 04:50:14 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 4 time(s).
+12/11/04 04:50:14 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 4 time(s).
+12/11/04 04:50:15 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 5 time(s).
+12/11/04 04:50:15 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 5 time(s).
+12/11/04 04:50:15 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 5 time(s).
+12/11/04 04:50:16 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 5 time(s).
+12/11/04 04:50:16 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 6 time(s).
+12/11/04 04:50:16 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 6 time(s).
+12/11/04 04:50:16 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 6 time(s).
+12/11/04 04:50:17 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 6 time(s).
+12/11/04 04:50:17 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 7 time(s).
+12/11/04 04:50:17 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 7 time(s).
+12/11/04 04:50:17 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 7 time(s).
+12/11/04 04:50:18 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 7 time(s).
+12/11/04 04:50:18 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 8 time(s).
+12/11/04 04:50:18 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 8 time(s).
+12/11/04 04:50:18 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 8 time(s).
+12/11/04 04:50:19 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 8 time(s).
+12/11/04 04:50:19 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 9 time(s).
+Exception in thread "main" java.net.ConnectException: Call to /170.224.164.187:9001 failed on connection exception: java.net.ConnectException: Connection refused
+        at org.apache.hadoop.ipc.Client.wrapException(Client.java:767)
+        at org.apache.hadoop.ipc.Client.call(Client.java:743)
+        at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+        at org.apache.hadoop.mapred.$Proxy0.getProtocolVersion(Unknown Source)
+        at org.apache.hadoop.ipc.RPC.getProxy(RPC.java:359)
+        at org.apache.hadoop.mapred.JobClient.createRPCProxy(JobClient.java:429)
+        at org.apache.hadoop.mapred.JobClient.init(JobClient.java:423)
+        at org.apache.hadoop.mapred.JobClient.<init>(JobClient.java:410)
+        at org.apache.hadoop.mapreduce.Job.<init>(Job.java:50)
+        at org.apache.hadoop.mapreduce.Job.<init>(Job.java:54)
+        at org.apache.hadoop.examples.WordCount.main(WordCount.java:63)
+        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:60)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:37)
+        at java.lang.reflect.Method.invoke(Method.java:611)
+        at org.apache.hadoop.util.RunJar.main(RunJar.java:156)
+Caused by: java.net.ConnectException: Connection refused
+        at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+        at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:585)
+        at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+        at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:404)
+        at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:304)
+        at org.apache.hadoop.ipc.Client$Connection.access$1700(Client.java:176)
+        at org.apache.hadoop.ipc.Client.getConnection(Client.java:860)
+        at org.apache.hadoop.ipc.Client.call(Client.java:720)
+        ... 14 more
+12/11/04 04:50:19 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 9 time(s).
+Exception in thread "main" java.net.ConnectException: Call to /170.224.164.187:9001 failed on connection exception: java.net.ConnectException: Connection refused
+        at org.apache.hadoop.ipc.Client.wrapException(Client.java:767)
+        at org.apache.hadoop.ipc.Client.call(Client.java:743)
+        at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+        at org.apache.hadoop.mapred.$Proxy0.getProtocolVersion(Unknown Source)
+        at org.apache.hadoop.ipc.RPC.getProxy(RPC.java:359)
+        at org.apache.hadoop.mapred.JobClient.createRPCProxy(JobClient.java:429)
+        at org.apache.hadoop.mapred.JobClient.init(JobClient.java:423)
+        at org.apache.hadoop.mapred.JobClient.<init>(JobClient.java:410)
+        at org.apache.hadoop.mapreduce.Job.<init>(Job.java:50)
+        at org.apache.hadoop.mapreduce.Job.<init>(Job.java:54)
+        at org.apache.hadoop.examples.WordCount.main(WordCount.java:63)
+        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:60)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:37)
+        at java.lang.reflect.Method.invoke(Method.java:611)
+        at org.apache.hadoop.util.RunJar.main(RunJar.java:156)
+Caused by: java.net.ConnectException: Connection refused
+        at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+        at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:585)
+        at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+        at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:404)
+        at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:304)
+        at org.apache.hadoop.ipc.Client$Connection.access$1700(Client.java:176)
+        at org.apache.hadoop.ipc.Client.getConnection(Client.java:860)
+        at org.apache.hadoop.ipc.Client.call(Client.java:720)
+        ... 14 more
+12/11/04 04:50:19 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 9 time(s).
+Exception in thread "main" java.net.ConnectException: Call to /170.224.164.187:9001 failed on connection exception: java.net.ConnectException: Connection refused
+        at org.apache.hadoop.ipc.Client.wrapException(Client.java:767)
+        at org.apache.hadoop.ipc.Client.call(Client.java:743)
+        at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+        at org.apache.hadoop.mapred.$Proxy0.getProtocolVersion(Unknown Source)
+        at org.apache.hadoop.ipc.RPC.getProxy(RPC.java:359)
+        at org.apache.hadoop.mapred.JobClient.createRPCProxy(JobClient.java:429)
+        at org.apache.hadoop.mapred.JobClient.init(JobClient.java:423)
+        at org.apache.hadoop.mapred.JobClient.<init>(JobClient.java:410)
+        at org.apache.hadoop.mapreduce.Job.<init>(Job.java:50)
+        at org.apache.hadoop.mapreduce.Job.<init>(Job.java:54)
+        at org.apache.hadoop.examples.WordCount.main(WordCount.java:63)
+        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:60)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:37)
+        at java.lang.reflect.Method.invoke(Method.java:611)
+        at org.apache.hadoop.util.RunJar.main(RunJar.java:156)
+Caused by: java.net.ConnectException: Connection refused
+        at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+        at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:585)
+        at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+        at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:404)
+        at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:304)
+        at org.apache.hadoop.ipc.Client$Connection.access$1700(Client.java:176)
+        at org.apache.hadoop.ipc.Client.getConnection(Client.java:860)
+        at org.apache.hadoop.ipc.Client.call(Client.java:720)
+        ... 14 more
+12/11/04 04:50:20 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 9 time(s).
+Exception in thread "main" java.net.ConnectException: Call to /170.224.164.187:9001 failed on connection exception: java.net.ConnectException: Connection refused
+        at org.apache.hadoop.ipc.Client.wrapException(Client.java:767)
+        at org.apache.hadoop.ipc.Client.call(Client.java:743)
+        at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+        at org.apache.hadoop.mapred.$Proxy0.getProtocolVersion(Unknown Source)
+        at org.apache.hadoop.ipc.RPC.getProxy(RPC.java:359)
+        at org.apache.hadoop.mapred.JobClient.createRPCProxy(JobClient.java:429)
+        at org.apache.hadoop.mapred.JobClient.init(JobClient.java:423)
+        at org.apache.hadoop.mapred.JobClient.<init>(JobClient.java:410)
+        at org.apache.hadoop.mapreduce.Job.<init>(Job.java:50)
+        at org.apache.hadoop.mapreduce.Job.<init>(Job.java:54)
+        at org.apache.hadoop.examples.WordCount.main(WordCount.java:63)
+        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:60)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:37)
+        at java.lang.reflect.Method.invoke(Method.java:611)
+        at org.apache.hadoop.util.RunJar.main(RunJar.java:156)
+Caused by: java.net.ConnectException: Connection refused
+        at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+        at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:585)
+        at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+        at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:404)
+        at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:304)
+        at org.apache.hadoop.ipc.Client$Connection.access$1700(Client.java:176)
+        at org.apache.hadoop.ipc.Client.getConnection(Client.java:860)
+        at org.apache.hadoop.ipc.Client.call(Client.java:720)
+        ... 14 more
+
+[idcuser@vhost1207 ~]$ ./run_jobs.sh 4
+Jobid:  0  Priority:  LOW  No Of Reduces:  10
+Jobid:  1  Priority:  VERY_LOW  No Of Reduces:  5
+Jobid:  2  Priority:  NORMAL  No Of Reduces:  5
+Jobid:  3  Priority:  LOW  No Of Reduces:  10
+[idcuser@vhost1207 ~]$ 12/11/04 04:54:43 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 0 time(s).
+12/11/04 04:54:44 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 0 time(s).
+12/11/04 04:54:44 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 0 time(s).
+12/11/04 04:54:44 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 0 time(s).
+12/11/04 04:54:44 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 1 time(s).
+12/11/04 04:54:45 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 1 time(s).
+12/11/04 04:54:45 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 1 time(s).
+12/11/04 04:54:45 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 1 time(s).
+12/11/04 04:54:45 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 2 time(s).
+12/11/04 04:54:46 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 2 time(s).
+12/11/04 04:54:46 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 2 time(s).
+12/11/04 04:54:46 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 2 time(s).
+12/11/04 04:54:46 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 3 time(s).
+12/11/04 04:54:47 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 3 time(s).
+12/11/04 04:54:47 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 3 time(s).
+12/11/04 04:54:47 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 3 time(s).
+12/11/04 04:54:47 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 4 time(s).
+12/11/04 04:54:48 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 4 time(s).
+12/11/04 04:54:48 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 4 time(s).
+12/11/04 04:54:48 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 4 time(s).
+12/11/04 04:54:48 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 5 time(s).
+12/11/04 04:54:49 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 5 time(s).
+12/11/04 04:54:49 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 5 time(s).
+12/11/04 04:54:49 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 5 time(s).
+12/11/04 04:54:49 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 6 time(s).
+12/11/04 04:54:50 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 6 time(s).
+12/11/04 04:54:50 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 6 time(s).
+12/11/04 04:54:50 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 6 time(s).
+12/11/04 04:54:50 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 7 time(s).
+12/11/04 04:54:51 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 7 time(s).
+12/11/04 04:54:51 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 7 time(s).
+12/11/04 04:54:51 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 7 time(s).
+12/11/04 04:54:51 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 8 time(s).
+12/11/04 04:54:52 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 8 time(s).
+12/11/04 04:54:52 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 8 time(s).
+12/11/04 04:54:52 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 8 time(s).
+12/11/04 04:54:52 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 9 time(s).
+Exception in thread "main" java.net.ConnectException: Call to /170.224.164.187:9001 failed on connection exception: java.net.ConnectException: Connection refused
+        at org.apache.hadoop.ipc.Client.wrapException(Client.java:767)
+        at org.apache.hadoop.ipc.Client.call(Client.java:743)
+        at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+        at org.apache.hadoop.mapred.$Proxy0.getProtocolVersion(Unknown Source)
+        at org.apache.hadoop.ipc.RPC.getProxy(RPC.java:359)
+        at org.apache.hadoop.mapred.JobClient.createRPCProxy(JobClient.java:429)
+        at org.apache.hadoop.mapred.JobClient.init(JobClient.java:423)
+        at org.apache.hadoop.mapred.JobClient.<init>(JobClient.java:410)
+        at org.apache.hadoop.mapreduce.Job.<init>(Job.java:50)
+        at org.apache.hadoop.mapreduce.Job.<init>(Job.java:54)
+        at org.apache.hadoop.examples.WordCount.main(WordCount.java:63)
+        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:60)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:37)
+        at java.lang.reflect.Method.invoke(Method.java:611)
+        at org.apache.hadoop.util.RunJar.main(RunJar.java:156)
+Caused by: java.net.ConnectException: Connection refused
+        at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+        at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:585)
+        at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+        at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:404)
+        at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:304)
+        at org.apache.hadoop.ipc.Client$Connection.access$1700(Client.java:176)
+        at org.apache.hadoop.ipc.Client.getConnection(Client.java:860)
+        at org.apache.hadoop.ipc.Client.call(Client.java:720)
+        ... 14 more
+12/11/04 04:54:53 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 9 time(s).
+Exception in thread "main" java.net.ConnectException: Call to /170.224.164.187:9001 failed on connection exception: java.net.ConnectException: Connection refused
+        at org.apache.hadoop.ipc.Client.wrapException(Client.java:767)
+        at org.apache.hadoop.ipc.Client.call(Client.java:743)
+        at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+        at org.apache.hadoop.mapred.$Proxy0.getProtocolVersion(Unknown Source)
+        at org.apache.hadoop.ipc.RPC.getProxy(RPC.java:359)
+        at org.apache.hadoop.mapred.JobClient.createRPCProxy(JobClient.java:429)
+        at org.apache.hadoop.mapred.JobClient.init(JobClient.java:423)
+        at org.apache.hadoop.mapred.JobClient.<init>(JobClient.java:410)
+        at org.apache.hadoop.mapreduce.Job.<init>(Job.java:50)
+        at org.apache.hadoop.mapreduce.Job.<init>(Job.java:54)
+        at org.apache.hadoop.examples.WordCount.main(WordCount.java:63)
+        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:60)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:37)
+        at java.lang.reflect.Method.invoke(Method.java:611)
+        at org.apache.hadoop.util.RunJar.main(RunJar.java:156)
+Caused by: java.net.ConnectException: Connection refused
+        at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+        at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:585)
+        at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+        at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:404)
+        at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:304)
+        at org.apache.hadoop.ipc.Client$Connection.access$1700(Client.java:176)
+        at org.apache.hadoop.ipc.Client.getConnection(Client.java:860)
+        at org.apache.hadoop.ipc.Client.call(Client.java:720)
+        ... 14 more
+12/11/04 04:54:53 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 9 time(s).
+Exception in thread "main" java.net.ConnectException: Call to /170.224.164.187:9001 failed on connection exception: java.net.ConnectException: Connection refused
+        at org.apache.hadoop.ipc.Client.wrapException(Client.java:767)
+        at org.apache.hadoop.ipc.Client.call(Client.java:743)
+        at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+        at org.apache.hadoop.mapred.$Proxy0.getProtocolVersion(Unknown Source)
+        at org.apache.hadoop.ipc.RPC.getProxy(RPC.java:359)
+        at org.apache.hadoop.mapred.JobClient.createRPCProxy(JobClient.java:429)
+        at org.apache.hadoop.mapred.JobClient.init(JobClient.java:423)
+        at org.apache.hadoop.mapred.JobClient.<init>(JobClient.java:410)
+        at org.apache.hadoop.mapreduce.Job.<init>(Job.java:50)
+        at org.apache.hadoop.mapreduce.Job.<init>(Job.java:54)
+        at org.apache.hadoop.examples.WordCount.main(WordCount.java:63)
+        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:60)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:37)
+        at java.lang.reflect.Method.invoke(Method.java:611)
+        at org.apache.hadoop.util.RunJar.main(RunJar.java:156)
+Caused by: java.net.ConnectException: Connection refused
+        at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+        at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:585)
+        at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+        at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:404)
+        at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:304)
+        at org.apache.hadoop.ipc.Client$Connection.access$1700(Client.java:176)
+        at org.apache.hadoop.ipc.Client.getConnection(Client.java:860)
+        at org.apache.hadoop.ipc.Client.call(Client.java:720)
+        ... 14 more
+12/11/04 04:54:53 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 9 time(s).
+Exception in thread "main" java.net.ConnectException: Call to /170.224.164.187:9001 failed on connection exception: java.net.ConnectException: Connection refused
+        at org.apache.hadoop.ipc.Client.wrapException(Client.java:767)
+        at org.apache.hadoop.ipc.Client.call(Client.java:743)
+        at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+        at org.apache.hadoop.mapred.$Proxy0.getProtocolVersion(Unknown Source)
+        at org.apache.hadoop.ipc.RPC.getProxy(RPC.java:359)
+        at org.apache.hadoop.mapred.JobClient.createRPCProxy(JobClient.java:429)
+        at org.apache.hadoop.mapred.JobClient.init(JobClient.java:423)
+        at org.apache.hadoop.mapred.JobClient.<init>(JobClient.java:410)
+        at org.apache.hadoop.mapreduce.Job.<init>(Job.java:50)
+        at org.apache.hadoop.mapreduce.Job.<init>(Job.java:54)
+        at org.apache.hadoop.examples.WordCount.main(WordCount.java:63)
+        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:60)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:37)
+        at java.lang.reflect.Method.invoke(Method.java:611)
+        at org.apache.hadoop.util.RunJar.main(RunJar.java:156)
+Caused by: java.net.ConnectException: Connection refused
+        at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+        at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:585)
+        at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+        at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:404)
+        at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:304)
+        at org.apache.hadoop.ipc.Client$Connection.access$1700(Client.java:176)
+        at org.apache.hadoop.ipc.Client.getConnection(Client.java:860)
+        at org.apache.hadoop.ipc.Client.call(Client.java:720)
+        ... 14 more
+
+[idcuser@vhost1207 ~]$ ./run_jobs.sh 4
+Jobid:  0  Priority:  LOW  No Of Reduces:  10
+Jobid:  1  Priority:  VERY_LOW  No Of Reduces:  5
+Jobid:  2  Priority:  NORMAL  No Of Reduces:  5
+Jobid:  3  Priority:  LOW  No Of Reduces:  10
+[idcuser@vhost1207 ~]$ 12/11/04 05:04:51 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 0 time(s).
+12/11/04 05:04:51 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 0 time(s).
+12/11/04 05:04:52 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 0 time(s).
+12/11/04 05:04:52 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 0 time(s).
+12/11/04 05:04:52 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 1 time(s).
+12/11/04 05:04:52 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 1 time(s).
+12/11/04 05:04:53 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 1 time(s).
+12/11/04 05:04:53 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 1 time(s).
+12/11/04 05:04:53 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 2 time(s).
+12/11/04 05:04:53 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 2 time(s).
+12/11/04 05:04:54 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 2 time(s).
+12/11/04 05:04:54 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 2 time(s).
+12/11/04 05:04:54 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 3 time(s).
+12/11/04 05:04:54 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 3 time(s).
+12/11/04 05:04:55 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 3 time(s).
+12/11/04 05:04:55 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 3 time(s).
+12/11/04 05:04:55 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 4 time(s).
+12/11/04 05:04:55 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 4 time(s).
+12/11/04 05:04:56 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 4 time(s).
+12/11/04 05:04:56 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 4 time(s).
+12/11/04 05:04:56 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 5 time(s).
+12/11/04 05:04:56 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 5 time(s).
+12/11/04 05:04:57 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 5 time(s).
+12/11/04 05:04:57 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 5 time(s).
+12/11/04 05:04:57 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 6 time(s).
+12/11/04 05:04:57 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 6 time(s).
+12/11/04 05:04:58 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 6 time(s).
+12/11/04 05:04:58 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 6 time(s).
+12/11/04 05:04:58 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 7 time(s).
+12/11/04 05:04:58 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 7 time(s).
+12/11/04 05:04:59 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 7 time(s).
+12/11/04 05:04:59 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 7 time(s).
+12/11/04 05:04:59 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 8 time(s).
+12/11/04 05:04:59 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 8 time(s).
+12/11/04 05:05:00 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 8 time(s).
+12/11/04 05:05:00 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 8 time(s).
+12/11/04 05:05:00 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 9 time(s).
+Exception in thread "main" java.net.ConnectException: Call to /170.224.164.187:9001 failed on connection exception: java.net.ConnectException: Connection refused
+        at org.apache.hadoop.ipc.Client.wrapException(Client.java:767)
+        at org.apache.hadoop.ipc.Client.call(Client.java:743)
+        at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+        at org.apache.hadoop.mapred.$Proxy0.getProtocolVersion(Unknown Source)
+        at org.apache.hadoop.ipc.RPC.getProxy(RPC.java:359)
+        at org.apache.hadoop.mapred.JobClient.createRPCProxy(JobClient.java:429)
+        at org.apache.hadoop.mapred.JobClient.init(JobClient.java:423)
+        at org.apache.hadoop.mapred.JobClient.<init>(JobClient.java:410)
+        at org.apache.hadoop.mapreduce.Job.<init>(Job.java:50)
+        at org.apache.hadoop.mapreduce.Job.<init>(Job.java:54)
+        at org.apache.hadoop.examples.WordCount.main(WordCount.java:63)
+        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:60)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:37)
+        at java.lang.reflect.Method.invoke(Method.java:611)
+        at org.apache.hadoop.util.RunJar.main(RunJar.java:156)
+Caused by: java.net.ConnectException: Connection refused
+        at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+        at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:585)
+        at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+        at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:404)
+        at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:304)
+        at org.apache.hadoop.ipc.Client$Connection.access$1700(Client.java:176)
+        at org.apache.hadoop.ipc.Client.getConnection(Client.java:860)
+        at org.apache.hadoop.ipc.Client.call(Client.java:720)
+        ... 14 more
+12/11/04 05:05:00 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 9 time(s).
+Exception in thread "main" java.net.ConnectException: Call to /170.224.164.187:9001 failed on connection exception: java.net.ConnectException: Connection refused
+        at org.apache.hadoop.ipc.Client.wrapException(Client.java:767)
+        at org.apache.hadoop.ipc.Client.call(Client.java:743)
+        at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+        at org.apache.hadoop.mapred.$Proxy0.getProtocolVersion(Unknown Source)
+        at org.apache.hadoop.ipc.RPC.getProxy(RPC.java:359)
+        at org.apache.hadoop.mapred.JobClient.createRPCProxy(JobClient.java:429)
+        at org.apache.hadoop.mapred.JobClient.init(JobClient.java:423)
+        at org.apache.hadoop.mapred.JobClient.<init>(JobClient.java:410)
+        at org.apache.hadoop.mapreduce.Job.<init>(Job.java:50)
+        at org.apache.hadoop.mapreduce.Job.<init>(Job.java:54)
+        at org.apache.hadoop.examples.WordCount.main(WordCount.java:63)
+        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:60)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:37)
+        at java.lang.reflect.Method.invoke(Method.java:611)
+        at org.apache.hadoop.util.RunJar.main(RunJar.java:156)
+Caused by: java.net.ConnectException: Connection refused
+        at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+        at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:585)
+        at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+        at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:404)
+        at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:304)
+        at org.apache.hadoop.ipc.Client$Connection.access$1700(Client.java:176)
+        at org.apache.hadoop.ipc.Client.getConnection(Client.java:860)
+        at org.apache.hadoop.ipc.Client.call(Client.java:720)
+        ... 14 more
+12/11/04 05:05:01 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 9 time(s).
+Exception in thread "main" java.net.ConnectException: Call to /170.224.164.187:9001 failed on connection exception: java.net.ConnectException: Connection refused
+        at org.apache.hadoop.ipc.Client.wrapException(Client.java:767)
+        at org.apache.hadoop.ipc.Client.call(Client.java:743)
+        at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+        at org.apache.hadoop.mapred.$Proxy0.getProtocolVersion(Unknown Source)
+        at org.apache.hadoop.ipc.RPC.getProxy(RPC.java:359)
+        at org.apache.hadoop.mapred.JobClient.createRPCProxy(JobClient.java:429)
+        at org.apache.hadoop.mapred.JobClient.init(JobClient.java:423)
+        at org.apache.hadoop.mapred.JobClient.<init>(JobClient.java:410)
+        at org.apache.hadoop.mapreduce.Job.<init>(Job.java:50)
+        at org.apache.hadoop.mapreduce.Job.<init>(Job.java:54)
+        at org.apache.hadoop.examples.WordCount.main(WordCount.java:63)
+        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:60)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:37)
+        at java.lang.reflect.Method.invoke(Method.java:611)
+        at org.apache.hadoop.util.RunJar.main(RunJar.java:156)
+Caused by: java.net.ConnectException: Connection refused
+        at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+        at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:585)
+        at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+        at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:404)
+        at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:304)
+        at org.apache.hadoop.ipc.Client$Connection.access$1700(Client.java:176)
+        at org.apache.hadoop.ipc.Client.getConnection(Client.java:860)
+        at org.apache.hadoop.ipc.Client.call(Client.java:720)
+        ... 14 more
+12/11/04 05:05:01 INFO ipc.Client: Retrying connect to server: /170.224.164.187:9001. Already tried 9 time(s).
+Exception in thread "main" java.net.ConnectException: Call to /170.224.164.187:9001 failed on connection exception: java.net.ConnectException: Connection refused
+        at org.apache.hadoop.ipc.Client.wrapException(Client.java:767)
+        at org.apache.hadoop.ipc.Client.call(Client.java:743)
+        at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+        at org.apache.hadoop.mapred.$Proxy0.getProtocolVersion(Unknown Source)
+        at org.apache.hadoop.ipc.RPC.getProxy(RPC.java:359)
+        at org.apache.hadoop.mapred.JobClient.createRPCProxy(JobClient.java:429)
+        at org.apache.hadoop.mapred.JobClient.init(JobClient.java:423)
+        at org.apache.hadoop.mapred.JobClient.<init>(JobClient.java:410)
+        at org.apache.hadoop.mapreduce.Job.<init>(Job.java:50)
+        at org.apache.hadoop.mapreduce.Job.<init>(Job.java:54)
+        at org.apache.hadoop.examples.WordCount.main(WordCount.java:63)
+        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:60)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:37)
+        at java.lang.reflect.Method.invoke(Method.java:611)
+        at org.apache.hadoop.util.RunJar.main(RunJar.java:156)
+Caused by: java.net.ConnectException: Connection refused
+        at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+        at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:585)
+        at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+        at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:404)
+        at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:304)
+        at org.apache.hadoop.ipc.Client$Connection.access$1700(Client.java:176)
+        at org.apache.hadoop.ipc.Client.getConnection(Client.java:860)
+        at org.apache.hadoop.ipc.Client.call(Client.java:720)
+        ... 14 more
+
+[idcuser@vhost1207 ~]$

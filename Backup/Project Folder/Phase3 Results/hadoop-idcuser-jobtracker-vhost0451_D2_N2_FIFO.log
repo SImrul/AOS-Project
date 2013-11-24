@@ -1,0 +1,1158 @@
+2012-12-04 18:16:18,149 INFO org.apache.hadoop.mapred.JobTracker: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting JobTracker
+STARTUP_MSG:   host = vhost0451/170.224.161.196
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 0.20.2
+STARTUP_MSG:   build =  -r ; compiled by 'hadoop0202' on Tue Mar 29 09:46:31 CDT 2011
+************************************************************/
+2012-12-04 18:16:18,277 INFO org.apache.hadoop.mapred.JobTracker: Scheduler configured with (memSizeForMapSlotOnJT, memSizeForReduceSlotOnJT, limitMaxMemForMapTasks, limitMaxMemForReduceTasks) (-1, -1, -1, -1)
+2012-12-04 18:16:18,327 INFO org.apache.hadoop.ipc.metrics.RpcMetrics: Initializing RPC Metrics with hostName=JobTracker, port=9001
+2012-12-04 18:16:18,378 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2012-12-04 18:16:18,490 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50030
+2012-12-04 18:16:18,494 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50030 webServer.getConnectors()[0].getLocalPort() returned 50030
+2012-12-04 18:16:18,494 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50030
+2012-12-04 18:16:18,494 INFO org.mortbay.log: jetty-6.1.14
+2012-12-04 18:16:18,886 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50030
+2012-12-04 18:16:18,889 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=JobTracker, sessionId=
+2012-12-04 18:16:18,890 INFO org.apache.hadoop.mapred.JobTracker: JobTracker up at: 9001
+2012-12-04 18:16:18,890 INFO org.apache.hadoop.mapred.JobTracker: JobTracker webserver: 50030
+2012-12-04 18:16:19,099 INFO org.apache.hadoop.mapred.JobTracker: Cleaning up the system directory
+2012-12-04 18:16:19,109 INFO org.apache.hadoop.mapred.JobTracker: problem cleaning system directory: hdfs://170.224.161.196:9000/hadoop/mapred/system
+org.apache.hadoop.ipc.RemoteException: org.apache.hadoop.hdfs.server.namenode.SafeModeException: Cannot delete /hadoop/mapred/system. Name node is in safe mode.
+The ratio of reported blocks 1.0000 has reached the threshold 0.9990. Safe mode will be turned off automatically in 23 seconds.
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.deleteInternal(FSNamesystem.java:1700)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.delete(FSNamesystem.java:1680)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.delete(NameNode.java:517)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:60)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:37)
+	at java.lang.reflect.Method.invoke(Method.java:611)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:508)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:959)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:955)
+	at java.security.AccessController.doPrivileged(AccessController.java:284)
+	at javax.security.auth.Subject.doAs(Subject.java:573)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:953)
+
+	at org.apache.hadoop.ipc.Client.call(Client.java:740)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy1.delete(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:60)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:37)
+	at java.lang.reflect.Method.invoke(Method.java:611)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:82)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:59)
+	at $Proxy1.delete(Unknown Source)
+	at org.apache.hadoop.hdfs.DFSClient.delete(DFSClient.java:582)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.delete(DistributedFileSystem.java:227)
+	at org.apache.hadoop.mapred.JobTracker.<init>(JobTracker.java:1695)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:183)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:175)
+	at org.apache.hadoop.mapred.JobTracker.main(JobTracker.java:3702)
+2012-12-04 18:16:29,118 INFO org.apache.hadoop.mapred.JobTracker: Cleaning up the system directory
+2012-12-04 18:16:29,121 INFO org.apache.hadoop.mapred.JobTracker: problem cleaning system directory: hdfs://170.224.161.196:9000/hadoop/mapred/system
+org.apache.hadoop.ipc.RemoteException: org.apache.hadoop.hdfs.server.namenode.SafeModeException: Cannot delete /hadoop/mapred/system. Name node is in safe mode.
+The ratio of reported blocks 1.0000 has reached the threshold 0.9990. Safe mode will be turned off automatically in 13 seconds.
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.deleteInternal(FSNamesystem.java:1700)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.delete(FSNamesystem.java:1680)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.delete(NameNode.java:517)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:60)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:37)
+	at java.lang.reflect.Method.invoke(Method.java:611)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:508)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:959)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:955)
+	at java.security.AccessController.doPrivileged(AccessController.java:284)
+	at javax.security.auth.Subject.doAs(Subject.java:573)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:953)
+
+	at org.apache.hadoop.ipc.Client.call(Client.java:740)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy1.delete(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:60)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:37)
+	at java.lang.reflect.Method.invoke(Method.java:611)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:82)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:59)
+	at $Proxy1.delete(Unknown Source)
+	at org.apache.hadoop.hdfs.DFSClient.delete(DFSClient.java:582)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.delete(DistributedFileSystem.java:227)
+	at org.apache.hadoop.mapred.JobTracker.<init>(JobTracker.java:1695)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:183)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:175)
+	at org.apache.hadoop.mapred.JobTracker.main(JobTracker.java:3702)
+2012-12-04 18:16:39,129 INFO org.apache.hadoop.mapred.JobTracker: Cleaning up the system directory
+2012-12-04 18:16:39,134 INFO org.apache.hadoop.mapred.JobTracker: problem cleaning system directory: hdfs://170.224.161.196:9000/hadoop/mapred/system
+org.apache.hadoop.ipc.RemoteException: org.apache.hadoop.hdfs.server.namenode.SafeModeException: Cannot delete /hadoop/mapred/system. Name node is in safe mode.
+The ratio of reported blocks 1.0000 has reached the threshold 0.9990. Safe mode will be turned off automatically in 3 seconds.
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.deleteInternal(FSNamesystem.java:1700)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.delete(FSNamesystem.java:1680)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.delete(NameNode.java:517)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:60)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:37)
+	at java.lang.reflect.Method.invoke(Method.java:611)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:508)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:959)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:955)
+	at java.security.AccessController.doPrivileged(AccessController.java:284)
+	at javax.security.auth.Subject.doAs(Subject.java:573)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:953)
+
+	at org.apache.hadoop.ipc.Client.call(Client.java:740)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy1.delete(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:60)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:37)
+	at java.lang.reflect.Method.invoke(Method.java:611)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:82)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:59)
+	at $Proxy1.delete(Unknown Source)
+	at org.apache.hadoop.hdfs.DFSClient.delete(DFSClient.java:582)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.delete(DistributedFileSystem.java:227)
+	at org.apache.hadoop.mapred.JobTracker.<init>(JobTracker.java:1695)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:183)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:175)
+	at org.apache.hadoop.mapred.JobTracker.main(JobTracker.java:3702)
+2012-12-04 18:16:49,144 INFO org.apache.hadoop.mapred.JobTracker: Cleaning up the system directory
+2012-12-04 18:16:49,306 INFO org.apache.hadoop.mapred.CompletedJobStatusStore: Completed job store is inactive
+2012-12-04 18:16:49,509 WARN org.apache.hadoop.mapred.PoolManager: No mapred.fairscheduler.allocation.file given in jobconf - the fair scheduler will not use any queues.
+2012-12-04 18:16:49,515 INFO org.apache.hadoop.mapred.FairScheduler: Successfully configured FairScheduler
+2012-12-04 18:16:49,518 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2012-12-04 18:16:49,520 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 9001: starting
+2012-12-04 18:16:49,521 INFO org.apache.hadoop.ipc.Server: IPC Server handler 0 on 9001: starting
+2012-12-04 18:16:49,521 INFO org.apache.hadoop.ipc.Server: IPC Server handler 1 on 9001: starting
+2012-12-04 18:16:49,521 INFO org.apache.hadoop.ipc.Server: IPC Server handler 2 on 9001: starting
+2012-12-04 18:16:49,521 INFO org.apache.hadoop.ipc.Server: IPC Server handler 3 on 9001: starting
+2012-12-04 18:16:49,521 INFO org.apache.hadoop.ipc.Server: IPC Server handler 4 on 9001: starting
+2012-12-04 18:16:49,522 INFO org.apache.hadoop.ipc.Server: IPC Server handler 5 on 9001: starting
+2012-12-04 18:16:49,525 INFO org.apache.hadoop.mapred.JobTracker: Starting RUNNING
+2012-12-04 18:16:49,542 INFO org.apache.hadoop.ipc.Server: IPC Server handler 6 on 9001: starting
+2012-12-04 18:16:49,542 INFO org.apache.hadoop.ipc.Server: IPC Server handler 7 on 9001: starting
+2012-12-04 18:16:49,542 INFO org.apache.hadoop.ipc.Server: IPC Server handler 8 on 9001: starting
+2012-12-04 18:16:49,542 INFO org.apache.hadoop.ipc.Server: IPC Server handler 9 on 9001: starting
+2012-12-04 18:16:49,767 INFO org.apache.hadoop.net.NetworkTopology: Adding a new node: /default-rack/170.224.168.42
+2012-12-04 18:16:49,771 INFO org.apache.hadoop.net.NetworkTopology: Adding a new node: /default-rack/170.224.168.180
+2012-12-04 18:16:49,869 INFO org.apache.hadoop.net.NetworkTopology: Adding a new node: /default-rack/170.224.161.196
+2012-12-04 18:17:01,827 ERROR org.apache.hadoop.mapred.PoolManager: Failed to reload allocations file - will use existing allocations.
+java.lang.NullPointerException
+	at java.io.File.<init>(File.java:233)
+	at org.apache.hadoop.mapred.PoolManager.reloadAllocsIfNecessary(PoolManager.java:119)
+	at org.apache.hadoop.mapred.FairScheduler.assignTasks(FairScheduler.java:227)
+	at org.apache.hadoop.mapred.JobTracker.heartbeat(JobTracker.java:2576)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:60)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:37)
+	at java.lang.reflect.Method.invoke(Method.java:611)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:508)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:959)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:955)
+	at java.security.AccessController.doPrivileged(AccessController.java:284)
+	at javax.security.auth.Subject.doAs(Subject.java:573)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:953)
+2012-12-04 18:28:05,256 INFO org.apache.hadoop.mapred.JobTracker: Initializing job_201212041816_0005
+2012-12-04 18:28:05,257 INFO org.apache.hadoop.mapred.JobInProgress: Initializing job_201212041816_0005
+2012-12-04 18:28:05,438 INFO org.apache.hadoop.mapred.JobTracker: Initializing job_201212041816_0001
+2012-12-04 18:28:05,439 INFO org.apache.hadoop.mapred.JobInProgress: Initializing job_201212041816_0001
+2012-12-04 18:28:05,531 INFO org.apache.hadoop.mapred.JobTracker: Initializing job_201212041816_0008
+2012-12-04 18:28:05,532 INFO org.apache.hadoop.mapred.JobInProgress: Initializing job_201212041816_0008
+2012-12-04 18:28:05,627 INFO org.apache.hadoop.mapred.JobTracker: Initializing job_201212041816_0002
+2012-12-04 18:28:05,627 INFO org.apache.hadoop.mapred.JobInProgress: Initializing job_201212041816_0002
+2012-12-04 18:28:06,180 INFO org.apache.hadoop.mapred.JobInProgress: Input size for job job_201212041816_0008 = 264525228. Number of splits = 4
+2012-12-04 18:28:06,181 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0008_m_000000 has split on node:/default-rack/170.224.161.196
+2012-12-04 18:28:06,181 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0008_m_000000 has split on node:/default-rack/170.224.168.180
+2012-12-04 18:28:06,181 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0008_m_000000 has split on node:/default-rack/170.224.168.42
+2012-12-04 18:28:06,181 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0008_m_000001 has split on node:/default-rack/170.224.161.196
+2012-12-04 18:28:06,182 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0008_m_000001 has split on node:/default-rack/170.224.168.180
+2012-12-04 18:28:06,182 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0008_m_000001 has split on node:/default-rack/170.224.168.42
+2012-12-04 18:28:06,182 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0008_m_000002 has split on node:/default-rack/170.224.161.196
+2012-12-04 18:28:06,182 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0008_m_000002 has split on node:/default-rack/170.224.168.42
+2012-12-04 18:28:06,182 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0008_m_000002 has split on node:/default-rack/170.224.168.180
+2012-12-04 18:28:06,183 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0008_m_000003 has split on node:/default-rack/170.224.161.196
+2012-12-04 18:28:06,183 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0008_m_000003 has split on node:/default-rack/170.224.168.180
+2012-12-04 18:28:06,183 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0008_m_000003 has split on node:/default-rack/170.224.168.42
+2012-12-04 18:28:06,184 INFO org.apache.hadoop.mapred.JobTracker: Initializing job_201212041816_0004
+2012-12-04 18:28:06,184 INFO org.apache.hadoop.mapred.JobInProgress: Initializing job_201212041816_0004
+2012-12-04 18:28:06,385 INFO org.apache.hadoop.mapred.JobInProgress: Input size for job job_201212041816_0005 = 66131307. Number of splits = 1
+2012-12-04 18:28:06,386 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0005_m_000000 has split on node:/default-rack/170.224.161.196
+2012-12-04 18:28:06,387 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0005_m_000000 has split on node:/default-rack/170.224.168.42
+2012-12-04 18:28:06,387 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0005_m_000000 has split on node:/default-rack/170.224.168.180
+2012-12-04 18:28:06,389 INFO org.apache.hadoop.mapred.JobTracker: Initializing job_201212041816_0007
+2012-12-04 18:28:06,389 INFO org.apache.hadoop.mapred.JobInProgress: Initializing job_201212041816_0007
+2012-12-04 18:28:06,450 INFO org.apache.hadoop.mapred.JobInProgress: Input size for job job_201212041816_0001 = 132262614. Number of splits = 2
+2012-12-04 18:28:06,451 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0001_m_000000 has split on node:/default-rack/170.224.161.196
+2012-12-04 18:28:06,452 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0001_m_000000 has split on node:/default-rack/170.224.168.180
+2012-12-04 18:28:06,452 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0001_m_000000 has split on node:/default-rack/170.224.168.42
+2012-12-04 18:28:06,452 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0001_m_000001 has split on node:/default-rack/170.224.161.196
+2012-12-04 18:28:06,453 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0001_m_000001 has split on node:/default-rack/170.224.168.180
+2012-12-04 18:28:06,453 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0001_m_000001 has split on node:/default-rack/170.224.168.42
+2012-12-04 18:28:06,456 INFO org.apache.hadoop.mapred.JobInProgress: Input size for job job_201212041816_0002 = 462919149. Number of splits = 7
+2012-12-04 18:28:06,457 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0002_m_000000 has split on node:/default-rack/170.224.161.196
+2012-12-04 18:28:06,457 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0002_m_000000 has split on node:/default-rack/170.224.168.180
+2012-12-04 18:28:06,457 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0002_m_000000 has split on node:/default-rack/170.224.168.42
+2012-12-04 18:28:06,457 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0002_m_000001 has split on node:/default-rack/170.224.161.196
+2012-12-04 18:28:06,458 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0002_m_000001 has split on node:/default-rack/170.224.168.42
+2012-12-04 18:28:06,458 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0002_m_000001 has split on node:/default-rack/170.224.168.180
+2012-12-04 18:28:06,458 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0002_m_000002 has split on node:/default-rack/170.224.161.196
+2012-12-04 18:28:06,458 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0002_m_000002 has split on node:/default-rack/170.224.168.180
+2012-12-04 18:28:06,459 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0002_m_000002 has split on node:/default-rack/170.224.168.42
+2012-12-04 18:28:06,459 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0002_m_000003 has split on node:/default-rack/170.224.161.196
+2012-12-04 18:28:06,459 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0002_m_000003 has split on node:/default-rack/170.224.168.180
+2012-12-04 18:28:06,459 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0002_m_000003 has split on node:/default-rack/170.224.168.42
+2012-12-04 18:28:06,460 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0002_m_000004 has split on node:/default-rack/170.224.161.196
+2012-12-04 18:28:06,460 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0002_m_000004 has split on node:/default-rack/170.224.168.42
+2012-12-04 18:28:06,460 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0002_m_000004 has split on node:/default-rack/170.224.168.180
+2012-12-04 18:28:06,460 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0002_m_000005 has split on node:/default-rack/170.224.161.196
+2012-12-04 18:28:06,461 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0002_m_000005 has split on node:/default-rack/170.224.168.42
+2012-12-04 18:28:06,461 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0002_m_000005 has split on node:/default-rack/170.224.168.180
+2012-12-04 18:28:06,461 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0002_m_000006 has split on node:/default-rack/170.224.161.196
+2012-12-04 18:28:06,461 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0002_m_000006 has split on node:/default-rack/170.224.168.180
+2012-12-04 18:28:06,462 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0002_m_000006 has split on node:/default-rack/170.224.168.42
+2012-12-04 18:28:06,505 INFO org.apache.hadoop.mapred.JobTracker: Initializing job_201212041816_0006
+2012-12-04 18:28:06,506 INFO org.apache.hadoop.mapred.JobInProgress: Initializing job_201212041816_0006
+2012-12-04 18:28:06,737 INFO org.apache.hadoop.mapred.JobInProgress: Input size for job job_201212041816_0004 = 396787842. Number of splits = 6
+2012-12-04 18:28:06,738 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0004_m_000000 has split on node:/default-rack/170.224.161.196
+2012-12-04 18:28:06,739 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0004_m_000000 has split on node:/default-rack/170.224.168.180
+2012-12-04 18:28:06,739 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0004_m_000000 has split on node:/default-rack/170.224.168.42
+2012-12-04 18:28:06,739 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0004_m_000001 has split on node:/default-rack/170.224.161.196
+2012-12-04 18:28:06,740 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0004_m_000001 has split on node:/default-rack/170.224.168.42
+2012-12-04 18:28:06,740 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0004_m_000001 has split on node:/default-rack/170.224.168.180
+2012-12-04 18:28:06,740 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0004_m_000002 has split on node:/default-rack/170.224.161.196
+2012-12-04 18:28:06,740 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0004_m_000002 has split on node:/default-rack/170.224.168.42
+2012-12-04 18:28:06,741 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0004_m_000002 has split on node:/default-rack/170.224.168.180
+2012-12-04 18:28:06,741 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0004_m_000003 has split on node:/default-rack/170.224.161.196
+2012-12-04 18:28:06,741 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0004_m_000003 has split on node:/default-rack/170.224.168.180
+2012-12-04 18:28:06,741 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0004_m_000003 has split on node:/default-rack/170.224.168.42
+2012-12-04 18:28:06,742 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0004_m_000004 has split on node:/default-rack/170.224.161.196
+2012-12-04 18:28:06,742 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0004_m_000004 has split on node:/default-rack/170.224.168.180
+2012-12-04 18:28:06,742 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0004_m_000004 has split on node:/default-rack/170.224.168.42
+2012-12-04 18:28:06,742 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0004_m_000005 has split on node:/default-rack/170.224.161.196
+2012-12-04 18:28:06,743 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0004_m_000005 has split on node:/default-rack/170.224.168.42
+2012-12-04 18:28:06,743 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0004_m_000005 has split on node:/default-rack/170.224.168.180
+2012-12-04 18:28:06,757 INFO org.apache.hadoop.mapred.JobInProgress: Input size for job job_201212041816_0006 = 330656535. Number of splits = 5
+2012-12-04 18:28:06,757 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0006_m_000000 has split on node:/default-rack/170.224.161.196
+2012-12-04 18:28:06,758 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0006_m_000000 has split on node:/default-rack/170.224.168.42
+2012-12-04 18:28:06,758 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0006_m_000000 has split on node:/default-rack/170.224.168.180
+2012-12-04 18:28:06,758 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0006_m_000001 has split on node:/default-rack/170.224.161.196
+2012-12-04 18:28:06,759 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0006_m_000001 has split on node:/default-rack/170.224.168.42
+2012-12-04 18:28:06,759 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0006_m_000001 has split on node:/default-rack/170.224.168.180
+2012-12-04 18:28:06,759 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0006_m_000002 has split on node:/default-rack/170.224.161.196
+2012-12-04 18:28:06,760 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0006_m_000002 has split on node:/default-rack/170.224.168.180
+2012-12-04 18:28:06,760 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0006_m_000002 has split on node:/default-rack/170.224.168.42
+2012-12-04 18:28:06,760 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0006_m_000003 has split on node:/default-rack/170.224.161.196
+2012-12-04 18:28:06,760 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0006_m_000003 has split on node:/default-rack/170.224.168.42
+2012-12-04 18:28:06,761 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0006_m_000003 has split on node:/default-rack/170.224.168.180
+2012-12-04 18:28:06,761 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0006_m_000004 has split on node:/default-rack/170.224.161.196
+2012-12-04 18:28:06,761 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0006_m_000004 has split on node:/default-rack/170.224.168.42
+2012-12-04 18:28:06,761 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0006_m_000004 has split on node:/default-rack/170.224.168.180
+2012-12-04 18:28:06,770 INFO org.apache.hadoop.mapred.JobInProgress: Input size for job job_201212041816_0007 = 198393921. Number of splits = 3
+2012-12-04 18:28:06,771 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0007_m_000000 has split on node:/default-rack/170.224.161.196
+2012-12-04 18:28:06,771 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0007_m_000000 has split on node:/default-rack/170.224.168.42
+2012-12-04 18:28:06,771 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0007_m_000000 has split on node:/default-rack/170.224.168.180
+2012-12-04 18:28:06,772 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0007_m_000001 has split on node:/default-rack/170.224.161.196
+2012-12-04 18:28:06,772 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0007_m_000001 has split on node:/default-rack/170.224.168.42
+2012-12-04 18:28:06,772 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0007_m_000001 has split on node:/default-rack/170.224.168.180
+2012-12-04 18:28:06,772 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0007_m_000002 has split on node:/default-rack/170.224.161.196
+2012-12-04 18:28:06,773 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0007_m_000002 has split on node:/default-rack/170.224.168.42
+2012-12-04 18:28:06,773 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0007_m_000002 has split on node:/default-rack/170.224.168.180
+2012-12-04 18:28:06,782 INFO org.apache.hadoop.mapred.JobTracker: Initializing job_201212041816_0003
+2012-12-04 18:28:06,783 INFO org.apache.hadoop.mapred.JobInProgress: Initializing job_201212041816_0003
+2012-12-04 18:28:06,912 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0001_m_000003_0' to tip task_201212041816_0001_m_000003, for tracker 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:28:06,944 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0002_m_000008_0' to tip task_201212041816_0002_m_000008, for tracker 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:28:06,947 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0004_m_000007_0' to tip task_201212041816_0004_m_000007, for tracker 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:28:07,362 INFO org.apache.hadoop.mapred.JobInProgress: Input size for job job_201212041816_0003 = 529050456. Number of splits = 8
+2012-12-04 18:28:07,363 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0003_m_000000 has split on node:/default-rack/170.224.161.196
+2012-12-04 18:28:07,363 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0003_m_000000 has split on node:/default-rack/170.224.168.42
+2012-12-04 18:28:07,363 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0003_m_000000 has split on node:/default-rack/170.224.168.180
+2012-12-04 18:28:07,364 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0003_m_000001 has split on node:/default-rack/170.224.161.196
+2012-12-04 18:28:07,364 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0003_m_000001 has split on node:/default-rack/170.224.168.180
+2012-12-04 18:28:07,364 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0003_m_000001 has split on node:/default-rack/170.224.168.42
+2012-12-04 18:28:07,364 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0003_m_000002 has split on node:/default-rack/170.224.161.196
+2012-12-04 18:28:07,365 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0003_m_000002 has split on node:/default-rack/170.224.168.42
+2012-12-04 18:28:07,365 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0003_m_000002 has split on node:/default-rack/170.224.168.180
+2012-12-04 18:28:07,366 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0003_m_000003 has split on node:/default-rack/170.224.161.196
+2012-12-04 18:28:07,366 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0003_m_000003 has split on node:/default-rack/170.224.168.180
+2012-12-04 18:28:07,366 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0003_m_000003 has split on node:/default-rack/170.224.168.42
+2012-12-04 18:28:07,367 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0003_m_000004 has split on node:/default-rack/170.224.161.196
+2012-12-04 18:28:07,367 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0003_m_000004 has split on node:/default-rack/170.224.168.42
+2012-12-04 18:28:07,367 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0003_m_000004 has split on node:/default-rack/170.224.168.180
+2012-12-04 18:28:07,368 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0003_m_000005 has split on node:/default-rack/170.224.161.196
+2012-12-04 18:28:07,368 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0003_m_000005 has split on node:/default-rack/170.224.168.42
+2012-12-04 18:28:07,368 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0003_m_000005 has split on node:/default-rack/170.224.168.180
+2012-12-04 18:28:07,369 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0003_m_000006 has split on node:/default-rack/170.224.161.196
+2012-12-04 18:28:07,369 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0003_m_000006 has split on node:/default-rack/170.224.168.42
+2012-12-04 18:28:07,369 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0003_m_000006 has split on node:/default-rack/170.224.168.180
+2012-12-04 18:28:07,369 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0003_m_000007 has split on node:/default-rack/170.224.161.196
+2012-12-04 18:28:07,370 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0003_m_000007 has split on node:/default-rack/170.224.168.180
+2012-12-04 18:28:07,370 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0003_m_000007 has split on node:/default-rack/170.224.168.42
+2012-12-04 18:28:09,991 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0004_m_000007_0' has completed task_201212041816_0004_m_000007 successfully.
+2012-12-04 18:28:09,995 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0003_m_000009_0' to tip task_201212041816_0003_m_000009, for tracker 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:28:10,001 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0002_m_000008_0' has completed task_201212041816_0002_m_000008 successfully.
+2012-12-04 18:28:10,003 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0005_m_000002_0' to tip task_201212041816_0005_m_000002, for tracker 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:28:10,004 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0001_m_000003_0' has completed task_201212041816_0001_m_000003 successfully.
+2012-12-04 18:28:10,005 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0006_m_000006_0' to tip task_201212041816_0006_m_000006, for tracker 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:28:13,001 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0003_m_000009_0' has completed task_201212041816_0003_m_000009 successfully.
+2012-12-04 18:28:13,004 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0007_m_000004_0' to tip task_201212041816_0007_m_000004, for tracker 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:28:13,010 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0006_m_000006_0' has completed task_201212041816_0006_m_000006 successfully.
+2012-12-04 18:28:13,012 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0008_m_000005_0' to tip task_201212041816_0008_m_000005, for tracker 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:28:13,013 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0005_m_000002_0' has completed task_201212041816_0005_m_000002 successfully.
+2012-12-04 18:28:13,016 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0001_m_000000_0' to tip task_201212041816_0001_m_000000, for tracker 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:28:13,020 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201212041816_0001_m_000000
+2012-12-04 18:28:16,010 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0007_m_000004_0' has completed task_201212041816_0007_m_000004 successfully.
+2012-12-04 18:28:16,011 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0001_m_000001_0' to tip task_201212041816_0001_m_000001, for tracker 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:28:16,011 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201212041816_0001_m_000001
+2012-12-04 18:28:16,018 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0008_m_000005_0' has completed task_201212041816_0008_m_000005 successfully.
+2012-12-04 18:28:16,019 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0004_m_000000_0' to tip task_201212041816_0004_m_000000, for tracker 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:28:16,019 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201212041816_0004_m_000000
+2012-12-04 18:28:16,026 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0004_m_000001_0' to tip task_201212041816_0004_m_000001, for tracker 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:28:16,027 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201212041816_0004_m_000001
+2012-12-04 18:28:19,017 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0002_m_000000_0' to tip task_201212041816_0002_m_000000, for tracker 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:28:19,017 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201212041816_0002_m_000000
+2012-12-04 18:28:19,024 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0002_m_000001_0' to tip task_201212041816_0002_m_000001, for tracker 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:28:19,025 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201212041816_0002_m_000001
+2012-12-04 18:28:28,045 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0004_m_000000_0' has completed task_201212041816_0004_m_000000 successfully.
+2012-12-04 18:28:28,045 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:1  completedMapsInputSize:67108865  completedMapsOutputSize:5085880
+2012-12-04 18:28:28,046 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0006_m_000000_0' to tip task_201212041816_0006_m_000000, for tracker 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:28:28,047 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201212041816_0006_m_000000
+2012-12-04 18:28:31,035 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0001_m_000001_0' has completed task_201212041816_0001_m_000001 successfully.
+2012-12-04 18:28:31,035 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:1  completedMapsInputSize:65153751  completedMapsOutputSize:5013173
+2012-12-04 18:28:31,037 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0005_m_000000_0' to tip task_201212041816_0005_m_000000, for tracker 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:28:31,037 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201212041816_0005_m_000000
+2012-12-04 18:28:31,053 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0001_m_000000_0' has completed task_201212041816_0001_m_000000 successfully.
+2012-12-04 18:28:31,053 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:2  completedMapsInputSize:132262616  completedMapsOutputSize:10099083
+2012-12-04 18:28:31,054 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0004_m_000001_0' has completed task_201212041816_0004_m_000001 successfully.
+2012-12-04 18:28:31,054 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:2  completedMapsInputSize:134217730  completedMapsOutputSize:10171760
+2012-12-04 18:28:31,055 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0007_m_000000_0' to tip task_201212041816_0007_m_000000, for tracker 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:28:31,055 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201212041816_0007_m_000000
+2012-12-04 18:28:34,082 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0001_r_000000_0' to tip task_201212041816_0001_r_000000, for tracker 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:28:34,213 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0007_m_000001_0' to tip task_201212041816_0007_m_000001, for tracker 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:28:34,213 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201212041816_0007_m_000001
+2012-12-04 18:28:34,214 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0001_r_000001_0' to tip task_201212041816_0001_r_000001, for tracker 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:28:37,121 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0002_m_000000_0' has completed task_201212041816_0002_m_000000 successfully.
+2012-12-04 18:28:37,121 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:1  completedMapsInputSize:67108865  completedMapsOutputSize:5085898
+2012-12-04 18:28:37,122 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0003_m_000000_0' to tip task_201212041816_0003_m_000000, for tracker 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:28:37,122 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201212041816_0003_m_000000
+2012-12-04 18:28:37,219 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0001_r_000002_0' to tip task_201212041816_0001_r_000002, for tracker 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:28:37,764 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0002_m_000001_0' has completed task_201212041816_0002_m_000001 successfully.
+2012-12-04 18:28:37,764 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:2  completedMapsInputSize:134217730  completedMapsOutputSize:10171796
+2012-12-04 18:28:37,764 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0004_m_000002_0' to tip task_201212041816_0004_m_000002, for tracker 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:28:37,764 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201212041816_0004_m_000002
+2012-12-04 18:28:40,146 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0001_r_000003_0' to tip task_201212041816_0001_r_000003, for tracker 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:28:40,332 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0001_r_000004_0' to tip task_201212041816_0001_r_000004, for tracker 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:28:40,769 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0001_r_000005_0' to tip task_201212041816_0001_r_000005, for tracker 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:28:46,785 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0006_m_000000_0' has completed task_201212041816_0006_m_000000 successfully.
+2012-12-04 18:28:46,785 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:1  completedMapsInputSize:67108865  completedMapsOutputSize:5085880
+2012-12-04 18:28:46,786 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0004_m_000003_0' to tip task_201212041816_0004_m_000003, for tracker 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:28:46,787 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201212041816_0004_m_000003
+2012-12-04 18:28:49,158 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0005_m_000000_0' has completed task_201212041816_0005_m_000000 successfully.
+2012-12-04 18:28:49,159 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:1  completedMapsInputSize:66131308  completedMapsOutputSize:5085910
+2012-12-04 18:28:49,159 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0004_m_000004_0' to tip task_201212041816_0004_m_000004, for tracker 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:28:49,159 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201212041816_0004_m_000004
+2012-12-04 18:28:49,790 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0001_r_000001_0' has completed task_201212041816_0001_r_000001 successfully.
+2012-12-04 18:28:50,023 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0005_r_000000_0' to tip task_201212041816_0005_r_000000, for tracker 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:28:50,075 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0007_m_000000_0' has completed task_201212041816_0007_m_000000 successfully.
+2012-12-04 18:28:50,075 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:1  completedMapsInputSize:67108865  completedMapsOutputSize:5085892
+2012-12-04 18:28:50,076 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0004_m_000005_0' to tip task_201212041816_0004_m_000005, for tracker 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:28:50,076 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201212041816_0004_m_000005
+2012-12-04 18:28:53,086 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0007_m_000001_0' has completed task_201212041816_0007_m_000001 successfully.
+2012-12-04 18:28:53,086 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:2  completedMapsInputSize:134217730  completedMapsOutputSize:10171784
+2012-12-04 18:28:53,087 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0006_m_000001_0' to tip task_201212041816_0006_m_000001, for tracker 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:28:53,087 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201212041816_0006_m_000001
+2012-12-04 18:28:53,229 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0004_m_000002_0' has completed task_201212041816_0004_m_000002 successfully.
+2012-12-04 18:28:53,229 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:3  completedMapsInputSize:201326595  completedMapsOutputSize:15257640
+2012-12-04 18:28:53,229 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0006_m_000002_0' to tip task_201212041816_0006_m_000002, for tracker 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:28:53,229 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201212041816_0006_m_000002
+2012-12-04 18:28:55,696 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0004_r_000000_0' to tip task_201212041816_0004_r_000000, for tracker 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:28:56,091 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0001_r_000002_0' has completed task_201212041816_0001_r_000002 successfully.
+2012-12-04 18:28:56,093 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0004_r_000001_0' to tip task_201212041816_0004_r_000001, for tracker 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:28:56,235 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0004_r_000002_0' to tip task_201212041816_0004_r_000002, for tracker 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:28:58,740 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0001_r_000000_0' has completed task_201212041816_0001_r_000000 successfully.
+2012-12-04 18:28:59,009 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0007_r_000000_0' to tip task_201212041816_0007_r_000000, for tracker 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:28:59,240 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0001_r_000005_0' has completed task_201212041816_0001_r_000005 successfully.
+2012-12-04 18:29:02,016 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0003_m_000000_0' has completed task_201212041816_0003_m_000000 successfully.
+2012-12-04 18:29:02,016 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:1  completedMapsInputSize:67108865  completedMapsOutputSize:5085898
+2012-12-04 18:29:02,016 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0001_r_000003_0' has completed task_201212041816_0001_r_000003 successfully.
+2012-12-04 18:29:02,017 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0008_m_000000_0' to tip task_201212041816_0008_m_000000, for tracker 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:29:02,017 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201212041816_0008_m_000000
+2012-12-04 18:29:05,106 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0007_r_000001_0' to tip task_201212041816_0007_r_000001, for tracker 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:29:05,284 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0004_m_000003_0' has completed task_201212041816_0004_m_000003 successfully.
+2012-12-04 18:29:05,284 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:4  completedMapsInputSize:268435460  completedMapsOutputSize:20343520
+2012-12-04 18:29:05,284 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0002_m_000002_0' to tip task_201212041816_0002_m_000002, for tracker 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:29:05,284 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201212041816_0002_m_000002
+2012-12-04 18:29:08,112 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0001_r_000004_0' has completed task_201212041816_0001_r_000004 successfully.
+2012-12-04 18:29:08,113 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0004_m_000005_0' has completed task_201212041816_0004_m_000005 successfully.
+2012-12-04 18:29:08,113 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:5  completedMapsInputSize:329678983  completedMapsOutputSize:25063535
+2012-12-04 18:29:08,113 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0002_m_000003_0' to tip task_201212041816_0002_m_000003, for tracker 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:29:08,113 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201212041816_0002_m_000003
+2012-12-04 18:29:08,290 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0005_r_000000_0' has completed task_201212041816_0005_r_000000 successfully.
+2012-12-04 18:29:08,291 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0007_r_000002_0' to tip task_201212041816_0007_r_000002, for tracker 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:29:11,294 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0006_m_000002_0' has completed task_201212041816_0006_m_000002 successfully.
+2012-12-04 18:29:11,294 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:2  completedMapsInputSize:134217730  completedMapsOutputSize:10171760
+2012-12-04 18:29:11,295 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0007_m_000002_0' to tip task_201212041816_0007_m_000002, for tracker 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:29:11,295 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201212041816_0007_m_000002
+2012-12-04 18:29:14,189 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0004_m_000004_0' has completed task_201212041816_0004_m_000004 successfully.
+2012-12-04 18:29:14,189 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:6  completedMapsInputSize:396787848  completedMapsOutputSize:30149415
+2012-12-04 18:29:14,190 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0002_m_000004_0' to tip task_201212041816_0002_m_000004, for tracker 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:29:14,190 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201212041816_0002_m_000004
+2012-12-04 18:29:17,214 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0006_m_000001_0' has completed task_201212041816_0006_m_000001 successfully.
+2012-12-04 18:29:17,214 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:3  completedMapsInputSize:201326595  completedMapsOutputSize:15257640
+2012-12-04 18:29:17,215 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0003_m_000001_0' to tip task_201212041816_0003_m_000001, for tracker 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:29:17,215 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201212041816_0003_m_000001
+2012-12-04 18:29:23,579 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0008_m_000000_0' has completed task_201212041816_0008_m_000000 successfully.
+2012-12-04 18:29:23,579 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:1  completedMapsInputSize:67108865  completedMapsOutputSize:5085892
+2012-12-04 18:29:23,580 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0006_m_000003_0' to tip task_201212041816_0006_m_000003, for tracker 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:29:23,580 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201212041816_0006_m_000003
+2012-12-04 18:29:23,742 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0006_r_000000_0' to tip task_201212041816_0006_r_000000, for tracker 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:29:23,850 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0002_m_000002_0' has completed task_201212041816_0002_m_000002 successfully.
+2012-12-04 18:29:23,850 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:3  completedMapsInputSize:201326595  completedMapsOutputSize:15257694
+2012-12-04 18:29:23,851 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0006_m_000004_0' to tip task_201212041816_0006_m_000004, for tracker 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:29:23,851 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201212041816_0006_m_000004
+2012-12-04 18:29:26,590 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0006_r_000001_0' to tip task_201212041816_0006_r_000001, for tracker 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:29:26,763 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0004_r_000001_0' has completed task_201212041816_0004_r_000001 successfully.
+2012-12-04 18:29:26,763 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0002_m_000003_0' has completed task_201212041816_0002_m_000003 successfully.
+2012-12-04 18:29:26,763 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:4  completedMapsInputSize:268435460  completedMapsOutputSize:20343592
+2012-12-04 18:29:26,764 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0003_m_000002_0' to tip task_201212041816_0003_m_000002, for tracker 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:29:26,764 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201212041816_0003_m_000002
+2012-12-04 18:29:26,861 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0004_r_000002_0' has completed task_201212041816_0004_r_000002 successfully.
+2012-12-04 18:29:26,862 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0002_r_000000_0' to tip task_201212041816_0002_r_000000, for tracker 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:29:30,198 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0004_r_000000_0' has completed task_201212041816_0004_r_000000 successfully.
+2012-12-04 18:29:30,199 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0007_m_000002_0' has completed task_201212041816_0007_m_000002 successfully.
+2012-12-04 18:29:30,199 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:3  completedMapsInputSize:198393924  completedMapsOutputSize:15111577
+2012-12-04 18:29:30,199 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0004_m_000006_0' to tip task_201212041816_0004_m_000006, for tracker 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:29:33,205 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0002_m_000004_0' has completed task_201212041816_0002_m_000004 successfully.
+2012-12-04 18:29:33,205 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:5  completedMapsInputSize:335544325  completedMapsOutputSize:25429490
+2012-12-04 18:29:33,206 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0008_m_000001_0' to tip task_201212041816_0008_m_000001, for tracker 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:29:33,206 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201212041816_0008_m_000001
+2012-12-04 18:29:33,206 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0004_m_000006_0' has completed task_201212041816_0004_m_000006 successfully.
+2012-12-04 18:29:33,206 INFO org.apache.hadoop.mapred.JobInProgress: Job job_201212041816_0004 has completed successfully.
+2012-12-04 18:29:34,116 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0008_m_000002_0' to tip task_201212041816_0008_m_000002, for tracker 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:29:34,117 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201212041816_0008_m_000002
+2012-12-04 18:29:34,117 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0004_m_000000_0' from 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:29:34,117 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0004_m_000002_0' from 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:29:34,117 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0004_m_000003_0' from 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:29:34,117 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0004_m_000006_0' from 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:29:34,117 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0004_r_000002_0' from 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:29:36,208 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0003_m_000001_0' has completed task_201212041816_0003_m_000001 successfully.
+2012-12-04 18:29:36,208 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:2  completedMapsInputSize:134217730  completedMapsOutputSize:10171796
+2012-12-04 18:29:36,208 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0002_m_000005_0' to tip task_201212041816_0002_m_000005, for tracker 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:29:36,208 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201212041816_0002_m_000005
+2012-12-04 18:29:36,209 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0004_m_000001_0' from 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:29:36,209 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0004_m_000005_0' from 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:29:36,209 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0004_r_000001_0' from 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:29:36,219 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0004_m_000004_0' from 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:29:36,219 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0004_m_000007_0' from 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:29:36,219 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0004_r_000000_0' from 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:29:39,225 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0001_r_000006_0' to tip task_201212041816_0001_r_000006, for tracker 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:29:40,170 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0006_m_000004_0' has completed task_201212041816_0006_m_000004 successfully.
+2012-12-04 18:29:40,170 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:4  completedMapsInputSize:263547675  completedMapsOutputSize:20050915
+2012-12-04 18:29:40,171 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0002_m_000006_0' to tip task_201212041816_0002_m_000006, for tracker 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:29:40,171 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201212041816_0002_m_000006
+2012-12-04 18:29:42,217 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0003_m_000002_0' has completed task_201212041816_0003_m_000002 successfully.
+2012-12-04 18:29:42,217 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:3  completedMapsInputSize:201326595  completedMapsOutputSize:15257694
+2012-12-04 18:29:42,218 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0003_m_000003_0' to tip task_201212041816_0003_m_000003, for tracker 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:29:42,218 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201212041816_0003_m_000003
+2012-12-04 18:29:42,228 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0007_r_000000_0' has completed task_201212041816_0007_r_000000 successfully.
+2012-12-04 18:29:43,175 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0007_r_000002_0' has completed task_201212041816_0007_r_000002 successfully.
+2012-12-04 18:29:43,175 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0001_r_000007_0' to tip task_201212041816_0001_r_000007, for tracker 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:29:45,222 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0007_r_000001_0' has completed task_201212041816_0007_r_000001 successfully.
+2012-12-04 18:29:45,222 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0002_r_000001_0' to tip task_201212041816_0002_r_000001, for tracker 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:29:48,234 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0006_m_000003_0' has completed task_201212041816_0006_m_000003 successfully.
+2012-12-04 18:29:48,234 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:5  completedMapsInputSize:330656540  completedMapsOutputSize:25136795
+2012-12-04 18:29:48,234 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0003_m_000004_0' to tip task_201212041816_0003_m_000004, for tracker 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:29:48,235 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201212041816_0003_m_000004
+2012-12-04 18:29:49,183 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0008_m_000002_0' has completed task_201212041816_0008_m_000002 successfully.
+2012-12-04 18:29:49,183 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:2  completedMapsInputSize:134217730  completedMapsOutputSize:10171784
+2012-12-04 18:29:49,184 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0003_m_000005_0' to tip task_201212041816_0003_m_000005, for tracker 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:29:49,184 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201212041816_0003_m_000005
+2012-12-04 18:29:51,240 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0008_m_000001_0' has completed task_201212041816_0008_m_000001 successfully.
+2012-12-04 18:29:51,240 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:3  completedMapsInputSize:201326595  completedMapsOutputSize:15257676
+2012-12-04 18:29:51,241 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0003_m_000006_0' to tip task_201212041816_0003_m_000006, for tracker 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:29:51,241 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201212041816_0003_m_000006
+2012-12-04 18:29:54,584 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0002_m_000005_0' has completed task_201212041816_0002_m_000005 successfully.
+2012-12-04 18:29:54,584 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:6  completedMapsInputSize:402653190  completedMapsOutputSize:30515388
+2012-12-04 18:29:54,584 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0003_m_000007_0' to tip task_201212041816_0003_m_000007, for tracker 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:29:54,584 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201212041816_0003_m_000007
+2012-12-04 18:29:57,402 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0005_r_000001_0' to tip task_201212041816_0005_r_000001, for tracker 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:29:58,459 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0002_m_000006_0' has completed task_201212041816_0002_m_000006 successfully.
+2012-12-04 18:29:58,459 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:7  completedMapsInputSize:462919156  completedMapsOutputSize:35162302
+2012-12-04 18:29:58,459 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0008_m_000003_0' to tip task_201212041816_0008_m_000003, for tracker 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:29:58,459 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201212041816_0008_m_000003
+2012-12-04 18:30:00,413 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0006_r_000001_0' has completed task_201212041816_0006_r_000001 successfully.
+2012-12-04 18:30:00,414 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0005_r_000002_0' to tip task_201212041816_0005_r_000002, for tracker 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:30:00,601 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0005_r_000003_0' to tip task_201212041816_0005_r_000003, for tracker 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:30:01,464 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0005_r_000004_0' to tip task_201212041816_0005_r_000004, for tracker 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:30:03,426 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0001_r_000006_0' has completed task_201212041816_0001_r_000006 successfully.
+2012-12-04 18:30:03,606 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0006_r_000000_0' has completed task_201212041816_0006_r_000000 successfully.
+2012-12-04 18:30:06,610 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0003_m_000003_0' has completed task_201212041816_0003_m_000003 successfully.
+2012-12-04 18:30:06,610 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:4  completedMapsInputSize:268435460  completedMapsOutputSize:20343592
+2012-12-04 18:30:06,611 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0001_r_000007_0' has completed task_201212041816_0001_r_000007 successfully.
+2012-12-04 18:30:09,450 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0003_m_000004_0' has completed task_201212041816_0003_m_000004 successfully.
+2012-12-04 18:30:09,450 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:5  completedMapsInputSize:335544325  completedMapsOutputSize:25429490
+2012-12-04 18:30:09,451 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0001_m_000002_0' to tip task_201212041816_0001_m_000002, for tracker 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:30:09,618 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0003_r_000000_0' to tip task_201212041816_0003_r_000000, for tracker 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:30:09,641 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0003_m_000005_0' has completed task_201212041816_0003_m_000005 successfully.
+2012-12-04 18:30:09,641 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:6  completedMapsInputSize:402653190  completedMapsOutputSize:30515388
+2012-12-04 18:30:09,642 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0003_r_000001_0' to tip task_201212041816_0003_r_000001, for tracker 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:30:09,651 INFO org.apache.hadoop.mapred.JobTracker: attempt_201212041816_0001_m_000002_0 is 200 ms debug.
+2012-12-04 18:30:12,623 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0002_r_000001_0' has completed task_201212041816_0002_r_000001 successfully.
+2012-12-04 18:30:12,658 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0002_r_000000_0' has completed task_201212041816_0002_r_000000 successfully.
+2012-12-04 18:30:15,497 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0003_m_000006_0' has completed task_201212041816_0003_m_000006 successfully.
+2012-12-04 18:30:15,497 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:7  completedMapsInputSize:469762055  completedMapsOutputSize:35601286
+2012-12-04 18:30:15,497 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0001_m_000002_0' has completed task_201212041816_0001_m_000002 successfully.
+2012-12-04 18:30:15,497 INFO org.apache.hadoop.mapred.JobInProgress: Job job_201212041816_0001 has completed successfully.
+2012-12-04 18:30:16,230 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0001_m_000001_0' from 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:30:16,230 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0001_m_000002_0' from 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:30:16,230 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0001_r_000000_0' from 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:30:16,230 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0001_r_000003_0' from 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:30:16,230 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0001_r_000006_0' from 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:30:16,238 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0003_m_000007_0' has completed task_201212041816_0003_m_000007 successfully.
+2012-12-04 18:30:16,238 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:8  completedMapsInputSize:529050464  completedMapsOutputSize:40175420
+2012-12-04 18:30:16,239 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0003_r_000002_0' to tip task_201212041816_0003_r_000002, for tracker 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:30:16,239 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0001_m_000000_0' from 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:30:16,239 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0001_r_000002_0' from 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:30:16,239 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0001_r_000004_0' from 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:30:16,239 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0008_m_000003_0' has completed task_201212041816_0008_m_000003 successfully.
+2012-12-04 18:30:16,239 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:4  completedMapsInputSize:264525232  completedMapsOutputSize:20124345
+2012-12-04 18:30:16,240 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0003_r_000003_0' to tip task_201212041816_0003_r_000003, for tracker 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:30:16,240 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0001_m_000003_0' from 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:30:16,240 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0001_r_000001_0' from 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:30:16,240 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0001_r_000005_0' from 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:30:16,240 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0001_r_000007_0' from 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:30:19,234 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0008_r_000000_0' to tip task_201212041816_0008_r_000000, for tracker 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:30:19,244 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0005_r_000003_0' has completed task_201212041816_0005_r_000003 successfully.
+2012-12-04 18:30:19,277 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0005_r_000004_0' has completed task_201212041816_0005_r_000004 successfully.
+2012-12-04 18:30:22,240 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0005_r_000001_0' has completed task_201212041816_0005_r_000001 successfully.
+2012-12-04 18:30:22,240 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0005_r_000002_0' has completed task_201212041816_0005_r_000002 successfully.
+2012-12-04 18:30:22,240 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0008_r_000001_0' to tip task_201212041816_0008_r_000001, for tracker 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:30:28,257 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0002_r_000002_0' to tip task_201212041816_0002_r_000002, for tracker 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:30:28,289 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0002_r_000003_0' to tip task_201212041816_0002_r_000003, for tracker 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:30:31,260 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0002_r_000004_0' to tip task_201212041816_0002_r_000004, for tracker 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:30:31,262 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0003_r_000000_0' has completed task_201212041816_0003_r_000000 successfully.
+2012-12-04 18:30:31,263 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0003_r_000002_0' has completed task_201212041816_0003_r_000002 successfully.
+2012-12-04 18:30:31,263 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0002_r_000005_0' to tip task_201212041816_0002_r_000005, for tracker 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:30:31,295 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0003_r_000001_0' has completed task_201212041816_0003_r_000001 successfully.
+2012-12-04 18:30:31,295 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0003_r_000003_0' has completed task_201212041816_0003_r_000003 successfully.
+2012-12-04 18:30:31,296 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0006_r_000002_0' to tip task_201212041816_0006_r_000002, for tracker 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:30:34,264 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0008_r_000000_0' has completed task_201212041816_0008_r_000000 successfully.
+2012-12-04 18:30:34,265 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0008_r_000001_0' has completed task_201212041816_0008_r_000001 successfully.
+2012-12-04 18:30:34,265 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0008_r_000002_0' to tip task_201212041816_0008_r_000002, for tracker 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:30:37,271 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0008_r_000003_0' to tip task_201212041816_0008_r_000003, for tracker 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:30:37,305 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0008_r_000004_0' to tip task_201212041816_0008_r_000004, for tracker 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:30:40,273 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0005_r_000005_0' to tip task_201212041816_0005_r_000005, for tracker 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:30:40,277 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0002_r_000002_0' has completed task_201212041816_0002_r_000002 successfully.
+2012-12-04 18:30:40,278 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0005_r_000006_0' to tip task_201212041816_0005_r_000006, for tracker 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:30:40,311 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0002_r_000003_0' has completed task_201212041816_0002_r_000003 successfully.
+2012-12-04 18:30:40,312 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0005_r_000007_0' to tip task_201212041816_0005_r_000007, for tracker 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:30:43,278 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0002_r_000004_0' has completed task_201212041816_0002_r_000004 successfully.
+2012-12-04 18:30:43,279 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0007_r_000003_0' to tip task_201212041816_0007_r_000003, for tracker 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:30:43,284 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0002_r_000005_0' has completed task_201212041816_0002_r_000005 successfully.
+2012-12-04 18:30:43,284 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0002_m_000007_0' to tip task_201212041816_0002_m_000007, for tracker 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:30:43,316 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0006_r_000002_0' has completed task_201212041816_0006_r_000002 successfully.
+2012-12-04 18:30:43,317 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0006_m_000005_0' to tip task_201212041816_0006_m_000005, for tracker 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:30:46,283 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0008_r_000002_0' has completed task_201212041816_0008_r_000002 successfully.
+2012-12-04 18:30:46,288 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0002_m_000007_0' has completed task_201212041816_0002_m_000007 successfully.
+2012-12-04 18:30:46,288 INFO org.apache.hadoop.mapred.JobInProgress: Job job_201212041816_0002 has completed successfully.
+2012-12-04 18:30:46,363 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0007_r_000004_0' to tip task_201212041816_0007_r_000004, for tracker 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:30:46,363 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0002_m_000003_0' from 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:30:46,363 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0002_m_000005_0' from 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:30:46,364 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0002_m_000007_0' from 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:30:46,364 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0002_m_000008_0' from 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:30:46,364 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0002_r_000001_0' from 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:30:46,364 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0002_r_000002_0' from 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:30:46,364 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0002_r_000005_0' from 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:30:46,364 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0006_m_000005_0' has completed task_201212041816_0006_m_000005 successfully.
+2012-12-04 18:30:46,365 INFO org.apache.hadoop.mapred.JobInProgress: Job job_201212041816_0006 has completed successfully.
+2012-12-04 18:30:46,401 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0002_m_000001_0' from 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:30:46,401 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0002_m_000002_0' from 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:30:46,401 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0002_m_000006_0' from 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:30:46,401 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0002_r_000000_0' from 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:30:46,401 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0002_r_000003_0' from 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:30:46,401 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0006_m_000000_0' from 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:30:46,401 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0006_m_000002_0' from 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:30:46,401 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0006_m_000004_0' from 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:30:46,401 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0006_m_000005_0' from 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:30:46,401 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0006_m_000006_0' from 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:30:46,401 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0006_r_000002_0' from 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:30:49,288 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0003_r_000004_0' to tip task_201212041816_0003_r_000004, for tracker 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:30:49,289 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0002_m_000000_0' from 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:30:49,289 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0002_m_000004_0' from 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:30:49,290 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0002_r_000004_0' from 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:30:49,290 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0006_m_000003_0' from 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:30:49,290 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0006_r_000001_0' from 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:30:49,370 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0008_r_000003_0' has completed task_201212041816_0008_r_000003 successfully.
+2012-12-04 18:30:49,371 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0003_r_000005_0' to tip task_201212041816_0003_r_000005, for tracker 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:30:49,371 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0006_m_000001_0' from 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:30:49,371 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0006_r_000000_0' from 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:30:52,295 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0005_r_000005_0' has completed task_201212041816_0005_r_000005 successfully.
+2012-12-04 18:30:52,375 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0005_r_000006_0' has completed task_201212041816_0005_r_000006 successfully.
+2012-12-04 18:30:52,411 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0008_r_000004_0' has completed task_201212041816_0008_r_000004 successfully.
+2012-12-04 18:30:52,411 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0005_r_000007_0' has completed task_201212041816_0005_r_000007 successfully.
+2012-12-04 18:30:52,412 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0005_m_000001_0' to tip task_201212041816_0005_m_000001, for tracker 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:30:55,300 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0008_m_000004_0' to tip task_201212041816_0008_m_000004, for tracker 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:30:55,414 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0005_m_000001_0' has completed task_201212041816_0005_m_000001 successfully.
+2012-12-04 18:30:55,414 INFO org.apache.hadoop.mapred.JobInProgress: Job job_201212041816_0005 has completed successfully.
+2012-12-04 18:30:55,452 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0005_m_000001_0' from 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:30:55,452 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0005_r_000000_0' from 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:30:55,452 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0005_r_000004_0' from 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:30:55,452 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0005_r_000007_0' from 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:30:58,309 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0007_r_000003_0' has completed task_201212041816_0007_r_000003 successfully.
+2012-12-04 18:30:58,310 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0003_r_000004_0' has completed task_201212041816_0003_r_000004 successfully.
+2012-12-04 18:30:58,310 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0008_m_000004_0' has completed task_201212041816_0008_m_000004 successfully.
+2012-12-04 18:30:58,310 INFO org.apache.hadoop.mapred.JobInProgress: Job job_201212041816_0008 has completed successfully.
+2012-12-04 18:30:58,671 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0005_m_000000_0' from 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:30:58,671 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0005_r_000001_0' from 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:30:58,671 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0005_r_000002_0' from 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:30:58,671 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0005_r_000005_0' from 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:30:58,671 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0008_m_000000_0' from 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:30:58,671 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0008_m_000001_0' from 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:30:58,671 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0008_m_000004_0' from 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:30:58,671 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0008_r_000000_0' from 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:30:58,671 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0008_r_000001_0' from 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:30:58,671 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0008_r_000002_0' from 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:30:58,671 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0007_r_000004_0' has completed task_201212041816_0007_r_000004 successfully.
+2012-12-04 18:30:58,672 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0007_m_000003_0' to tip task_201212041816_0007_m_000003, for tracker 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:30:58,672 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0005_m_000002_0' from 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:30:58,672 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0005_r_000003_0' from 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:30:58,672 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0005_r_000006_0' from 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:30:58,672 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0008_r_000003_0' from 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:30:58,677 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0008_m_000002_0' from 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:30:58,677 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0008_m_000003_0' from 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:30:58,677 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0008_m_000005_0' from 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:30:58,677 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0008_r_000004_0' from 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:31:01,678 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0003_r_000005_0' has completed task_201212041816_0003_r_000005 successfully.
+2012-12-04 18:31:01,679 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0007_m_000003_0' has completed task_201212041816_0007_m_000003 successfully.
+2012-12-04 18:31:01,679 INFO org.apache.hadoop.mapred.JobInProgress: Job job_201212041816_0007 has completed successfully.
+2012-12-04 18:31:01,714 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0003_m_000008_0' to tip task_201212041816_0003_m_000008, for tracker 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:31:01,715 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0007_m_000000_0' from 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:31:01,715 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0007_m_000001_0' from 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:31:01,715 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0007_m_000003_0' from 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:31:01,715 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0007_r_000001_0' from 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:31:01,715 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0007_r_000004_0' from 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:31:01,716 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0007_m_000002_0' from 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:31:01,716 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0007_r_000002_0' from 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:31:04,678 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0007_m_000004_0' from 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:31:04,678 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0007_r_000000_0' from 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:31:04,678 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0007_r_000003_0' from 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:31:04,719 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0003_m_000008_0' has completed task_201212041816_0003_m_000008 successfully.
+2012-12-04 18:31:04,719 INFO org.apache.hadoop.mapred.JobInProgress: Job job_201212041816_0003 has completed successfully.
+2012-12-04 18:31:04,759 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0003_m_000001_0' from 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:31:04,759 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0003_m_000002_0' from 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:31:04,759 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0003_m_000003_0' from 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:31:04,759 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0003_m_000007_0' from 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:31:04,759 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0003_m_000008_0' from 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:31:04,759 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0003_r_000000_0' from 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:31:04,759 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0003_r_000002_0' from 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:31:04,759 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0003_r_000005_0' from 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:31:07,682 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0003_m_000000_0' from 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:31:07,682 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0003_m_000004_0' from 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:31:07,682 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0003_m_000006_0' from 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:31:07,682 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0003_m_000009_0' from 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:31:07,682 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0003_r_000004_0' from 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:31:07,723 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0003_m_000005_0' from 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:31:07,723 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0003_r_000001_0' from 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:31:07,723 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0003_r_000003_0' from 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:38:00,749 INFO org.apache.hadoop.mapred.JobTracker: Initializing job_201212041816_0016
+2012-12-04 18:38:00,749 INFO org.apache.hadoop.mapred.JobInProgress: Initializing job_201212041816_0016
+2012-12-04 18:38:00,859 INFO org.apache.hadoop.mapred.JobTracker: Initializing job_201212041816_0009
+2012-12-04 18:38:00,860 INFO org.apache.hadoop.mapred.JobInProgress: Initializing job_201212041816_0009
+2012-12-04 18:38:00,981 INFO org.apache.hadoop.mapred.JobTracker: Initializing job_201212041816_0012
+2012-12-04 18:38:00,984 INFO org.apache.hadoop.mapred.JobInProgress: Initializing job_201212041816_0012
+2012-12-04 18:38:00,984 INFO org.apache.hadoop.mapred.JobInProgress: Input size for job job_201212041816_0009 = 198393921. Number of splits = 3
+2012-12-04 18:38:00,985 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0009_m_000000 has split on node:/default-rack/170.224.161.196
+2012-12-04 18:38:00,988 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0009_m_000000 has split on node:/default-rack/170.224.168.42
+2012-12-04 18:38:00,988 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0009_m_000000 has split on node:/default-rack/170.224.168.180
+2012-12-04 18:38:00,989 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0009_m_000001 has split on node:/default-rack/170.224.161.196
+2012-12-04 18:38:00,989 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0009_m_000001 has split on node:/default-rack/170.224.168.42
+2012-12-04 18:38:00,992 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0009_m_000001 has split on node:/default-rack/170.224.168.180
+2012-12-04 18:38:00,992 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0009_m_000002 has split on node:/default-rack/170.224.161.196
+2012-12-04 18:38:00,992 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0009_m_000002 has split on node:/default-rack/170.224.168.42
+2012-12-04 18:38:00,993 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0009_m_000002 has split on node:/default-rack/170.224.168.180
+2012-12-04 18:38:01,069 INFO org.apache.hadoop.mapred.JobTracker: Initializing job_201212041816_0014
+2012-12-04 18:38:01,073 INFO org.apache.hadoop.mapred.JobInProgress: Initializing job_201212041816_0014
+2012-12-04 18:38:01,135 INFO org.apache.hadoop.mapred.JobInProgress: Input size for job job_201212041816_0016 = 132262614. Number of splits = 2
+2012-12-04 18:38:01,136 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0016_m_000000 has split on node:/default-rack/170.224.161.196
+2012-12-04 18:38:01,205 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0016_m_000000 has split on node:/default-rack/170.224.168.180
+2012-12-04 18:38:01,206 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0016_m_000000 has split on node:/default-rack/170.224.168.42
+2012-12-04 18:38:01,206 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0016_m_000001 has split on node:/default-rack/170.224.161.196
+2012-12-04 18:38:01,206 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0016_m_000001 has split on node:/default-rack/170.224.168.180
+2012-12-04 18:38:01,207 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0016_m_000001 has split on node:/default-rack/170.224.168.42
+2012-12-04 18:38:01,142 INFO org.apache.hadoop.mapred.JobTracker: Initializing job_201212041816_0011
+2012-12-04 18:38:01,210 INFO org.apache.hadoop.mapred.JobInProgress: Initializing job_201212041816_0011
+2012-12-04 18:38:01,306 INFO org.apache.hadoop.mapred.JobTracker: Initializing job_201212041816_0013
+2012-12-04 18:38:01,306 INFO org.apache.hadoop.mapred.JobInProgress: Initializing job_201212041816_0013
+2012-12-04 18:38:01,445 INFO org.apache.hadoop.mapred.JobInProgress: Input size for job job_201212041816_0012 = 529050456. Number of splits = 8
+2012-12-04 18:38:01,445 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0012_m_000000 has split on node:/default-rack/170.224.161.196
+2012-12-04 18:38:01,445 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0012_m_000000 has split on node:/default-rack/170.224.168.42
+2012-12-04 18:38:01,445 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0012_m_000000 has split on node:/default-rack/170.224.168.180
+2012-12-04 18:38:01,445 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0012_m_000001 has split on node:/default-rack/170.224.161.196
+2012-12-04 18:38:01,445 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0012_m_000001 has split on node:/default-rack/170.224.168.180
+2012-12-04 18:38:01,445 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0012_m_000001 has split on node:/default-rack/170.224.168.42
+2012-12-04 18:38:01,445 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0012_m_000002 has split on node:/default-rack/170.224.161.196
+2012-12-04 18:38:01,446 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0012_m_000002 has split on node:/default-rack/170.224.168.42
+2012-12-04 18:38:01,446 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0012_m_000002 has split on node:/default-rack/170.224.168.180
+2012-12-04 18:38:01,446 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0012_m_000003 has split on node:/default-rack/170.224.161.196
+2012-12-04 18:38:01,446 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0012_m_000003 has split on node:/default-rack/170.224.168.180
+2012-12-04 18:38:01,446 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0012_m_000003 has split on node:/default-rack/170.224.168.42
+2012-12-04 18:38:01,446 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0012_m_000004 has split on node:/default-rack/170.224.161.196
+2012-12-04 18:38:01,446 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0012_m_000004 has split on node:/default-rack/170.224.168.42
+2012-12-04 18:38:01,446 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0012_m_000004 has split on node:/default-rack/170.224.168.180
+2012-12-04 18:38:01,447 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0012_m_000005 has split on node:/default-rack/170.224.161.196
+2012-12-04 18:38:01,447 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0012_m_000005 has split on node:/default-rack/170.224.168.42
+2012-12-04 18:38:01,447 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0012_m_000005 has split on node:/default-rack/170.224.168.180
+2012-12-04 18:38:01,447 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0012_m_000006 has split on node:/default-rack/170.224.161.196
+2012-12-04 18:38:01,447 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0012_m_000006 has split on node:/default-rack/170.224.168.42
+2012-12-04 18:38:01,447 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0012_m_000006 has split on node:/default-rack/170.224.168.180
+2012-12-04 18:38:01,447 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0012_m_000007 has split on node:/default-rack/170.224.161.196
+2012-12-04 18:38:01,447 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0012_m_000007 has split on node:/default-rack/170.224.168.180
+2012-12-04 18:38:01,447 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0012_m_000007 has split on node:/default-rack/170.224.168.42
+2012-12-04 18:38:01,450 INFO org.apache.hadoop.mapred.JobTracker: Initializing job_201212041816_0015
+2012-12-04 18:38:01,450 INFO org.apache.hadoop.mapred.JobInProgress: Initializing job_201212041816_0015
+2012-12-04 18:38:01,486 INFO org.apache.hadoop.mapred.JobInProgress: Input size for job job_201212041816_0014 = 396787842. Number of splits = 6
+2012-12-04 18:38:01,487 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0014_m_000000 has split on node:/default-rack/170.224.161.196
+2012-12-04 18:38:01,487 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0014_m_000000 has split on node:/default-rack/170.224.168.180
+2012-12-04 18:38:01,487 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0014_m_000000 has split on node:/default-rack/170.224.168.42
+2012-12-04 18:38:01,487 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0014_m_000001 has split on node:/default-rack/170.224.161.196
+2012-12-04 18:38:01,487 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0014_m_000001 has split on node:/default-rack/170.224.168.42
+2012-12-04 18:38:01,487 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0014_m_000001 has split on node:/default-rack/170.224.168.180
+2012-12-04 18:38:01,487 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0014_m_000002 has split on node:/default-rack/170.224.161.196
+2012-12-04 18:38:01,487 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0014_m_000002 has split on node:/default-rack/170.224.168.42
+2012-12-04 18:38:01,487 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0014_m_000002 has split on node:/default-rack/170.224.168.180
+2012-12-04 18:38:01,487 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0014_m_000003 has split on node:/default-rack/170.224.161.196
+2012-12-04 18:38:01,487 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0014_m_000003 has split on node:/default-rack/170.224.168.180
+2012-12-04 18:38:01,488 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0014_m_000003 has split on node:/default-rack/170.224.168.42
+2012-12-04 18:38:01,488 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0014_m_000004 has split on node:/default-rack/170.224.161.196
+2012-12-04 18:38:01,488 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0014_m_000004 has split on node:/default-rack/170.224.168.180
+2012-12-04 18:38:01,488 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0014_m_000004 has split on node:/default-rack/170.224.168.42
+2012-12-04 18:38:01,488 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0014_m_000005 has split on node:/default-rack/170.224.161.196
+2012-12-04 18:38:01,488 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0014_m_000005 has split on node:/default-rack/170.224.168.42
+2012-12-04 18:38:01,489 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0014_m_000005 has split on node:/default-rack/170.224.168.180
+2012-12-04 18:38:01,499 INFO org.apache.hadoop.mapred.JobInProgress: Input size for job job_201212041816_0013 = 462919149. Number of splits = 7
+2012-12-04 18:38:01,500 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0013_m_000000 has split on node:/default-rack/170.224.161.196
+2012-12-04 18:38:01,500 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0013_m_000000 has split on node:/default-rack/170.224.168.180
+2012-12-04 18:38:01,500 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0013_m_000000 has split on node:/default-rack/170.224.168.42
+2012-12-04 18:38:01,500 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0013_m_000001 has split on node:/default-rack/170.224.161.196
+2012-12-04 18:38:01,500 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0013_m_000001 has split on node:/default-rack/170.224.168.42
+2012-12-04 18:38:01,500 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0013_m_000001 has split on node:/default-rack/170.224.168.180
+2012-12-04 18:38:01,501 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0013_m_000002 has split on node:/default-rack/170.224.161.196
+2012-12-04 18:38:01,501 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0013_m_000002 has split on node:/default-rack/170.224.168.180
+2012-12-04 18:38:01,501 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0013_m_000002 has split on node:/default-rack/170.224.168.42
+2012-12-04 18:38:01,501 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0013_m_000003 has split on node:/default-rack/170.224.161.196
+2012-12-04 18:38:01,501 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0013_m_000003 has split on node:/default-rack/170.224.168.180
+2012-12-04 18:38:01,501 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0013_m_000003 has split on node:/default-rack/170.224.168.42
+2012-12-04 18:38:01,501 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0013_m_000004 has split on node:/default-rack/170.224.161.196
+2012-12-04 18:38:01,501 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0013_m_000004 has split on node:/default-rack/170.224.168.42
+2012-12-04 18:38:01,502 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0013_m_000004 has split on node:/default-rack/170.224.168.180
+2012-12-04 18:38:01,502 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0013_m_000005 has split on node:/default-rack/170.224.161.196
+2012-12-04 18:38:01,502 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0013_m_000005 has split on node:/default-rack/170.224.168.42
+2012-12-04 18:38:01,503 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0013_m_000005 has split on node:/default-rack/170.224.168.180
+2012-12-04 18:38:01,503 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0013_m_000006 has split on node:/default-rack/170.224.161.196
+2012-12-04 18:38:01,503 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0013_m_000006 has split on node:/default-rack/170.224.168.180
+2012-12-04 18:38:01,504 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0013_m_000006 has split on node:/default-rack/170.224.168.42
+2012-12-04 18:38:01,510 INFO org.apache.hadoop.mapred.JobInProgress: Input size for job job_201212041816_0011 = 330656535. Number of splits = 5
+2012-12-04 18:38:01,510 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0011_m_000000 has split on node:/default-rack/170.224.161.196
+2012-12-04 18:38:01,510 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0011_m_000000 has split on node:/default-rack/170.224.168.42
+2012-12-04 18:38:01,510 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0011_m_000000 has split on node:/default-rack/170.224.168.180
+2012-12-04 18:38:01,510 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0011_m_000001 has split on node:/default-rack/170.224.161.196
+2012-12-04 18:38:01,511 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0011_m_000001 has split on node:/default-rack/170.224.168.42
+2012-12-04 18:38:01,511 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0011_m_000001 has split on node:/default-rack/170.224.168.180
+2012-12-04 18:38:01,511 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0011_m_000002 has split on node:/default-rack/170.224.161.196
+2012-12-04 18:38:01,511 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0011_m_000002 has split on node:/default-rack/170.224.168.180
+2012-12-04 18:38:01,511 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0011_m_000002 has split on node:/default-rack/170.224.168.42
+2012-12-04 18:38:01,511 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0011_m_000003 has split on node:/default-rack/170.224.161.196
+2012-12-04 18:38:01,511 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0011_m_000003 has split on node:/default-rack/170.224.168.42
+2012-12-04 18:38:01,511 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0011_m_000003 has split on node:/default-rack/170.224.168.180
+2012-12-04 18:38:01,512 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0011_m_000004 has split on node:/default-rack/170.224.161.196
+2012-12-04 18:38:01,512 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0011_m_000004 has split on node:/default-rack/170.224.168.42
+2012-12-04 18:38:01,512 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0011_m_000004 has split on node:/default-rack/170.224.168.180
+2012-12-04 18:38:01,570 INFO org.apache.hadoop.mapred.JobTracker: Initializing job_201212041816_0010
+2012-12-04 18:38:01,570 INFO org.apache.hadoop.mapred.JobInProgress: Initializing job_201212041816_0010
+2012-12-04 18:38:01,982 INFO org.apache.hadoop.mapred.JobInProgress: Input size for job job_201212041816_0015 = 264525228. Number of splits = 4
+2012-12-04 18:38:01,982 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0015_m_000000 has split on node:/default-rack/170.224.161.196
+2012-12-04 18:38:01,982 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0015_m_000000 has split on node:/default-rack/170.224.168.180
+2012-12-04 18:38:01,982 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0015_m_000000 has split on node:/default-rack/170.224.168.42
+2012-12-04 18:38:01,982 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0015_m_000001 has split on node:/default-rack/170.224.161.196
+2012-12-04 18:38:01,982 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0015_m_000001 has split on node:/default-rack/170.224.168.180
+2012-12-04 18:38:01,982 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0015_m_000001 has split on node:/default-rack/170.224.168.42
+2012-12-04 18:38:01,982 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0015_m_000002 has split on node:/default-rack/170.224.161.196
+2012-12-04 18:38:01,982 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0015_m_000002 has split on node:/default-rack/170.224.168.42
+2012-12-04 18:38:01,983 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0015_m_000002 has split on node:/default-rack/170.224.168.180
+2012-12-04 18:38:01,983 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0015_m_000003 has split on node:/default-rack/170.224.161.196
+2012-12-04 18:38:01,983 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0015_m_000003 has split on node:/default-rack/170.224.168.180
+2012-12-04 18:38:01,983 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0015_m_000003 has split on node:/default-rack/170.224.168.42
+2012-12-04 18:38:02,007 INFO org.apache.hadoop.mapred.JobInProgress: Input size for job job_201212041816_0010 = 66131307. Number of splits = 1
+2012-12-04 18:38:02,007 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0010_m_000000 has split on node:/default-rack/170.224.161.196
+2012-12-04 18:38:02,007 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0010_m_000000 has split on node:/default-rack/170.224.168.42
+2012-12-04 18:38:02,007 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201212041816_0010_m_000000 has split on node:/default-rack/170.224.168.180
+2012-12-04 18:38:02,278 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0009_m_000004_0' to tip task_201212041816_0009_m_000004, for tracker 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:38:02,286 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0010_m_000002_0' to tip task_201212041816_0010_m_000002, for tracker 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:38:02,320 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0011_m_000006_0' to tip task_201212041816_0011_m_000006, for tracker 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:38:05,283 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0009_m_000004_0' has completed task_201212041816_0009_m_000004 successfully.
+2012-12-04 18:38:05,283 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0012_m_000009_0' to tip task_201212041816_0012_m_000009, for tracker 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:38:05,290 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0010_m_000002_0' has completed task_201212041816_0010_m_000002 successfully.
+2012-12-04 18:38:05,291 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0013_m_000008_0' to tip task_201212041816_0013_m_000008, for tracker 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:38:05,323 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0011_m_000006_0' has completed task_201212041816_0011_m_000006 successfully.
+2012-12-04 18:38:05,323 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0014_m_000007_0' to tip task_201212041816_0014_m_000007, for tracker 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:38:08,290 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0012_m_000009_0' has completed task_201212041816_0012_m_000009 successfully.
+2012-12-04 18:38:08,291 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0015_m_000005_0' to tip task_201212041816_0015_m_000005, for tracker 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:38:08,295 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0013_m_000008_0' has completed task_201212041816_0013_m_000008 successfully.
+2012-12-04 18:38:08,295 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0016_m_000003_0' to tip task_201212041816_0016_m_000003, for tracker 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:38:08,329 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0014_m_000007_0' has completed task_201212041816_0014_m_000007 successfully.
+2012-12-04 18:38:08,330 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0009_m_000000_0' to tip task_201212041816_0009_m_000000, for tracker 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:38:08,330 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201212041816_0009_m_000000
+2012-12-04 18:38:11,295 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0015_m_000005_0' has completed task_201212041816_0015_m_000005 successfully.
+2012-12-04 18:38:11,295 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0014_m_000000_0' to tip task_201212041816_0014_m_000000, for tracker 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:38:11,296 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201212041816_0014_m_000000
+2012-12-04 18:38:11,299 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0016_m_000003_0' has completed task_201212041816_0016_m_000003 successfully.
+2012-12-04 18:38:11,300 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0014_m_000001_0' to tip task_201212041816_0014_m_000001, for tracker 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:38:11,300 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201212041816_0014_m_000001
+2012-12-04 18:38:11,335 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0014_m_000002_0' to tip task_201212041816_0014_m_000002, for tracker 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:38:11,335 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201212041816_0014_m_000002
+2012-12-04 18:38:14,308 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0016_m_000000_0' to tip task_201212041816_0016_m_000000, for tracker 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:38:14,308 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201212041816_0016_m_000000
+2012-12-04 18:38:14,308 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0016_m_000001_0' to tip task_201212041816_0016_m_000001, for tracker 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:38:14,309 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201212041816_0016_m_000001
+2012-12-04 18:38:23,830 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0009_m_000000_0' has completed task_201212041816_0009_m_000000 successfully.
+2012-12-04 18:38:23,830 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:1  completedMapsInputSize:67108865  completedMapsOutputSize:5085892
+2012-12-04 18:38:23,831 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0014_m_000003_0' to tip task_201212041816_0014_m_000003, for tracker 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:38:23,831 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201212041816_0014_m_000003
+2012-12-04 18:38:26,376 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0014_m_000001_0' has completed task_201212041816_0014_m_000001 successfully.
+2012-12-04 18:38:26,376 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:1  completedMapsInputSize:67108865  completedMapsOutputSize:5085880
+2012-12-04 18:38:26,377 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0014_m_000004_0' to tip task_201212041816_0014_m_000004, for tracker 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:38:26,377 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201212041816_0014_m_000004
+2012-12-04 18:38:26,836 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0014_m_000002_0' has completed task_201212041816_0014_m_000002 successfully.
+2012-12-04 18:38:26,836 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:2  completedMapsInputSize:134217730  completedMapsOutputSize:10171760
+2012-12-04 18:38:26,837 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0014_m_000005_0' to tip task_201212041816_0014_m_000005, for tracker 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:38:26,837 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201212041816_0014_m_000005
+2012-12-04 18:38:29,326 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0014_m_000000_0' has completed task_201212041816_0014_m_000000 successfully.
+2012-12-04 18:38:29,326 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:3  completedMapsInputSize:201326595  completedMapsOutputSize:15257640
+2012-12-04 18:38:29,326 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0009_m_000001_0' to tip task_201212041816_0009_m_000001, for tracker 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:38:29,327 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201212041816_0009_m_000001
+2012-12-04 18:38:29,381 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0016_m_000001_0' has completed task_201212041816_0016_m_000001 successfully.
+2012-12-04 18:38:29,381 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:1  completedMapsInputSize:65153751  completedMapsOutputSize:5013173
+2012-12-04 18:38:29,382 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0009_m_000002_0' to tip task_201212041816_0009_m_000002, for tracker 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:38:29,382 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201212041816_0009_m_000002
+2012-12-04 18:38:29,840 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0016_r_000000_0' to tip task_201212041816_0016_r_000000, for tracker 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:38:32,330 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0016_m_000000_0' has completed task_201212041816_0016_m_000000 successfully.
+2012-12-04 18:38:32,330 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:2  completedMapsInputSize:132262616  completedMapsOutputSize:10099083
+2012-12-04 18:38:32,331 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0011_m_000000_0' to tip task_201212041816_0011_m_000000, for tracker 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:38:32,331 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201212041816_0011_m_000000
+2012-12-04 18:38:32,385 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0016_r_000001_0' to tip task_201212041816_0016_r_000001, for tracker 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:38:32,865 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0016_r_000002_0' to tip task_201212041816_0016_r_000002, for tracker 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:38:35,336 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0016_r_000003_0' to tip task_201212041816_0016_r_000003, for tracker 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:38:35,390 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0016_r_000004_0' to tip task_201212041816_0016_r_000004, for tracker 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:38:38,341 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0016_r_000005_0' to tip task_201212041816_0016_r_000005, for tracker 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:38:39,640 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0014_m_000003_0' has completed task_201212041816_0014_m_000003 successfully.
+2012-12-04 18:38:39,640 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:4  completedMapsInputSize:268435460  completedMapsOutputSize:20343520
+2012-12-04 18:38:39,641 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0011_m_000001_0' to tip task_201212041816_0011_m_000001, for tracker 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:38:39,641 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201212041816_0011_m_000001
+2012-12-04 18:38:41,399 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0014_m_000004_0' has completed task_201212041816_0014_m_000004 successfully.
+2012-12-04 18:38:41,399 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:5  completedMapsInputSize:335544325  completedMapsOutputSize:25429400
+2012-12-04 18:38:41,400 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0011_m_000002_0' to tip task_201212041816_0011_m_000002, for tracker 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:38:41,400 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201212041816_0011_m_000002
+2012-12-04 18:38:45,666 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0014_m_000005_0' has completed task_201212041816_0014_m_000005 successfully.
+2012-12-04 18:38:45,666 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:6  completedMapsInputSize:396787848  completedMapsOutputSize:30149415
+2012-12-04 18:38:45,667 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0011_m_000003_0' to tip task_201212041816_0011_m_000003, for tracker 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:38:45,667 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201212041816_0011_m_000003
+2012-12-04 18:38:47,350 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0009_m_000001_0' has completed task_201212041816_0009_m_000001 successfully.
+2012-12-04 18:38:47,350 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:2  completedMapsInputSize:134217730  completedMapsOutputSize:10171784
+2012-12-04 18:38:47,351 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0011_m_000004_0' to tip task_201212041816_0011_m_000004, for tracker 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:38:47,351 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201212041816_0011_m_000004
+2012-12-04 18:38:47,408 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0009_m_000002_0' has completed task_201212041816_0009_m_000002 successfully.
+2012-12-04 18:38:47,408 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:3  completedMapsInputSize:198393924  completedMapsOutputSize:15111577
+2012-12-04 18:38:47,409 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0013_m_000000_0' to tip task_201212041816_0013_m_000000, for tracker 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:38:47,409 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201212041816_0013_m_000000
+2012-12-04 18:38:48,671 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0016_r_000000_0' has completed task_201212041816_0016_r_000000 successfully.
+2012-12-04 18:38:48,672 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0016_r_000006_0' to tip task_201212041816_0016_r_000006, for tracker 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:38:50,412 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0016_r_000001_0' has completed task_201212041816_0016_r_000001 successfully.
+2012-12-04 18:38:50,413 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0016_r_000007_0' to tip task_201212041816_0016_r_000007, for tracker 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:38:51,676 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0014_r_000000_0' to tip task_201212041816_0014_r_000000, for tracker 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:38:53,417 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0016_r_000004_0' has completed task_201212041816_0016_r_000004 successfully.
+2012-12-04 18:38:53,417 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0014_r_000001_0' to tip task_201212041816_0014_r_000001, for tracker 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:38:54,681 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0016_r_000002_0' has completed task_201212041816_0016_r_000002 successfully.
+2012-12-04 18:38:54,681 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0011_m_000001_0' has completed task_201212041816_0011_m_000001 successfully.
+2012-12-04 18:38:54,681 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:1  completedMapsInputSize:67108865  completedMapsOutputSize:5085880
+2012-12-04 18:38:54,682 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0013_m_000001_0' to tip task_201212041816_0013_m_000001, for tracker 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:38:54,682 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201212041816_0013_m_000001
+2012-12-04 18:38:56,363 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0011_m_000000_0' has completed task_201212041816_0011_m_000000 successfully.
+2012-12-04 18:38:56,363 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:2  completedMapsInputSize:134217730  completedMapsOutputSize:10171760
+2012-12-04 18:38:56,364 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0013_m_000002_0' to tip task_201212041816_0013_m_000002, for tracker 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:38:56,364 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201212041816_0013_m_000002
+2012-12-04 18:38:56,438 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0011_m_000002_0' has completed task_201212041816_0011_m_000002 successfully.
+2012-12-04 18:38:56,438 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:3  completedMapsInputSize:201326595  completedMapsOutputSize:15257640
+2012-12-04 18:38:56,439 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0013_m_000003_0' to tip task_201212041816_0013_m_000003, for tracker 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:38:56,439 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201212041816_0013_m_000003
+2012-12-04 18:38:59,774 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0016_r_000003_0' has completed task_201212041816_0016_r_000003 successfully.
+2012-12-04 18:38:59,774 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0016_r_000005_0' has completed task_201212041816_0016_r_000005 successfully.
+2012-12-04 18:38:59,775 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0014_r_000002_0' to tip task_201212041816_0014_r_000002, for tracker 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:39:02,782 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0009_r_000000_0' to tip task_201212041816_0009_r_000000, for tracker 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:39:05,785 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0011_m_000004_0' has completed task_201212041816_0011_m_000004 successfully.
+2012-12-04 18:39:05,785 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:4  completedMapsInputSize:263547675  completedMapsOutputSize:20050915
+2012-12-04 18:39:05,794 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0013_m_000004_0' to tip task_201212041816_0013_m_000004, for tracker 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:39:05,794 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201212041816_0013_m_000004
+2012-12-04 18:39:06,474 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0009_r_000001_0' to tip task_201212041816_0009_r_000001, for tracker 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:39:09,360 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0013_m_000000_0' has completed task_201212041816_0013_m_000000 successfully.
+2012-12-04 18:39:09,361 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:1  completedMapsInputSize:67108865  completedMapsOutputSize:5085898
+2012-12-04 18:39:09,361 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0013_m_000005_0' to tip task_201212041816_0013_m_000005, for tracker 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:39:09,361 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201212041816_0013_m_000005
+2012-12-04 18:39:09,498 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0011_m_000003_0' has completed task_201212041816_0011_m_000003 successfully.
+2012-12-04 18:39:09,498 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:5  completedMapsInputSize:330656540  completedMapsOutputSize:25136795
+2012-12-04 18:39:09,498 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0016_r_000006_0' has completed task_201212041816_0016_r_000006 successfully.
+2012-12-04 18:39:09,499 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0013_m_000006_0' to tip task_201212041816_0013_m_000006, for tracker 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:39:09,499 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201212041816_0013_m_000006
+2012-12-04 18:39:12,371 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0016_r_000007_0' has completed task_201212041816_0016_r_000007 successfully.
+2012-12-04 18:39:12,371 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0013_m_000003_0' has completed task_201212041816_0013_m_000003 successfully.
+2012-12-04 18:39:12,371 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:2  completedMapsInputSize:134217730  completedMapsOutputSize:10171796
+2012-12-04 18:39:12,371 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0016_m_000002_0' to tip task_201212041816_0016_m_000002, for tracker 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:39:15,375 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0014_r_000001_0' has completed task_201212041816_0014_r_000001 successfully.
+2012-12-04 18:39:15,375 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0009_r_000002_0' to tip task_201212041816_0009_r_000002, for tracker 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:39:15,513 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0013_m_000001_0' has completed task_201212041816_0013_m_000001 successfully.
+2012-12-04 18:39:15,558 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:3  completedMapsInputSize:201326595  completedMapsOutputSize:15257694
+2012-12-04 18:39:15,559 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0010_m_000000_0' to tip task_201212041816_0010_m_000000, for tracker 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:39:15,598 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201212041816_0010_m_000000
+2012-12-04 18:39:17,807 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0009_r_000003_0' to tip task_201212041816_0009_r_000003, for tracker 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:39:18,379 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0016_m_000002_0' has completed task_201212041816_0016_m_000002 successfully.
+2012-12-04 18:39:18,379 INFO org.apache.hadoop.mapred.JobInProgress: Job job_201212041816_0016 has completed successfully.
+2012-12-04 18:39:19,444 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0012_m_000000_0' to tip task_201212041816_0012_m_000000, for tracker 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:39:19,444 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201212041816_0012_m_000000
+2012-12-04 18:39:19,444 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0016_m_000001_0' from 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:39:19,444 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0016_m_000002_0' from 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:39:19,444 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0016_m_000003_0' from 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:39:19,444 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0016_r_000001_0' from 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:39:19,444 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0016_r_000004_0' from 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:39:19,444 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0016_r_000007_0' from 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:39:19,445 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0014_r_000000_0' has completed task_201212041816_0014_r_000000 successfully.
+2012-12-04 18:39:19,446 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0009_r_000004_0' to tip task_201212041816_0009_r_000004, for tracker 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:39:19,446 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0016_r_000000_0' from 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:39:19,446 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0016_r_000002_0' from 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:39:19,446 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0016_r_000006_0' from 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:39:20,811 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0013_m_000002_0' has completed task_201212041816_0013_m_000002 successfully.
+2012-12-04 18:39:20,811 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:4  completedMapsInputSize:268435460  completedMapsOutputSize:20343592
+2012-12-04 18:39:20,811 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0014_r_000002_0' has completed task_201212041816_0014_r_000002 successfully.
+2012-12-04 18:39:20,812 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0014_m_000006_0' to tip task_201212041816_0014_m_000006, for tracker 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:39:20,812 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0016_m_000000_0' from 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:39:20,812 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0016_r_000003_0' from 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:39:20,812 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0016_r_000005_0' from 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:39:22,448 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0013_m_000005_0' has completed task_201212041816_0013_m_000005 successfully.
+2012-12-04 18:39:22,448 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:5  completedMapsInputSize:335544325  completedMapsOutputSize:25429490
+2012-12-04 18:39:22,449 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0012_m_000001_0' to tip task_201212041816_0012_m_000001, for tracker 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:39:22,449 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201212041816_0012_m_000001
+2012-12-04 18:39:23,815 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0011_r_000000_0' to tip task_201212041816_0011_r_000000, for tracker 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:39:25,454 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0011_r_000001_0' to tip task_201212041816_0011_r_000001, for tracker 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:39:26,819 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0009_r_000000_0' has completed task_201212041816_0009_r_000000 successfully.
+2012-12-04 18:39:26,820 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0013_m_000004_0' has completed task_201212041816_0013_m_000004 successfully.
+2012-12-04 18:39:26,820 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:6  completedMapsInputSize:402653190  completedMapsOutputSize:30515388
+2012-12-04 18:39:26,820 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0014_m_000006_0' has completed task_201212041816_0014_m_000006 successfully.
+2012-12-04 18:39:26,820 INFO org.apache.hadoop.mapred.JobInProgress: Job job_201212041816_0014 has completed successfully.
+2012-12-04 18:39:27,059 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0012_m_000002_0' to tip task_201212041816_0012_m_000002, for tracker 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:39:27,059 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201212041816_0012_m_000002
+2012-12-04 18:39:27,060 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0014_m_000000_0' from 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:39:27,060 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0014_m_000006_0' from 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:39:27,060 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0014_r_000002_0' from 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:39:28,456 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0011_r_000002_0' to tip task_201212041816_0011_r_000002, for tracker 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:39:28,456 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0014_m_000001_0' from 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:39:28,456 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0014_m_000004_0' from 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:39:28,456 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0014_r_000001_0' from 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:39:28,458 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0013_m_000006_0' has completed task_201212041816_0013_m_000006 successfully.
+2012-12-04 18:39:28,458 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:7  completedMapsInputSize:462919156  completedMapsOutputSize:35162302
+2012-12-04 18:39:28,458 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0012_m_000003_0' to tip task_201212041816_0012_m_000003, for tracker 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:39:28,458 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201212041816_0012_m_000003
+2012-12-04 18:39:28,459 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0014_m_000002_0' from 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:39:28,459 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0014_m_000003_0' from 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:39:28,459 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0014_m_000005_0' from 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:39:28,459 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0014_m_000007_0' from 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:39:28,459 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0014_r_000000_0' from 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:39:30,065 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0012_m_000004_0' to tip task_201212041816_0012_m_000004, for tracker 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:39:30,065 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201212041816_0012_m_000004
+2012-12-04 18:39:31,463 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0009_r_000001_0' has completed task_201212041816_0009_r_000001 successfully.
+2012-12-04 18:39:31,463 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0013_r_000000_0' to tip task_201212041816_0013_r_000000, for tracker 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:39:31,986 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0009_r_000002_0' has completed task_201212041816_0009_r_000002 successfully.
+2012-12-04 18:39:36,072 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0013_r_000001_0' to tip task_201212041816_0013_r_000001, for tracker 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:39:37,473 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0010_m_000000_0' has completed task_201212041816_0010_m_000000 successfully.
+2012-12-04 18:39:37,473 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:1  completedMapsInputSize:66131308  completedMapsOutputSize:5085910
+2012-12-04 18:39:37,473 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0012_m_000005_0' to tip task_201212041816_0012_m_000005, for tracker 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:39:37,473 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201212041816_0012_m_000005
+2012-12-04 18:39:38,052 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0012_m_000000_0' has completed task_201212041816_0012_m_000000 successfully.
+2012-12-04 18:39:38,052 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:1  completedMapsInputSize:67108865  completedMapsOutputSize:5085898
+2012-12-04 18:39:38,053 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0012_m_000006_0' to tip task_201212041816_0012_m_000006, for tracker 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:39:38,053 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201212041816_0012_m_000006
+2012-12-04 18:39:39,075 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0009_r_000003_0' has completed task_201212041816_0009_r_000003 successfully.
+2012-12-04 18:39:39,076 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0013_r_000002_0' to tip task_201212041816_0013_r_000002, for tracker 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:39:40,479 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0013_r_000003_0' to tip task_201212041816_0013_r_000003, for tracker 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:39:41,057 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0012_m_000001_0' has completed task_201212041816_0012_m_000001 successfully.
+2012-12-04 18:39:41,057 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:2  completedMapsInputSize:134217730  completedMapsOutputSize:10171796
+2012-12-04 18:39:41,058 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0012_m_000007_0' to tip task_201212041816_0012_m_000007, for tracker 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:39:41,058 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201212041816_0012_m_000007
+2012-12-04 18:39:42,080 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0011_r_000000_0' has completed task_201212041816_0011_r_000000 successfully.
+2012-12-04 18:39:43,482 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0009_r_000004_0' has completed task_201212041816_0009_r_000004 successfully.
+2012-12-04 18:39:44,061 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0011_r_000001_0' has completed task_201212041816_0011_r_000001 successfully.
+2012-12-04 18:39:44,061 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0009_r_000005_0' to tip task_201212041816_0009_r_000005, for tracker 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:39:45,083 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0012_m_000002_0' has completed task_201212041816_0012_m_000002 successfully.
+2012-12-04 18:39:45,083 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:3  completedMapsInputSize:201326595  completedMapsOutputSize:15257694
+2012-12-04 18:39:45,083 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0015_m_000000_0' to tip task_201212041816_0015_m_000000, for tracker 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:39:45,084 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201212041816_0015_m_000000
+2012-12-04 18:39:49,495 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0013_r_000004_0' to tip task_201212041816_0013_r_000004, for tracker 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:39:50,118 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0009_r_000005_0' has completed task_201212041816_0009_r_000005 successfully.
+2012-12-04 18:39:50,118 INFO org.apache.hadoop.mapred.JobInProgress: Job job_201212041816_0009 has completed successfully.
+2012-12-04 18:39:51,073 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0013_r_000005_0' to tip task_201212041816_0013_r_000005, for tracker 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:39:51,073 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0009_m_000002_0' from 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:39:51,073 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0009_r_000002_0' from 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:39:51,073 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0009_r_000005_0' from 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:39:51,091 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0009_m_000001_0' from 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:39:51,091 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0009_m_000004_0' from 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:39:51,091 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0009_r_000000_0' from 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:39:51,091 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0009_r_000003_0' from 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:39:52,500 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0013_r_000000_0' has completed task_201212041816_0013_r_000000 successfully.
+2012-12-04 18:39:52,500 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0009_m_000000_0' from 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:39:52,500 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0009_r_000001_0' from 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:39:52,500 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0009_r_000004_0' from 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:39:54,095 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0012_m_000004_0' has completed task_201212041816_0012_m_000004 successfully.
+2012-12-04 18:39:54,095 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:4  completedMapsInputSize:268435460  completedMapsOutputSize:20343592
+2012-12-04 18:39:54,095 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0015_m_000001_0' to tip task_201212041816_0015_m_000001, for tracker 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:39:54,095 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201212041816_0015_m_000001
+2012-12-04 18:39:54,121 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0010_r_000000_0' to tip task_201212041816_0010_r_000000, for tracker 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:39:55,524 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0012_m_000003_0' has completed task_201212041816_0012_m_000003 successfully.
+2012-12-04 18:39:55,524 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:5  completedMapsInputSize:335544325  completedMapsOutputSize:25429490
+2012-12-04 18:39:55,524 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0012_m_000005_0' has completed task_201212041816_0012_m_000005 successfully.
+2012-12-04 18:39:55,524 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:6  completedMapsInputSize:402653190  completedMapsOutputSize:30515388
+2012-12-04 18:39:55,525 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0015_m_000002_0' to tip task_201212041816_0015_m_000002, for tracker 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:39:55,525 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201212041816_0015_m_000002
+2012-12-04 18:39:57,146 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0011_r_000002_0' has completed task_201212041816_0011_r_000002 successfully.
+2012-12-04 18:39:57,146 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0012_m_000006_0' has completed task_201212041816_0012_m_000006 successfully.
+2012-12-04 18:39:57,146 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:7  completedMapsInputSize:469762055  completedMapsOutputSize:35601286
+2012-12-04 18:39:57,147 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0012_m_000007_0' has completed task_201212041816_0012_m_000007 successfully.
+2012-12-04 18:39:57,147 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:8  completedMapsInputSize:529050464  completedMapsOutputSize:40175420
+2012-12-04 18:39:57,147 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0011_m_000005_0' to tip task_201212041816_0011_m_000005, for tracker 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:39:58,546 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0015_m_000003_0' to tip task_201212041816_0015_m_000003, for tracker 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:39:58,547 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201212041816_0015_m_000003
+2012-12-04 18:40:00,152 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0011_m_000005_0' has completed task_201212041816_0011_m_000005 successfully.
+2012-12-04 18:40:00,152 INFO org.apache.hadoop.mapred.JobInProgress: Job job_201212041816_0011 has completed successfully.
+2012-12-04 18:40:00,858 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0011_m_000002_0' from 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:40:00,858 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0011_m_000005_0' from 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:40:00,858 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0011_r_000001_0' from 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:40:00,858 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0011_r_000002_0' from 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:40:01,180 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0010_r_000001_0' to tip task_201212041816_0010_r_000001, for tracker 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:40:01,180 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0011_m_000000_0' from 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:40:01,180 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0011_m_000004_0' from 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:40:01,180 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0011_r_000000_0' from 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:40:01,551 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0011_m_000001_0' from 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:40:01,551 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0011_m_000003_0' from 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:40:01,551 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0011_m_000006_0' from 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:40:03,861 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0010_r_000002_0' to tip task_201212041816_0010_r_000002, for tracker 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:40:04,184 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0013_r_000001_0' has completed task_201212041816_0013_r_000001 successfully.
+2012-12-04 18:40:04,184 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0010_r_000003_0' to tip task_201212041816_0010_r_000003, for tracker 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:40:04,555 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0010_r_000004_0' to tip task_201212041816_0010_r_000004, for tracker 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:40:06,868 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0013_r_000005_0' has completed task_201212041816_0013_r_000005 successfully.
+2012-12-04 18:40:06,868 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0010_r_000000_0' has completed task_201212041816_0010_r_000000 successfully.
+2012-12-04 18:40:06,868 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0010_r_000005_0' to tip task_201212041816_0010_r_000005, for tracker 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:40:07,189 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0013_r_000002_0' has completed task_201212041816_0013_r_000002 successfully.
+2012-12-04 18:40:07,560 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0013_r_000003_0' has completed task_201212041816_0013_r_000003 successfully.
+2012-12-04 18:40:10,194 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0015_m_000000_0' has completed task_201212041816_0015_m_000000 successfully.
+2012-12-04 18:40:10,194 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:1  completedMapsInputSize:67108865  completedMapsOutputSize:5085892
+2012-12-04 18:40:10,747 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0010_r_000006_0' to tip task_201212041816_0010_r_000006, for tracker 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:40:12,883 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0010_r_000007_0' to tip task_201212041816_0010_r_000007, for tracker 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:40:13,754 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0013_r_000004_0' has completed task_201212041816_0013_r_000004 successfully.
+2012-12-04 18:40:15,895 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0010_r_000002_0' has completed task_201212041816_0010_r_000002 successfully.
+2012-12-04 18:40:15,895 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0013_m_000007_0' to tip task_201212041816_0013_m_000007, for tracker 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:40:16,201 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0015_m_000001_0' has completed task_201212041816_0015_m_000001 successfully.
+2012-12-04 18:40:16,201 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:2  completedMapsInputSize:134217730  completedMapsOutputSize:10171784
+2012-12-04 18:40:16,784 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0015_m_000002_0' has completed task_201212041816_0015_m_000002 successfully.
+2012-12-04 18:40:16,784 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:3  completedMapsInputSize:201326595  completedMapsOutputSize:15257676
+2012-12-04 18:40:16,784 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0015_m_000003_0' has completed task_201212041816_0015_m_000003 successfully.
+2012-12-04 18:40:16,784 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:4  completedMapsInputSize:264525232  completedMapsOutputSize:20124345
+2012-12-04 18:40:18,901 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0010_r_000005_0' has completed task_201212041816_0010_r_000005 successfully.
+2012-12-04 18:40:18,902 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0013_m_000007_0' has completed task_201212041816_0013_m_000007 successfully.
+2012-12-04 18:40:18,902 INFO org.apache.hadoop.mapred.JobInProgress: Job job_201212041816_0013 has completed successfully.
+2012-12-04 18:40:18,944 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0012_r_000000_0' to tip task_201212041816_0012_r_000000, for tracker 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:40:18,944 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0013_m_000000_0' from 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:40:18,944 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0013_m_000003_0' from 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:40:18,944 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0013_m_000005_0' from 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:40:18,944 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0013_m_000007_0' from 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:40:18,944 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0013_m_000008_0' from 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:40:18,944 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0013_r_000005_0' from 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:40:19,205 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0012_r_000001_0' to tip task_201212041816_0012_r_000001, for tracker 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:40:19,205 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0013_m_000002_0' from 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:40:19,205 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0013_m_000004_0' from 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:40:19,205 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0013_r_000001_0' from 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:40:19,205 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0013_r_000002_0' from 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:40:19,790 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0013_m_000001_0' from 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:40:19,790 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0013_m_000006_0' from 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:40:19,790 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0013_r_000000_0' from 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:40:19,790 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0013_r_000003_0' from 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:40:19,790 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0013_r_000004_0' from 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:40:21,948 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0012_r_000002_0' to tip task_201212041816_0012_r_000002, for tracker 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:40:22,210 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0010_r_000001_0' has completed task_201212041816_0010_r_000001 successfully.
+2012-12-04 18:40:22,211 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0010_r_000003_0' has completed task_201212041816_0010_r_000003 successfully.
+2012-12-04 18:40:22,211 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0012_r_000003_0' to tip task_201212041816_0012_r_000003, for tracker 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:40:22,794 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0012_r_000004_0' to tip task_201212041816_0012_r_000004, for tracker 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:40:24,953 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0010_r_000007_0' has completed task_201212041816_0010_r_000007 successfully.
+2012-12-04 18:40:25,817 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0010_r_000004_0' has completed task_201212041816_0010_r_000004 successfully.
+2012-12-04 18:40:25,818 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0010_r_000006_0' has completed task_201212041816_0010_r_000006 successfully.
+2012-12-04 18:40:25,818 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0010_m_000001_0' to tip task_201212041816_0010_m_000001, for tracker 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:40:27,956 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0012_r_000005_0' to tip task_201212041816_0012_r_000005, for tracker 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:40:28,219 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0015_r_000000_0' to tip task_201212041816_0015_r_000000, for tracker 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:40:28,823 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0010_m_000001_0' has completed task_201212041816_0010_m_000001 successfully.
+2012-12-04 18:40:28,824 INFO org.apache.hadoop.mapred.JobInProgress: Job job_201212041816_0010 has completed successfully.
+2012-12-04 18:40:29,001 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0015_r_000001_0' to tip task_201212041816_0015_r_000001, for tracker 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:40:29,001 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0010_m_000000_0' from 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:40:29,002 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0010_m_000001_0' from 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:40:29,002 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0010_r_000004_0' from 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:40:29,002 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0010_r_000006_0' from 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:40:30,961 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0012_r_000000_0' has completed task_201212041816_0012_r_000000 successfully.
+2012-12-04 18:40:30,961 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0010_m_000002_0' from 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:40:30,961 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0010_r_000000_0' from 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:40:30,961 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0010_r_000002_0' from 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:40:30,961 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0010_r_000005_0' from 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:40:30,961 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0010_r_000007_0' from 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:40:31,221 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0012_r_000001_0' has completed task_201212041816_0012_r_000001 successfully.
+2012-12-04 18:40:31,221 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0010_r_000001_0' from 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:40:31,221 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0010_r_000003_0' from 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:40:32,007 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0015_r_000002_0' to tip task_201212041816_0015_r_000002, for tracker 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:40:33,966 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0015_r_000003_0' to tip task_201212041816_0015_r_000003, for tracker 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:40:34,226 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0015_r_000004_0' to tip task_201212041816_0015_r_000004, for tracker 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:40:35,010 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0012_r_000004_0' has completed task_201212041816_0012_r_000004 successfully.
+2012-12-04 18:40:36,970 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0012_r_000002_0' has completed task_201212041816_0012_r_000002 successfully.
+2012-12-04 18:40:37,230 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0012_r_000003_0' has completed task_201212041816_0012_r_000003 successfully.
+2012-12-04 18:40:40,235 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0015_r_000000_0' has completed task_201212041816_0015_r_000000 successfully.
+2012-12-04 18:40:41,020 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0015_r_000001_0' has completed task_201212041816_0015_r_000001 successfully.
+2012-12-04 18:40:41,020 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0015_r_000002_0' has completed task_201212041816_0015_r_000002 successfully.
+2012-12-04 18:40:42,978 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0012_r_000005_0' has completed task_201212041816_0012_r_000005 successfully.
+2012-12-04 18:40:42,978 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0012_m_000008_0' to tip task_201212041816_0012_m_000008, for tracker 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:40:45,984 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0015_r_000003_0' has completed task_201212041816_0015_r_000003 successfully.
+2012-12-04 18:40:45,985 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0012_m_000008_0' has completed task_201212041816_0012_m_000008 successfully.
+2012-12-04 18:40:45,985 INFO org.apache.hadoop.mapred.JobInProgress: Job job_201212041816_0012 has completed successfully.
+2012-12-04 18:40:46,009 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0012_m_000000_0' from 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:40:46,009 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0012_m_000001_0' from 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:40:46,009 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0012_m_000006_0' from 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:40:46,009 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0012_m_000007_0' from 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:40:46,009 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0012_m_000008_0' from 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:40:46,009 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0012_r_000000_0' from 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:40:46,009 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0012_r_000002_0' from 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:40:46,009 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0012_r_000005_0' from 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'
+2012-12-04 18:40:46,241 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0015_r_000004_0' has completed task_201212041816_0015_r_000004 successfully.
+2012-12-04 18:40:46,241 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201212041816_0015_m_000004_0' to tip task_201212041816_0015_m_000004, for tracker 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:40:46,241 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0012_m_000002_0' from 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:40:46,241 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0012_m_000004_0' from 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:40:46,241 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0012_m_000009_0' from 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:40:46,241 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0012_r_000001_0' from 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:40:46,241 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0012_r_000003_0' from 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:40:47,027 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0012_m_000003_0' from 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:40:47,027 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0012_m_000005_0' from 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:40:47,027 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0012_r_000004_0' from 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:40:49,245 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201212041816_0015_m_000004_0' has completed task_201212041816_0015_m_000004 successfully.
+2012-12-04 18:40:49,245 INFO org.apache.hadoop.mapred.JobInProgress: Job job_201212041816_0015 has completed successfully.
+2012-12-04 18:40:49,269 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0015_m_000000_0' from 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:40:49,269 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0015_m_000001_0' from 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:40:49,269 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0015_m_000004_0' from 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:40:49,269 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0015_m_000005_0' from 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:40:49,269 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0015_r_000000_0' from 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:40:49,270 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0015_r_000004_0' from 'tracker_170.224.161.196:localhost.localdomain/127.0.0.1:39127'
+2012-12-04 18:40:50,031 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0015_m_000002_0' from 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:40:50,032 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0015_m_000003_0' from 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:40:50,032 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0015_r_000001_0' from 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:40:50,032 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0015_r_000002_0' from 'tracker_170.224.168.42:localhost.localdomain/127.0.0.1:45272'
+2012-12-04 18:40:52,017 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201212041816_0015_r_000003_0' from 'tracker_170.224.168.180:localhost.localdomain/127.0.0.1:41140'

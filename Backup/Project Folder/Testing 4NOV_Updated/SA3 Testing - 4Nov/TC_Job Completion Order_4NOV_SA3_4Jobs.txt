@@ -1,0 +1,6 @@
+
+12/11/04 21:21:04 INFO mapred.JobClient: Job complete: job_201211041810_0014
+12/11/04 21:21:05 INFO mapred.JobClient: Job complete: job_201211041810_0011
+12/11/04 21:21:06 INFO mapred.JobClient: Job complete: job_201211041810_0013
+12/11/04 21:21:09 INFO mapred.JobClient: Job complete: job_201211041810_0012
+
